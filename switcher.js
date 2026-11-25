@@ -108,6 +108,7 @@
       if (changed) {
         try { localStorage.setItem("studyHub.cloudPreview", JSON.stringify(map)); } catch (e) {}
         if (window.CAT && CAT.refresh) CAT.refresh();
+        if (window.STUDY_STATS && STUDY_STATS.refresh) STUDY_STATS.refresh();
         if (onDone) onDone();
       }
     });
@@ -208,7 +209,7 @@
         '</a>';
     });
     html += authBlockHtml();
-    html += '<a class="hubsw-all" role="menuitem" data-hub-pick="1" href="../?pick=1">🏠 All subjects screen</a>';
+    html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px"><button type="button" class="hubsw-all" role="menuitem" data-hub-stats="1" style="background:none;cursor:pointer">📊 Statistics</button><a class="hubsw-all" role="menuitem" data-hub-pick="1" href="../?pick=1">🏠 All subjects</a></div>';
     menu.innerHTML = html;
   }
 
@@ -228,6 +229,13 @@
   });
 
   menu.addEventListener("click", function (e) {
+    var stBtn = e.target.closest("[data-hub-stats]");
+    if (stBtn && window.STUDY_STATS) {
+      e.preventDefault();
+      setOpen(false);
+      STUDY_STATS.open();
+      return;
+    }
     var authBtn = e.target.closest("[data-hub-auth]");
     if (authBtn && window.GEOSync) {
       e.preventDefault();

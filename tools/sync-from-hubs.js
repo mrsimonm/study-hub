@@ -37,6 +37,9 @@ function patchIndexHtml(html, hubId) {
   if (!out.includes(tag)) {
     out = out.replace('<script src="app.js"></script>', '<script src="app.js"></script>\n' + tag);
   }
+  if (!out.includes('<script src="lib/stats.js"></script>')) {
+    out = out.replace('<script src="lib/cat.js"></script>', '<script src="lib/cat.js"></script>\n<script src="lib/stats.js"></script>');
+  }
   return out;
 }
 
@@ -55,6 +58,7 @@ function buildFirebaseConfig(baseCfg, hubDoc) {
 const sharedConfig = fs.readFileSync(path.join(ROOT, "lib", "firebase-config.js"), "utf8");
 const sharedSync = fs.readFileSync(path.join(ROOT, "lib", "firebase-sync.js"), "utf8");
 const sharedCat = fs.readFileSync(path.join(ROOT, "lib", "cat.js"), "utf8");
+const sharedStats = fs.readFileSync(path.join(ROOT, "lib", "stats.js"), "utf8");
 
 HUBS.forEach(({ id, src, hubDoc }) => {
   if (!fs.existsSync(src)) {
@@ -89,5 +93,7 @@ HUBS.forEach(({ id, src, hubDoc }) => {
     }
     count++;
   });
+  fs.writeFileSync(path.join(destRoot, "lib", "stats.js"), sharedStats, "utf8");
+  count++;
   console.log("✓ Synced " + id + " (" + count + " files) from " + src);
 });

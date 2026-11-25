@@ -18,7 +18,15 @@ rules_version = '2';
 //      Validated by `isValidUserDoc` on create & update.
 //    - Dedicated shared Study Cat doc: {hubId} == 'cat'
 //      Validated by `isValidCatDoc` on create & update (`cat` map + `updatedAt` timestamp).
-//    Access: get, list by owner; create, update, delete by owner for valid hubId or 'cat'.
+//    - Dedicated quantitative study statistics doc: {hubId} == 'analytics'
+//      Validated by `isValidAnalyticsDoc` on create & update (`analytics` map + `updatedAt` timestamp):
+//        - hrs: map (optional, max 5000 entries) - Hourly study activity buckets
+//        - modes: map (optional, max 100 entries) - Activity breakdown by study mode
+//        - topics: map (optional, max 200 entries) - Activity breakdown by topic/lecture
+//        - seen: map (optional, max 10 entries) - Distinct items seen per subject
+//        - sess: map (optional, max 10 entries) - Session counters/aggregates
+//        - sprints: map (optional, max 10 entries) - Focused sprint counters/aggregates
+//    Access: get, list by owner; create, update, delete by owner for valid hubId, 'cat', or 'analytics'.
 //
 // Shared Document Fields (validated by `isValidUserDoc` on create & update):
 //   - state: map (required) - Core study progress object:
@@ -176,6 +184,18 @@ service cloud.firestore {
         && (!('best' in tick) || (tick.best is map && tick.best.size() <= 1000));
     }
 
+    // Quantitative study statistics map: hourly buckets, study modes, topics, seen items, sessions, sprints
+    function isValidAnalytics(analytics) {
+      return analytics is map
+        && analytics.keys().hasOnly(['hrs', 'modes', 'topics', 'seen', 'sess', 'sprints'])
+        && (!('hrs' in analytics) || (analytics.hrs is map && analytics.hrs.size() <= 5000))
+        && (!('modes' in analytics) || (analytics.modes is map && analytics.modes.size() <= 100))
+        && (!('topics' in analytics) || (analytics.topics is map && analytics.topics.size() <= 200))
+        && (!('seen' in analytics) || (analytics.seen is map && analytics.seen.size() <= 10))
+        && (!('sess' in analytics) || (analytics.sess is map && analytics.sess.size() <= 10))
+        && (!('sprints' in analytics) || (analytics.sprints is map && analytics.sprints.size() <= 10));
+    }
+
     // Validate dedicated shared Study Cat document at /users/{userId}/hubs/cat on both create and update
     function isValidCatDoc(data) {
       return hasRequiredFields(['cat', 'updatedAt'])
@@ -183,6 +203,16 @@ service cloud.firestore {
         && data.keys().hasAll(['cat', 'updatedAt'])
         && data.keys().hasOnly(['cat', 'updatedAt'])
         && isValidCat(data.cat)
+        && data.updatedAt is timestamp;
+    }
+
+    // Validate dedicated study statistics document at /users/{userId}/hubs/analytics on both create and update
+    function isValidAnalyticsDoc(data) {
+      return hasRequiredFields(['analytics', 'updatedAt'])
+        && hasOnlyAllowedFields(['analytics', 'updatedAt'])
+        && data.keys().hasAll(['analytics', 'updatedAt'])
+        && data.keys().hasOnly(['analytics', 'updatedAt'])
+        && isValidAnalytics(data.analytics)
         && data.updatedAt is timestamp;
     }
 
@@ -216,24 +246,26 @@ service cloud.firestore {
       // Owner can delete only their own document
       allow delete: if isOwner(userId);
 
-      // Unified Study Hub per-subject progress documents and shared Study Cat document
+      // Unified Study Hub per-subject progress, shared Study Cat, and study analytics documents
       match /hubs/{hubId} {
-        // Owner can read individual subject/cat docs and list their own hubs subcollection
+        // Owner can read individual subject/cat/analytics docs and list their own hubs subcollection
         allow get, list: if isOwner(userId);
 
-        // Owner can create or update recognized subject hub docs (`isValidUserDoc`)
-        // or the dedicated shared Study Cat doc at hubId == 'cat' (`isValidCatDoc`)
+        // Owner can create or update recognized subject hub docs (`isValidUserDoc`),
+        // the shared Study Cat doc (`isValidCatDoc`), or the study analytics doc (`isValidAnalyticsDoc`)
         allow create: if isOwner(userId) && uidUnchanged() && (
           (isValidHubId(hubId) && isValidUserDoc(request.resource.data))
           || (hubId == 'cat' && isValidCatDoc(request.resource.data))
+          || (hubId == 'analytics' && isValidAnalyticsDoc(request.resource.data))
         );
         allow update: if isOwner(userId) && uidNotModified() && (
           (isValidHubId(hubId) && isValidUserDoc(request.resource.data))
           || (hubId == 'cat' && isValidCatDoc(request.resource.data))
+          || (hubId == 'analytics' && isValidAnalyticsDoc(request.resource.data))
         );
 
-        // Owner can delete recognized subject hub docs or the shared Study Cat doc
-        allow delete: if isOwner(userId) && (isValidHubId(hubId) || hubId == 'cat');
+        // Owner can delete recognized subject hub docs, the shared Study Cat doc, or the analytics doc
+        allow delete: if isOwner(userId) && (isValidHubId(hubId) || hubId == 'cat' || hubId == 'analytics');
       }
     }
 

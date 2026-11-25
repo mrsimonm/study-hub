@@ -1,17 +1,17 @@
 // Study Hub offline support: caches the unified shell and Bio Hub, Eco Hub and Geology Hub.
 // Bump V when you change root shell files or switcher.js. Content files (json, md, js, html)
 // are fetched fresh when online and served from cache when offline.
-const V = "study-hub-v3";
+const V = "study-hub-v4";
 const SHELL = [
   "./", "./index.html", "./switcher.js", "./manifest.webmanifest",
-  "./lib/firebase-config.js", "./lib/firebase-sync.js", "./lib/cat.js",
+  "./lib/firebase-config.js", "./lib/firebase-sync.js", "./lib/cat.js", "./lib/stats.js",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png",
-  "./bio/", "./bio/index.html", "./bio/app.js", "./bio/lib/lecture-lib.js", "./bio/lib/cat.js",
+  "./bio/", "./bio/index.html", "./bio/app.js", "./bio/lib/lecture-lib.js", "./bio/lib/cat.js", "./bio/lib/stats.js",
   "./bio/lib/firebase-config.js", "./bio/lib/firebase-sync.js", "./bio/courses/bio/course.json",
   "./eco/", "./eco/index.html", "./eco/app.js", "./eco/lib/lecture-lib.js", "./eco/lib/path.js",
-  "./eco/lib/cat.js", "./eco/lib/tickall.js", "./eco/lib/firebase-config.js", "./eco/lib/firebase-sync.js",
+  "./eco/lib/cat.js", "./eco/lib/stats.js", "./eco/lib/tickall.js", "./eco/lib/firebase-config.js", "./eco/lib/firebase-sync.js",
   "./eco/courses/eco/course.json",
-  "./geo/", "./geo/index.html", "./geo/app.js", "./geo/lib/lecture-lib.js", "./geo/lib/cat.js",
+  "./geo/", "./geo/index.html", "./geo/app.js", "./geo/lib/lecture-lib.js", "./geo/lib/cat.js", "./geo/lib/stats.js",
   "./geo/lib/slides.js", "./geo/lib/firebase-config.js", "./geo/lib/firebase-sync.js",
   "./geo/topics/t1.js", "./geo/topics/t2.js", "./geo/topics/t3.js",
   "./geo/topics/t4.js", "./geo/topics/t5.js", "./geo/topics/t6.js",

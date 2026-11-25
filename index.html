@@ -186,10 +186,13 @@ body.catopen{overflow:hidden}
 
   <div class="card catbanner">
     <div>
-      <h2>🐱 Study Cat</h2>
-      <p>One shared Study Cat across Bio, Eco &amp; Geology—every XP you earn in any subject feeds and grows the same cat.</p>
+      <h2>📊 Statistics &amp; 🐱 Study Cat</h2>
+      <p>Track active study hours, accuracy &amp; usage across Day / Week / Month / Semester / Year, and grow one shared Study Cat.</p>
     </div>
-    <button type="button" class="btn" id="opencatcard">Visit Study Cat</button>
+    <div class="row">
+      <button type="button" class="btn" id="openstatscard">📊 Open Statistics</button>
+      <button type="button" class="btn sec" id="opencatcard">🐱 Visit Study Cat</button>
+    </div>
   </div>
 
   <div class="card">
@@ -211,6 +214,7 @@ body.catopen{overflow:hidden}
 <script src="lib/firebase-sync.js"></script>
 <script src="switcher.js"></script>
 <script src="lib/cat.js"></script>
+<script src="lib/stats.js"></script>
 <script>
 (function () {
   var hubs = window.STUDY_HUBS || [];
@@ -246,6 +250,10 @@ body.catopen{overflow:hidden}
   var openCatBtn = document.getElementById("opencatcard");
   if (openCatBtn) {
     openCatBtn.onclick = function () { if (window.CAT && CAT.open) CAT.open("room"); };
+  }
+  var openStatsBtn = document.getElementById("openstatscard");
+  if (openStatsBtn) {
+    openStatsBtn.onclick = function () { if (window.STUDY_STATS && STUDY_STATS.open) STUDY_STATS.open("all"); };
   }
 
   refreshCards();
