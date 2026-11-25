@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Syncs Bio Hub, Eco Hub and Geology Hub from their standalone ~/Projects/<name>-hub folders
-   into study-hub/{bio,eco,geo}, wiring each sub-hub to the shared manifest, service worker and switcher.js
-   without touching the standalone repositories or changing any hub logic/content. */
+   into study-hub/{bio,eco,geo}, wiring each sub-hub to the shared manifest, service worker, switcher.js
+   and unified Study Hub Google sign-in without touching the standalone repositories. */
 "use strict";
 
 const fs = require("fs");
@@ -12,9 +12,9 @@ const ROOT = path.resolve(__dirname, "..");
 const PROJECTS = path.resolve(ROOT, "..");
 
 const HUBS = [
-  { id: "bio", src: path.join(PROJECTS, "bio-hub") },
-  { id: "eco", src: path.join(PROJECTS, "eco-hub") },
-  { id: "geo", src: path.join(PROJECTS, "geo-hub") }
+  { id: "bio", src: path.join(PROJECTS, "bio-hub"), hubDoc: "bio" },
+  { id: "eco", src: path.join(PROJECTS, "eco-hub"), hubDoc: "eco" },
+  { id: "geo", src: path.join(PROJECTS, "geo-hub"), hubDoc: "" }
 ];
 
 const SKIP = new Set([
@@ -39,7 +39,11 @@ function patchIndexHtml(html, hubId) {
   return out;
 }
 
-// Copy shared PWA icons from bio-hub to root if needed
+function buildFirebaseConfig(baseCfg, hubDoc) {
+  if (!hubDoc) return baseCfg;
+  return baseCfg.replace(/};\s*$/, ',\n  hubDoc: "' + hubDoc + '"\n};\n');
+}
+
 ["icon-192.png", "icon-512.png", "icon-maskable-512.png"].forEach((icon) => {
   const srcIcon = path.join(PROJECTS, "bio-hub", icon);
   if (fs.existsSync(srcIcon)) {
@@ -47,7 +51,10 @@ function patchIndexHtml(html, hubId) {
   }
 });
 
-HUBS.forEach(({ id, src }) => {
+const sharedConfig = fs.readFileSync(path.join(ROOT, "lib", "firebase-config.js"), "utf8");
+const sharedSync = fs.readFileSync(path.join(ROOT, "lib", "firebase-sync.js"), "utf8");
+
+HUBS.forEach(({ id, src, hubDoc }) => {
   if (!fs.existsSync(src)) {
     console.error("Missing source hub: " + src);
     process.exit(1);
@@ -68,8 +75,11 @@ HUBS.forEach(({ id, src }) => {
     if (!fs.existsSync(from)) return;
     fs.mkdirSync(path.dirname(to), { recursive: true });
     if (rel === "index.html") {
-      const patched = patchIndexHtml(fs.readFileSync(from, "utf8"), id);
-      fs.writeFileSync(to, patched, "utf8");
+      fs.writeFileSync(to, patchIndexHtml(fs.readFileSync(from, "utf8"), id), "utf8");
+    } else if (rel === "lib/firebase-config.js") {
+      fs.writeFileSync(to, buildFirebaseConfig(sharedConfig, hubDoc), "utf8");
+    } else if (rel === "lib/firebase-sync.js") {
+      fs.writeFileSync(to, sharedSync, "utf8");
     } else {
       fs.copyFileSync(from, to);
     }

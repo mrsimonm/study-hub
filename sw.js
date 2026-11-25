@@ -1,9 +1,10 @@
 // Study Hub offline support: caches the unified shell and Bio Hub, Eco Hub and Geology Hub.
 // Bump V when you change root shell files or switcher.js. Content files (json, md, js, html)
 // are fetched fresh when online and served from cache when offline.
-const V = "study-hub-v1";
+const V = "study-hub-v2";
 const SHELL = [
   "./", "./index.html", "./switcher.js", "./manifest.webmanifest",
+  "./lib/firebase-config.js", "./lib/firebase-sync.js",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png",
   "./bio/", "./bio/index.html", "./bio/app.js", "./bio/lib/lecture-lib.js", "./bio/lib/cat.js",
   "./bio/lib/firebase-config.js", "./bio/lib/firebase-sync.js", "./bio/courses/bio/course.json",
@@ -42,11 +43,12 @@ self.addEventListener("fetch", (e) => {
   const u = new URL(r.url);
   const same = u.origin === location.origin;
   const fonts = u.hostname === "fonts.googleapis.com" || u.hostname === "fonts.gstatic.com";
+  const fbSdk = u.hostname === "www.gstatic.com" && u.pathname.startsWith("/firebasejs/10.14.1/");
   const cdn = u.hostname === "cdnjs.cloudflare.com" && (
     u.pathname.startsWith("/ajax/libs/pdf.js/3.11.174/") ||
     u.pathname.startsWith("/ajax/libs/KaTeX/0.16.9/")
   );
-  if (!same && !fonts && !cdn) return;
+  if (!same && !fonts && !fbSdk && !cdn) return;
   const put = (res) => {
     if (res.ok || res.type === "opaque") {
       const cp = res.clone();
@@ -54,7 +56,7 @@ self.addEventListener("fetch", (e) => {
     }
     return res;
   };
-  if (fonts || cdn || /\.(png|jpg|woff2?)$/.test(u.pathname)) {
+  if (fonts || fbSdk || cdn || /\.(png|jpg|woff2?)$/.test(u.pathname)) {
     e.respondWith(caches.match(r).then((m) => m || fetch(r).then(put)));
     return;
   }

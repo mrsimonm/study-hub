@@ -1,6 +1,6 @@
-/* Firebase Web App config for Geology Hub (project geo-hub-96426).
-   These values are public by design; access is protected by Firestore rules and authorized domains.
-   If apiKey is empty, Geology Hub runs locally using browser storage only. */
+/* Shared Firebase Web App config for Study Hub (project geo-hub-96426).
+   Powers one single Google sign-in across Bio Hub, Eco Hub, Geology Hub and the Study Hub subject picker.
+   Geology Hub stores progress at users/{uid}; Bio Hub and Eco Hub store progress at users/{uid}/hubs/{bio|eco}. */
 window.FIREBASE_CONFIG = {
   apiKey: "AIzaSyAqjXtqdiRvx-_ObogpKAcW87uwmfSkqBg",
   authDomain: "geo-hub-96426.firebaseapp.com",

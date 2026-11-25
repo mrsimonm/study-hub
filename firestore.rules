@@ -1,0 +1,225 @@
+rules_version = '2';
+
+// ===============================================================
+// Assumed Data Model
+// ===============================================================
+//
+// This security rules file assumes the following data structures
+// for Firebase project `geo-hub-96426` (serving both standalone
+// Geology Hub at `/users/{userId}` and unified Study Hub per-subject
+// progress at `/users/{userId}/hubs/{hubId}`):
+//
+// 1. Collection: users
+//    Document ID: {userId} (must match Firebase Auth request.auth.uid)
+//    Access: get, create, update, delete by owner only; list disabled.
+//
+// 2. Subcollection: users/{userId}/hubs
+//    Document ID: {hubId} (enum: 'bio', 'eco', 'geo', 'stats', 'micro')
+//    Access: get, list by owner; create, update, delete by owner for valid hubId.
+//
+// Shared Document Fields (validated by `isValidUserDoc` on create & update):
+//   - state: map (required) - Core study progress object:
+//       - review: list (optional, max 2000 items) - Question IDs queued for review
+//       - tp: map (optional, max 100 entries) - Topic step completion progress
+//       - best: map (optional, max 100 entries) - Best quiz/mock scores
+//       - xp: number (optional, >= 0, <= 10000000) - Total experience points
+//       - day: map (optional, keys: d [string <= 20], xp [number >= 0, <= 1000000])
+//       - streak: map (optional, keys: last [string <= 20], n [number >= 0, <= 100000])
+//       - games: map (optional, max 100 entries) - Mini-game stats
+//       - full: bool (optional) - Full-course mode toggle
+//       - last: string (optional, <= 100 chars) - Last visited route/hash
+//       - mas: map (optional, max 100 entries) - Mastery check tracking
+//   - updatedAt: timestamp (required) - Server update timestamp (`serverTimestamp()`)
+//   - cat: map (optional) - Study Cat companion progress (`lib/cat.js`):
+//       - name: string (optional, <= 24 chars) - Companion name
+//       - coat: string (optional, <= 16 chars) - Coat variant ID
+//       - worn: map (optional, max 8 entries) - Equipped items by slot
+//       - spent: number (optional, >= 0, <= 10000000) - XP spent in shop
+//       - items: map (optional, max 100 entries) - Owned shop items
+//       - off: map (optional, max 100 entries) - Disabled/toggled cosmetics
+//       - lv: number (optional, >= -1, <= 1000) - Companion level state
+//       - stg: number (optional, >= -1, <= 10) - Companion growth stage
+//       - goalD: string (optional, <= 20 chars) - Last daily goal date string
+//   - pt: map (optional) - Study path progress (`lib/path.js`):
+//       - done: map (optional, max 3000 entries) - Completed path steps
+//       - cur: map (optional, max 20 entries) - Current step per study path
+//   - ap: map (optional) - Apply exercises progress (`lib/apply.js`):
+//       - done: map (optional, max 3000 entries) - Solved exercise parts
+//       - miss: map (optional, max 3000 entries) - Missed exercise parts
+//       - notes: map (optional, max 500 entries) - Per-exercise user notes
+//       - cur: map (optional, max 50 entries) - Current exercise per set
+//   - tick: map (optional) - Tick-all-that-apply progress (`lib/tickall.js`):
+//       - best: map (optional, max 1000 entries) - Mastered question IDs
+//
+// ===============================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+
+    // Check if the request is from an authenticated user
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Check if the authenticated user owns the document by path userId
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Verify optional uid field (if ever present) matches authenticated user on create
+    function uidUnchanged() {
+      return !('uid' in request.resource.data)
+        || request.resource.data.uid == request.auth.uid;
+    }
+
+    // Verify optional uid field (if ever present) is not modified on update
+    function uidNotModified() {
+      return !('uid' in request.resource.data)
+        || request.resource.data.uid == resource.data.uid;
+    }
+
+    // Validate that all required top-level fields are present
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    // Validate that no unexpected top-level fields are present
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // Validate allowed subject hub document IDs under /users/{userId}/hubs/{hubId}
+    function isValidHubId(hubId) {
+      return hubId in ['bio', 'eco', 'geo', 'stats', 'micro'];
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    // Validate daily goal progress sub-map: { d: string, xp: number }
+    function isValidDayMap(day) {
+      return day is map
+        && day.keys().hasOnly(['d', 'xp'])
+        && (!('d' in day) || (day.d is string && day.d.size() <= 20))
+        && (!('xp' in day) || (day.xp is number && day.xp >= 0 && day.xp <= 1000000));
+    }
+
+    // Validate streak sub-map: { last: string, n: number }
+    function isValidStreakMap(streak) {
+      return streak is map
+        && streak.keys().hasOnly(['last', 'n'])
+        && (!('last' in streak) || (streak.last is string && streak.last.size() <= 20))
+        && (!('n' in streak) || (streak.n is number && streak.n >= 0 && streak.n <= 100000));
+    }
+
+    // Validate the study progress `state` map structure, types, and size bounds
+    function isValidStudyState(state) {
+      return state is map
+        && state.keys().hasOnly(['review', 'tp', 'best', 'xp', 'day', 'streak', 'games', 'full', 'last', 'mas'])
+        && (!('review' in state) || (state.review is list && state.review.size() <= 2000))
+        && (!('tp' in state) || (state.tp is map && state.tp.size() <= 100))
+        && (!('best' in state) || (state.best is map && state.best.size() <= 100))
+        && (!('xp' in state) || (state.xp is number && state.xp >= 0 && state.xp <= 10000000))
+        && (!('day' in state) || isValidDayMap(state.day))
+        && (!('streak' in state) || isValidStreakMap(state.streak))
+        && (!('games' in state) || (state.games is map && state.games.size() <= 100))
+        && (!('full' in state) || state.full is bool)
+        && (!('last' in state) || (state.last is string && state.last.size() <= 100))
+        && (!('mas' in state) || (state.mas is map && state.mas.size() <= 100));
+    }
+
+    // Study Cat (lib/cat.js): name, coat, worn items, XP spent in shop, owned items, level/stage
+    function isValidCat(cat) {
+      return cat is map
+        && cat.keys().hasOnly(['name', 'coat', 'worn', 'spent', 'items', 'off', 'lv', 'stg', 'goalD'])
+        && (!('name' in cat) || (cat.name is string && cat.name.size() <= 24))
+        && (!('coat' in cat) || (cat.coat is string && cat.coat.size() <= 16))
+        && (!('worn' in cat) || (cat.worn is map && cat.worn.size() <= 8))
+        && (!('spent' in cat) || (cat.spent is number && cat.spent >= 0 && cat.spent <= 10000000))
+        && (!('items' in cat) || (cat.items is map && cat.items.size() <= 100))
+        && (!('off' in cat) || (cat.off is map && cat.off.size() <= 100))
+        && (!('lv' in cat) || (cat.lv is number && cat.lv >= -1 && cat.lv <= 1000))
+        && (!('stg' in cat) || (cat.stg is number && cat.stg >= -1 && cat.stg <= 10))
+        && (!('goalD' in cat) || (cat.goalD is string && cat.goalD.size() <= 20));
+    }
+
+    // Study path progress (lib/path.js): finished steps, current position per path
+    function isValidPath(pt) {
+      return pt is map
+        && pt.keys().hasOnly(['done', 'cur'])
+        && (!('done' in pt) || (pt.done is map && pt.done.size() <= 3000))
+        && (!('cur' in pt) || (pt.cur is map && pt.cur.size() <= 20));
+    }
+
+    // Apply exercises progress (lib/apply.js): solved/missed parts, notes, current exercise per set
+    function isValidApply(ap) {
+      return ap is map
+        && ap.keys().hasOnly(['done', 'miss', 'notes', 'cur'])
+        && (!('done' in ap) || (ap.done is map && ap.done.size() <= 3000))
+        && (!('miss' in ap) || (ap.miss is map && ap.miss.size() <= 3000))
+        && (!('notes' in ap) || (ap.notes is map && ap.notes.size() <= 500))
+        && (!('cur' in ap) || (ap.cur is map && ap.cur.size() <= 50));
+    }
+
+    // Tick-all-that-apply progress (lib/tickall.js): mastered question IDs
+    function isValidTick(tick) {
+      return tick is map
+        && tick.keys().hasOnly(['best'])
+        && (!('best' in tick) || (tick.best is map && tick.best.size() <= 1000));
+    }
+
+    // Validate the entire user/hub progress document on both create and update
+    function isValidUserDoc(data) {
+      return hasRequiredFields(['state', 'updatedAt'])
+        && hasOnlyAllowedFields(['state', 'updatedAt', 'cat', 'pt', 'ap', 'tick'])
+        && data.keys().hasAll(['state', 'updatedAt'])
+        && data.keys().hasOnly(['state', 'updatedAt', 'cat', 'pt', 'ap', 'tick'])
+        && isValidStudyState(data.state)
+        && data.updatedAt is timestamp
+        && (!('cat' in data) || isValidCat(data.cat))
+        && (!('pt' in data) || isValidPath(data.pt))
+        && (!('ap' in data) || isValidApply(data.ap))
+        && (!('tick' in data) || isValidTick(data.tick));
+    }
+
+    // ===============================================================
+    // Collection Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      // Standalone Geology Hub root document: owner can read their own doc; collection listing disabled
+      allow get: if isOwner(userId);
+      allow list: if false;
+
+      // Owner can create or update only their own document with valid schema and bounds
+      allow create: if isOwner(userId) && uidUnchanged() && isValidUserDoc(request.resource.data);
+      allow update: if isOwner(userId) && uidNotModified() && isValidUserDoc(request.resource.data);
+
+      // Owner can delete only their own document
+      allow delete: if isOwner(userId);
+
+      // Unified Study Hub per-subject progress documents
+      match /hubs/{hubId} {
+        // Owner can read individual subject docs and list their own hubs subcollection
+        allow get, list: if isOwner(userId);
+
+        // Owner can create or update only recognized subject hub docs with valid schema and bounds
+        allow create: if isOwner(userId) && isValidHubId(hubId) && uidUnchanged() && isValidUserDoc(request.resource.data);
+        allow update: if isOwner(userId) && isValidHubId(hubId) && uidNotModified() && isValidUserDoc(request.resource.data);
+
+        // Owner can delete only recognized subject hub docs
+        allow delete: if isOwner(userId) && isValidHubId(hubId);
+      }
+    }
+
+    // Default deny all other collections, subcollections, and operations
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

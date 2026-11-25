@@ -1,12 +1,29 @@
-/* Optional Firebase Auth + Firestore sync for Geology Hub.
-   Works alongside localStorage (instant offline cache) and only activates when FIREBASE_CONFIG.apiKey is set. */
+/* Shared Firebase Auth + Firestore sync for Study Hub (Bio Hub, Eco Hub and Geology Hub).
+   One Google sign-in works across the whole Study Hub. Geology Hub syncs to users/{uid} (compatible with
+   standalone geo-hub); sub-hubs with FIREBASE_CONFIG.hubDoc sync to users/{uid}/hubs/{hubDoc}. */
 (function () {
   "use strict";
   var auth = null, db = null, user = null, unsub = null, timer = null, status = "off";
+  var subs = [];
 
   function configured() {
     var c = window.FIREBASE_CONFIG;
     return !!(c && typeof c.apiKey === "string" && c.apiKey.trim() && c.projectId && window.firebase);
+  }
+
+  function docRef(uid) {
+    var c = window.FIREBASE_CONFIG;
+    var u = db.collection("users").doc(uid);
+    return (c && c.hubDoc) ? u.collection("hubs").doc(c.hubDoc) : u;
+  }
+
+  function notify() {
+    var info = getInfo();
+    subs.forEach(function (fn) { try { fn(info); } catch (e) {} });
+  }
+
+  function getInfo() {
+    return { configured: configured(), user: user, status: status, db: db };
   }
 
   /* Merge local and cloud state non-destructively so neither device loses progress. */
@@ -74,10 +91,9 @@
   function setStatus(s) {
     status = s;
     renderUI();
+    notify();
   }
 
-  /* Extra synced fields (e.g. the Study Cat "cat" from lib/cat.js), registered with GEOSync.register():
-     { key, get() -> object, set(object), merge(local, cloud) -> object }. Stored next to "state" in users/{uid}. */
   var EXTRAS = [];
   function register(x) { EXTRAS.push(x); }
   function extrasDoc() { var o = {}; EXTRAS.forEach(function (x) { o[x.key] = x.get(); }); return o; }
@@ -88,7 +104,7 @@
     var doc = extrasDoc();
     doc.state = state;
     doc.updatedAt = firebase.firestore.FieldValue.serverTimestamp();
-    db.collection("users").doc(user.uid).set(doc).then(function () {
+    docRef(user.uid).set(doc).then(function () {
       setStatus("synced");
     }).catch(function (e) {
       console.error("Firestore save failed:", e);
@@ -105,7 +121,7 @@
 
   function startListener(u) {
     if (unsub) { unsub(); unsub = null; }
-    var ref = db.collection("users").doc(u.uid);
+    var ref = docRef(u.uid);
     var first = true;
     setStatus("syncing");
     unsub = ref.onSnapshot(function (snap) {
@@ -172,21 +188,21 @@
     if (!box) return;
     var esc = (window.GEO && window.GEO.esc) || function (s) { return String(s); };
     if (!configured()) {
-      box.innerHTML = '<p style="font-size:.9rem;color:var(--mute);margin:0 0 8px">Cloud sync is not configured yet. Add your Firebase Web App config in <code>lib/firebase-config.js</code> to sync progress across devices.</p>';
+      box.innerHTML = '<p style="font-size:.9rem;color:var(--mute);margin:0 0 8px">Cloud sync is not configured yet.</p>';
       return;
     }
     if (!user) {
-      box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Sign in with Google to sync your XP, Mastery stars, and Review list between your phone and laptop.</p><button class="btn" id="syncin">Sign in with Google</button>';
+      box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Sign in with Google once to sync all your Study Hub subjects (Bio, Eco and Geology), XP, Mastery stars, Study Cats and Review lists across your devices.</p><button class="btn" id="syncin">Sign in with Google</button>';
       document.getElementById("syncin").onclick = signIn;
       return;
     }
     var badge = status === "synced" ? "Synced ✓" : status === "saving" || status === "syncing" ? "Syncing…" : "Sync paused (offline or error)";
-    box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Signed in as <b>' + esc(user.email || user.displayName || "Account") + '</b> · <span style="color:var(--mute)">' + badge + '</span></p><button class="ghost" id="syncout">Sign out</button>';
+    box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Signed in across Study Hub as <b>' + esc(user.email || user.displayName || "Account") + '</b> · <span style="color:var(--mute)">' + badge + '</span></p><button class="ghost" id="syncout">Sign out</button>';
     document.getElementById("syncout").onclick = signOut;
   }
 
   function init() {
-    if (!configured()) { renderUI(); return; }
+    if (!configured()) { renderUI(); notify(); return; }
     try {
       if (!firebase.apps.length) firebase.initializeApp(window.FIREBASE_CONFIG);
       auth = firebase.auth();
@@ -211,6 +227,10 @@
     render: renderUI,
     onSave: schedulePush,
     register: register,
+    signIn: signIn,
+    signOut: signOut,
+    info: getInfo,
+    subscribe: function (fn) { subs.push(fn); try { fn(getInfo()); } catch (e) {} },
     touch: function () { if (user && window.GEO && window.GEO._getState) schedulePush(window.GEO._getState()); },
     onReset: function (freshState) {
       clearTimeout(timer);

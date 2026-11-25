@@ -12,6 +12,7 @@ A single unified study app and PWA for Simon's three ČZU Prague hubs:
 - Project folder on this Mac: `/Users/simonmusel/Projects/study-hub`
 - Live site: https://mrsimonm.github.io/study-hub/
 - Repo: `mrsimonm/study-hub` (GitHub Pages from `main` root)
+- **Unified Google Sign-In (`geo-hub-96426`)**: Signing in once anywhere in Study Hub (welcome screen, `Subjects ▾` dropdown, or any hub's `Your data` card) signs you in across all three subjects. Geology Hub syncs to `users/{uid}` (compatible with standalone `geo-hub`); Bio Hub and Eco Hub sync to `users/{uid}/hubs/bio` and `users/{uid}/hubs/eco`.
 - Standalone hubs (`bio-hub`, `eco-hub`, `geo-hub`) remain intact in `/Users/simonmusel/Projects/` and on GitHub Pages. Because all GitHub Pages sites share the `https://mrsimonm.github.io` origin, `localStorage` keys (`bioHub.v1`, `ecoHub.v1`, `geoHub.v1`, Study Cats, etc.) are preserved automatically on the same device.
 
 ## How subject switching works

@@ -47,7 +47,9 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--font-b)}
 h1,h2{font-family:var(--font-d);line-height:1.2;text-wrap:balance;margin:0}
 h1{font-size:2rem}
+h2{font-size:1.25rem}
 p{margin:0 0 10px;max-width:64ch}
+button{font:inherit;color:inherit;cursor:pointer}
 a{color:var(--acc)}
 :focus-visible{outline:3px solid var(--acc);outline-offset:2px}
 .top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
@@ -64,7 +66,10 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
 .tile .ts{color:var(--mute);font-size:.92rem}
 .tile .st{font-size:.84rem;color:var(--mute);margin-top:auto;padding-top:8px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
 .pill{font-size:.74rem;font-weight:700;padding:1px 8px;border-radius:99px;background:var(--acc-soft);color:var(--acc)}
-.foot{color:var(--mute);font-size:.88rem;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.btn{border:0;border-radius:10px;padding:10px 16px;font-weight:700;background:var(--acc);color:var(--acc-ink)}
+.ghost{background:none;border:1px solid var(--line);border-radius:9px;padding:6px 12px;color:var(--mute);font-size:.9rem}
+.ghost:hover{color:var(--ink);border-color:var(--mute)}
 @media (max-width:520px){h1{font-size:1.65rem} body{font-size:16px}}
 </style>
 </head>
@@ -99,44 +104,36 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
     </a>
   </div>
 
-  <p class="foot">Progress, streaks and Study Cats are saved in your browser (and synced across devices where Google sign-in is enabled).</p>
+  <div class="card">
+    <h2 style="margin-bottom:6px">☁️ Google sign-in &amp; sync</h2>
+    <div id="syncbox"></div>
+  </div>
 </main>
 
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="lib/firebase-config.js"></script>
+<script src="lib/firebase-sync.js"></script>
 <script src="switcher.js"></script>
 <script>
 (function () {
   var hubs = window.STUDY_HUBS || [];
   var last = "";
   try { last = localStorage.getItem("studyHub.last") || ""; } catch (e) {}
-  function dstr(d) { return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+
+  function refreshCards() {
+    hubs.forEach(function (h) {
+      var card = document.querySelector('[data-hub-card="' + h.id + '"]');
+      if (!card) return;
+      var m = card.querySelector(".meta");
+      if (m && window.STUDY_HUBS_STATS) m.textContent = window.STUDY_HUBS_STATS(h);
+    });
+  }
+
   hubs.forEach(function (h) {
     var card = document.querySelector('[data-hub-card="' + h.id + '"]');
     if (!card) return;
-    try {
-      var raw = localStorage.getItem(h.key);
-      if (raw) {
-        var s = JSON.parse(raw);
-        if (s && typeof s === "object") {
-          var xp = +s.xp || 0;
-          var td = dstr(new Date()), yd = dstr(new Date(Date.now() - 864e5));
-          var st = s.streak && (s.streak.last === td || s.streak.last === yd) ? (+s.streak.n || 0) : 0;
-          var steps = 0;
-          if (s.tp && typeof s.tp === "object") {
-            Object.keys(s.tp).forEach(function (tid) {
-              var done = s.tp[tid] && s.tp[tid].done;
-              if (done && typeof done === "object") Object.keys(done).forEach(function (k) { if (done[k]) steps++; });
-            });
-          }
-          if (xp || steps) {
-            var parts = ["⚡ " + xp + " XP"];
-            if (st > 0) parts.push("🔥 " + st + "d");
-            if (steps > 0) parts.push(steps + " step" + (steps === 1 ? "" : "s") + " done");
-            var m = card.querySelector(".meta");
-            if (m) m.textContent = parts.join(" · ");
-          }
-        }
-      }
-    } catch (e) {}
     if (last === h.id) {
       var stRow = card.querySelector(".st");
       if (stRow) stRow.insertAdjacentHTML("beforeend", '<span class="pill">Last studied</span>');
@@ -149,6 +146,20 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
       }
     });
   });
+
+  refreshCards();
+
+  if (window.GEOSync) {
+    GEOSync.init();
+    if (GEOSync.subscribe) {
+      GEOSync.subscribe(function (info) {
+        if (info && info.user && window.STUDY_HUBS_PREVIEW) {
+          window.STUDY_HUBS_PREVIEW(info, refreshCards);
+        }
+      });
+    }
+  }
+
   if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
     navigator.serviceWorker.register("sw.js").catch(function () {});
   }
