@@ -107,6 +107,7 @@
       });
       if (changed) {
         try { localStorage.setItem("studyHub.cloudPreview", JSON.stringify(map)); } catch (e) {}
+        if (window.CAT && CAT.refresh) CAT.refresh();
         if (onDone) onDone();
       }
     });

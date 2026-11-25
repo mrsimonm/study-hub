@@ -14,8 +14,11 @@ rules_version = '2';
 //    Access: get, create, update, delete by owner only; list disabled.
 //
 // 2. Subcollection: users/{userId}/hubs
-//    Document ID: {hubId} (enum: 'bio', 'eco', 'geo', 'stats', 'micro')
-//    Access: get, list by owner; create, update, delete by owner for valid hubId.
+//    - Subject progress docs: {hubId} in ['bio', 'eco', 'geo', 'stats', 'micro']
+//      Validated by `isValidUserDoc` on create & update.
+//    - Dedicated shared Study Cat doc: {hubId} == 'cat'
+//      Validated by `isValidCatDoc` on create & update (`cat` map + `updatedAt` timestamp).
+//    Access: get, list by owner; create, update, delete by owner for valid hubId or 'cat'.
 //
 // Shared Document Fields (validated by `isValidUserDoc` on create & update):
 //   - state: map (required) - Core study progress object:
@@ -173,6 +176,16 @@ service cloud.firestore {
         && (!('best' in tick) || (tick.best is map && tick.best.size() <= 1000));
     }
 
+    // Validate dedicated shared Study Cat document at /users/{userId}/hubs/cat on both create and update
+    function isValidCatDoc(data) {
+      return hasRequiredFields(['cat', 'updatedAt'])
+        && hasOnlyAllowedFields(['cat', 'updatedAt'])
+        && data.keys().hasAll(['cat', 'updatedAt'])
+        && data.keys().hasOnly(['cat', 'updatedAt'])
+        && isValidCat(data.cat)
+        && data.updatedAt is timestamp;
+    }
+
     // Validate the entire user/hub progress document on both create and update
     function isValidUserDoc(data) {
       return hasRequiredFields(['state', 'updatedAt'])
@@ -203,17 +216,24 @@ service cloud.firestore {
       // Owner can delete only their own document
       allow delete: if isOwner(userId);
 
-      // Unified Study Hub per-subject progress documents
+      // Unified Study Hub per-subject progress documents and shared Study Cat document
       match /hubs/{hubId} {
-        // Owner can read individual subject docs and list their own hubs subcollection
+        // Owner can read individual subject/cat docs and list their own hubs subcollection
         allow get, list: if isOwner(userId);
 
-        // Owner can create or update only recognized subject hub docs with valid schema and bounds
-        allow create: if isOwner(userId) && isValidHubId(hubId) && uidUnchanged() && isValidUserDoc(request.resource.data);
-        allow update: if isOwner(userId) && isValidHubId(hubId) && uidNotModified() && isValidUserDoc(request.resource.data);
+        // Owner can create or update recognized subject hub docs (`isValidUserDoc`)
+        // or the dedicated shared Study Cat doc at hubId == 'cat' (`isValidCatDoc`)
+        allow create: if isOwner(userId) && uidUnchanged() && (
+          (isValidHubId(hubId) && isValidUserDoc(request.resource.data))
+          || (hubId == 'cat' && isValidCatDoc(request.resource.data))
+        );
+        allow update: if isOwner(userId) && uidNotModified() && (
+          (isValidHubId(hubId) && isValidUserDoc(request.resource.data))
+          || (hubId == 'cat' && isValidCatDoc(request.resource.data))
+        );
 
-        // Owner can delete only recognized subject hub docs
-        allow delete: if isOwner(userId) && isValidHubId(hubId);
+        // Owner can delete recognized subject hub docs or the shared Study Cat doc
+        allow delete: if isOwner(userId) && (isValidHubId(hubId) || hubId == 'cat');
       }
     }
 

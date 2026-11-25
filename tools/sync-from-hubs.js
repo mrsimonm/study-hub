@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /* Syncs Bio Hub, Eco Hub and Geology Hub from their standalone ~/Projects/<name>-hub folders
-   into study-hub/{bio,eco,geo}, wiring each sub-hub to the shared manifest, service worker, switcher.js
-   and unified Study Hub Google sign-in without touching the standalone repositories. */
+   into study-hub/{bio,eco,geo}, wiring each sub-hub to the shared manifest, service worker, switcher.js,
+   unified Google sign-in and shared Study Cat without touching the standalone repositories. */
 "use strict";
 
 const fs = require("fs");
@@ -30,6 +30,7 @@ function patchIndexHtml(html, hubId) {
     .replace('<link rel="manifest" href="manifest.webmanifest">', '<link rel="manifest" href="../manifest.webmanifest">')
     .replace('<link rel="apple-touch-icon" href="icon-192.png">', '<link rel="icon" href="../icon-192.png">\n<link rel="apple-touch-icon" href="../icon-192.png">')
     .replace(/<meta name="apple-mobile-web-app-title" content="[^"]*">/, '<meta name="apple-mobile-web-app-title" content="Study Hub">')
+    .replace(/data-key="[a-zA-Z0-9._-]+\.cat"/, 'data-key="studyHub.cat"')
     .replace('navigator.serviceWorker.register("sw.js")', 'navigator.serviceWorker.register("../sw.js")');
 
   const tag = '<script src="../switcher.js" data-hub="' + hubId + '"></script>';
@@ -53,6 +54,7 @@ function buildFirebaseConfig(baseCfg, hubDoc) {
 
 const sharedConfig = fs.readFileSync(path.join(ROOT, "lib", "firebase-config.js"), "utf8");
 const sharedSync = fs.readFileSync(path.join(ROOT, "lib", "firebase-sync.js"), "utf8");
+const sharedCat = fs.readFileSync(path.join(ROOT, "lib", "cat.js"), "utf8");
 
 HUBS.forEach(({ id, src, hubDoc }) => {
   if (!fs.existsSync(src)) {
@@ -80,6 +82,8 @@ HUBS.forEach(({ id, src, hubDoc }) => {
       fs.writeFileSync(to, buildFirebaseConfig(sharedConfig, hubDoc), "utf8");
     } else if (rel === "lib/firebase-sync.js") {
       fs.writeFileSync(to, sharedSync, "utf8");
+    } else if (rel === "lib/cat.js") {
+      fs.writeFileSync(to, sharedCat, "utf8");
     } else {
       fs.copyFileSync(from, to);
     }

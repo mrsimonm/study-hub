@@ -1,28 +1,137 @@
-/* Study Cat: a pixel-art cat you look after by studying. One file, no images, no dependencies. Drops into any hub.
-   Simple loop: earn XP by studying -> the cat grows with your level -> spend XP in the shop on things for the cat.
-   Spending XP never lowers your level: spendable XP = total XP earned - XP spent.
-   Everything is drawn on a pixel grid in code (SVG rects + shape-rendering: crispEdges), so it stays sharp at any size.
-   Hooks (all optional for the host app):
-     - GEO.xp() calls CAT.onXP(n, why) after every XP award.   (app.js)
-     - GEO._setState() calls CAT.refresh().                      (app.js)
-     - "Reset all my progress" calls CAT.reset().                (app.js)
-   The host page needs: #catbtn (top-bar chip), #catapp (overlay) and the "Study Cat" CSS in index.html.
-   Cloud sync (SYNC = true): saved as "cat" next to "state" in users/{uid}. The hub's firestore.rules must allow the 'cat'
-   field (isValidCat) and its lib/firebase-sync.js must have register()/touch(), otherwise set SYNC = false. */
+/* Unified Study Cat for Study Hub: one pixel-art cat shared across the Landing Page, Bio Hub, Eco Hub and Geology Hub.
+   Studying ANY subject feeds this same cat: total XP = Bio XP + Eco XP + Geology XP.
+   Spending XP in the Shop never lowers your level: spendable XP = combined XP - XP spent.
+   Saved locally in "studyHub.cat" (migrating any existing geoHub.cat / ecoHub.cat / bioHub.cat on first run)
+   and synced across devices in Firestore at users/{uid}/hubs/cat (seeding from users/{uid}.cat if needed). */
 (function () {
   "use strict";
-  var G = window.GEO;
-  if (!G || !G._getState || !G.lvOf) return;
+  var G = window.GEO || null;
+  var KEY = "studyHub.cat";
+  var LEGACY_KEYS = ["bioHub.cat", "ecoHub.cat", "geoHub.cat"];
+  var HUB_SOURCES = [
+    { id: "bio", key: "bioHub.v1" },
+    { id: "eco", key: "ecoHub.v1" },
+    { id: "geo", key: "geoHub.v1" }
+  ];
+  var GOAL = (G && G.GOAL) || 150;
 
-  /* each hub saves its own cat: the key comes from <div id="catapp" data-key="..."> in index.html */
-  var KEY = (document.getElementById("catapp") && document.getElementById("catapp").getAttribute("data-key")) || "studyCat";
-  var SYNC = true;
   var $ = function (id) { return document.getElementById(id); };
   function esc(t) { return String(t == null ? "" : t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function isObj(x) { return x && typeof x === "object" && !Array.isArray(x); }
   function reduced() { return !!(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches); }
-  function S() { return G._getState(); }
-  function xpNow() { return +S().xp || 0; }
+
+  function lvOf(x) {
+    if (G && G.lvOf) return G.lvOf(x);
+    var n = 0, need = 100;
+    while (x >= need) { x -= need; n++; need = 100 + n * 50; }
+    return { n: n, into: x, need: need };
+  }
+  function dstr(d) { return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+  function todayStr() { return (G && G.today) ? G.today() : dstr(new Date()); }
+
+  function activeHubId() {
+    var s = document.querySelector("script[data-hub]");
+    if (s && s.getAttribute("data-hub")) return s.getAttribute("data-hub");
+    var m = /\/(bio|eco|geo)(?:\/|$)/.exec(location.pathname);
+    return m ? m[1] : "";
+  }
+
+  function parseDateKey(str) {
+    var p = /^(\d+)-(\d+)-(\d+)$/.exec(String(str || ""));
+    if (!p) return 0;
+    return new Date(+p[1], +p[2] - 1, +p[3]).getTime();
+  }
+
+  function hubStateOf(h) {
+    var cur = activeHubId(), local = null, prev = null;
+    if (cur === h.id && G && G._getState) {
+      local = G._getState();
+    } else {
+      try { local = JSON.parse(localStorage.getItem(h.key) || "null"); } catch (e) {}
+    }
+    try {
+      var pm = JSON.parse(localStorage.getItem("studyHub.cloudPreview") || "null");
+      if (pm && isObj(pm[h.id])) prev = pm[h.id];
+    } catch (e) {}
+    if (!isObj(local)) return isObj(prev) ? prev : {};
+    if (!isObj(prev)) return local;
+    var td = todayStr();
+    var lDay = isObj(local.day) && local.day.d === td ? (+local.day.xp || 0) : 0;
+    var pDay = isObj(prev.day) && prev.day.d === td ? (+prev.day.xp || 0) : 0;
+    var lLast = isObj(local.streak) ? String(local.streak.last || "") : "";
+    var pLast = isObj(prev.streak) ? String(prev.streak.last || "") : "";
+    return {
+      xp: Math.max(+local.xp || 0, +prev.xp || 0),
+      day: { d: td, xp: Math.max(lDay, pDay) },
+      streak: { last: parseDateKey(pLast) > parseDateKey(lLast) ? pLast : lLast }
+    };
+  }
+
+  function xpNow() {
+    var sum = 0;
+    HUB_SOURCES.forEach(function (h) { sum += +hubStateOf(h).xp || 0; });
+    return sum;
+  }
+
+  function dayXP() {
+    var td = todayStr(), sum = 0;
+    HUB_SOURCES.forEach(function (h) {
+      var s = hubStateOf(h);
+      if (isObj(s.day) && s.day.d === td) sum += +s.day.xp || 0;
+    });
+    return sum;
+  }
+
+  function latestStudyTime() {
+    var best = 0;
+    HUB_SOURCES.forEach(function (h) {
+      var s = hubStateOf(h);
+      var t1 = isObj(s.streak) ? parseDateKey(s.streak.last) : 0;
+      var t2 = isObj(s.day) && (+s.day.xp || 0) > 0 ? parseDateKey(s.day.d) : 0;
+      if (t1 > best) best = t1;
+      if (t2 > best) best = t2;
+    });
+    return best;
+  }
+
+  function showToast(msg) {
+    if (G && G.toast) { G.toast(msg); return; }
+    var h = $("toasts");
+    if (!h) {
+      h = document.createElement("div");
+      h.id = "toasts";
+      h.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:32px;z-index:60;display:flex;flex-direction:column;gap:6px;align-items:center;pointer-events:none";
+      document.body.appendChild(h);
+    }
+    var d = document.createElement("div");
+    d.style.cssText = "background:var(--ink);color:var(--bg);font-weight:700;border-radius:99px;padding:7px 16px;font-size:.95rem;box-shadow:0 6px 20px rgba(0,0,0,.2)";
+    d.textContent = msg;
+    h.appendChild(d);
+    setTimeout(function () { if (d.parentNode) d.parentNode.removeChild(d); }, 1800);
+  }
+
+  function showConfetti() {
+    if (G && G.confetti) { G.confetti(); return; }
+    if (reduced()) return;
+    var c = document.createElement("div");
+    c.style.cssText = "position:fixed;inset:0;pointer-events:none;z-index:55;overflow:hidden";
+    var cols = ["#F2C14E", "#5FD39A", "#8CC4DC", "#E39BDD", "#F59A73", "#9C93F2"];
+    for (var i = 0; i < 36; i++) {
+      var p = document.createElement("i");
+      p.style.cssText = "position:absolute;top:-12px;width:9px;height:14px;border-radius:2px;left:" + (Math.random() * 100) + "%;background:" + cols[i % cols.length] + ";transition:transform 1.5s ease-in,opacity 1.5s ease-in";
+      c.appendChild(p);
+      (function (el) {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            el.style.transform = "translateY(105vh) rotate(520deg)";
+            el.style.opacity = "0.6";
+          });
+        });
+      })(p);
+    }
+    document.body.appendChild(c);
+    setTimeout(function () { if (c.parentNode) c.parentNode.removeChild(c); }, 2000);
+  }
 
   /* ---------- catalogue: everything is bought with XP ---------- */
   var COAT = {
@@ -54,58 +163,183 @@
   /* ---------- the cat's saved state ---------- */
   function fresh() { return { name: "Biscuit", coat: "orange", worn: {}, spent: 0, items: {}, off: {}, lv: -1, stg: -1, goalD: "" }; }
   var C = fresh();
+  function sanitize(m) {
+    var f = fresh();
+    if (!isObj(m)) return f;
+    return {
+      name: typeof m.name === "string" && m.name ? m.name.slice(0, 16) : f.name,
+      coat: typeof m.coat === "string" && COAT[m.coat] ? m.coat : f.coat,
+      worn: isObj(m.worn) ? Object.assign({}, m.worn) : {},
+      spent: Math.max(0, +m.spent || 0),
+      items: isObj(m.items) ? Object.assign({}, m.items) : {},
+      off: isObj(m.off) ? Object.assign({}, m.off) : {},
+      lv: m.lv == null ? -1 : +m.lv,
+      stg: m.stg == null ? -1 : +m.stg,
+      goalD: String(m.goalD || "").slice(0, 20)
+    };
+  }
   function adopt(m) {
     if (!isObj(m)) return;
-    var f = fresh();
-    C.name = typeof m.name === "string" && m.name ? m.name.slice(0, 16) : f.name;
-    C.coat = typeof m.coat === "string" && COAT[m.coat] ? m.coat : f.coat;
-    C.worn = isObj(m.worn) ? m.worn : {};
-    C.spent = Math.max(0, +m.spent || 0);
-    C.items = isObj(m.items) ? m.items : {}; C.off = isObj(m.off) ? m.off : {};
-    C.lv = m.lv == null ? -1 : +m.lv; C.stg = m.stg == null ? -1 : +m.stg; C.goalD = String(m.goalD || "");
+    C = sanitize(m);
   }
-  try { adopt(JSON.parse(localStorage.getItem(KEY) || "null")); } catch (e) {}
-  function store() { try { localStorage.setItem(KEY, JSON.stringify(C)); } catch (e) {} }
-  function save() { store(); if (SYNC && window.GEOSync && GEOSync.touch) GEOSync.touch(); }
   function merge(a, b) {
-    a = a || {}; b = b || {};
-    var o = JSON.parse(JSON.stringify(a));
+    a = sanitize(a); b = sanitize(b);
+    var o = sanitize(a);
+    if (o.name === "Biscuit" && b.name && b.name !== "Biscuit") o.name = b.name;
+    if (o.coat === "orange" && b.coat && b.coat !== "orange") o.coat = b.coat;
+    o.worn = Object.assign({}, b.worn || {}, a.worn || {});
     o.spent = Math.max(+a.spent || 0, +b.spent || 0);
     o.items = Object.assign({}, b.items || {}, a.items || {});
+    o.off = Object.assign({}, b.off || {}, a.off || {});
     o.lv = Math.max(a.lv == null ? -1 : +a.lv, b.lv == null ? -1 : +b.lv);
     o.stg = Math.max(a.stg == null ? -1 : +a.stg, b.stg == null ? -1 : +b.stg);
+    o.goalD = (a.goalD || "") >= (b.goalD || "") ? (a.goalD || "") : (b.goalD || "");
     return o;
+  }
+  function hasCatProgress(m) {
+    return !!(isObj(m) && ((+m.spent || 0) > 0 || (isObj(m.items) && Object.keys(m.items).length) || (m.name && m.name !== "Biscuit") || (m.coat && m.coat !== "orange") || (+m.lv >= 0)));
+  }
+
+  function store() { try { localStorage.setItem(KEY, JSON.stringify(C)); } catch (e) {} }
+
+  /* Load studyHub.cat, or migrate any existing per-hub cats on first run. */
+  (function initLocal() {
+    var existing = null;
+    try { existing = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) {}
+    if (isObj(existing)) {
+      adopt(existing);
+      return;
+    }
+    var migrated = null;
+    LEGACY_KEYS.forEach(function (k) {
+      try {
+        var old = JSON.parse(localStorage.getItem(k) || "null");
+        if (isObj(old)) migrated = migrated ? merge(old, migrated) : sanitize(old);
+      } catch (e) {}
+    });
+    if (migrated) {
+      adopt(migrated);
+      store();
+    }
+  })();
+
+  /* ---------- dedicated Firestore sync (users/{uid}/hubs/cat) ---------- */
+  var cloudDb = null, cloudUid = "", cloudUnsub = null, cloudTimer = null;
+
+  function pushCloudNow() {
+    if (!cloudDb || !cloudUid || !window.firebase) return;
+    cloudDb.collection("users").doc(cloudUid).collection("hubs").doc("cat").set({
+      cat: sanitize(C),
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+    }).catch(function (e) {
+      console.error("Study Cat cloud save failed:", e);
+    });
+  }
+
+  function scheduleCloudSave() {
+    if (!cloudDb || !cloudUid) return;
+    clearTimeout(cloudTimer);
+    cloudTimer = setTimeout(pushCloudNow, 800);
+  }
+
+  function save() {
+    store();
+    scheduleCloudSave();
+  }
+
+  function startCatCloud(info) {
+    if (!info || !info.user || !info.db) {
+      if (cloudUnsub) { cloudUnsub(); cloudUnsub = null; }
+      cloudDb = null; cloudUid = "";
+      return;
+    }
+    if (cloudUid === info.user.uid && cloudUnsub) return;
+    if (cloudUnsub) { cloudUnsub(); cloudUnsub = null; }
+    cloudDb = info.db;
+    cloudUid = info.user.uid;
+    var uref = cloudDb.collection("users").doc(cloudUid);
+    var cref = uref.collection("hubs").doc("cat");
+    var first = true;
+
+    cloudUnsub = cref.onSnapshot(function (snap) {
+      if (snap.metadata && snap.metadata.hasPendingWrites) return;
+      var data = (snap.exists && snap.data()) || null;
+      var remoteCat = data && isObj(data.cat) ? data.cat : null;
+
+      if (first) {
+        first = false;
+        if (remoteCat) {
+          var m = hasCatProgress(C) ? merge(C, remoteCat) : sanitize(remoteCat);
+          adopt(m);
+          store();
+          chip();
+          if (open) render();
+          if (JSON.stringify(sanitize(m)) !== JSON.stringify(sanitize(remoteCat))) pushCloudNow();
+          return;
+        }
+        /* First time using unified Study Cat in the cloud: check legacy users/{uid}.cat (e.g. Geo Hub) too. */
+        Promise.all([
+          uref.get().catch(function () { return null; }),
+          uref.collection("hubs").doc("bio").get().catch(function () { return null; }),
+          uref.collection("hubs").doc("eco").get().catch(function () { return null; })
+        ]).then(function (snaps) {
+          var seed = hasCatProgress(C) ? sanitize(C) : null;
+          // Merge bio, eco, then geo last so existing Geo Hub cat customizations take priority if customized
+          [snaps[1], snaps[2], snaps[0]].forEach(function (s) {
+            var d = s && s.exists && s.data();
+            if (d && isObj(d.cat)) seed = seed ? merge(d.cat, seed) : sanitize(d.cat);
+          });
+          if (seed) {
+            adopt(seed);
+            store();
+            chip();
+            if (open) render();
+            pushCloudNow();
+          } else if (hasCatProgress(C)) {
+            pushCloudNow();
+          }
+        });
+        return;
+      }
+
+      if (remoteCat) {
+        adopt(remoteCat);
+        store();
+        chip();
+        if (open) render();
+      }
+    }, function (e) {
+      console.error("Study Cat listener error:", e);
+    });
   }
 
   /* ---------- XP to spend, growth stages, mood ---------- */
   function bal() { return Math.max(0, xpNow() - C.spent); }
-  function cumXP(n) { return 100 * n + 25 * n * (n - 1); }          /* total XP to reach level index n (engine: 100, then +50 per level) */
+  function cumXP(n) { return 100 * n + 25 * n * (n - 1); }
   var STAGES = [{ name: "Kitten", lv: 0 }, { name: "Young cat", lv: 2 }, { name: "House cat", lv: 4 }, { name: "Chonky legend", lv: 7 }];
-  function stageIdx() { var n = G.lvOf(xpNow()).n, k = 0; STAGES.forEach(function (s, i) { if (n >= s.lv) k = i; }); return k; }
+  function stageIdx() { var n = lvOf(xpNow()).n, k = 0; STAGES.forEach(function (s, i) { if (n >= s.lv) k = i; }); return k; }
   function daysOff() {
-    var p = /^(\d+)-(\d+)-(\d+)$/.exec((S().streak && S().streak.last) || "");
-    if (!p) return -1;
-    var a = new Date(+p[1], +p[2] - 1, +p[3]), b = new Date(); b = new Date(b.getFullYear(), b.getMonth(), b.getDate());
-    return Math.round((b - a) / 864e5);
+    var last = latestStudyTime();
+    if (!last) return -1;
+    var b = new Date(); b = new Date(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.round((b.getTime() - last) / 864e5);
   }
   function mood() { var d = daysOff(); return d < 0 ? "hello" : d <= 0 ? "purr" : d < 3 ? "sleepy" : "grumpy"; }
   function moodLine() {
     var d = daysOff(), n = esc(C.name);
-    if (d < 0) return n + " is new here and curious. Earn some XP and watch them grow.";
+    if (d < 0) return n + " is new here and curious. Earn XP in any subject and watch them grow.";
     if (d <= 0) return n + " is purring. You studied today. 💛";
-    if (d < 3) return n + " is sleepy. One quick quiz will wake them up.";
+    if (d < 3) return n + " is sleepy. One quick quiz in any subject wakes them up.";
     return n + " is a bit grumpy after " + d + " days without you. One quiz fixes it.";
   }
 
   /* ---------- pixel drawing helpers ---------- */
   function v(x) { return "var(" + x + ")"; }
-  /* sprite palette: one letter = one colour (CSS variables from index.html, so light and dark mode both work) */
   var PAL = { o: "--k-eye", e: "--k-eye", a: "--k-frame", b: "--k-bed", B: "--k-bed2", c: "--k-cloud", d: "--k-wood2", w: "--k-wood", f: "--k-fish", g: "--k-gold", G: "--k-goldd",
     l: "--k-leaf", L: "--k-leaf2", p: "--k-pot", P: "--k-potd", r: "--k-rug", R: "--k-rug2", s: "--k-sun", t: "--k-water", y: "--k-yarn", k: "--k-pink", x: "#fff",
     z: "--k-base", h: "--k-wall1", H: "--k-wall2", K: "--k-wall3", u: "--k-curtain", U: "--k-curtain2", i: "--k-hill", I: "--k-hill2", v: "--k-star", V: "--k-dust", S: "--k-screen", q: "--k-sky1", Q: "--k-sky2", F: "--k-floor", j: "--k-floor2", m: "--k-cap", M: "--k-capd", n: "--k-bow", N: "--k-bowd" };
   function fillOf(c) { var p = PAL[c] || c; return p.charAt(0) === "-" ? v(p) : p; }
   function rect(x, y, w, h, c) { return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" style="fill:' + fillOf(c) + '"/>'; }
-  /* a sprite is an array of strings; "." is transparent. Same-colour runs in a row become one rect. */
   function sprite(rows, x0, y0) {
     var h = "";
     rows.forEach(function (row, y) {
@@ -119,7 +353,6 @@
     return h;
   }
   function inEll(x, y, cx, cy, rx, ry) { var dx = (x + 0.5 - cx) / rx, dy = (y + 0.5 - cy) / ry; return dx * dx + dy * dy <= 1; }
-  /* a filled pixel ellipse; border: colour for the ring, dash: only every other ring pixel */
   function pxEll(cx, cy, rx, ry, c, border, dash) {
     var h = "";
     for (var y = Math.floor(cy - ry); y <= Math.ceil(cy + ry); y++) {
@@ -145,9 +378,7 @@
     return !((d1 < 0 || d2 < 0 || d3 < 0) && (d1 > 0 || d2 > 0 || d3 > 0));
   }
 
-  /* ---------- the pixel cat ----------
-     Drawn on a 48 x 44 grid, centred between columns 23 and 24, feet on row 42.
-     Shapes (head, ears, body, tail) are rasterised, then every edge pixel becomes the dark outline colour. */
+  /* ---------- the pixel cat ---------- */
   var CW = 48, CH = 44, CX = 24, GY = 42;
   var SP = [
     { hx: 8, hy: 6.6, bx: 6, by: 5, ear: 5, t: 0.8 },
@@ -183,7 +414,7 @@
       else if (inEll(x, y, CX, bcy, p.bx, p.by)) own[i] = 2;
       else if (tail[x + "," + y]) own[i] = 1;
     }
-    function O(x, y) { return x < 0 || y < 0 || x >= CW || y >= CH ? 0 : own[y * CW + x]; }
+    function O(x, y) { return x < 0 || y >= CH || y < 0 || x >= CW ? 0 : own[y * CW + x]; }
     for (y = 0; y < CH; y++) for (x = 0; x < CW; x++) {
       i = y * CW + x; if (!own[i]) continue;
       var me = own[i];
@@ -214,11 +445,9 @@
       [bx, bx - 1].forEach(function (dx) { mt(dx, br - 2, D, 2); mt(dx, br + 1, D, 2); });
       Object.keys(tail).forEach(function (k, n) { var q = k.split(","); if (n % 5 === 2 && inner(+q[0], +q[1], 1)) put(+q[0], +q[1], D); });
     }
-    /* paws */
     var pd = Math.round(p.bx * 0.45);
     [pd - 1, pd, pd + 1].forEach(function (dx) { [GY - 3, GY - 2].forEach(function (r) { mt(dx, r, L, 2); }); });
     mt(pd, GY - 2, D, 2);
-    /* face */
     if (m === "purr") { mm(ex - 2, 1, E); mm(ex - 1, 0, E); mm(ex, 0, E); mm(ex + 1, 1, E); }
     else if (m === "sleepy") { mm(ex - 2, 0, E); mm(ex - 1, 1, E); mm(ex, 1, E); mm(ex + 1, 0, E); }
     else if (m === "grumpy") {
@@ -236,7 +465,6 @@
     else { mm(1, 3, E); mm(0, 4, E); }
     var wx = Math.ceil(p.hx);
     [wx, wx + 1].forEach(function (dx) { mm(dx, 1, D); mm(dx, 3, D); });
-    /* things the cat wears */
     if (wr.face === "glasses") {
       [-2, 2].forEach(function (dy) { [ex - 2, ex - 1, ex, ex + 1].forEach(function (dx) { mm(dx, dy, E); }); });
       [-1, 0, 1].forEach(function (dy) { mm(ex - 2, dy, E); mm(ex + 1, dy, E); });
@@ -259,9 +487,7 @@
     if (wr.head === "crown") {
       ["g..gg..g", "g..gg..g", "gGgggGgg", "gggyyggg", "GGGGGGGG"].forEach(function (row, r) { for (var k = 0; k < 8; k++) if (row.charAt(k) !== ".") put(CX - 4 + k, top - 4 + r, fillOf(row.charAt(k))); });
     }
-    /* soft shadow on the floor */
     for (y = GY - 1; y < CH; y++) for (x = 0; x < CW; x++) if (!own[y * CW + x] && !col[y * CW + x] && inEll(x, y, CX, GY + 0.4, p.bx + 4, 1.7)) col[y * CW + x] = "rgba(0,0,0,.16)";
-    /* rows of same colour -> rects */
     var h = "";
     for (y = 0; y < CH; y++) {
       x = 0;
@@ -275,7 +501,6 @@
     CACHE[key] = res;
     return res;
   }
-  /* two frames that swap (tail swish); sleepy cats keep still and snore little pixel z's */
   function catG(o) {
     o.worn = o.worn || {};
     var a = catPixels(o, 0), z = "";
@@ -345,11 +570,9 @@
   function desk() {
     var h = rect(15, 60, 32, 3, "w") + rect(15, 63, 32, 1, "d") + rect(17, 64, 2, 16, "d") + rect(43, 64, 2, 16, "d")
       + rect(30, 64, 12, 6, "w") + rect(30, 69, 12, 1, "d") + rect(35, 66, 2, 1, "g");
-    /* laptop with a bell curve on screen */
     h += rect(20, 48, 15, 11, "e") + rect(21, 49, 13, 9, "S");
     [7, 7, 6, 5, 3, 2, 1, 2, 3, 5, 6, 7, 7].forEach(function (y, i) { h += rect(21 + i, 49 + y, 1, 1, "g"); });
     h += rect(27, 57, 1, 1, "y") + rect(18, 59, 19, 1, "e") + rect(18, 59, 19, 1, "rgba(255,255,255,.15)");
-    /* mug with steam */
     h += rect(39, 55, 4, 5, "a") + rect(43, 56, 1, 2, "a") + rect(39, 55, 4, 1, "w");
     h += twinkle(40, 52, "x", 0) + twinkle(41, 50, "x", .6) + twinkle(40, 48, "x", 1.2);
     return h;
@@ -364,12 +587,10 @@
   function twinkle(x, y, c, d) { return '<g class="k-tw" style="animation-delay:' + d + 's">' + rect(x, y, 1, 1, c) + '</g>'; }
   function roomBase() {
     var h = rect(0, 0, 120, 62, "h"), x, y, k;
-    /* wallpaper: soft stripes, crown moulding, panelled lower wall */
     for (x = 3; x < 120; x += 6) h += rect(x, 3, 1, 47, "H");
     h += rect(0, 0, 120, 2, "K") + rect(0, 2, 120, 1, "H");
     h += rect(0, 50, 120, 12, "H") + rect(0, 50, 120, 1, "z") + rect(0, 51, 120, 1, "h");
     for (x = 3; x < 118; x += 19) h += rect(x, 54, 15, 1, "K") + rect(x, 54, 1, 6, "K") + rect(x, 59, 15, 1, "h") + rect(x + 14, 54, 1, 6, "h");
-    /* window: sky, sun or moon, stars at night, hills and a tree outside */
     h += rect(9, 11, 32, 34, "a") + rect(11, 13, 28, 14, "q") + rect(11, 27, 28, 15, "Q");
     [[13, 15, 0], [20, 22, .7], [31, 14, 1.3], [36, 24, .4], [16, 31, 1.7], [29, 27, 1]].forEach(function (s) { h += twinkle(s[0], s[1], "v", s[2]); });
     h += sprite([".sss.", "sssss", "sssss", "sssss", ".sss."], 14, 16);
@@ -380,7 +601,6 @@
     }
     h += sprite([".L.", "LLL", "LlL", ".d."], 32, 31) + rect(33, 35, 1, 2, "d");
     h += rect(24, 13, 2, 29, "a") + rect(11, 26, 28, 2, "a") + rect(7, 44, 36, 2, "a") + rect(7, 46, 36, 1, "d");
-    /* curtains on a rod, tied back in the middle */
     var rows = [];
     for (y = 9; y <= 46; y++) {
       var w = y < 30 ? 7 - Math.round((y - 9) * 3 / 21) : 4 + Math.round((y - 30) * 2 / 16), s = [];
@@ -390,16 +610,12 @@
       rows.push(s.join(""));
     }
     h += sprite(rows, 5, 9) + rect(4, 8, 42, 1, "d") + rect(2, 7, 3, 3, "g") + rect(45, 7, 3, 3, "g");
-    /* light switch */
     h += rect(48, 36, 3, 5, "a") + rect(49, 37, 1, 2, "K");
-    /* floor: planks, shadow along the wall */
     h += rect(0, 62, 120, 2, "z") + rect(0, 64, 120, 24, "F") + rect(0, 64, 120, 2, "rgba(0,0,0,.13)");
     [70, 76, 82].forEach(function (r) { h += rect(0, r, 120, 1, "j"); });
     [[18, 64], [58, 64], [97, 64], [6, 71], [40, 71], [78, 71], [112, 71], [26, 77], [66, 77], [104, 77], [12, 83], [50, 83], [88, 83]].forEach(function (q) { h += rect(q[0], q[1], 1, 6, "j"); });
-    /* sunbeam (moonbeam at night) with floating dust */
     h += '<g style="opacity:.15">' + rect(12, 64, 30, 6, "s") + rect(16, 70, 30, 6, "s") + rect(20, 76, 30, 6, "s") + rect(24, 82, 30, 6, "s") + '</g>';
     [[20, 56, 0], [27, 49, .9], [33, 60, 1.6], [38, 53, .5], [30, 67, 1.2], [44, 72, 2]].forEach(function (s) { h += twinkle(s[0], s[1], "V", s[2]); });
-    /* soft corners for depth */
     h += rect(0, 0, 2, 88, "rgba(0,0,0,.08)") + rect(118, 0, 2, 88, "rgba(0,0,0,.08)") + rect(0, 86, 120, 2, "rgba(0,0,0,.08)");
     return h;
   }
@@ -418,7 +634,7 @@
   function coatThumb(k) { return '<svg viewBox="6 4 38 40" shape-rendering="crispEdges" aria-hidden="true">' + catG(catNow({ stage: 2, mood: "hello", coat: k, worn: {} })) + '</svg>'; }
   function smallCat() { var o = catNow(); if (o.mood !== "grumpy" && o.mood !== "sleepy") o.mood = "purr"; return '<svg viewBox="6 2 36 42" shape-rendering="crispEdges" aria-hidden="true">' + catG(o) + '</svg>'; }
 
-  /* ---------- celebrations: the cat pops up on level-up, growing and the daily goal ---------- */
+  /* ---------- celebrations ---------- */
   var popQ = [], popBusy = false, popEl = null, open = false;
   function pop(msg) { popQ.push(msg); if (!popBusy) nextPop(); }
   function nextPop() {
@@ -433,30 +649,35 @@
     popEl.innerHTML = smallCat() + "<span>" + esc(m) + "</span>"; popEl.hidden = false; popEl.classList.remove("in"); void popEl.offsetWidth; popEl.classList.add("in");
     setTimeout(function () { if (popEl) popEl.hidden = true; setTimeout(nextPop, 250); }, 3600);
   }
-  function level() { return G.lvOf(xpNow()).n; }
-  function dayXP() { var s = S(); return s.day && s.day.d === G.today() ? +s.day.xp || 0 : 0; }
-  function silentSync() { C.lv = level(); C.stg = stageIdx(); if (dayXP() >= G.GOAL) C.goalD = G.today(); store(); }
+  function level() { return lvOf(xpNow()).n; }
+  function silentSync() { C.lv = level(); C.stg = stageIdx(); if (dayXP() >= GOAL) C.goalD = todayStr(); store(); }
   function cheapestNew() { var b = null; ITEMS.forEach(function (it) { if (!C.items[it.id] && (!b || it.cost < b.cost)) b = it; }); return b; }
   function onXP(n) {
-    var msgs = [], before = bal() - n, L = level(), st = stageIdx();
+    var msgs = [], before = bal() - n, L = level(), st = stageIdx(), td = todayStr();
     if (C.stg >= 0 && st > C.stg) msgs.push(C.name + " grew into a " + STAGES[st].name + "! 🎉");
-    else if (C.lv >= 0 && L > C.lv) msgs.push("Level " + (L + 1) + "! Meow! 🎉");
+    else if (C.lv >= 0 && L > C.lv) msgs.push("Study Cat Lv " + (L + 1) + "! Meow! 🎉");
     C.lv = L; C.stg = st;
-    if (dayXP() >= G.GOAL && C.goalD !== G.today()) { C.goalD = G.today(); msgs.push("Daily goal done! 🎯"); }
+    if (dayXP() >= GOAL && C.goalD !== td) { C.goalD = td; msgs.push("Daily goal done! 🎯"); }
     var nx = cheapestNew();
     if (nx && before < nx.cost && bal() >= nx.cost) msgs.push("You can buy the " + nx.n + " now 🛍️");
     save(); chip(); if (open) render();
     if (msgs.length) setTimeout(function () { pop(msgs.slice(0, 2).join(" · ")); }, 900);
   }
 
-  /* ---------- the app: Room and Shop ---------- */
+  /* ---------- Room and Shop ---------- */
   var tab = "room", lastFocus = null;
-  function chip() { var b = $("catbtn"); if (!b) return; b.hidden = false; b.textContent = "🐱 " + bal(); b.title = C.name + " the cat. " + bal() + " XP to spend. Tap to visit."; }
+  function chip() {
+    var b = $("catbtn");
+    if (!b) return;
+    b.hidden = false;
+    b.textContent = "🐱 " + bal();
+    b.title = C.name + " the Study Cat · " + bal() + " XP to spend across all subjects. Tap to visit.";
+  }
   function bar(p) { return '<div class="pxbar"><i style="width:' + Math.max(0, Math.min(100, Math.round(p * 100))) + '%"></i></div>'; }
   function rRoom() {
     var si = stageIdx(), x = xpNow(), prog;
-    if (si < STAGES.length - 1) { var nx = STAGES[si + 1], a = cumXP(STAGES[si].lv), b = cumXP(nx.lv); prog = bar((x - a) / (b - a)) + '<p class="cat-sub">' + Math.max(0, b - x) + ' XP until ' + esc(C.name) + ' grows into a <b>' + nx.name + '</b>.</p>'; }
-    else prog = '<p class="cat-sub">Fully grown. A true chonky legend. ✨</p>';
+    if (si < STAGES.length - 1) { var nx = STAGES[si + 1], a = cumXP(STAGES[si].lv), b = cumXP(nx.lv); prog = bar((x - a) / (b - a)) + '<p class="cat-sub">' + Math.max(0, b - x) + ' XP until ' + esc(C.name) + ' grows into a <b>' + nx.name + '</b> (' + x + ' total XP across Bio, Eco &amp; Geology).</p>'; }
+    else prog = '<p class="cat-sub">Fully grown (' + x + ' total XP across Bio, Eco &amp; Geology). A true chonky legend. ✨</p>';
     return '<div class="cat-scene" id="catscene" title="Pet ' + esc(C.name) + '">' + roomSVG() + '</div>'
       + '<div class="cat-namerow"><button class="cat-name" data-a="rename" aria-label="Rename your cat">' + esc(C.name) + ' <span aria-hidden="true">✎</span></button><span class="pxtag">' + STAGES[si].name + '</span></div>'
       + '<p class="cat-mood" id="catsay" aria-live="polite">' + moodLine() + '</p>' + prog
@@ -468,7 +689,7 @@
     return '<button class="btn' + (can ? '' : ' sec') + '" data-buy="' + id + '"' + (can ? '' : ' disabled') + '>' + (can ? "Buy · " + cost + " XP" : "Need " + (cost - bal()) + " more XP") + '</button>';
   }
   function rShop() {
-    var h = '<div class="card kbal"><b>⚡ ' + bal() + ' XP to spend</b><small>Spending never lowers your level. Study to earn more.</small></div><h3 class="cat-h3">For the room</h3><div class="shopgrid">';
+    var h = '<div class="card kbal"><b>⚡ ' + bal() + ' XP to spend</b><small>Earned across Bio, Eco &amp; Geology (' + xpNow() + ' total XP). Spending never lowers your level.</small></div><h3 class="cat-h3">For the room</h3><div class="shopgrid">';
     ITEMS.forEach(function (it) {
       if (it.kind !== "room") return;
       var own = !!C.items[it.id];
@@ -510,8 +731,8 @@
     C.spent += it.cost; C.items[id] = 1;
     if (coat) C.coat = k; else if (it.kind === "wear") C.worn[it.slot] = id;
     save(); render();
-    if (G.toast) G.toast("New for " + C.name + ": " + it.n + " 🎁");
-    if (G.confetti) G.confetti();
+    showToast("New for " + C.name + ": " + it.n + " 🎁");
+    showConfetti();
   }
   function openApp(t) {
     tab = t || "room"; open = true; lastFocus = document.activeElement;
@@ -542,11 +763,16 @@
       else if (t.hasAttribute("data-coat")) { C.coat = t.getAttribute("data-coat"); save(); render(); }
     });
     silentSync(); chip();
+    if (window.GEOSync && GEOSync.subscribe) {
+      GEOSync.subscribe(startCatCloud);
+    }
   }
   function refresh() { silentSync(); chip(); if (open) render(); }
-  function reset() { C = fresh(); store(); silentSync(); chip(); if (open) render(); }
-
-  if (SYNC && window.GEOSync && GEOSync.register) GEOSync.register({ key: "cat", get: function () { return C; }, set: function (m) { adopt(m); store(); chip(); if (open) render(); }, merge: merge });
+  function reset() {
+    /* Only wipe the shared cat if XP across ALL subjects is 0; resetting a single subject preserves your cat. */
+    if (xpNow() === 0) { C = fresh(); save(); }
+    silentSync(); chip(); if (open) render();
+  }
 
   window.CAT = { onXP: onXP, refresh: refresh, reset: reset, open: openApp, close: closeApp, _state: function () { return C; } };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", wire); else wire();

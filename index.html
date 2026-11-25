@@ -12,7 +12,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Study Hub">
-<meta name="description" content="Bio Hub, Eco Hub and Geology Hub in one app: pick a subject and switch anytime.">
+<meta name="description" content="Bio Hub, Eco Hub and Geology Hub in one app: pick a subject, switch anytime, and grow one shared Study Cat.">
 <script>
 (function () {
   try {
@@ -28,24 +28,32 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=JetBrains+Mono:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F2F4F5; --card:#FFFFFF; --soft:#E7ECEE; --ink:#16212A; --mute:#566673; --line:#D6DEE2;
   --acc:#2F5D73; --acc-ink:#FFFFFF; --acc-soft:#E0ECF2;
   --ok:#1A7F4B; --c1:#3550A0; --c4:#86650F;
-  --font-d:"Fraunces", Georgia, serif; --font-b:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-d:"Fraunces", Georgia, serif; --font-b:"Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif; --font-m:"JetBrains Mono", ui-monospace, Menlo, monospace;
   color-scheme:light;
+  --k-wall1:#FBEBD6;--k-wall2:#F2D9BC;--k-floor:#D9A876;--k-floor2:#C6935F;--k-base:#B57E4F;--k-sky1:#9ED8F5;--k-sky2:#DDF3FF;--k-sun:#FFCF5C;--k-cloud:#FFFFFF;--k-frame:#FFF8EE;
+  --k-wall3:#E9C9A4;--k-curtain:#58B4A4;--k-curtain2:#3F9585;--k-hill:#86C77A;--k-hill2:#6AAE66;--k-star:transparent;--k-dust:rgba(255,255,255,.95);--k-screen:#1E2A44;
+  --k-eye:#2A211E;--k-pink:#F59FB4;--k-wood:#C58F5B;--k-wood2:#94643A;--k-water:#8FD3EC;--k-fish:#FF9A4D;--k-yarn:#E8679A;--k-rug:#EFAFC0;--k-rug2:#FBD3DD;--k-bed:#6F9FDB;--k-bed2:#A6C6EF;
+  --k-leaf:#5DB377;--k-leaf2:#3E9159;--k-pot:#E08A5E;--k-potd:#C46F45;--k-gold:#F7C744;--k-goldd:#C9962A;--k-cap:#2E3A4B;--k-capd:#1C2531;--k-bow:#E8618A;--k-bowd:#B83E64;
+  --k-or:#F5A95F;--k-orl:#FFE4C2;--k-ord:#C8763A;--k-gr:#A9B4BE;--k-grl:#E8EDF1;--k-grd:#6C7987;--k-bk:#474C56;--k-bkl:#80878F;--k-bkd:#25292F;--k-wh:#FCF9F3;--k-whl:#FFFFFF;--k-whd:#BDB3A2;
 }
 @media (prefers-color-scheme: dark){:root{
   --bg:#10161A; --card:#192228; --soft:#222D34; --ink:#E7EEF2; --mute:#A0B1BC; --line:#2E3C45;
   --acc:#8CC4DC; --acc-ink:#0D161B; --acc-soft:#1A3240;
   --ok:#5FD39A; --c1:#8FA8E8; --c4:#E2C062;
   color-scheme:dark;
+  --k-wall1:#2F3350;--k-wall2:#262941;--k-floor:#5E4838;--k-floor2:#4E3B2E;--k-base:#3F3026;--k-sky1:#1B2650;--k-sky2:#3A4C86;--k-sun:#F6EBB8;--k-cloud:#7D8BB5;--k-frame:#B9B5C9;
+  --k-wall3:#1F2236;--k-curtain:#3B7C73;--k-curtain2:#2C6159;--k-hill:#2E5443;--k-hill2:#223F33;--k-star:#FFF4C2;--k-dust:transparent;
+  --k-rug:#7A4C5C;--k-rug2:#9A6B7B;--k-bed:#41659A;--k-bed2:#5B80B5;--k-wood:#9C6E45;--k-wood2:#6E4B2D;--k-cap:#C9D6E8;--k-capd:#8FA0B8;--k-bk:#545A64;--k-bkl:#8A919B;--k-bkd:#1E2126;
 }}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--font-b)}
-h1,h2{font-family:var(--font-d);line-height:1.2;text-wrap:balance;margin:0}
+h1,h2,h3{font-family:var(--font-d);line-height:1.2;text-wrap:balance;margin:0}
 h1{font-size:2rem}
 h2{font-size:1.25rem}
 p{margin:0 0 10px;max-width:64ch}
@@ -55,7 +63,11 @@ a{color:var(--acc)}
 .top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
 .top-in{max-width:880px;margin:0 auto;padding:12px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .top-in b{font-family:var(--font-d);font-size:1.15rem}
-.top-in span{color:var(--mute);font-size:.88rem}
+.top-in .sub{color:var(--mute);font-size:.88rem}
+.hud{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-left:auto}
+.hudchip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:var(--soft);border-radius:99px;padding:3px 11px;font-size:.85rem;font-weight:700;color:var(--ink);white-space:nowrap}
+.hudchip:hover{border-color:var(--acc)}
+.hudchip[hidden]{display:none}
 main{max-width:880px;margin:0 auto;padding:24px 16px 64px}
 .lede{color:var(--mute);font-size:1.05rem;margin-top:6px}
 .tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:20px 0}
@@ -67,16 +79,84 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
 .tile .st{font-size:.84rem;color:var(--mute);margin-top:auto;padding-top:8px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}
 .pill{font-size:.74rem;font-weight:700;padding:1px 8px;border-radius:99px;background:var(--acc-soft);color:var(--acc)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .btn{border:0;border-radius:10px;padding:10px 16px;font-weight:700;background:var(--acc);color:var(--acc-ink)}
+.btn.sec{background:var(--soft);color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
 .ghost{background:none;border:1px solid var(--line);border-radius:9px;padding:6px 12px;color:var(--mute);font-size:.9rem}
 .ghost:hover{color:var(--ink);border-color:var(--mute)}
+.catbanner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.catbanner p{margin:2px 0 0;font-size:.92rem;color:var(--mute)}
+/* Study Cat pixel UI */
+.pxcat .f2{visibility:hidden}
+.pxm-hello .f1,.pxm-purr .f1,.pxm-grumpy .f1{animation:pxa 1.2s steps(1) infinite}
+.pxm-hello .f2,.pxm-purr .f2,.pxm-grumpy .f2{animation:pxb 1.2s steps(1) infinite}
+.pxm-purr .f1,.pxm-purr .f2{animation-duration:.7s}
+.pxm-grumpy .f1,.pxm-grumpy .f2{animation-duration:.45s}
+@keyframes pxa{0%{visibility:visible}50%{visibility:hidden}}
+@keyframes pxb{0%{visibility:hidden}50%{visibility:visible}}
+.pxz{animation:pxz 1.6s steps(2) infinite}.pxz.z2{animation-delay:.8s}
+@keyframes pxz{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-4px);opacity:.3}}
+.k-bulb{animation:kglow 1.6s steps(2) infinite}.k-bulb:nth-of-type(2n){animation-delay:.8s}
+.k-fish{animation:kswim 3s steps(6) infinite alternate}
+@keyframes kglow{0%{opacity:.45}100%{opacity:1}}
+.k-tw{animation:ktw 2.2s steps(2) infinite}
+@keyframes ktw{0%{opacity:1}100%{opacity:.15}}
+.k-tick .f2{visibility:hidden}.k-tick .f1{animation:pxa 2s steps(1) infinite}.k-tick .f2{animation:pxb 2s steps(1) infinite}
+@keyframes kswim{0%{transform:translateX(0)}100%{transform:translateX(-9px)}}
+@keyframes toastIn{from{opacity:0;transform:translateY(12px) scale(.9)}to{opacity:1;transform:none}}
+.catapp .cat-top b,.catapp .cat-name,.kbal b,.cat-h3,.pxtag,.cat-nav button,.shopc b{font-family:"Press Start 2P",var(--font-m),monospace;letter-spacing:0}
+.catapp .cat-top b{font-size:.78rem}.catapp .cat-name{font-size:.95rem;line-height:1.5}
+.cat-h3{font-size:.68rem!important;line-height:1.6;margin:16px 0 6px;color:var(--mute)}
+.shopc b{font-size:.58rem!important;line-height:1.6}
+.cat-nav button{font-size:.58rem!important}
+.pxtag{font-size:.52rem;padding:5px 7px;background:var(--k-base);color:#fff;box-shadow:2px 2px 0 var(--k-eye)}
+.catapp .btn{border-radius:0;border:2px solid var(--k-eye);box-shadow:inset -3px -3px 0 rgba(0,0,0,.22),inset 3px 3px 0 rgba(255,255,255,.2)}
+.catapp .btn:active{box-shadow:inset 3px 3px 0 rgba(0,0,0,.22)}
+.catapp .card{border-radius:0;border:3px solid var(--line);box-shadow:4px 4px 0 rgba(0,0,0,.14)}
+.catapp .shopc.own{border-color:var(--ok)}
+.catapp .cat-top .x{border-radius:0;border:2px solid var(--k-eye)}
+.pxbar{height:14px;border:2px solid var(--k-eye);background:var(--soft);margin:10px 0 4px;padding:2px}
+.pxbar i{display:block;height:100%;background:repeating-linear-gradient(90deg,var(--ok) 0 8px,transparent 8px 10px)}
+.catapp{position:fixed;inset:0;z-index:42;background:var(--bg);display:flex;flex-direction:column}
+.catapp[hidden]{display:none}
+.cat-in{max-width:520px;margin:0 auto;width:100%;height:100%;display:flex;flex-direction:column}
+.cat-top{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--card)}
+.cat-top b{font-family:var(--font-d);font-size:1.15rem;flex:1}
+.cat-top .x{border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:10px;width:40px;height:40px;font-size:1.1rem}
+#catbody{flex:1;overflow-y:auto;padding:12px 16px 24px;-webkit-overflow-scrolling:touch}
+.cat-nav{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);background:var(--card);padding-bottom:env(safe-area-inset-bottom)}
+.cat-nav button{border:0;background:none;color:var(--mute);padding:8px 2px;font-size:.78rem;font-weight:700;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:56px}
+.cat-nav button span{font-size:1.3rem;line-height:1}
+.cat-nav button[aria-current=page]{color:var(--acc);background:var(--acc-soft)}
+body.catopen{overflow:hidden}
+.cat-scene{position:relative;overflow:hidden;border:4px solid var(--k-eye);cursor:pointer;margin:0 6px 16px 0;box-shadow:6px 6px 0 rgba(0,0,0,.2);-webkit-tap-highlight-color:transparent}
+.cat-room{display:block;width:100%;height:auto}
+.cat-heart{position:absolute;bottom:34%;color:var(--k-yarn);font-size:1.4rem;font-style:normal;pointer-events:none;animation:heartup 1.3s ease-out forwards}
+@keyframes heartup{0%{opacity:0;transform:translateY(0) scale(.6)}20%{opacity:1}100%{opacity:0;transform:translateY(-70px) scale(1.2)}}
+.cat-namerow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cat-name{border:0;background:none;font:700 1.35rem var(--font-d);color:var(--ink);padding:4px 0;cursor:pointer}
+.cat-mood{margin:4px 0 8px}
+.cat-sub{color:var(--mute);font-size:.92rem;margin:6px 0 10px}
+.kbal{padding:14px 16px;margin:0 0 6px}.kbal b{display:block;font-size:1.1rem}.kbal small{color:var(--mute)}
+.shopgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:480px){.shopgrid{grid-template-columns:repeat(3,1fr)}}
+.shopc{display:flex;flex-direction:column;align-items:stretch;gap:8px;text-align:center;padding:10px;margin:0}
+.shopc.own{border-color:var(--ok)}
+.kthumb{aspect-ratio:1/1;background:var(--k-wall1);border:2px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.kthumb svg{width:84%;height:84%}
+.shopc .btn{padding:8px 6px;font-size:.85rem;width:100%;margin-top:auto}
+.catpop{position:fixed;left:12px;bottom:32px;z-index:44;display:flex;align-items:center;gap:8px;max-width:min(86vw,340px);background:var(--card);color:var(--ink);border:3px solid var(--k-eye);box-shadow:4px 4px 0 rgba(0,0,0,.2);padding:6px 14px 6px 6px;font:700 .95rem/1.3 var(--font-b);text-align:left}
+.catpop[hidden]{display:none}.catpop svg{width:46px;height:54px;flex:none}.catpop.in{animation:toastIn .3s ease both}
+@media (prefers-reduced-motion: reduce){.pxcat .f1,.pxcat .f2,.k-tick .f1,.k-tick .f2,.k-tw,.pxz,.k-bulb,.k-fish,.catpop.in,.cat-heart{animation:none!important}}
 @media (max-width:520px){h1{font-size:1.65rem} body{font-size:16px}}
 </style>
 </head>
 <body>
 <header class="top"><div class="top-in">
   <b>📚 Study Hub</b>
-  <span>ČZU Prague · All subjects in one place</span>
+  <span class="sub">ČZU Prague · All subjects in one place</span>
+  <span class="hud"><button class="hudchip" id="catbtn" title="Your Study Cat" hidden>🐱 0</button></span>
 </div></header>
 
 <main>
@@ -104,11 +184,25 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
     </a>
   </div>
 
+  <div class="card catbanner">
+    <div>
+      <h2>🐱 Study Cat</h2>
+      <p>One shared Study Cat across Bio, Eco &amp; Geology—every XP you earn in any subject feeds and grows the same cat.</p>
+    </div>
+    <button type="button" class="btn" id="opencatcard">Visit Study Cat</button>
+  </div>
+
   <div class="card">
     <h2 style="margin-bottom:6px">☁️ Google sign-in &amp; sync</h2>
     <div id="syncbox"></div>
   </div>
 </main>
+
+<div class="catapp" id="catapp" data-key="studyHub.cat" hidden role="dialog" aria-modal="true" aria-label="Study Cat"><div class="cat-in">
+  <div class="cat-top"><b>🐱 Study Cat</b><span class="hudchip" id="catbal" title="XP you can spend">⚡ 0</span><button class="x" id="catclose" aria-label="Close Study Cat">✕</button></div>
+  <div id="catbody"></div>
+  <nav class="cat-nav" id="catnav" aria-label="Study Cat sections"><button data-tab="room"><span>🏠</span>Room</button><button data-tab="shop"><span>🛍️</span>Shop</button></nav>
+</div></div>
 
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
@@ -116,6 +210,7 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
 <script src="lib/firebase-config.js"></script>
 <script src="lib/firebase-sync.js"></script>
 <script src="switcher.js"></script>
+<script src="lib/cat.js"></script>
 <script>
 (function () {
   var hubs = window.STUDY_HUBS || [];
@@ -129,6 +224,7 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
       var m = card.querySelector(".meta");
       if (m && window.STUDY_HUBS_STATS) m.textContent = window.STUDY_HUBS_STATS(h);
     });
+    if (window.CAT && CAT.refresh) CAT.refresh();
   }
 
   hubs.forEach(function (h) {
@@ -146,6 +242,11 @@ a.tile:hover{border-color:var(--tc,var(--acc));background:var(--soft)}
       }
     });
   });
+
+  var openCatBtn = document.getElementById("opencatcard");
+  if (openCatBtn) {
+    openCatBtn.onclick = function () { if (window.CAT && CAT.open) CAT.open("room"); };
+  }
 
   refreshCards();
 

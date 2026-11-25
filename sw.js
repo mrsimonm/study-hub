@@ -1,10 +1,10 @@
 // Study Hub offline support: caches the unified shell and Bio Hub, Eco Hub and Geology Hub.
 // Bump V when you change root shell files or switcher.js. Content files (json, md, js, html)
 // are fetched fresh when online and served from cache when offline.
-const V = "study-hub-v2";
+const V = "study-hub-v3";
 const SHELL = [
   "./", "./index.html", "./switcher.js", "./manifest.webmanifest",
-  "./lib/firebase-config.js", "./lib/firebase-sync.js",
+  "./lib/firebase-config.js", "./lib/firebase-sync.js", "./lib/cat.js",
   "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png",
   "./bio/", "./bio/index.html", "./bio/app.js", "./bio/lib/lecture-lib.js", "./bio/lib/cat.js",
   "./bio/lib/firebase-config.js", "./bio/lib/firebase-sync.js", "./bio/courses/bio/course.json",
