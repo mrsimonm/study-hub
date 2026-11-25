@@ -1,0 +1,246 @@
+{
+ "num": 3,
+ "title": "Life histories: fast or slow?",
+ "short": "Life histories",
+ "sub": "Symposium topic 1 · Stearns 1977 vs Stott et al. 2024",
+ "blurb": "Life-history traits, the slow–fast continuum, pace-of-life syndromes and why one axis is not enough.",
+ "h1": "Does the fast–slow continuum capture life-history variation?",
+ "lede": "Group 1's question: does the fast–slow continuum capture life-history variation across taxa, or do we need several axes? Classic paper Stearns (1977), recent paper Stott et al. (2024), 'Life histories are not just fast or slow'.",
+ "six": [
+  "**Life-history traits**: growth, age and size at maturity, number and size of offspring, lifespan.",
+  "**Fast** = early reproduction, many small offspring, short life, high mortality. **Slow** = the opposite.",
+  "The **slow–fast continuum** is the main axis, defined by the trade-off between time spent on reproduction and development versus survival.",
+  "**Pace-of-life syndromes** add behaviour and physiology: fast, bold, high-metabolism vs slow, shy, low-metabolism.",
+  "It works as the dominant axis in tetrapods, and broadly in vascular plants and corals; few studies in invertebrates (except insects).",
+  "Answer: the fast–slow axis is the main one for some taxa, but **multiple axes** are needed (e.g. reproductive patterns, stature–recruitment, altricial vs precocial)."
+ ],
+ "must": "slow–fast continuum",
+ "foot": "Source: Group 1 symposium slides; glossary section 2; Stearns 1977; Stott et al. 2024.",
+ "questions": [
+  {
+   "id": "t3-traits",
+   "q": "Which of these is a life-history trait?",
+   "answer": "Age at maturity",
+   "wrong": [
+    "Feather colour",
+    "Habitat type",
+    "Trophic level"
+   ],
+   "e": "Life-history traits concern growth, reproduction and survival: age at maturity, offspring number and size, lifespan.",
+   "fol": true
+  },
+  {
+   "id": "t3-fast",
+   "q": "Which set describes a FAST life history?",
+   "answer": "Early reproduction, many small offspring, short lifespan",
+   "wrong": [
+    "Late reproduction, few large offspring, long lifespan",
+    "Early reproduction, few large offspring, long lifespan",
+    "Late reproduction, many small offspring, short lifespan"
+   ],
+   "e": "Fast = early, many, small, short-lived, high mortality.",
+   "fol": true
+  },
+  {
+   "id": "t3-fly",
+   "q": "Group 1's example of a fast species, with a 10–12 day life cycle, is…",
+   "answer": "The fruit fly",
+   "wrong": [
+    "Przewalski's horse",
+    "The African elephant",
+    "The kapok tree"
+   ],
+   "e": "Drosophila melanogaster: 10–12 days at room temperature."
+  },
+  {
+   "id": "t3-horse",
+   "q": "Group 1's slow example, mature at 4–5 years and living about 20 years, is…",
+   "answer": "Przewalski's horse",
+   "wrong": [
+    "The fruit fly",
+    "The harvest mouse",
+    "The sockeye salmon"
+   ],
+   "e": "Slow: later maturation, fewer offspring, longer life."
+  },
+  {
+   "id": "t3-axis",
+   "q": "The slow–fast continuum is defined by the trade-off between…",
+   "answer": "Time for reproduction and development versus survival",
+   "wrong": [
+    "Body size and colour",
+    "Predation and competition",
+    "Temperature and rainfall"
+   ],
+   "e": "Group 1: an axis defined by allocating time to reproduction and development versus survival."
+  },
+  {
+   "id": "t3-pols",
+   "q": "Pace-of-life syndromes add which kinds of traits to life history?",
+   "answer": "Behavioural and physiological traits",
+   "wrong": [
+    "Only morphological traits",
+    "Only genetic markers",
+    "Only habitat preferences"
+   ],
+   "e": "E.g. fast-growing, bold, high-metabolism vs slow-growing, shy, low-metabolism.",
+   "fol": true
+  },
+  {
+   "id": "t3-where",
+   "q": "Where does the fast–slow axis work best as the dominant axis, per Group 1?",
+   "answer": "In tetrapods",
+   "wrong": [
+    "In bacteria",
+    "In invertebrates generally",
+    "In fungi"
+   ],
+   "e": "Broad picture in tetrapods; also vascular plants and corals; few studies in invertebrates except insects."
+  },
+  {
+   "id": "t3-answer",
+   "q": "What was Group 1's answer to the guiding question?",
+   "answer": "Fast–slow is the main axis for some taxa, but multiple axes are needed",
+   "wrong": [
+    "Fast–slow explains all variation",
+    "Life histories cannot be classified",
+    "Only body size matters"
+   ],
+   "e": "Many organisms fall outside fast–slow predictions.",
+   "fol": true
+  },
+  {
+   "id": "t3-recruit",
+   "q": "The kapok tree (low recruitment) vs Psychotria horizontalis (high recruitment) illustrate which extra axis?",
+   "answer": "The stature–recruitment axis",
+   "wrong": [
+    "The slow–fast axis",
+    "The latitudinal gradient",
+    "The island rule"
+   ],
+   "e": "Recruitment = rate of adding new individuals to a population segment."
+  },
+  {
+   "id": "t3-altricial",
+   "q": "Young that are born helpless and need care are called…",
+   "answer": "Altricial",
+   "wrong": [
+    "Precocial",
+    "Semelparous",
+    "Iteroparous"
+   ],
+   "e": "Group 1 contrasted altricial and precocial offspring as another axis."
+  },
+  {
+   "id": "t3-parity",
+   "q": "Sockeye salmon vs European rabbit was Group 1's example for which trait?",
+   "answer": "Parity (how many times an organism breeds)",
+   "wrong": [
+    "Parental investment",
+    "Age at maturity",
+    "Body size"
+   ],
+   "e": "Parity is a life-history trait: the salmon breeds once, the rabbit many times."
+  },
+  {
+   "id": "t3-papers",
+   "q": "Which recent paper did Group 1 use?",
+   "answer": "Stott et al. 2024, Life histories are not just fast or slow",
+   "wrong": [
+    "Stearns 1977, The evolution of life history traits",
+    "Paine 1966, Food web complexity",
+    "Mora et al. 2011, How many species"
+   ],
+   "e": "Classic: Stearns 1977; recent: Stott et al. 2024 (TREE)."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Life history",
+   "term": "Life-history traits",
+   "meaning": "Traits linked to growth, reproduction and survival: age at maturity, offspring number and size, lifespan."
+  },
+  {
+   "group": "Life history",
+   "term": "Slow–fast continuum",
+   "meaning": "Main axis of life-history variation from fast (early, many, short-lived) to slow (late, few, long-lived)."
+  },
+  {
+   "group": "Life history",
+   "term": "Pace-of-life syndrome",
+   "meaning": "Linked life-history, physiological and behavioural traits along the slow–fast axis."
+  },
+  {
+   "group": "Life history",
+   "term": "Fast strategy",
+   "meaning": "Early reproduction, many small offspring, short lifespan, high mortality."
+  },
+  {
+   "group": "Life history",
+   "term": "Slow strategy",
+   "meaning": "Late reproduction, few large offspring, long lifespan, low mortality."
+  },
+  {
+   "group": "Extra axes",
+   "term": "Recruitment",
+   "meaning": "Rate at which new individuals are added to a population segment."
+  },
+  {
+   "group": "Extra axes",
+   "term": "Stature–recruitment axis",
+   "meaning": "A second axis contrasting high-recruitment and low-recruitment plants."
+  },
+  {
+   "group": "Extra axes",
+   "term": "Altricial",
+   "meaning": "Offspring born helpless, needing parental care."
+  },
+  {
+   "group": "Extra axes",
+   "term": "Precocial",
+   "meaning": "Offspring born well developed and mobile."
+  },
+  {
+   "group": "Extra axes",
+   "term": "Parity",
+   "meaning": "How many times an organism reproduces in its life."
+  }
+ ],
+ "confusable": [
+  [
+   "Altricial",
+   "Precocial"
+  ],
+  [
+   "Fast strategy",
+   "Slow strategy"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Fast species reproduce early and have {many|few|large|no} small offspring."
+  ],
+  [
+   1,
+   "The fruit fly's life cycle takes about {10|100|365|2} days."
+  ],
+  [
+   2,
+   "Pace-of-life syndromes add behaviour and {physiology|colour|habitat|taxonomy} to life history."
+  ],
+  [
+   2,
+   "The fast–slow axis works best as the dominant axis in {tetrapods|bacteria|fungi|invertebrates}."
+  ],
+  [
+   3,
+   "Helpless young that need care are called {altricial|precocial|semelparous|iteroparous}."
+  ],
+  [
+   3,
+   "Group 1 concluded that {multiple|zero|single|random} axes are needed."
+  ]
+ ],
+ "id": "t3"
+}

@@ -1,0 +1,622 @@
+{
+  "num": 8,
+  "id": "t8",
+  "title": "Photosynthesis",
+  "short": "Photosynthesis",
+  "sub": "Lecture 8 · Karol Krak · 20 Nov 2026",
+  "blurb": "Photosynthesis turns light energy into chemical energy in autotrophs (overall equation; leaf and chloroplast structure; two phases).",
+  "h1": "Photosynthesis",
+  "lede": "Photosynthesis turns light energy into chemical energy in autotrophs (overall equation; leaf and chloroplast structure; two phases). Light-dependent reactions in the thylakoids: the dual nature of light, PhAR 400–750 nm, pigments and their absorption, four ways an excited pigment loses energy, photosystems (LHC + reaction centre; PSI P700, PSII P680), the electron path through PSI (A0, A1, Fe–S, ferredoxin → NADP⁺) and PSII (pheophytin, plastoquinones, cytochrome b6/f, plastocyanin → P700), water photolysis (OEC), photophosphorylation, the Z-scheme (non-cyclic) and cyclic electron flow. Light-independent reactions in the stroma: the Calvin cycle (fixation by RuBisCO, reduction, regeneration), C3 plants and stomata, RuBisCO's oxygenase activity → photorespiration, and the adaptations C4 (spatial separation, Kranz anatomy) and CAM (temporal separation).",
+  "six": [
+    "The photosynthesis equation",
+    "Where light vs dark reactions happen; their inputs and outputs",
+    "Pigments; PhAR; photosystems; P700 vs P680",
+    "Electron path and water photolysis (source of O₂)",
+    "Cyclic vs non-cyclic flow",
+    "Calvin cycle phases; RuBisCO; RuBP; G3P"
+  ],
+  "must": "Photosynthesis",
+  "questions": [
+    {
+      "id": "t8-q01",
+      "q": "The O₂ released during photosynthesis comes from:",
+      "answer": "water",
+      "wrong": [
+        "CO₂",
+        "RuBP",
+        "glucose"
+      ],
+      "e": "Water photolysis: 2 H₂O → 4 H⁺ + 4 e⁻ + O₂. (Slides: p. 37)",
+      "fol": true
+    },
+    {
+      "id": "t8-q02",
+      "q": "Photosystem II has an absorption maximum of:",
+      "answer": "680 nm",
+      "wrong": [
+        "700 nm",
+        "450 nm",
+        "750 nm"
+      ],
+      "e": "PSII = P680; PSI = P700. (Slides: p. 15)",
+      "fol": true
+    },
+    {
+      "id": "t8-q03",
+      "q": "The Calvin cycle takes place in the:",
+      "answer": "stroma",
+      "wrong": [
+        "thylakoid lumen",
+        "thylakoid membrane",
+        "cytosol"
+      ],
+      "e": "Light-independent reactions occur in the stroma. (Slides: p. 45)",
+      "fol": true
+    },
+    {
+      "id": "t8-q04",
+      "q": "Cyclic electron flow produces:",
+      "answer": "ATP only",
+      "wrong": [
+        "NADPH only",
+        "O₂ and NADPH",
+        "ATP and NADPH"
+      ],
+      "e": "Only PSI is involved; ATP is made, no NADPH. (Slides: p. 44)",
+      "fol": true
+    },
+    {
+      "id": "t8-q05",
+      "q": "The enzyme that fixes CO₂ onto RuBP is:",
+      "answer": "RuBisCO",
+      "wrong": [
+        "Ferredoxin-NADP⁺ reductase",
+        "PEP carboxylase",
+        "ATP synthase"
+      ],
+      "e": "RuBisCO (ribulose-1,5-bisphosphate carboxylase/oxygenase). (Slides: p. 47, p. 53)"
+    },
+    {
+      "id": "t8-q06",
+      "q": "The first stable product of carbon fixation in C3 plants is:",
+      "answer": "3-phosphoglycerate",
+      "wrong": [
+        "malate",
+        "oxaloacetate",
+        "glucose"
+      ],
+      "e": "CO₂ + RuBP → 2 × 3-phosphoglycerate (3C). (Slides: p. 47, p. 52)"
+    },
+    {
+      "id": "t8-q07",
+      "q": "Photorespiration occurs when RuBisCO binds:",
+      "answer": "O₂ instead of CO₂",
+      "wrong": [
+        "CO₂ at high concentration",
+        "PEP",
+        "NADPH"
+      ],
+      "e": "Low CO₂ and high O₂ favour oxygenation. (Slides: p. 53–54)"
+    },
+    {
+      "id": "t8-q08",
+      "q": "In C4 plants, the Calvin cycle runs in:",
+      "answer": "bundle-sheath cells",
+      "wrong": [
+        "guard cells",
+        "mesophyll cells",
+        "epidermal cells"
+      ],
+      "e": "Spatial separation: uptake in mesophyll, Calvin cycle in bundle sheath. (Slides: p. 57)"
+    },
+    {
+      "id": "t8-q09",
+      "q": "CAM plants open their stomata:",
+      "answer": "at night",
+      "wrong": [
+        "never",
+        "only in winter",
+        "during the day"
+      ],
+      "e": "Night: stomata open, CO₂ stored as malate. (Slides: p. 60)"
+    },
+    {
+      "id": "t8-q10",
+      "q": "Which electron carrier transfers electrons from cytochrome b6/f to PSI?",
+      "answer": "Plastocyanin",
+      "wrong": [
+        "Ferredoxin",
+        "Plastoquinone",
+        "Pheophytin"
+      ],
+      "e": "b6/f → plastocyanin → P700. (Slides: p. 37)"
+    },
+    {
+      "id": "t8-q11",
+      "q": "Photosynthetically active radiation covers:",
+      "answer": "400–750 nm",
+      "wrong": [
+        "200–600 nm",
+        "750–1000 nm",
+        "100–400 nm"
+      ],
+      "e": "PhAR = 400–750 nm. (Slides: p. 8)"
+    },
+    {
+      "id": "t8-q12",
+      "q": "Maize and sugar cane are examples of:",
+      "answer": "C4 plants",
+      "wrong": [
+        "CAM plants",
+        "non-photosynthetic plants",
+        "C3 plants"
+      ],
+      "e": "C4 plants of hot, dry climates. (Slides: p. 57)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Photosynthesis",
+      "term": "Autotroph",
+      "meaning": "organism making organic compounds from inorganic ones"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Thylakoid / Granum / Stroma",
+      "meaning": "membrane sac / stack of thylakoids / chloroplast fluid"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "PhAR",
+      "meaning": "photosynthetically active radiation, 400–750 nm"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Photon",
+      "meaning": "particle of light"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Pigment",
+      "meaning": "light-absorbing molecule (chlorophylls, carotenoids, phycobilins)"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Charge separation",
+      "meaning": "excited pigment donates an electron to an acceptor"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Light-harvesting complex (antenna)",
+      "meaning": "pigments funnelling energy to the reaction centre"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Reaction centre",
+      "meaning": "chlorophyll a that performs charge separation"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "P700 / P680",
+      "meaning": "reaction-centre chlorophylls of PSI / PSII"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Ferredoxin",
+      "meaning": "Fe–S protein passing electrons from PSI to NADP⁺ reductase"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Plastoquinone / Plastocyanin",
+      "meaning": "mobile carriers PSII → b6/f / b6/f → PSI"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "OEC",
+      "meaning": "oxygen-evolving complex (water splitting)"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Photolysis",
+      "meaning": "light-driven splitting of water"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Photophosphorylation",
+      "meaning": "light-driven ATP synthesis"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Z-scheme",
+      "meaning": "non-cyclic electron flow through PSII and PSI"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Cyclic electron flow",
+      "meaning": "PSI-only flow making ATP without NADPH"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Calvin cycle",
+      "meaning": "CO₂ fixation and sugar synthesis in the stroma"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "RuBP",
+      "meaning": "ribulose-1,5-bisphosphate (5C CO₂ acceptor)"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "RuBisCO",
+      "meaning": "ribulose-1,5-bisphosphate carboxylase/oxygenase"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "G3P",
+      "meaning": "glyceraldehyde-3-phosphate, the sugar output"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Photorespiration",
+      "meaning": "RuBisCO fixing O₂ instead of CO₂"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "Kranz anatomy",
+      "meaning": "C4 leaf structure with prominent bundle sheath"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "PEP carboxylase",
+      "meaning": "C4/CAM enzyme fixing CO₂ onto PEP"
+    },
+    {
+      "group": "Photosynthesis",
+      "term": "CAM",
+      "meaning": "crassulacean acid metabolism"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Photosynthesis: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Overall equation of photosynthesis?",
+        "grp": "Photosynthesis",
+        "a": "6 CO₂ + 12 H₂O + light → C₆H₁₂O₆ + 6 O₂ + 6 H₂O."
+      },
+      {
+        "n": "Two phases of photosynthesis and their locations?",
+        "grp": "Photosynthesis",
+        "a": "Light-dependent reactions (thylakoids) and light-independent reactions / Calvin cycle (stroma)."
+      },
+      {
+        "n": "Products of the light reactions?",
+        "grp": "Photosynthesis",
+        "a": "ATP, NADPH and O₂ (by-product)."
+      },
+      {
+        "n": "What is PhAR?",
+        "grp": "Photosynthesis",
+        "a": "Photosynthetically active radiation, 400–750 nm."
+      },
+      {
+        "n": "Three groups of photosynthetic pigments?",
+        "grp": "Photosynthesis",
+        "a": "Chlorophylls, carotenoids, phycobilins."
+      },
+      {
+        "n": "Four ways an excited pigment loses energy?",
+        "grp": "Photosynthesis",
+        "a": "Kinetic energy, light/heat, energy transfer to another pigment, loss of the electron (charge separation)."
+      },
+      {
+        "n": "Which pigment performs charge separation in the reaction centre?",
+        "grp": "Photosynthesis",
+        "a": "Chlorophyll a."
+      },
+      {
+        "n": "Absorption maxima of PSI and PSII?",
+        "grp": "Photosynthesis",
+        "a": "PSI 700 nm (P700); PSII 680 nm (P680)."
+      },
+      {
+        "n": "Electron path from PSI to NADP⁺?",
+        "grp": "Photosynthesis",
+        "a": "P700* → A0 → A1 → Fe–S → ferredoxin → ferredoxin-NADP⁺ reductase → NADPH."
+      },
+      {
+        "n": "Where does PSI get its missing electron?",
+        "grp": "Photosynthesis",
+        "a": "From PSII (via plastocyanin)."
+      },
+      {
+        "n": "Electron path from PSII to PSI?",
+        "grp": "Photosynthesis",
+        "a": "P680* → pheophytin → plastoquinone QA → QB → cytochrome b6/f → plastocyanin → P700."
+      },
+      {
+        "n": "Where does PSII get its missing electron?",
+        "grp": "Photosynthesis",
+        "a": "From water photolysis."
+      },
+      {
+        "n": "Equation of water photolysis?",
+        "grp": "Photosynthesis",
+        "a": "2 H₂O → 4 H⁺ + 4 e⁻ + O₂ (at the oxygen-evolving complex)."
+      },
+      {
+        "n": "What is photophosphorylation?",
+        "grp": "Photosynthesis",
+        "a": "Light-driven ATP synthesis using the H⁺ gradient across the thylakoid membrane."
+      },
+      {
+        "n": "Where are protons accumulated in chloroplasts?",
+        "grp": "Photosynthesis",
+        "a": "Inside the thylakoid compartment."
+      },
+      {
+        "n": "Cyclic vs non-cyclic electron flow?",
+        "grp": "Photosynthesis",
+        "a": "Non-cyclic (Z-scheme): PSII + PSI, ATP + NADPH. Cyclic: PSI only, ATP only."
+      },
+      {
+        "n": "Where does the Calvin cycle occur, and what does it use?",
+        "grp": "Photosynthesis",
+        "a": "In the stroma; it uses CO₂, ATP and NADPH."
+      },
+      {
+        "n": "Three phases of the Calvin cycle?",
+        "grp": "Photosynthesis",
+        "a": "Carbon fixation, reduction, regeneration of RuBP."
+      },
+      {
+        "n": "Carbon fixation reaction?",
+        "grp": "Photosynthesis",
+        "a": "CO₂ + RuBP (5C) → unstable 6C → 2 × 3-phosphoglycerate (enzyme RuBisCO)."
+      },
+      {
+        "n": "What is reduced to G3P, and using what?",
+        "grp": "Photosynthesis",
+        "a": "1,3-bisphosphoglycerate (made from 3-PGA with ATP) is reduced by NADPH to glyceraldehyde-3-phosphate."
+      },
+      {
+        "n": "How many G3P regenerate how many RuBP?",
+        "grp": "Photosynthesis",
+        "a": "5 G3P → 3 RuBP (uses ATP)."
+      },
+      {
+        "n": "What does RuBisCO stand for?",
+        "grp": "Photosynthesis",
+        "a": "Ribulose-1,5-bisphosphate carboxylase/oxygenase."
+      },
+      {
+        "n": "Share of leaf protein that is RuBisCO?",
+        "grp": "Photosynthesis",
+        "a": "Up to 50 %."
+      },
+      {
+        "n": "Carboxylation : oxygenation ratio of RuBisCO?",
+        "grp": "Photosynthesis",
+        "a": "4 : 1."
+      },
+      {
+        "n": "When does photorespiration dominate?",
+        "grp": "Photosynthesis",
+        "a": "At low CO₂ and high O₂ (e.g. closed stomata in heat and drought)."
+      },
+      {
+        "n": "Products of RuBP oxygenation?",
+        "grp": "Photosynthesis",
+        "a": "3-phosphoglycerate (3C) + 2-phosphoglycolate (2C)."
+      },
+      {
+        "n": "Which organelles recycle 2-phosphoglycolate?",
+        "grp": "Photosynthesis",
+        "a": "Chloroplast, peroxisome, mitochondrion."
+      },
+      {
+        "n": "Benefits of photorespiration?",
+        "grp": "Photosynthesis",
+        "a": "Protects against photo-oxidation damage and free radicals (though it costs ATP)."
+      },
+      {
+        "n": "How do C4 plants separate CO₂ uptake and fixation?",
+        "grp": "Photosynthesis",
+        "a": "Spatially: uptake in mesophyll, Calvin cycle in bundle-sheath cells (Kranz anatomy)."
+      },
+      {
+        "n": "Examples of C4 plants?",
+        "grp": "Photosynthesis",
+        "a": "Maize, sugar cane."
+      },
+      {
+        "n": "First CO₂ acceptor in C4 and CAM plants?",
+        "grp": "Photosynthesis",
+        "a": "Phosphoenolpyruvate (PEP), giving oxaloacetate → malate."
+      },
+      {
+        "n": "How do CAM plants separate CO₂ uptake and fixation?",
+        "grp": "Photosynthesis",
+        "a": "Temporally: CO₂ taken up at night (stomata open) and stored as malate; Calvin cycle by day (stomata closed)."
+      },
+      {
+        "n": "What does CAM stand for, and which plants use it?",
+        "grp": "Photosynthesis",
+        "a": "Crassulacean acid metabolism; succulents."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Light-dependent vs Light-independent (Calvin) <small>(p. 5–6, p. 45)</small>",
+      [
+        "",
+        "Light-dependent",
+        "Light-independent (Calvin)"
+      ],
+      [
+        [
+          "Location",
+          "thylakoid membranes",
+          "stroma"
+        ],
+        [
+          "Light",
+          "required",
+          "not directly"
+        ],
+        [
+          "Inputs",
+          "H₂O, light, ADP, NADP⁺",
+          "CO₂, ATP, NADPH"
+        ],
+        [
+          "Outputs",
+          "O₂, ATP, NADPH",
+          "sugars (G3P), ADP, NADP⁺"
+        ]
+      ]
+    ],
+    [
+      "PSI vs PSII <small>(p. 15, p. 26, p. 36–37)</small>",
+      [
+        "",
+        "PSI",
+        "PSII"
+      ],
+      [
+        [
+          "Reaction centre",
+          "P700",
+          "P680"
+        ],
+        [
+          "Absorption max",
+          "700 nm",
+          "680 nm"
+        ],
+        [
+          "Electron source",
+          "PSII via plastocyanin",
+          "water (photolysis)"
+        ],
+        [
+          "Electrons go to",
+          "ferredoxin → NADP⁺",
+          "plastoquinone → b6/f → PSI"
+        ]
+      ]
+    ],
+    [
+      "Non-cyclic (Z-scheme) vs Cyclic <small>(p. 40, p. 44)</small>",
+      [
+        "",
+        "Non-cyclic (Z-scheme)",
+        "Cyclic"
+      ],
+      [
+        [
+          "Photosystems",
+          "PSI + PSII",
+          "PSI only"
+        ],
+        [
+          "Products",
+          "ATP + NADPH + O₂",
+          "ATP only"
+        ]
+      ]
+    ],
+    [
+      "C3 vs C4 vs CAM <small>(p. 52–61)</small>",
+      [
+        "",
+        "C3",
+        "C4",
+        "CAM"
+      ],
+      [
+        [
+          "First product",
+          "3-phosphoglycerate (3C)",
+          "oxaloacetate (4C)",
+          "oxaloacetate/malate (4C)"
+        ],
+        [
+          "Separation of uptake and Calvin cycle",
+          "none",
+          "spatial (mesophyll / bundle sheath)",
+          "temporal (night / day)"
+        ],
+        [
+          "Primary CO₂ enzyme",
+          "RuBisCO",
+          "PEP carboxylase",
+          "PEP carboxylase"
+        ],
+        [
+          "Climate / examples",
+          "temperate",
+          "hot, dry (maize, sugar cane)",
+          "arid; succulents"
+        ],
+        [
+          "Photorespiration",
+          "yes",
+          "avoided",
+          "avoided"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/08 Photosynthesis.pdf (61 pages; many animation-style diagram pages, read visually). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Photosynthesis: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Equation: <b>6 CO₂ + 12 H₂O → C₆H₁₂O₆ + 6 O₂ + 6 H₂O</b>",
+            "p. 2"
+          ],
+          [
+            "PhAR <b>400–750 nm</b>",
+            "p. 8"
+          ],
+          [
+            "PSI <b>700 nm</b>, PSII <b>680 nm</b>",
+            "p. 15"
+          ],
+          [
+            "<b>2 H₂O → 4 H⁺ + 4 e⁻ + O₂</b>",
+            "p. 37"
+          ],
+          [
+            "RuBisCO: up to <b>50 %</b> of leaf protein; carboxylation : oxygenation <b>4 : 1</b>",
+            "p. 53"
+          ],
+          [
+            "Calvin cycle: <b>3 CO₂ → 1 G3P</b>; 5 G3P regenerate 3 RuBP; 9 ATP + 6 NADPH",
+            "p. 46, p. 51"
+          ]
+        ]
+      }
+    ]
+  }
+}

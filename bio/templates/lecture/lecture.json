@@ -1,0 +1,45 @@
+{
+  "num": 8,
+  "id": "t8",
+  "title": "Lecture title",
+  "short": "Short name",
+  "sub": "Lecture 8 · one line about it",
+  "blurb": "One or two sentences shown on the home tile.",
+  "h1": "Heading on the overview page",
+  "lede": "A short paragraph introducing the lecture.",
+  "six": [
+    "Key takeaway one, with **bold** for the key word.",
+    "Key takeaway two.",
+    "Key takeaway three.",
+    "Key takeaway four.",
+    "Key takeaway five.",
+    "Key takeaway six."
+  ],
+  "must": "the most important topic",
+  "foot": "Source: where this material came from.",
+
+  "questions": [
+    { "id": "t8-1", "q": "Question text?", "h": "Optional hint.", "answer": "The correct answer", "wrong": ["Wrong answer A", "Wrong answer B", "Wrong answer C"], "e": "Why the answer is correct.", "fol": true },
+    { "id": "t8-2", "q": "Second question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." },
+    { "id": "t8-3", "q": "Third question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." },
+    { "id": "t8-4", "q": "Fourth question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." },
+    { "id": "t8-5", "q": "Fifth question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." },
+    { "id": "t8-6", "q": "Sixth question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." },
+    { "id": "t8-7", "q": "Seventh question?", "answer": "Right", "wrong": ["Wrong 1", "Wrong 2", "Wrong 3"], "e": "Explanation." }
+  ],
+
+  "vocab": [
+    { "group": "Group name", "term": "Term one", "meaning": "What it means, in plain words." },
+    { "group": "Group name", "term": "Term two", "meaning": "What it means." },
+    { "group": "Group name", "term": "Term three", "meaning": "What it means." },
+    { "group": "Group name", "term": "Term four", "meaning": "What it means." },
+    { "group": "Group name", "term": "Term five", "meaning": "What it means." },
+    { "group": "Group name", "term": "Term six", "meaning": "What it means." }
+  ],
+
+  "confusable": [["Term one", "Term two"]],
+
+  "facts": [
+    [1, "A sentence with a gap: the answer is {right|wrong1|wrong2|wrong3}."]
+  ]
+}

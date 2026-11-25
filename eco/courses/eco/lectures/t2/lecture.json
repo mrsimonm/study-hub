@@ -1,0 +1,275 @@
+{
+ "num": 2,
+ "title": "Ecogeographical rules & the island rule",
+ "short": "Rules & islands",
+ "sub": "Lectures 2 & 3 · Bergmann, Allen, Gloger, island rule, meta-analysis",
+ "blurb": "Body size and colour along climate gradients, giants and dwarfs on islands, how to read a paper.",
+ "h1": "Patterns in body size, shape and colour",
+ "lede": "The end of Lecture 2 (ecogeographical rules) and the Lecture 3 example talk on the island rule, plus how a scientific paper is built. Glossary section 6 i–l.",
+ "six": [
+  "**Bergmann's rule**: larger bodies in colder climates.",
+  "**Allen's rule**: shorter extremities in cold regions.",
+  "**Gloger's rule**: darker pigmentation in warm, humid areas.",
+  "**Island rule** (Foster's rule): small species get bigger (**gigantism**), large species get smaller (**dwarfism**) on islands.",
+  "A **meta-analysis** statistically combines results of many studies; for the island rule, author groups disagree, so the verdict is: it generally holds, but depends on context and lineage, and methods matter.",
+  "Abstract → Introduction (what is known), Methods (data & stats), Results, Discussion (interpretation)."
+ ],
+ "must": "the four ecogeographical rules",
+ "foot": "Source: Lecture 2 slides, 2026_Ecology_Lecture_3_hands-on.pptx and 2026_glossary.pdf section 6.",
+ "questions": [
+  {
+   "id": "t2-berg",
+   "q": "Which rule says animals in colder climates tend to have larger bodies?",
+   "answer": "Bergmann's rule",
+   "wrong": [
+    "Allen's rule",
+    "Gloger's rule",
+    "Island rule"
+   ],
+   "e": "Bergmann: larger bodies in colder climates.",
+   "fol": true
+  },
+  {
+   "id": "t2-allen",
+   "q": "Which rule says animals in cold regions have shorter extremities (ears, legs)?",
+   "answer": "Allen's rule",
+   "wrong": [
+    "Bergmann's rule",
+    "Gloger's rule",
+    "Foster's rule"
+   ],
+   "e": "Allen: shorter extremities in cold regions.",
+   "fol": true
+  },
+  {
+   "id": "t2-glog",
+   "q": "Which rule links darker pigmentation to warm, humid areas?",
+   "answer": "Gloger's rule",
+   "wrong": [
+    "Bergmann's rule",
+    "Allen's rule",
+    "Island rule"
+   ],
+   "e": "Gloger: darker colour in warm, humid areas.",
+   "fol": true
+  },
+  {
+   "id": "t2-island",
+   "q": "What does the island rule predict?",
+   "answer": "Small species get bigger and large species get smaller on islands",
+   "wrong": [
+    "All species get smaller on islands",
+    "All species get bigger on islands",
+    "Island species are more colourful"
+   ],
+   "e": "Glossary 6i: compared with mainland relatives.",
+   "fol": true
+  },
+  {
+   "id": "t2-dwarf",
+   "q": "Large animals evolving a smaller body size on islands is called…",
+   "answer": "Insular dwarfism",
+   "wrong": [
+    "Insular gigantism",
+    "Bergmann's rule",
+    "Extinction debt"
+   ],
+   "e": "Linked to limited resources and relaxed predation."
+  },
+  {
+   "id": "t2-giant",
+   "q": "Why might small animals get bigger on islands (insular gigantism)?",
+   "answer": "Less predation and competition open new opportunities",
+   "wrong": [
+    "More food than on the mainland",
+    "Colder climate on islands",
+    "Stronger sexual selection"
+   ],
+   "e": "Glossary 6k: presumably reduced predation and competition."
+  },
+  {
+   "id": "t2-why-dwarf",
+   "q": "Which two factors does the glossary link to insular dwarfism?",
+   "answer": "Limited resources and relaxed predation",
+   "wrong": [
+    "Cold climate and many predators",
+    "High rainfall and strong competition",
+    "Inbreeding and disease"
+   ],
+   "e": "Smaller, more resource-efficient individuals are favoured."
+  },
+  {
+   "id": "t2-foster",
+   "q": "The island rule is also called…",
+   "answer": "Foster's rule",
+   "wrong": [
+    "Gloger's rule",
+    "Paine's rule",
+    "Allee's rule"
+   ],
+   "e": "After Bristol Foster; Leigh Van Valen is also linked to it."
+  },
+  {
+   "id": "t2-meta",
+   "q": "What is a meta-analysis?",
+   "answer": "A statistical synthesis that combines effect sizes from many independent studies",
+   "wrong": [
+    "One very large field experiment",
+    "A review that lists papers without statistics",
+    "A model of a single population"
+   ],
+   "e": "Used to estimate overall patterns and test how robust a hypothesis is."
+  },
+  {
+   "id": "t2-verdict",
+   "q": "What was the Lecture 3 synthesis on the island rule?",
+   "answer": "It generally holds, but depends on context and lineage, and methods matter",
+   "wrong": [
+    "It is false",
+    "It holds for every species",
+    "It only applies to plants"
+   ],
+   "e": "Lokatis & Jeschke 2018 show author groups disagree; phylogenetic vs non-phylogenetic models give different answers.",
+   "fol": true
+  },
+  {
+   "id": "t2-abs",
+   "q": "In a paper, 'what is known' from the abstract is expanded in which section?",
+   "answer": "Introduction",
+   "wrong": [
+    "Methods",
+    "Results",
+    "Discussion"
+   ],
+   "e": "Abstract parts map to Introduction, Methods, Results and Discussion."
+  },
+  {
+   "id": "t2-disc",
+   "q": "Where do the authors interpret their results?",
+   "answer": "Discussion",
+   "wrong": [
+    "Introduction",
+    "Methods",
+    "Abstract only"
+   ],
+   "e": "Interpretations = Discussion."
+  },
+  {
+   "id": "t2-song",
+   "q": "How was song complexity measured in the Lecture 3 songbird study?",
+   "answer": "Number of different note types in a sequence of 50 notes",
+   "wrong": [
+    "Length of the song in seconds",
+    "Loudness of the song",
+    "Number of songs per day"
+   ],
+   "e": "About 18,500 recordings of 4,940 species were screened manually."
+  },
+  {
+   "id": "t2-songmsg",
+   "q": "What explains extreme song complexity, according to that talk?",
+   "answer": "Vocal learning, ecological context and evolutionary history together",
+   "wrong": [
+    "Sexual selection alone",
+    "Brain size alone",
+    "Habitat structure alone"
+   ],
+   "e": "Not a single selective driver."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Rules",
+   "term": "Ecogeographical rules",
+   "meaning": "Patterns linking body size, shape or colour to broad environmental gradients."
+  },
+  {
+   "group": "Rules",
+   "term": "Bergmann's rule",
+   "meaning": "Larger bodies in colder climates."
+  },
+  {
+   "group": "Rules",
+   "term": "Allen's rule",
+   "meaning": "Shorter extremities in cold regions."
+  },
+  {
+   "group": "Rules",
+   "term": "Gloger's rule",
+   "meaning": "Darker pigmentation in warm, humid areas."
+  },
+  {
+   "group": "Islands",
+   "term": "Island rule",
+   "meaning": "Small species get bigger and large species get smaller on islands (Foster's rule)."
+  },
+  {
+   "group": "Islands",
+   "term": "Insular dwarfism",
+   "meaning": "Large animals evolving smaller bodies on islands (limited resources, relaxed predation)."
+  },
+  {
+   "group": "Islands",
+   "term": "Insular gigantism",
+   "meaning": "Small animals evolving larger bodies on islands (less predation and competition)."
+  },
+  {
+   "group": "Methods",
+   "term": "Meta-analysis",
+   "meaning": "Statistical synthesis combining effect sizes across many independent studies."
+  },
+  {
+   "group": "Methods",
+   "term": "Introduction",
+   "meaning": "Paper section on what is already known."
+  },
+  {
+   "group": "Methods",
+   "term": "Methods",
+   "meaning": "Paper section on data and statistics."
+  },
+  {
+   "group": "Methods",
+   "term": "Discussion",
+   "meaning": "Paper section where the results are interpreted."
+  }
+ ],
+ "confusable": [
+  [
+   "Bergmann's rule",
+   "Allen's rule",
+   "Gloger's rule"
+  ],
+  [
+   "Insular dwarfism",
+   "Insular gigantism"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Bergmann's rule: {larger|smaller|darker|lighter} bodies in colder climates."
+  ],
+  [
+   1,
+   "Allen's rule: {shorter|longer|thicker|darker} extremities in cold regions."
+  ],
+  [
+   1,
+   "Gloger's rule: darker pigmentation in warm, {humid|dry|cold|windy} areas."
+  ],
+  [
+   2,
+   "Large animals getting smaller on islands is insular {dwarfism|gigantism|radiation|isolation}."
+  ],
+  [
+   2,
+   "The island rule is also called {Foster's|Gloger's|Bergmann's|Paine's} rule."
+  ],
+  [
+   3,
+   "In a paper, interpretations belong in the {Discussion|Methods|Introduction|Results}."
+  ]
+ ],
+ "id": "t2"
+}

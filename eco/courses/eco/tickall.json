@@ -1,0 +1,386 @@
+[
+ {
+  "id": "k1-1",
+  "t": "t1",
+  "q": "Which statements about ecology and evolution are true?",
+  "right": [
+   "Ecology asks why organisms are distributed and abundant as they are",
+   "Genetic drift is a driver of evolution",
+   "Natural selection needs heredity"
+  ],
+  "wrong": [
+   "Ecology means 'study of life' in Greek",
+   "Extinction and local extirpation mean the same",
+   "Speciation requires gene flow between populations"
+  ],
+  "why": "oîkos = house. Extirpation is local; speciation needs reduced gene flow."
+ },
+ {
+  "id": "k1-2",
+  "t": "t1",
+  "q": "Which statements about niche and habitat are true?",
+  "right": [
+   "The realized niche is shaped by competitors and predators",
+   "The fundamental niche is set by physiology and resources"
+  ],
+  "wrong": [
+   "Habitat and niche are synonyms",
+   "The realized niche is usually larger than the fundamental niche",
+   "A niche includes only abiotic conditions",
+   "Habitat is a species' role in the community"
+  ],
+  "why": "Habitat = where; niche = role and requirements, including biotic interactions."
+ },
+ {
+  "id": "k1-3",
+  "t": "t1",
+  "q": "Which statements about Darwin and Wallace are true?",
+  "right": [
+   "Wallace's essay was sent from Ternate",
+   "Both were read at the Linnean Society in 1858",
+   "On the Origin of Species appeared in 1859",
+   "Wallace emphasised the environment as the force of selection"
+  ],
+  "wrong": [
+   "Darwin and Wallace agreed on human evolution",
+   "Darwin emphasised the environment, Wallace competition"
+  ],
+  "why": "Darwin: competition between individuals; Wallace: the environment."
+ },
+ {
+  "id": "k2-1",
+  "t": "t2",
+  "q": "Which ecogeographical rules are stated correctly?",
+  "right": [
+   "Bergmann: larger bodies in colder climates",
+   "Allen: shorter extremities in cold regions",
+   "Gloger: darker pigmentation in warm, humid areas"
+  ],
+  "wrong": [
+   "Allen: larger bodies in colder climates",
+   "Gloger: lighter colours in warm, humid areas",
+   "Bergmann: longer ears in hot deserts"
+  ],
+  "why": "Bergmann = size, Allen = appendages, Gloger = colour."
+ },
+ {
+  "id": "k2-2",
+  "t": "t2",
+  "q": "Which statements about the island rule are true?",
+  "right": [
+   "Small species tend to get bigger on islands",
+   "Large species tend to get smaller on islands",
+   "Relaxed predation is linked to insular dwarfism",
+   "Meta-analyses disagree on how general it is"
+  ],
+  "wrong": [
+   "All island species become dwarfs",
+   "It applies only to birds"
+  ],
+  "why": "Generally holds, but context- and lineage-dependent; methods matter."
+ },
+ {
+  "id": "k3-1",
+  "t": "t3",
+  "q": "Which traits describe a FAST life history?",
+  "right": [
+   "Early maturation",
+   "Many small offspring",
+   "Short lifespan",
+   "High mortality"
+  ],
+  "wrong": [
+   "Few large offspring",
+   "Long lifespan"
+  ],
+  "why": "Fast: early, many, small, short-lived, high mortality."
+ },
+ {
+  "id": "k3-2",
+  "t": "t3",
+  "q": "Which statements match Group 1's conclusions?",
+  "right": [
+   "Fast–slow is the dominant axis in tetrapods",
+   "Multiple axes are needed to describe all life-history variation",
+   "Altricial vs precocial offspring is an extra axis"
+  ],
+  "wrong": [
+   "Fast–slow fully explains invertebrate life histories",
+   "Life histories cannot be measured",
+   "Pace-of-life syndromes ignore behaviour"
+  ],
+  "why": "Stott et al. 2024: life histories are not just fast or slow."
+ },
+ {
+  "id": "k4-1",
+  "t": "t4",
+  "q": "Which statements about Allee effects are true?",
+  "right": [
+   "A component Allee effect concerns one fitness component",
+   "A strong Allee effect has a critical threshold density",
+   "Below a strong-Allee threshold, per-capita growth is negative"
+  ],
+  "wrong": [
+   "A weak Allee effect always leads to extinction",
+   "A demographic Allee effect concerns only mate finding",
+   "Allee effects mean crowding always hurts"
+  ],
+  "why": "Weak: slower growth at low density, but recovery is possible."
+ },
+ {
+  "id": "k4-2",
+  "t": "t4",
+  "q": "Which are examples or mechanisms of Allee effects from Group 2?",
+  "right": [
+   "African wild dogs: pup survival rises with pack size",
+   "Sea urchins: finding mates",
+   "Gypsy moth colonies below ≈107 males shrink"
+  ],
+  "wrong": [
+   "Snowshoe hares: fences keep out lynx",
+   "Lesser flamingos eating Spirulina",
+   "Bark beetles prefer cold climates"
+  ],
+  "why": "Mechanisms: mates, safety, teamwork, changing habitat."
+ },
+ {
+  "id": "k5-1",
+  "t": "t5",
+  "q": "Which statements about top-down and bottom-up control are true?",
+  "right": [
+   "Top-down: consumers regulate lower trophic levels",
+   "Bottom-up: resource supply sets higher trophic levels",
+   "Trophic cascades alternate rises and falls in biomass"
+  ],
+  "wrong": [
+   "Bottom-up means predators control prey",
+   "Predation only covers kill-and-eat",
+   "Trophic cascades only move upwards"
+  ],
+  "why": "Predation includes parasitoids, parasitic castration, herbivory and seed predation."
+ },
+ {
+  "id": "k5-2",
+  "t": "t5",
+  "q": "Which results about snowshoe hares are correct?",
+  "right": [
+   "Food plus predator exclusion gave the biggest effect",
+   "The decline was delayed, not prevented",
+   "Declines came mainly from lower survival before weaning"
+  ],
+  "wrong": [
+   "Food alone stopped the cycle",
+   "The cycle lasts about 2 years",
+   "Oli et al. used a fencing experiment"
+  ],
+  "why": "Krebs 1995: ~11× with both; Oli 2026: capture-mark-recapture over 43 years."
+ },
+ {
+  "id": "k6-1",
+  "t": "t6",
+  "q": "Which statements about food-web structure are true?",
+  "right": [
+   "Degree is the number of links a species has",
+   "Modules interact more within than between clusters",
+   "Motifs are small link patterns that recur more than chance",
+   "Rewiring can be caused by species introductions"
+  ],
+  "wrong": [
+   "Keystone species are always the most abundant",
+   "Complex webs are always stable"
+  ],
+  "why": "Complexity supports resilience but is not automatically stable."
+ },
+ {
+  "id": "k7-1",
+  "t": "t7",
+  "q": "Which statements about the latitudinal diversity gradient are true?",
+  "right": [
+   "Richness rises from the poles to the equator",
+   "Climate and energy are the main driver",
+   "Diversification is speciation minus extinction"
+  ],
+  "wrong": [
+   "Biotic factors are the main driver",
+   "Gradients are weaker in cold periods",
+   "Every taxon follows the gradient"
+  ],
+  "why": "Exceptions: parasites, aquatic flora, secondary marine mammals and birds."
+ },
+ {
+  "id": "k7-2",
+  "t": "t7",
+  "q": "Which pairings of diversity dimension and meaning are correct?",
+  "right": [
+   "Functional: traits and ecological roles",
+   "Phylogenetic: evolutionary history represented",
+   "Taxonomic: number of species and evenness",
+   "Beta: difference between communities"
+  ],
+  "wrong": [
+   "Alpha: diversity across a whole region",
+   "Gamma: diversity at one sample point"
+  ],
+  "why": "Point → alpha → beta → gamma."
+ },
+ {
+  "id": "k8-1",
+  "t": "t8",
+  "q": "Which statements about counting species are true?",
+  "right": [
+   "Mora et al. estimated about 8.7 million species",
+   "Cryptic diversity makes real diversity higher than taxonomy shows",
+   "Prokaryotic diversity is probably underestimated"
+  ],
+  "wrong": [
+   "The biological species concept works well for bacteria",
+   "Higher taxa have stopped growing",
+   "Different species concepts always give the same count"
+  ],
+  "why": "Over 700 new genera are described each year."
+ },
+ {
+  "id": "k8-2",
+  "t": "t8",
+  "q": "Which are species concepts named in the glossary?",
+  "right": [
+   "Biological",
+   "Morphological",
+   "Phylogenetic"
+  ],
+  "wrong": [
+   "Ecological-energy",
+   "Latitudinal",
+   "Functional"
+  ],
+  "why": "Each highlights different processes and gives different counts."
+ },
+ {
+  "id": "k9-1",
+  "t": "t9",
+  "q": "Which of these are among the Big Five mass extinctions?",
+  "right": [
+   "End-Ordovician",
+   "Late Devonian",
+   "End-Permian",
+   "End-Triassic",
+   "End-Cretaceous"
+  ],
+  "wrong": [
+   "End-Jurassic"
+  ],
+  "why": "Order: Ordovician, Devonian, Permian, Triassic, Cretaceous."
+ },
+ {
+  "id": "k9-2",
+  "t": "t9",
+  "q": "Which statements about the sixth mass extinction debate are true?",
+  "right": [
+   "Ceballos defines mass extinction by rate",
+   "Wiens & Saban define it by total loss (75 %)",
+   "Extinction debt means losses already committed by past damage"
+  ],
+  "wrong": [
+   "Background rates come from the IUCN Red List",
+   "Total species loss today already exceeds 75 %",
+   "Extinction debt has no time lag"
+  ],
+  "why": "Background rates come from the fossil record (~2 E/MSY)."
+ },
+ {
+  "id": "k10-1",
+  "t": "t10",
+  "q": "Which are DIRECT drivers of biodiversity loss?",
+  "right": [
+   "Habitat conversion",
+   "Harvesting",
+   "Pollution",
+   "Species introductions"
+  ],
+  "wrong": [
+   "Population growth",
+   "Economic policy"
+  ],
+  "why": "Indirect drivers are social, economic, demographic, technological and institutional."
+ },
+ {
+  "id": "k10-2",
+  "t": "t10",
+  "q": "Which statements about Earth's biomass (Bar-On et al.) are true?",
+  "right": [
+   "Plants make up most of the biomass",
+   "Livestock outweigh wild mammals",
+   "Biomass is measured in gigatons of carbon"
+  ],
+  "wrong": [
+   "Animals make up about half of all biomass",
+   "Wild birds outweigh humans",
+   "Wild mammal biomass has increased"
+  ],
+  "why": "Plants ≈450 Gt C; animals ≈2; wild mammals down ~82.5 %."
+ },
+ {
+  "id": "k11-1",
+  "t": "t11",
+  "q": "Which value statements are correctly labelled?",
+  "right": [
+   "Intrinsic: nature has worth in itself",
+   "Instrumental: nature is useful for human needs",
+   "Relational: value from people's relationships with nature"
+  ],
+  "wrong": [
+   "Intrinsic: nature's market price",
+   "Relational: the dollar value of pollination",
+   "Instrumental: nature matters regardless of people"
+  ],
+  "why": "Instrumental = useful; relational = meaningful; intrinsic = regardless of us."
+ },
+ {
+  "id": "k11-2",
+  "t": "t11",
+  "q": "Which are regulating ecosystem services?",
+  "right": [
+   "Climate regulation",
+   "Flood protection",
+   "Water purification"
+  ],
+  "wrong": [
+   "Timber",
+   "Outdoor recreation",
+   "Crops"
+  ],
+  "why": "Timber and crops are material; recreation is non-material."
+ },
+ {
+  "id": "k12-1",
+  "t": "t12",
+  "q": "Which statements about citizen-science data are true?",
+  "right": [
+   "eBird records observation effort",
+   "Volunteer records are biased toward easy places and times",
+   "Occupancy–detection models can handle detection bias",
+   "GBIF aggregates occurrence records"
+  ],
+  "wrong": [
+   "Opportunistic data have a strict sampling design",
+   "Quality control happens before data collection"
+  ],
+  "why": "QA before/during, QC after."
+ },
+ {
+  "id": "k12-2",
+  "t": "t12",
+  "q": "Which statements about participation and principles are true?",
+  "right": [
+   "Crowdsourcing is Haklay's Level 1",
+   "Extreme citizen science is Haklay's Level 4",
+   "ECSA wrote the Ten Principles",
+   "Participant feedback is one of the Ten Principles"
+  ],
+  "wrong": [
+   "Haklay's levels run from bad to good like Arnstein's ladder",
+   "Citizen science started with smartphones"
+  ],
+  "why": "The Christmas Bird Count dates from 1900."
+ }
+]

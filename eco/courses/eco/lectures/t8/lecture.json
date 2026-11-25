@@ -1,0 +1,254 @@
+{
+ "num": 8,
+ "title": "How many species are there?",
+ "short": "Counting species",
+ "sub": "Symposium topic 6 · Mora et al. 2011 vs Wiens 2023",
+ "blurb": "Species concepts, cryptic diversity, extrapolation and why 8.7 million may be far too low.",
+ "h1": "How many species are on Earth, and why is it hard to say?",
+ "lede": "Group 6's question. Classic: Mora et al. (2011), who estimated about 8.7 million species by extrapolating from higher taxa. Recent: Wiens (2023), progress and problems.",
+ "six": [
+  "**Species concepts**: biological (interbreeding, reproductively isolated), morphological (distinct looks), phylogenetic (smallest diagnosable lineage). Different concepts give different counts.",
+  "The **biological species concept** (Mayr) fails for asexual organisms and prokaryotes, geographic isolation and hybridisation.",
+  "**Mora et al. 2011**: extrapolated from higher taxa (regression) → about **8.75 million** species.",
+  "**Cryptic diversity**: lookalike species lumped under one name (e.g. African savanna vs forest elephant).",
+  "Wiens 2023 problems: limited DNA data, cryptic diversity, underestimated **prokaryotes**, and Mora's wrong **assumption of stagnation** (>700 new genera are described each year).",
+  "**Extrapolation** = estimating total richness beyond what was sampled."
+ ],
+ "must": "species concepts and why estimates differ",
+ "foot": "Source: Group 6 symposium slides and notes; glossary section 6 f–h.",
+ "questions": [
+  {
+   "id": "t8-bsc",
+   "q": "The biological species concept defines a species as…",
+   "answer": "Interbreeding natural populations reproductively isolated from others",
+   "wrong": [
+    "Organisms that look the same",
+    "The smallest diagnosable monophyletic lineage",
+    "Organisms in the same habitat"
+   ],
+   "e": "Ernst Mayr's concept.",
+   "fol": true
+  },
+  {
+   "id": "t8-phylo",
+   "q": "The phylogenetic species concept uses…",
+   "answer": "The smallest diagnosable monophyletic lineages",
+   "wrong": [
+    "Interbreeding ability",
+    "Body shape alone",
+    "Habitat type"
+   ],
+   "e": "Glossary 6f."
+  },
+  {
+   "id": "t8-fail",
+   "q": "For which organisms does the biological species concept fail?",
+   "answer": "Asexual organisms such as prokaryotes",
+   "wrong": [
+    "Mammals",
+    "Birds",
+    "Large trees"
+   ],
+   "e": "Also problems with geographic isolation and hybridisation.",
+   "fol": true
+  },
+  {
+   "id": "t8-mule",
+   "q": "A horse and a donkey produce a mule. Why are they still separate species?",
+   "answer": "The mule is infertile",
+   "wrong": [
+    "They look different",
+    "They live in different places",
+    "They eat different food"
+   ],
+   "e": "Biological concept: the offspring must also be able to reproduce."
+  },
+  {
+   "id": "t8-mora",
+   "q": "Roughly how many species did Mora et al. 2011 estimate?",
+   "answer": "About 8.7 million",
+   "wrong": [
+    "About 400,000",
+    "About 50 million",
+    "About 1 billion"
+   ],
+   "e": "8.75 million, by extrapolating from higher taxa.",
+   "fol": true
+  },
+  {
+   "id": "t8-moramethod",
+   "q": "How did Mora et al. reach their estimate?",
+   "answer": "Extrapolating from the numbers of higher taxa with a regression",
+   "wrong": [
+    "Counting every species in museums",
+    "Sequencing all soil DNA",
+    "Asking experts to guess"
+   ],
+   "e": "They assumed higher taxa had levelled off (stagnated)."
+  },
+  {
+   "id": "t8-crypt",
+   "q": "Cryptic diversity is…",
+   "answer": "Distinct, reproductively isolated lineages lumped under one name because they look alike",
+   "wrong": [
+    "Species hidden underground",
+    "Species that are extinct",
+    "Species only known from fossils"
+   ],
+   "e": "E.g. Loxodonta africana and L. cyclotis.",
+   "fol": true
+  },
+  {
+   "id": "t8-stag",
+   "q": "Which assumption of Mora et al. did Wiens criticise as 'stagnation'?",
+   "answer": "That higher taxa have stopped growing",
+   "wrong": [
+    "That species never go extinct",
+    "That all species are insects",
+    "That DNA data are complete"
+   ],
+   "e": "Over 700 new genera are described each year."
+  },
+  {
+   "id": "t8-prok",
+   "q": "Which group does Wiens think may be a major driver of Earth's species richness?",
+   "answer": "Prokaryotes",
+   "wrong": [
+    "Mammals",
+    "Flowering plants",
+    "Birds"
+   ],
+   "e": "Prokaryotic diversity is massively underestimated."
+  },
+  {
+   "id": "t8-extra",
+   "q": "Using sampled data to estimate total richness beyond what was sampled is called…",
+   "answer": "Extrapolation",
+   "wrong": [
+    "Interpolation",
+    "Rarefaction",
+    "Triangulation"
+   ],
+   "e": "Glossary 6h: species-accumulation models, non-parametric estimators."
+  },
+  {
+   "id": "t8-may",
+   "q": "Robert May's estimate (10–50 million animals) came from which method?",
+   "answer": "Body size frequency distributions",
+   "wrong": [
+    "Author accumulation curves",
+    "Known-to-unknown ratios",
+    "Latitudinal gradients"
+   ],
+   "e": "Limitation: species don't follow one scaling law."
+  },
+  {
+   "id": "t8-why",
+   "q": "Why count species at all, according to Group 6?",
+   "answer": "To find threatened species, calculate extinction rates and track climate change",
+   "wrong": [
+    "To set hunting quotas only",
+    "Because laws require a fixed number",
+    "It has no practical use"
+   ],
+   "e": "Also education and awareness."
+  },
+  {
+   "id": "t8-need",
+   "q": "What did Mora et al. say would be needed to describe all species?",
+   "answer": "About $364 billion and 303,000 full-time taxonomists",
+   "wrong": [
+    "One large expedition",
+    "A single DNA lab",
+    "Ten years of satellite images"
+   ],
+   "e": "Group 6's conclusion slide."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Concepts",
+   "term": "Species concept",
+   "meaning": "A framework for defining what counts as a species."
+  },
+  {
+   "group": "Concepts",
+   "term": "Biological species concept",
+   "meaning": "Interbreeding populations reproductively isolated from others (Mayr)."
+  },
+  {
+   "group": "Concepts",
+   "term": "Morphological species concept",
+   "meaning": "Species defined by distinct phenotypes."
+  },
+  {
+   "group": "Concepts",
+   "term": "Phylogenetic species concept",
+   "meaning": "Smallest diagnosable monophyletic lineages."
+  },
+  {
+   "group": "Concepts",
+   "term": "Hybridisation",
+   "meaning": "Two species interbreeding (common in plants, some ducks)."
+  },
+  {
+   "group": "Counting",
+   "term": "Cryptic diversity",
+   "meaning": "Distinct lineages lumped under one name because they look alike."
+  },
+  {
+   "group": "Counting",
+   "term": "Extrapolation",
+   "meaning": "Estimating total richness beyond the sampled range."
+  },
+  {
+   "group": "Counting",
+   "term": "Higher taxa",
+   "meaning": "Ranks above species: genus, family, order, class, phylum."
+  },
+  {
+   "group": "Counting",
+   "term": "OTU",
+   "meaning": "Operational taxonomic unit: a DNA-based group used in place of species for microbes."
+  },
+  {
+   "group": "Counting",
+   "term": "Metabarcoding",
+   "meaning": "Identifying many species at once from DNA in a sample."
+  }
+ ],
+ "confusable": [
+  [
+   "Biological species concept",
+   "Morphological species concept",
+   "Phylogenetic species concept"
+  ],
+  [
+   "Extrapolation",
+   "Cryptic diversity"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "The biological species concept was defined by Ernst {Mayr|Darwin|Linnaeus|Wallace}."
+  ],
+  [
+   1,
+   "The biological species concept fails for {asexual|large|marine|rare} organisms."
+  ],
+  [
+   2,
+   "Mora et al. 2011 estimated about {8.7|1.2|50|100} million species."
+  ],
+  [
+   3,
+   "Lookalike species lumped under one name are cryptic {diversity|species pairs|hybrids|clades}."
+  ],
+  [
+   3,
+   "More than {700|7|70000|70} new genera are described each year."
+  ]
+ ],
+ "id": "t8"
+}

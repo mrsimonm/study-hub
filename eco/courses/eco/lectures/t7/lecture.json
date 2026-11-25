@@ -1,0 +1,293 @@
+{
+ "num": 7,
+ "title": "Latitudinal diversity gradient",
+ "short": "Latitudinal gradient",
+ "sub": "Symposium topic 5 (your group) · Willig et al. 2003 vs Brodie & Mannion 2023",
+ "blurb": "Why biodiversity peaks in the tropics, the three dimensions of diversity, and the exceptions.",
+ "h1": "Latitudinal gradients in biodiversity: how and why?",
+ "lede": "Your group's topic. Why does biodiversity peak in the tropics and fall toward the poles, and does that hold for every dimension? Classic: Willig, Kaufman & Stevens (2003). Recent: Brodie & Mannion (2023), the hierarchy of factors predicting the LDG.",
+ "six": [
+  "**Latitudinal diversity gradient (LDG)**: species richness rises from the poles to the equator, across most groups.",
+  "Three dimensions: **taxonomic** (counting species), **functional** (counting jobs), **phylogenetic** (measuring shared history).",
+  "Spatial scales: point, **alpha** (one community), **beta** (difference between communities), **gamma** (many communities).",
+  "Causes in order of priority: **climate & energy** (main driver), habitat area, evolutionary history, biotic factors.",
+  "Diversification = speciation minus extinction. Tropical conservatism: most lineages evolved in, and stayed adapted to, tropical conditions.",
+  "Exceptions: parasites, aquatic plants (peak in temperate zones), secondary marine mammals and birds (higher toward poles)."
+ ],
+ "must": "LDG and its causes",
+ "foot": "Source: Group 5 symposium slides; glossary section 6 a–e.",
+ "questions": [
+  {
+   "id": "t7-ldg",
+   "q": "What is the latitudinal diversity gradient?",
+   "answer": "Species richness rises from the poles to the equator",
+   "wrong": [
+    "Species richness rises toward the poles",
+    "Body size increases toward the poles",
+    "Diversity is equal at all latitudes"
+   ],
+   "e": "A global, general pattern across most groups.",
+   "fol": true
+  },
+  {
+   "id": "t7-main",
+   "q": "According to Group 5 (after Brodie & Mannion), what is the main driver of the LDG?",
+   "answer": "Climate and energy",
+   "wrong": [
+    "Habitat area",
+    "Biotic interactions",
+    "Evolutionary history"
+   ],
+   "e": "Order: climate & energy → habitat area → evolutionary history → biotic factors.",
+   "fol": true
+  },
+  {
+   "id": "t7-order",
+   "q": "Which order of priority did Group 5 give for LDG causes?",
+   "answer": "Climate & energy, habitat area, evolutionary history, biotic factors",
+   "wrong": [
+    "Biotic factors, habitat area, climate, history",
+    "Evolutionary history, climate, biotic factors, area",
+    "Habitat area, biotic factors, history, climate"
+   ],
+   "e": "Brodie & Mannion 2023: a hierarchy of factors."
+  },
+  {
+   "id": "t7-func",
+   "q": "Functional diversity is…",
+   "answer": "The range of traits and ecological roles in a community",
+   "wrong": [
+    "The number of species",
+    "The total branch length of a phylogeny",
+    "The evenness of abundances"
+   ],
+   "e": "'Counting jobs': diet, body size, dispersal mode.",
+   "fol": true
+  },
+  {
+   "id": "t7-phylo",
+   "q": "Phylogenetic diversity measures…",
+   "answer": "How much evolutionary history a community contains",
+   "wrong": [
+    "How many individuals live there",
+    "How many jobs species do",
+    "How fast species disperse"
+   ],
+   "e": "Usually as total branch length or relatedness."
+  },
+  {
+   "id": "t7-tax",
+   "q": "Taxonomic diversity captures…",
+   "answer": "How many species there are and how evenly individuals are spread among them",
+   "wrong": [
+    "Only the rarest species",
+    "Only shared evolutionary history",
+    "Only species' roles"
+   ],
+   "e": "Richness and evenness."
+  },
+  {
+   "id": "t7-beta",
+   "q": "Beta diversity is…",
+   "answer": "The difference in species between communities",
+   "wrong": [
+    "Diversity within one community",
+    "Diversity at a single sample point",
+    "Diversity across a whole region"
+   ],
+   "e": "Point → alpha (one community) → beta (difference) → gamma (many communities)."
+  },
+  {
+   "id": "t7-div",
+   "q": "Diversification is defined as…",
+   "answer": "Speciation minus extinction",
+   "wrong": [
+    "Speciation plus migration",
+    "Extinction minus immigration",
+    "Mutation plus selection"
+   ],
+   "e": "Glossary 6b."
+  },
+  {
+   "id": "t7-cons",
+   "q": "Tropical conservatism says that…",
+   "answer": "Most lineages evolved under tropical conditions and stayed adapted to them",
+   "wrong": [
+    "Tropical species are protected by law",
+    "Temperate species move to the tropics",
+    "The tropics have the fewest species"
+   ],
+   "e": "Part of the historical explanation of the LDG."
+  },
+  {
+   "id": "t7-cold",
+   "q": "When are latitudinal gradients sharper, according to Group 5?",
+   "answer": "In cold periods of Earth's history",
+   "wrong": [
+    "In hot periods",
+    "They never change",
+    "Only today"
+   ],
+   "e": "In hot climates the tropical zone is bigger."
+  },
+  {
+   "id": "t7-exc",
+   "q": "Which group was an exception, with diversity peaking in temperate zones?",
+   "answer": "Aquatic flora",
+   "wrong": [
+    "Terrestrial vertebrates",
+    "Vascular land plants",
+    "Insects"
+   ],
+   "e": "Exceptions: parasites, aquatic flora, secondary marine mammals and birds."
+  },
+  {
+   "id": "t7-marine",
+   "q": "Secondary marine mammals and birds…",
+   "answer": "Reverse the gradient, with higher diversity in polar and temperate zones",
+   "wrong": [
+    "Follow the classic gradient most strongly",
+    "Show no pattern at all",
+    "Live only at the equator"
+   ],
+   "e": "One of the taxonomic exceptions."
+  },
+  {
+   "id": "t7-problems",
+   "q": "Which is one of the methodological problems in studying the LDG?",
+   "answer": "Defining the area compared",
+   "wrong": [
+    "There is no data from the tropics",
+    "Species cannot be counted at all",
+    "Latitude cannot be measured"
+   ],
+   "e": "Problems: defining area, sampling effort, evolutionary rates."
+  },
+  {
+   "id": "t7-apply",
+   "q": "Which is an application of understanding the LDG named by Group 5?",
+   "answer": "Identifying areas that need protection",
+   "wrong": [
+    "Predicting earthquakes",
+    "Setting fishing prices",
+    "Measuring ocean depth"
+   ],
+   "e": "Also predicting invasive spread and future biodiversity."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Pattern",
+   "term": "Latitudinal diversity gradient",
+   "meaning": "Species richness rises from poles to equator in most groups."
+  },
+  {
+   "group": "Pattern",
+   "term": "Macroecology",
+   "meaning": "Study of organisms and environment at large spatial, temporal or taxonomic scales."
+  },
+  {
+   "group": "Pattern",
+   "term": "Biogeography",
+   "meaning": "Study of how living organisms are distributed across Earth and why."
+  },
+  {
+   "group": "Dimensions",
+   "term": "Taxonomic diversity",
+   "meaning": "How many species there are and how evenly individuals are spread among them."
+  },
+  {
+   "group": "Dimensions",
+   "term": "Functional diversity",
+   "meaning": "Range of traits and ecological roles in a community."
+  },
+  {
+   "group": "Dimensions",
+   "term": "Phylogenetic diversity",
+   "meaning": "How much evolutionary history a community contains."
+  },
+  {
+   "group": "Dimensions",
+   "term": "Species richness",
+   "meaning": "Number of species."
+  },
+  {
+   "group": "Dimensions",
+   "term": "Evenness",
+   "meaning": "How equally individuals are spread among species."
+  },
+  {
+   "group": "Scales",
+   "term": "Alpha diversity",
+   "meaning": "Diversity within one community."
+  },
+  {
+   "group": "Scales",
+   "term": "Beta diversity",
+   "meaning": "Difference in species between communities."
+  },
+  {
+   "group": "Scales",
+   "term": "Gamma diversity",
+   "meaning": "Diversity across many communities (a region)."
+  },
+  {
+   "group": "Causes",
+   "term": "Diversification",
+   "meaning": "Speciation minus extinction."
+  },
+  {
+   "group": "Causes",
+   "term": "Evolutionary rate",
+   "meaning": "Speed at which traits or lineages change over time."
+  },
+  {
+   "group": "Causes",
+   "term": "Tropical conservatism",
+   "meaning": "Most lineages evolved in, and stayed adapted to, tropical conditions."
+  }
+ ],
+ "confusable": [
+  [
+   "Taxonomic diversity",
+   "Functional diversity",
+   "Phylogenetic diversity"
+  ],
+  [
+   "Alpha diversity",
+   "Beta diversity",
+   "Gamma diversity"
+  ],
+  [
+   "Species richness",
+   "Evenness"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Species richness rises from the poles to the {equator|tropics of Cancer|mountains|oceans}."
+  ],
+  [
+   2,
+   "Functional diversity is about counting {jobs|species|branches|genes}."
+  ],
+  [
+   2,
+   "Diversity within one community is {alpha|beta|gamma|delta} diversity."
+  ],
+  [
+   3,
+   "The main driver of the LDG is climate and {energy|area|history|predation}."
+  ],
+  [
+   3,
+   "Diversification is speciation minus {extinction|migration|mutation|selection}."
+  ],
+  [
+   4,
+   "Aquatic flora diversity peaks in {temperate|tropical|polar|desert} zones."
+  ]
+ ],
+ "id": "t7"
+}

@@ -1,0 +1,610 @@
+{
+  "num": 1,
+  "id": "t1",
+  "title": "The cell nucleus – chromosomes, chromosome structure, DNA, RNA",
+  "short": "Cell nucleus",
+  "sub": "Lecture 1 · Bohumil Mandák · 2 Oct 2026",
+  "blurb": "Introduces the course and its exam (24-question test, lectures only, 3 terms).",
+  "h1": "The cell nucleus – chromosomes, chromosome structure, DNA, RNA",
+  "lede": "Introduces the course and its exam (24-question test, lectures only, 3 terms). Then covers karyology: what a karyotype is, how chromosome number, size and shape vary, and chromosome mutations. Next come genome size (C-value, the C-value paradox), polyploidy (auto- vs allo-) and aneuploidy (mono-, nulli-, tri-, tetrasomy), and how plants and animals tolerate them. The second half covers nucleic acids: the history of the DNA structure, nucleotide composition, phosphodiester bonds, complementary base pairing, DNA vs RNA, the three types of RNA, and the central dogma.",
+  "six": [
+    "Definitions: karyotype, C-value, euchromatin vs heterochromatin, polyploidy vs aneuploidy",
+    "Aneuploidy formulas (2n−1, 2n−2, 2n+1, 2n+2) and names",
+    "Auto- vs allopolyploidy, with an example each",
+    "A–T 2 H-bonds, C–G 3 H-bonds; purines vs pyrimidines",
+    "DNA vs RNA, three differences",
+    "mRNA / tRNA / rRNA functions"
+  ],
+  "must": "Cell nucleus",
+  "questions": [
+    {
+      "id": "t1-q01",
+      "q": "How many questions does the Fundamentals of Biology exam test have?",
+      "answer": "24",
+      "wrong": [
+        "12",
+        "30",
+        "20"
+      ],
+      "e": "Slide 3: the exam is a test of 24 questions based only on the lectures. (Slides: p. 3)",
+      "fol": true
+    },
+    {
+      "id": "t1-q02",
+      "q": "Which type of chromatin is transcriptionally active?",
+      "answer": "Euchromatin",
+      "wrong": [
+        "Centromeric chromatin",
+        "Heterochromatin",
+        "Nucleolar chromatin"
+      ],
+      "e": "Euchromatin is active; heterochromatin is very dense and inactive. (Slides: p. 7)",
+      "fol": true
+    },
+    {
+      "id": "t1-q03",
+      "q": "A diploid organism that has lost a whole homologous pair of chromosomes is:",
+      "answer": "nullisomic",
+      "wrong": [
+        "tetrasomic",
+        "monosomic",
+        "trisomic"
+      ],
+      "e": "Nullisomy = 2n − 2, loss of a homologous pair. (Slides: p. 19)",
+      "fol": true
+    },
+    {
+      "id": "t1-q04",
+      "q": "Galeopsis tetrahit (2n = 4x = 32) arose from G. pubescens × G. speciosa. This is an example of:",
+      "answer": "allopolyploidy",
+      "wrong": [
+        "autopolyploidy",
+        "aneuploidy",
+        "monosomy"
+      ],
+      "e": "Hybridisation of two species followed by genome doubling = allopolyploidy. (Slides: p. 26)",
+      "fol": true
+    },
+    {
+      "id": "t1-q05",
+      "q": "The C-value is defined as:",
+      "answer": "the amount of DNA in a haploid nucleus",
+      "wrong": [
+        "the number of chromosomes in a somatic cell",
+        "the number of genes in a genome",
+        "the ratio of coding to non-coding DNA"
+      ],
+      "e": "C-value = DNA amount in a haploid nucleus (gamete). (Slides: p. 14)"
+    },
+    {
+      "id": "t1-q06",
+      "q": "The C-value paradox refers to the fact that:",
+      "answer": "genome size does not correlate with organismal complexity",
+      "wrong": [
+        "all eukaryotes have the same genome size",
+        "polyploids always have smaller genomes",
+        "prokaryotes have larger genomes than eukaryotes"
+      ],
+      "e": "Some protists have much larger genomes than humans. (Slides: p. 16)"
+    },
+    {
+      "id": "t1-q07",
+      "q": "How many hydrogen bonds form between cytosine and guanine?",
+      "answer": "3",
+      "wrong": [
+        "2",
+        "1",
+        "4"
+      ],
+      "e": "C–G has 3 H-bonds, A–T has 2. (Slides: p. 37)"
+    },
+    {
+      "id": "t1-q08",
+      "q": "Which of the following is a purine?",
+      "answer": "Guanine",
+      "wrong": [
+        "Thymine",
+        "Uracil",
+        "Cytosine"
+      ],
+      "e": "Purines are A and G; pyrimidines are C, T and U. (Slides: p. 32)"
+    },
+    {
+      "id": "t1-q09",
+      "q": "Which RNA transfers a specific amino acid to the growing polypeptide chain?",
+      "answer": "tRNA",
+      "wrong": [
+        "mRNA",
+        "rRNA",
+        "snRNA"
+      ],
+      "e": "tRNA (transfer RNA) brings amino acids to the ribosome. (Slides: p. 40)"
+    },
+    {
+      "id": "t1-q10",
+      "q": "Who received the 1962 Nobel Prize for the structure of nucleic acids?",
+      "answer": "Watson, Crick and Wilkins",
+      "wrong": [
+        "Crick, Wilkins and Franklin",
+        "Watson, Crick and Franklin",
+        "Watson, Franklin and Gosling"
+      ],
+      "e": "The prize went to Crick, Watson and Maurice Wilkins. (Slides: p. 29)"
+    },
+    {
+      "id": "t1-q11",
+      "q": "In animals, which change in genome size is always lethal?",
+      "answer": "loss of more than 5 % or excess of more than 10 %",
+      "wrong": [
+        "loss of more than 1 %",
+        "excess of more than 50 %",
+        "any trisomy"
+      ],
+      "e": "Loss > 5 % or excess > 10 % of the genome is always lethal. (Slides: p. 20)"
+    },
+    {
+      "id": "t1-q12",
+      "q": "The phosphodiester bond in the DNA backbone links:",
+      "answer": "the 3′-OH of one sugar and the 5′-phosphate of the next",
+      "wrong": [
+        "two nitrogenous bases",
+        "the 1′ and 2′ carbons",
+        "the 5′-OH of one sugar and the 3′-phosphate of the next base"
+      ],
+      "e": "The 3′ hydroxyl and 5′ phosphate of adjacent sugars. (Slides: p. 35)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Cell nucleus",
+      "term": "Karyology",
+      "meaning": "study of cell nuclei, especially chromosomes"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Karyotype",
+      "meaning": "number and appearance of chromosomes in a eukaryotic nucleus"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Chromatin",
+      "meaning": "DNA packed with histone proteins"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Euchromatin",
+      "meaning": "loosely packed, transcriptionally active DNA"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Heterochromatin",
+      "meaning": "densely packed, transcriptionally inactive DNA"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "2n / n",
+      "meaning": "chromosome number of somatic cells / gametes"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Monoploid number (x)",
+      "meaning": "chromosome count of the basic ancestral set"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Centromere",
+      "meaning": "chromosome constriction whose position defines shape"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "C-value",
+      "meaning": "DNA amount in a haploid nucleus"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "C-value paradox",
+      "meaning": "genome size doesn't correlate with complexity"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Intron",
+      "meaning": "gene sequence removed by RNA splicing; absent in prokaryotes"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Polyploidy",
+      "meaning": "more than two homologous chromosome sets"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Autopolyploidy",
+      "meaning": "genome multiplication within one species"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Allopolyploidy",
+      "meaning": "genome multiplication after hybridisation of two species"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Aneuploidy",
+      "meaning": "abnormal number of individual chromosomes"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Monosomy / Nullisomy / Trisomy / Tetrasomy",
+      "meaning": "2n−1 / 2n−2 / 2n+1 / 2n+2"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Nucleotide",
+      "meaning": "base + sugar + phosphate"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Purine / Pyrimidine",
+      "meaning": "A, G / C, T, U"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Phosphodiester bond",
+      "meaning": "3′-OH to 5′-phosphate link in the backbone"
+    },
+    {
+      "group": "Cell nucleus",
+      "term": "Base stacking",
+      "meaning": "interaction among aromatic bases that stabilises the helix"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Cell nucleus: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "What is a karyotype?",
+        "grp": "Cell nucleus",
+        "a": "The number and appearance of chromosomes in the nucleus of a eukaryotic cell."
+      },
+      {
+        "n": "What is karyology?",
+        "grp": "Cell nucleus",
+        "a": "The branch of cytology dealing with the structure of cell nuclei, especially chromosomes."
+      },
+      {
+        "n": "Euchromatin vs heterochromatin?",
+        "grp": "Cell nucleus",
+        "a": "Euchromatin is transcriptionally active DNA; heterochromatin is very dense and transcriptionally inactive."
+      },
+      {
+        "n": "With which proteins is DNA packed into chromatin?",
+        "grp": "Cell nucleus",
+        "a": "Histones."
+      },
+      {
+        "n": "Who first observed chromosomes, and when?",
+        "grp": "Cell nucleus",
+        "a": "Carl Wilhelm von Nägeli, in plant cells, 1842."
+      },
+      {
+        "n": "Who discovered mitosis?",
+        "grp": "Cell nucleus",
+        "a": "Walther Flemming (1882, salamander cells)."
+      },
+      {
+        "n": "What does 2n mean, and what does n mean?",
+        "grp": "Cell nucleus",
+        "a": "2n = chromosome number in somatic cells; n = number in gametes."
+      },
+      {
+        "n": "What is the monoploid number (x)?",
+        "grp": "Cell nucleus",
+        "a": "The number of chromosomes in the ancestral (non-homologous) basic set; may differ from n."
+      },
+      {
+        "n": "Which plant has the lowest chromosome number?",
+        "grp": "Cell nucleus",
+        "a": "Haplopappus gracilis, 2n = 4."
+      },
+      {
+        "n": "Which organism has more than 1200 chromosomes?",
+        "grp": "Cell nucleus",
+        "a": "The fern Ophioglossum reticulatum."
+      },
+      {
+        "n": "Name the 4 chromosome shapes by centromere position.",
+        "grp": "Cell nucleus",
+        "a": "Telocentric, acrocentric, submetacentric, metacentric."
+      },
+      {
+        "n": "Single-chromosome vs two-chromosome mutations?",
+        "grp": "Cell nucleus",
+        "a": "Single: deletion, duplication, inversion. Two-chromosome: insertion, translocation."
+      },
+      {
+        "n": "What is the C-value?",
+        "grp": "Cell nucleus",
+        "a": "The amount of DNA in a haploid nucleus (gamete), i.e. half the diploid somatic amount."
+      },
+      {
+        "n": "1 pg of DNA equals how many base pairs?",
+        "grp": "Cell nucleus",
+        "a": "978 Mbp."
+      },
+      {
+        "n": "Smallest and largest plant genomes?",
+        "grp": "Cell nucleus",
+        "a": "Genlisea aurea 0.065 pg/1C; Paris japonica 152.23 pg/1C."
+      },
+      {
+        "n": "What is the C-value paradox?",
+        "grp": "Cell nucleus",
+        "a": "Genome size does not correlate with organismal complexity (e.g. some protists have larger genomes than humans)."
+      },
+      {
+        "n": "Do prokaryotes have introns?",
+        "grp": "Cell nucleus",
+        "a": "No."
+      },
+      {
+        "n": "What is an intron?",
+        "grp": "Cell nucleus",
+        "a": "A nucleotide sequence within a gene removed by RNA splicing during RNA maturation."
+      },
+      {
+        "n": "Define polyploidy.",
+        "grp": "Cell nucleus",
+        "a": "Having more than two paired (homologous) sets of chromosomes."
+      },
+      {
+        "n": "Define aneuploidy.",
+        "grp": "Cell nucleus",
+        "a": "Presence of an abnormal number of chromosomes in a cell."
+      },
+      {
+        "n": "Monosomy, nullisomy, trisomy, tetrasomy formulas?",
+        "grp": "Cell nucleus",
+        "a": "2n−1, 2n−2, 2n+1, 2n+2."
+      },
+      {
+        "n": "What genome change is always lethal in animals?",
+        "grp": "Cell nucleus",
+        "a": "Loss of more than 5 % or excess of more than 10 % of the genome."
+      },
+      {
+        "n": "Effect of aneuploidy in plants?",
+        "grp": "Cell nucleus",
+        "a": "No significant consequences; mono-/nullisomics have lower vitality and fertility."
+      },
+      {
+        "n": "Autopolyploidy example from the lecture?",
+        "grp": "Cell nucleus",
+        "a": "Dactylis polygama 2n=2x=14 → D. glomerata 2n=4x=28 (also Alnus glutinosa → A. rohlenae)."
+      },
+      {
+        "n": "Allopolyploidy example from the lecture?",
+        "grp": "Cell nucleus",
+        "a": "Galeopsis pubescens × G. speciosa (2n=16 each) → G. tetrahit 2n=4x=32."
+      },
+      {
+        "n": "What share of major crop production comes from polyploids?",
+        "grp": "Cell nucleus",
+        "a": "83.7 %."
+      },
+      {
+        "n": "Where is DNA located in the cell?",
+        "grp": "Cell nucleus",
+        "a": "Nucleus, mitochondria and chloroplasts."
+      },
+      {
+        "n": "Who published the DNA double helix, where and when?",
+        "grp": "Cell nucleus",
+        "a": "Watson and Crick, Nature, 25 April 1953 (Cavendish Laboratory, Cambridge)."
+      },
+      {
+        "n": "Who received the 1962 Nobel Prize for DNA structure?",
+        "grp": "Cell nucleus",
+        "a": "Francis Crick, James Watson and Maurice Wilkins."
+      },
+      {
+        "n": "Whose X-ray data guided Watson and Crick?",
+        "grp": "Cell nucleus",
+        "a": "Rosalind Franklin's (images taken by her student Raymond Gosling)."
+      },
+      {
+        "n": "Three parts of a nucleotide?",
+        "grp": "Cell nucleus",
+        "a": "Nitrogenous base, sugar (deoxyribose/ribose), phosphate group."
+      },
+      {
+        "n": "Which bases are purines and which pyrimidines?",
+        "grp": "Cell nucleus",
+        "a": "Purines: A, G. Pyrimidines: C, T, U."
+      },
+      {
+        "n": "Between which atoms is the phosphodiester bond?",
+        "grp": "Cell nucleus",
+        "a": "The 3′-OH of one sugar and the 5′-phosphate of the next."
+      },
+      {
+        "n": "How many hydrogen bonds in A–T and in C–G?",
+        "grp": "Cell nucleus",
+        "a": "A–T 2; C–G 3."
+      },
+      {
+        "n": "Which two forces stabilise the double helix?",
+        "grp": "Cell nucleus",
+        "a": "Hydrogen bonds between bases and base-stacking interactions."
+      },
+      {
+        "n": "Three differences between RNA and DNA?",
+        "grp": "Cell nucleus",
+        "a": "RNA is mostly single-stranded and shorter, has ribose, and has uracil instead of thymine."
+      },
+      {
+        "n": "Function of mRNA, tRNA, rRNA?",
+        "grp": "Cell nucleus",
+        "a": "mRNA carries protein sequence info to ribosomes; tRNA brings amino acids; rRNA + protein form the ribosome."
+      },
+      {
+        "n": "What is reverse transcription?",
+        "grp": "Cell nucleus",
+        "a": "Synthesis of DNA from an RNA template (RNA → DNA)."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "DNA vs RNA <small>(p. 28, p. 31, p. 39)</small>",
+      [
+        "",
+        "DNA",
+        "RNA"
+      ],
+      [
+        [
+          "Strands",
+          "double helix",
+          "mostly single, shorter"
+        ],
+        [
+          "Sugar",
+          "deoxyribose",
+          "ribose"
+        ],
+        [
+          "Bases",
+          "A, T, G, C",
+          "A, U, G, C"
+        ],
+        [
+          "Location",
+          "nucleus, mitochondria, chloroplasts",
+          "cytoplasm, nucleolus"
+        ]
+      ]
+    ],
+    [
+      "Autopolyploidy vs Allopolyploidy <small>(p. 23–26)</small>",
+      [
+        "",
+        "Autopolyploidy",
+        "Allopolyploidy"
+      ],
+      [
+        [
+          "Origin",
+          "one species' genome multiplied",
+          "two species hybridise + doubling"
+        ],
+        [
+          "Example",
+          "<i>Dactylis glomerata</i> 4x = 28; <i>Alnus rohlenae</i> 4x = 56",
+          "<i>Galeopsis tetrahit</i> 4x = 32"
+        ]
+      ]
+    ],
+    [
+      "H-bonds <small>(p. 37)</small>",
+      [
+        "Base pair",
+        "H-bonds"
+      ],
+      [
+        [
+          "A–T (DNA) / A–U (RNA)",
+          "2"
+        ],
+        [
+          "C–G",
+          "3"
+        ]
+      ]
+    ],
+    [
+      "Formula <small>(p. 19)</small>",
+      [
+        "Aneuploidy",
+        "Formula"
+      ],
+      [
+        [
+          "Nullisomy",
+          "2n − 2"
+        ],
+        [
+          "Monosomy",
+          "2n − 1"
+        ],
+        [
+          "Trisomy",
+          "2n + 1"
+        ],
+        [
+          "Tetrasomy",
+          "2n + 2"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/01 The cell nucleus.pdf (41 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Cell nucleus: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "1 pg DNA = <b>978 Mbp</b>",
+            "p. 14"
+          ],
+          [
+            "Smallest plant genome: <i>Genlisea aurea</i> <b>0.065 pg/1C</b>; largest: <i>Paris japonica</i> <b>152.23 pg/1C</b>",
+            "p. 14"
+          ],
+          [
+            "Human genome ≈ <b>3.5 pg</b>; <i>E. coli</i> ≈ 0.0046 pg",
+            "p. 16"
+          ],
+          [
+            "Lowest chromosome number: <i>Haplopappus gracilis</i> <b>2n = 4</b>; highest: <i>Ophioglossum reticulatum</i> <b>2n &gt; 1200</b>",
+            "p. 10"
+          ],
+          [
+            "Chromosome size: ~<b>0.2 µm</b> (Cyperaceae) to <b>25 µm</b> (<i>Lilium</i>)",
+            "p. 11"
+          ],
+          [
+            "Animals: loss &gt; <b>5 %</b> or excess &gt; <b>10 %</b> of genome is lethal",
+            "p. 20"
+          ],
+          [
+            "<b>83.7 %</b> of major crop production comes from polyploids",
+            "p. 27"
+          ],
+          [
+            "Human DNA per cell <b>&gt; 4 m</b> long",
+            "p. 28"
+          ],
+          [
+            "Chromosomes first seen <b>1842</b> (Nägeli); mitosis <b>1882</b> (Flemming); DNA structure <b>1953</b>; Nobel <b>1962</b>",
+            "p. 6, p. 29"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,638 @@
+{
+  "num": 10,
+  "id": "t10",
+  "title": "Physiological functions in animals",
+  "short": "Animal physiology",
+  "sub": "Lecture 10 · Michal Bílý · 11 Dec 2026",
+  "blurb": "Part 1, from cells to a body: unicellular vs multicellular; the hierarchy cells → tissues → organs → organ systems → body; the 4 animal tissue types; unitary vs modular organisms; new bodies by asexual reproduction or from a fertilised egg (zygote → morula → blastula → gastrula); 3 germ layers; body plans (Hydra and jellyfish with 2 germ layers; acoelomate flatworms, pseudocoelomate roundworms, coelomate annelids); radial vs bilateral symmetry; the main body functions.",
+  "h1": "Physiological functions in animals",
+  "lede": "Part 1, from cells to a body: unicellular vs multicellular; the hierarchy cells → tissues → organs → organ systems → body; the 4 animal tissue types; unitary vs modular organisms; new bodies by asexual reproduction or from a fertilised egg (zygote → morula → blastula → gastrula); 3 germ layers; body plans (Hydra and jellyfish with 2 germ layers; acoelomate flatworms, pseudocoelomate roundworms, coelomate annelids); radial vs bilateral symmetry; the main body functions. Part 2, the interplay of organ systems, compared across animals: respiration (skin, gills, lungs, tracheae, tracheal gills, haemoglobin), circulation (open with haemolymph vs closed with blood; single vs double loop; heart chambers from fish to mammals; capillaries; blood cells; haemoglobin), nervous systems (neuron; nerve net → nerve cords → brain) and digestion (gastrovascular cavity vs tract; insects, crayfish, spider, molluscs, vertebrates; pyloric caeca, the hen's crop and gizzard, the ruminant 4-part stomach; liver and gall bladder; symbiotic microorganisms).",
+  "six": [
+    "Organisation hierarchy and the 4 tissue types",
+    "Unitary vs modular organisms",
+    "Zygote → morula → blastula → gastrula; three germ layers; Hydra and jellyfish have two",
+    "Acoelomate / pseudocoelomate / coelomate examples",
+    "Main body functions (reproduction matters for the population, not the individual)",
+    "Respiratory structures by group (tracheae and spiracles in insects; epidermis in earthworms; air sacs in birds)"
+  ],
+  "must": "Animal physiology",
+  "questions": [
+    {
+      "id": "t10-q01",
+      "q": "Which is NOT one of the four basic animal tissue types?",
+      "answer": "Vascular",
+      "wrong": [
+        "Nervous",
+        "Epithelial",
+        "Connective"
+      ],
+      "e": "The four are epithelial, connective, muscle and nervous. (Slides: p. 9)",
+      "fol": true
+    },
+    {
+      "id": "t10-q02",
+      "q": "The correct order of early embryonic stages is:",
+      "answer": "fertilised egg, morula, blastula, gastrula",
+      "wrong": [
+        "fertilised egg, blastula, morula, gastrula",
+        "morula, fertilised egg, gastrula, blastula",
+        "gastrula, blastula, morula, fertilised egg"
+      ],
+      "e": "Egg → morula → blastula → gastrula. (Slides: p. 17)",
+      "fol": true
+    },
+    {
+      "id": "t10-q03",
+      "q": "Hydra is built from:",
+      "answer": "two cell layers (gastrula level)",
+      "wrong": [
+        "one cell layer",
+        "three germ layers",
+        "a coelom"
+      ],
+      "e": "Hydra stays at the gastrula level with two layers. (Slides: p. 19)",
+      "fol": true
+    },
+    {
+      "id": "t10-q04",
+      "q": "Roundworms have which type of body cavity?",
+      "answer": "Pseudocoelom",
+      "wrong": [
+        "True coelom",
+        "Gastrovascular cavity only",
+        "Acoelomate"
+      ],
+      "e": "Roundworms are pseudocoelomates. (Slides: p. 22)",
+      "fol": true
+    },
+    {
+      "id": "t10-q05",
+      "q": "Insects exchange gases mainly through:",
+      "answer": "tracheae opening by spiracles",
+      "wrong": [
+        "gills",
+        "the epidermis only",
+        "lungs"
+      ],
+      "e": "Tracheal system with spiracles. (Slides: p. 40–41)"
+    },
+    {
+      "id": "t10-q06",
+      "q": "Which animals have an open circulatory system?",
+      "answer": "Insects",
+      "wrong": [
+        "Earthworms",
+        "Mammals",
+        "Cephalopods"
+      ],
+      "e": "Insects, crustaceans and mussels: open system with haemolymph. (Slides: p. 47–49)"
+    },
+    {
+      "id": "t10-q07",
+      "q": "An amphibian heart has:",
+      "answer": "2 atria and 1 ventricle",
+      "wrong": [
+        "1 atrium and 2 ventricles",
+        "1 atrium and 1 ventricle",
+        "2 atria and 2 ventricles"
+      ],
+      "e": "Amphibians: 2 atria + 1 ventricle with mixed blood. (Slides: p. 54)"
+    },
+    {
+      "id": "t10-q08",
+      "q": "The nervous system of cnidarians is a:",
+      "answer": "nerve net",
+      "wrong": [
+        "ventral nerve cord",
+        "brain with spinal cord",
+        "radial nerve ring"
+      ],
+      "e": "Cnidarians have a nerve net. (Slides: p. 62)"
+    },
+    {
+      "id": "t10-q09",
+      "q": "Malpighian tubules belong to the excretory system of:",
+      "answer": "insects",
+      "wrong": [
+        "mussels",
+        "vertebrates",
+        "cnidarians"
+      ],
+      "e": "They join the insect gut between midgut and hindgut. (Slides: p. 65)"
+    },
+    {
+      "id": "t10-q10",
+      "q": "Which is NOT a chamber of the ruminant stomach?",
+      "answer": "Gizzard",
+      "wrong": [
+        "Rumen",
+        "Reticulum",
+        "Omasum"
+      ],
+      "e": "Rumen, reticulum, omasum, abomasum; the gizzard is in birds. (Slides: p. 72, p. 74)"
+    },
+    {
+      "id": "t10-q11",
+      "q": "Which organ stores and concentrates bile?",
+      "answer": "Gall bladder",
+      "wrong": [
+        "Liver",
+        "Stomach",
+        "Pancreas"
+      ],
+      "e": "The liver makes bile; the gall bladder stores and concentrates it. (Slides: p. 73)"
+    },
+    {
+      "id": "t10-q12",
+      "q": "Which animals have no definite respiratory system?",
+      "answer": "Planarians and earthworms",
+      "wrong": [
+        "Crayfish",
+        "Fish",
+        "Insects"
+      ],
+      "e": "Gas exchange through the epidermis. (Slides: p. 30)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Animal physiology",
+      "term": "Tissue / Organ / Organ system",
+      "meaning": "levels of body organisation"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Epithelial / Connective / Muscle / Nervous tissue",
+      "meaning": "the 4 animal tissues"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Unitary / Modular organism",
+      "meaning": "clearly defined body / colony of modules"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Morula / Blastula / Gastrula",
+      "meaning": "solid ball / hollow ball / two- or three-layered embryo"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Ectoderm / Mesoderm / Endoderm",
+      "meaning": "outer / middle / inner germ layer"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Mesoglea",
+      "meaning": "jelly layer between the cell layers of cnidarians"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Gastrovascular cavity",
+      "meaning": "gut with a single opening"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Acoelomate / Pseudocoelomate / Coelomate",
+      "meaning": "no cavity / cavity not fully lined by mesoderm / true coelom"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Radial / Bilateral symmetry",
+      "meaning": "many planes / one plane of symmetry"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Parapodia",
+      "meaning": "lateral appendages of polychaete annelids serving as gills"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Trachea / Tracheole / Spiracle",
+      "meaning": "insect air tubes / finest branches / openings"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Tracheal gills",
+      "meaning": "gills of aquatic insect larvae"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Haemolymph",
+      "meaning": "body fluid of an open circulatory system"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Ostia",
+      "meaning": "openings in an insect heart"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Precapillary sphincter",
+      "meaning": "muscle ring controlling capillary flow"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Haemoglobin / Heme",
+      "meaning": "O₂-carrying protein / its iron-containing group"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Nerve net",
+      "meaning": "diffuse nervous system of cnidarians"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Malpighian tubules",
+      "meaning": "insect and spider excretory organs joined to the gut"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Hepatopancreas",
+      "meaning": "digestive gland of crustaceans"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Pyloric caeca",
+      "meaning": "blind sacs around a fish stomach"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Crop / Gizzard",
+      "meaning": "bird food storage / muscular grinding stomach"
+    },
+    {
+      "group": "Animal physiology",
+      "term": "Rumen, reticulum, omasum, abomasum",
+      "meaning": "the 4 ruminant stomach chambers"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Animal physiology: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Are animals unicellular or multicellular?",
+        "grp": "Animal physiology",
+        "a": "In the correct sense (adult stage), animals are always multicellular."
+      },
+      {
+        "n": "Levels of body organisation?",
+        "grp": "Animal physiology",
+        "a": "Cells → tissues → organs → organ systems → body."
+      },
+      {
+        "n": "Four types of animal tissue?",
+        "grp": "Animal physiology",
+        "a": "Epithelial, connective, muscle, nervous."
+      },
+      {
+        "n": "Give examples of connective tissue.",
+        "grp": "Animal physiology",
+        "a": "Ligaments/tendons, loose connective tissue, adipose tissue, cartilage, bone, blood."
+      },
+      {
+        "n": "Three types of muscle tissue?",
+        "grp": "Animal physiology",
+        "a": "Skeletal, smooth, cardiac."
+      },
+      {
+        "n": "Four kinds of neurons by shape?",
+        "grp": "Animal physiology",
+        "a": "Unipolar, bipolar, pseudounipolar, multipolar."
+      },
+      {
+        "n": "Unitary vs modular organisms?",
+        "grp": "Animal physiology",
+        "a": "Unitary: clearly defined body (fish, mammal). Modular: colony of autonomous modules (sponges, corals)."
+      },
+      {
+        "n": "First stages of development from a fertilised egg?",
+        "grp": "Animal physiology",
+        "a": "Fertilised egg → morula → blastula → gastrula."
+      },
+      {
+        "n": "Three germ layers?",
+        "grp": "Animal physiology",
+        "a": "Ectoderm, mesoderm, endoderm."
+      },
+      {
+        "n": "How many germ layers do Hydra and jellyfish have?",
+        "grp": "Animal physiology",
+        "a": "Two: ectoderm and endoderm (Hydra stays at the gastrula level)."
+      },
+      {
+        "n": "Acoelomate, pseudocoelomate, coelomate examples?",
+        "grp": "Animal physiology",
+        "a": "Flatworms; roundworms; annelids (earthworm)."
+      },
+      {
+        "n": "Radial vs bilateral symmetry examples?",
+        "grp": "Animal physiology",
+        "a": "Radial: sea anemone. Bilateral: crayfish."
+      },
+      {
+        "n": "Why is reproduction special among body functions?",
+        "grp": "Animal physiology",
+        "a": "It isn't needed for the individual's survival, only for the population's."
+      },
+      {
+        "n": "Which animals lack a definite respiratory system?",
+        "grp": "Animal physiology",
+        "a": "Planarians and earthworms; they exchange gases through the epidermis."
+      },
+      {
+        "n": "What serves as gills in Alitta virens?",
+        "grp": "Animal physiology",
+        "a": "Parapodia."
+      },
+      {
+        "n": "Where are the gills of the water flea?",
+        "grp": "Animal physiology",
+        "a": "On its legs."
+      },
+      {
+        "n": "How do insects breathe?",
+        "grp": "Animal physiology",
+        "a": "Through tracheae and tracheoles that open via spiracles (plus air sacs)."
+      },
+      {
+        "n": "How do aquatic insect larvae breathe?",
+        "grp": "Animal physiology",
+        "a": "With tracheal gills."
+      },
+      {
+        "n": "Which insect larvae contain haemoglobin?",
+        "grp": "Animal physiology",
+        "a": "Chironomid larvae."
+      },
+      {
+        "n": "What do birds have besides lungs?",
+        "grp": "Animal physiology",
+        "a": "Air sacs."
+      },
+      {
+        "n": "Open vs closed circulation?",
+        "grp": "Animal physiology",
+        "a": "Open: haemolymph in sinuses (insects, crustaceans, mussels). Closed: blood in vessels (annelids, cephalopods, vertebrates)."
+      },
+      {
+        "n": "What are ostia?",
+        "grp": "Animal physiology",
+        "a": "Openings in the insect heart through which haemolymph returns."
+      },
+      {
+        "n": "How does fluid move at a capillary?",
+        "grp": "Animal physiology",
+        "a": "Squeezed out by blood pressure at the arterial end; re-enters by osmotic attraction at the venous end."
+      },
+      {
+        "n": "Heart and loop of fish?",
+        "grp": "Animal physiology",
+        "a": "1 atrium + 1 ventricle; single loop through the gills."
+      },
+      {
+        "n": "Amphibian heart?",
+        "grp": "Animal physiology",
+        "a": "2 atria + 1 ventricle; blood mixes in the ventricle."
+      },
+      {
+        "n": "Which vertebrates have a fully divided 4-chambered heart?",
+        "grp": "Animal physiology",
+        "a": "Crocodilians, birds and mammals."
+      },
+      {
+        "n": "Types of blood cells shown?",
+        "grp": "Animal physiology",
+        "a": "Erythrocytes, monocytes, lymphocytes, neutrophils, eosinophils, basophils, platelets."
+      },
+      {
+        "n": "Structure of haemoglobin?",
+        "grp": "Animal physiology",
+        "a": "2 α + 2 β chains, each with a heme (Fe-protoporphyrin IX) holding iron."
+      },
+      {
+        "n": "Parts of a neuron and impulse direction?",
+        "grp": "Animal physiology",
+        "a": "Dendrites → cell body → axon."
+      },
+      {
+        "n": "Nervous system of cnidarians?",
+        "grp": "Animal physiology",
+        "a": "A nerve net."
+      },
+      {
+        "n": "What is special about the squid's nervous system?",
+        "grp": "Animal physiology",
+        "a": "A brain and giant axons."
+      },
+      {
+        "n": "What is a gastrovascular cavity?",
+        "grp": "Animal physiology",
+        "a": "A digestive cavity with one opening serving as mouth and anus (Hydra, Planaria)."
+      },
+      {
+        "n": "Three parts of the insect gut?",
+        "grp": "Animal physiology",
+        "a": "Foregut, midgut, hindgut (Malpighian tubules attach)."
+      },
+      {
+        "n": "Parts of the crayfish digestive tract?",
+        "grp": "Animal physiology",
+        "a": "Stomach, hepatopancreas (gland), intestine."
+      },
+      {
+        "n": "What are pyloric caeca?",
+        "grp": "Animal physiology",
+        "a": "Many blind \"intestines\" around the stomach of trout, for food absorption."
+      },
+      {
+        "n": "What are the crop and gizzard?",
+        "grp": "Animal physiology",
+        "a": "Parts of the bird gut: crop stores food, gizzard (ventriculus) grinds it."
+      },
+      {
+        "n": "Role of the liver and gall bladder?",
+        "grp": "Animal physiology",
+        "a": "Liver = biochemical factory, produces bile; the gall bladder stores and concentrates bile."
+      },
+      {
+        "n": "Four parts of a ruminant stomach?",
+        "grp": "Animal physiology",
+        "a": "Rumen, reticulum, omasum, abomasum."
+      },
+      {
+        "n": "Who digests cellulose for ruminants and termites?",
+        "grp": "Animal physiology",
+        "a": "Symbiotic microorganisms."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Open circulation vs Closed circulation <small>(p. 46–50)</small>",
+      [
+        "",
+        "Open circulation",
+        "Closed circulation"
+      ],
+      [
+        [
+          "Fluid",
+          "haemolymph",
+          "blood (+ lymph)"
+        ],
+        [
+          "Path",
+          "heart → sinuses around organs → ostia",
+          "heart → vessels → capillaries → vessels"
+        ],
+        [
+          "Who",
+          "insects, crustaceans, mussels",
+          "annelids, cephalopods, vertebrates"
+        ]
+      ]
+    ],
+    [
+      "Animals <small>(p. 30–44)</small>",
+      [
+        "Respiration",
+        "Animals"
+      ],
+      [
+        [
+          "Body surface (epidermis)",
+          "planarians, earthworms"
+        ],
+        [
+          "External gills / parapodia",
+          "<i>Alitta virens</i>, nudibranchs"
+        ],
+        [
+          "Gills",
+          "crayfish, water flea (on legs), mussels, cephalopods, fish"
+        ],
+        [
+          "Tracheae + spiracles",
+          "insects"
+        ],
+        [
+          "Tracheal gills",
+          "aquatic insect larvae"
+        ],
+        [
+          "Lungs",
+          "vertebrates (birds also air sacs)"
+        ]
+      ]
+    ],
+    [
+      "Example <small>(p. 21–23)</small>",
+      [
+        "Body cavity",
+        "Example"
+      ],
+      [
+        [
+          "Acoelomate",
+          "flatworms (planarian)"
+        ],
+        [
+          "Pseudocoelomate",
+          "roundworms"
+        ],
+        [
+          "Coelomate",
+          "annelids (earthworm), vertebrates"
+        ]
+      ]
+    ],
+    [
+      "Examples <small>(p. 18–21)</small>",
+      [
+        "Germ layers",
+        "Examples"
+      ],
+      [
+        [
+          "2 (ecto + endoderm)",
+          "<i>Hydra</i>, jellyfish"
+        ],
+        [
+          "3 (+ mesoderm)",
+          "flatworms onward"
+        ]
+      ]
+    ],
+    [
+      "Group <small>(p. 62)</small>",
+      [
+        "Nervous system",
+        "Group"
+      ],
+      [
+        [
+          "Nerve net",
+          "cnidarians"
+        ],
+        [
+          "Nerve cords + simple brain",
+          "flatworms"
+        ],
+        [
+          "Ventral nerve cord + brain",
+          "annelids, arthropods"
+        ],
+        [
+          "Brain + giant axons",
+          "molluscs (squid)"
+        ],
+        [
+          "Radial nerves",
+          "echinoderms"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/10 Physiological functions in animals.pdf (76 pages; ~45 are picture-only, read visually). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Animal physiology: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "<b>4</b> tissue types; <b>3</b> germ layers; <b>4</b> early stages (zygote, morula, blastula, gastrula)",
+            "p. 9, p. 17–18"
+          ],
+          [
+            "Fish heart <b>2 chambers</b> (1 atrium + 1 ventricle); amphibian <b>3</b>; bird and mammal <b>4</b>",
+            "p. 52–56"
+          ],
+          [
+            "Haemoglobin: <b>4 chains (2α + 2β)</b>, each with heme + <b>Fe</b>",
+            "p. 59"
+          ],
+          [
+            "Ruminant stomach: <b>4</b> parts",
+            "p. 74"
+          ]
+        ]
+      }
+    ]
+  }
+}

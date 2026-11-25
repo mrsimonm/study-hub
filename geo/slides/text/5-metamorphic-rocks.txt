@@ -1,0 +1,439 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Metamorphic
+rocks and
+processes
+=== SLIDE 2 ===
+What is
+metamorphic
+petrology?
+• Metamorphic = Changed
+• Petrology = Study of rocks and
+their formative processes
+=== SLIDE 3 ===
+Content
+• Principles of phase changes
+• Metamorphic agents
+• Metamorphic textures
+• Metamorphic rocks, facies,
+and series
+• Rock cycle
+• Metamorphic rocks
+=== SLIDE 4 ===
+What are the three
+key aspects forming
+a metamorphic rock
+Metamorphic petrology
+=== SLIDE 5 ===
+Metamorphic petrology
+Pressure
+Temperature
+Protolith
+=original rock
+(+Time, +Fluids)
+Key aspects controlling metamorphism:
+=== SLIDE 6 ===
+Metamorphic petrology
+Protolith
+=parent rock
+Can be virtually
+any rock
+Granite
+Limestone
+Basalt
+Tonalite
+Mudstone
+Sandstone
+Gabbro
+=== SLIDE 7 ===
+Metamorphic agents
+Mechanisms of increasing pressure:
+1. Burial processes
+• New layers of sediment
+accumulate.
+• Pressure of the overlying layers—
+results in increase in confining
+lithostatic pressure.
+• Metamorphic reactions begin at
+depths of ~2 km
+=== SLIDE 8 ===
+Metamorphic agents
+Mechanisms of increasing pressure:
+2. Tectonic processes
+• Crustal thickening during
+orogeny (mountain building)
+• Rocks are dragged deeper into
+the Earth
+• Increase in lithostatic pressure,
+directed pressure, and shear
+stress
+=== SLIDE 9 ===
+Metamorphic agents
+Mechanisms of increasing temperature:
+1. Temperature increases with depth —
+roughly 25–30 °C per kilometer on
+average: Geothermal gradient
+=== SLIDE 10 ===
+Metamorphic agents
+Mechanisms of increasing temperature:
+1. Temperature increases with depth —
+roughly 25–30 °C per kilometer on
+average: Geothermal gradient
+2. Magma intrusion
+• Magma transfers heat into the
+surrounding rocks.
+• This local heating produces a “baked
+zone” or aureole around the
+intrusion.
+=== SLIDE 11 ===
+Metamorphic reactions
+=== SLIDE 12 ===
+Metamorphic reactions
+Phase:
+• Solid, liquid, gas
+• Different phases are stable at
+different PT (pressure–
+temperature) conditions
+• With change in PT conditions
+the phase changes
+H2O system:
+=== SLIDE 13 ===
+Principle of metamorphism:
+• A solid compound can have
+multiple phases
+• Different phases are stable at
+different PT (pressure–
+temperature) conditions
+• With change in PT conditions
+the phase changes
+SiO2 system:
+Metamorphic reactions
+=== SLIDE 14 ===
+Principle of metamorphism:
+• Different phases are stable at
+different PT (pressure–
+temperature) conditions
+• With change in PT conditions
+the phase changes
+Metamorphic reactions
+=== SLIDE 15 ===
+Reaction examples:
+Clay minerals to chlorite:
+5 Mg-Smectite + 3 Kaolinite + 1 Water →3 Chlorite + 17 Quartz
+5Mg₃Si₄O₁₀(OH)₂ + 3Al₂Si₂O₅(OH)₄ + H₂O →3Mg₅Al₂Si₃O₁₀(OH)₈ + 17SiO₂
+Chlortie to biotite:
+3 Chlorite + 5 Muscovite →5 Biotite + 1 Quartz + 8 Kyanite + 12 Water
+3Mg₅Al₂Si₃O₁₀(OH)₈ + 5KAl₃Si₃O₁₀(OH)₂ →5KMg₃AlSi₃O₁₀(OH)₂ + SiO₂ + 8Al₂SiO₅ + 12H₂O
+Metamorphic reactions
+=== SLIDE 16 ===
+Principle of metamorphism:
+• Different phases are stable at
+different PT (pressure–
+temperature) conditions
+• With change in PT conditions
+the phase changes
+Metamorphic reactions
+=== SLIDE 17 ===
+Metamorphic grade:
+• The degree of metamorphism
+• Reflects the PT conditions
+• Is determined by the present minerals
+Metamorphic reactions
+=== SLIDE 18 ===
+Metamorphic textures
+=== SLIDE 19 ===
+Metamorphic textures
+1. Foliated texture
+• Deformation of grains
+• Migration of atoms
+• New minerals grow in the
+direction of weakest pressure
+• Foliation causes the rock to have a
+layered appearance, and to break
+apart between layers
+=== SLIDE 20 ===
+Metamorphic textures
+=== SLIDE 21 ===
+Metamorphic textures
+1. Foliated texture
+• Example: slaty cleavage
+1. Foliated texture
+• Example: phyllitic foliation
+=== SLIDE 22 ===
+Metamorphic textures
+1. Foliated texture
+• Example: schistose foliation
+1. Foliated texture
+• Example: gneissic banding
+=== SLIDE 23 ===
+Metamorphic textures
+2. Non-foliated texture
+• Either no directed pressure
+➢ Typical for contact metamorphism -
+hornfels
+• Or no sheet minerals present
+➢ Typical for limestone and sandstone
+– marble and quartzite
+=== SLIDE 24 ===
+Metamorphic textures
+2. Non-foliated texture
+• Example: marble
+2. Non-foliated texture
+• Example: hornfels
+=== SLIDE 25 ===
+Metamorphic rocks:
+Mid-lecture quiz
+Mid-lecture quiz
+in moodle
+=== SLIDE 26 ===
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 27 ===
+Metamorphic rocks:
+metasedimentary
+Metapelitic rocks
+1. Mudstone (sedimentary)
+2. Shale (sedimentary)
+3. Slate (low-grade)
+4. Phyllite (low-grade)
+5. Schist (medium-grade)
+6. (Para)gneiss (high-grade)
+7. Migmatite (partial melting)
+https://www.youtube.com/wa
+tch?v=0QTkumoJnuU&list=P
+Lybg94GvOJ9E5VK94Uujan
+Wk45qM8rQuz&index=29
+=== SLIDE 28 ===
+Metamorphic rocks:
+metasedimentary
+Metapelitic rocks
+1. Mudstone (sedimentary)
+2. Shale (sedimentary)
+3. Slate (low-grade)
+4. Phyllite (low-grade)
+5. Schist (medium-grade)
+6. (Para)Gneiss (high-grade)
+7. Migmatite (partial melting)
+=== SLIDE 29 ===
+Metamorphic rocks:
+metasedimentary
+Metapsamitic rocks
+1. Sandstone (sedmintary)
+2. Quartzite (metamorphic)
+=== SLIDE 30 ===
+Metamorphic rocks:
+metasedimentary
+Metacalcareous rocks
+1. Limestone (sedimentary)
+2. Marble (metamorphic)
+=== SLIDE 31 ===
+Metamorphic rocks:
+metaigneous
+=== SLIDE 32 ===
+Metamorphic facies and series
+• Metabasaltic rocks define
+metamorphic facies
+• Facies = objective description
+based on defining mineral
+assembleges
+• Each facies is characteristic for
+certain PT conditions
+Metamorphic rocks: metaigneous
+=== SLIDE 33 ===
+Metamorphic facies and series
+• Series = a trend of
+metamorphism characteristic
+for a certain geologic
+environment
+• Each series extends across
+multiple facies
+• Low P/T (1)
+• Medium P/T (3)
+• High P/T (5)
+Metamorphic rocks: metaigneous
+=== SLIDE 34 ===
+Metamorphic facies and series
+• Low P/T series (1):
+➢ Hornfels
+• Medium P/T (3):
+➢ Greenschist–amphibolite–
+granulite
+• High P/T (5):
+➢ Blueschist–eclogite
+Metamorphic rocks: metaigneous
+=== SLIDE 35 ===
+Metamorphic facies and series
+• Low P/T series:
+➢ Hornfels
+• Contact metamorphism
+Metamorphic rocks: metaigneous
+=== SLIDE 36 ===
+Metamorphic facies and series
+• Medium P/T:
+➢ Greenschist–amphibolite–
+granulite
+• Regional = Orogenic =
+Mountain-belt metamorphism
+Metamorphic rocks: metaigneous
+=== SLIDE 37 ===
+Metamorphic facies and series
+• High P/T:
+➢ Blueschist–eclogite
+• Subduction-zone
+metamorphism
+Metamorphic rocks: metaigneous
+=== SLIDE 38 ===
+Relating
+metaigneous and
+metasedimentary
+rocks
+Metamorphic rocks: metaigneous
+Contact= LowP/T
+Barrovian = Medium P/T
+Blueschist= HighP/T
+=== SLIDE 39 ===
+Metagranitic rocks
+1. Granite,
+granotiorite, or
+tonalite
+(igneous)
+2. (Ortho)Gneiss
+(metamorphic)
+Metamorphic rocks: metaigneous
+=== SLIDE 40 ===
+Metarhyolitic rocks
+1. Rhyolite, dacite
+(igneous)
+2. Metarhyolite,
+metadacite
+(low-grade)
+3. Felsic schist
+(medium-grade)
+4. Felsic gneiss
+(high-grade)
+Metamorphic rocks: metaigneous
+=== SLIDE 41 ===
+Metaultramafic rocks
+1. Peridotite
+(igneous)
+2. Serpentinite
+(metamorphic)
+Metamorphic rocks: metaigneous
+=== SLIDE 42 ===
+Rock cycle
+=== SLIDE 43 ===
+=== SLIDE 44 ===
+=== SLIDE 45 ===
+Slate
+• Protolith: Mudstone or
+Shale
+• Grade: Low
+• Texture: Foliated, slaty
+cleavage
+• Minerals: Mica, chlorite,
+quartz, feldspar
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 46 ===
+Phyllite
+• Protolith: Shale or
+mudstone
+• Grade: Low to medium
+• Texture: Foliated,
+phyllitic sheen
+• Minerals: Mica, chlorite,
+quartz, feldspar
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 47 ===
+Schist
+• Protolith: Shale or
+mudstone
+• Grade: Medium
+• Texture: Foliated,
+schistosity
+• Minerals: Mica, quartz,
+feldspar, garnet
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 48 ===
+Paragneiss
+• Protolith: Shale or
+mudstone
+• Grade: High
+• Texture: Foliated,
+banded
+• Minerals: Quartz,
+feldspar, mica,
+amphibole
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 49 ===
+Quartzite
+• Protolith: Sandstone
+• Grade: Low to High
+• Texture: Non-foliated,
+crystalline
+• Minerals: Quartz
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 50 ===
+Marble
+• Protolith: Limestone or
+dolostone
+• Grade: Low to High
+• Texture: Non-foliated,
+crystalline
+• Minerals: Calcite,
+dolomite
+Metamorphic rocks:
+metasedimentary
+=== SLIDE 51 ===
+Orthogneiss
+• Protolith: Granite,
+granodiorite, tonalite
+• Grade: High
+• Texture: Foliated,
+banded
+• Minerals: Quartz,
+feldspar, mica,
+amphibole
+Metamorphic rocks: metaigneous
+=== SLIDE 52 ===
+Greenschist
+• Protolith: Basalt
+• Grade: Low to Medium
+• Texture: Foliated, slaty
+or schistose
+• Minerals: Chlorite,
+actinolite (green
+amphibole), epidote,
+albite (Na-plagioclase)
+Metamorphic rocks: metaigneous
+=== SLIDE 53 ===
+Amphibolite
+• Protolith: Basalt or
+gabbro
+• Grade: Medium to High
+• Texture: Foliated,
+banded
+• Minerals: Amphibole,
+plagioclase, epidote,
+garnet
+Metamorphic rocks: metaigneous
+=== SLIDE 54 ===
+Eclogite
+• Protolith: Basalt or
+gabbro
+• Grade: High (high-
+pressure)
+• Texture: Granoblastic
+• Minerals: Garnet,
+omphacite (green
+pyroxene)
+Metamorphic rocks: metaigneous
+=== SLIDE 55 ===
+# Metamorphic rock star
+Thanks for your attention

@@ -1,0 +1,521 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Sedimentary rocks
+and processes
+=== SLIDE 2 ===
+What comes
+into your mind
+when you hear
+„sediment“?
+Sedimentary rocks and processes
+=== SLIDE 3 ===
+What is
+sedimentary
+petrology?
+• Sedimentary = Deposited + lithified
+• Petrology = Study of rocks and their
+formative processes
+=== SLIDE 4 ===
+Content
+• Sedimentary processes
+Weathering
+Transport
+Deposition
+Diagenesis
+• Depositional environments
+Terrestrial
+Transitional
+Marine
+• Sedimentary rocks
+Clastic
+Chemical
+Biogenic
+=== SLIDE 5 ===
+Sedimentary processes
+=== SLIDE 6 ===
+Weathering is the breakdown of rocks and minerals in place, at or near the
+Earth’s surface, through physical, chemical, and biological processes.
+Sedimentary processes - weathering
+=== SLIDE 7 ===
+Sedimentary processes - weathering
+Mechanical weathering
+• Breaks rocks into smaller pieces
+without changing composition
+• Processes:
+• Frost wedging (expansion of
+freezing water in cracks)
+• Thermal expansion (insolation,
+onionskin, in deserts or wildfires)
+• Exfoliation (release of pressure)
+• Biological activity (root
+wedging, burrowing)
+• Results: Angular, coarse
+fragments, sharp edges
+Frostwedging Rootwedging
+Insolation(onionskin) Exfoliation
+=== SLIDE 8 ===
+Sedimentary processes - weathering
+Chemical weathering
+• Water + acids cause minerals to
+dissolve or transform
+• Happens faster in warm, wet
+climates
+• Keyreactions:
+• Hydrolysis– feldspar→ clay +
+ions
+• Oxidation– iron minerals → rust
+(hematite/goethite)
+• Dissolution– calcite in rainwater
+• Results: Softened rock, new
+minerals (clay), ions in solution
+Hydrolysis(clayformation)
+Oxidation Dissolution
+=== SLIDE 9 ===
+Sedimentary processes - weathering
+What is the difference
+between weathering
+and erosion?
+=== SLIDE 10 ===
+Erosion is the process of removal of weathered material (sediment) from its
+original location by natural agents such as water, wind, ice, or gravity.
+Sedimentary processes - erosion
+=== SLIDE 11 ===
+Water
+erosion
+Sedimentary processes - erosion
+=== SLIDE 12 ===
+Glacial
+erosion
+Sedimentary processes - erosion
+Gravitational
+erosion
+Wind (aeolian) erosion
+=== SLIDE 13 ===
+Transport is the movement of sediment from the site of erosion to the site of
+deposition, by agents like water, wind, ice, or gravity.
+Sedimentary processes - transport
+=== SLIDE 14 ===
+Sedimentary processes - transport
+Sediment transport
+• Follows after erosion
+• Same agents as for erosion
+(water, wind, glaciers, gravity)
+• Keyprocesses:
+• Sorting– Separation of grains by
+size, shape, and density
+• Rounding– Grains become
+more rounded and smoothed
+due to repeated abrasion
+• Chemical alteration– Minerals
+dissolve or transform
+=== SLIDE 15 ===
+Deposition is the process by which transported sediments come to rest and
+accumulate in a new location, forming sedimentary layers.
+Sedimentary processes - deposition
+=== SLIDE 16 ===
+Sedimentary processes - deposition
+Sediment deposition
+(sedimentation)
+• End of transport stage
+• Keycauses:
+• Water slows down– e.g., lower
+slope, river enters lake…
+• Wind drops
+• Glacier melts
+• Gravity stops acting– e.g., base
+of the cliff
+=== SLIDE 17 ===
+Sedimentary processes - deposition
+=== SLIDE 18 ===
+Diagenesis includes all physical, chemical, and biological changes that occur
+in sediments after deposition and before metamorphism.
+Sedimentary processes - diagenesis
+=== SLIDE 19 ===
+=== SLIDE 20 ===
+Sedimentary processes - diagenesis
+Sediment diagenesis
+• Keyprocesses:
+• Lithification– Making
+sediment a rock (compaction
+and cementation)
+• Recrystalization– Crystals
+reorganize or grow larger
+• Authigenesis– Growth of
+new minerals
+• Dissolution– Unstable
+minerals dissolve
+• Biochemical alteration–
+Alteration through microbial
+activity
+=== SLIDE 21 ===
+Depositional environments
+=== SLIDE 22 ===
+Fluvial:
+Rivers and streams; well-
+layered sands and muds,
+moderate sorting.
+Depositional environments - terrestrial
+Alluvial fan:
+Base of mountains; coarse,
+poorly sorted sediments.
+Glacial:
+Ice-dominated; very
+poorly sorted mix of all
+grain sizes.
+=== SLIDE 23 ===
+Aeolian:
+Wind-blown deserts; very
+well-sorted, rounded sand
+grains.
+Depositional environments - terrestrial
+Lacustrine:
+Lakes; fine-grained, often
+laminated sedimentary
+beds.
+Evaporitic:
+Arid basins (Playa =
+continental; Sabkha =
+coastal); Crystalline evaporite
+minerals, often bedded
+=== SLIDE 24 ===
+Deltaic:
+River–sea interface;
+alternating sand and mud
+layers.
+Depositional environments - transitional
+Beach:
+Wave-dominated coast;
+well-sorted, rounded sand.
+=== SLIDE 25 ===
+Tidal flat:
+Intertidal zone; alternating
+mud and sand, ripple
+marks.
+Depositional environments - transitional
+Lagoon:
+Sheltered coastal area;
+fine, quiet-water
+sediments.
+=== SLIDE 26 ===
+Shallow marine:
+Continental shelf and reef
+areas; well-sorted sand
+and carbonate mud.
+Depositional environments - marine
+Deep marine:
+Abyssal plain; very fine-
+grained muds and siliceous
+or calcareous ooze.
+=== SLIDE 27 ===
+Depositional environments
+=== SLIDE 28 ===
+Sedimentary rocks
+=== SLIDE 29 ===
+Sedimentary rocks
+Clastic
+(Terrigeneous)
+Chemical
+(Chemogenic)
+Biogenic
+(Organic)
+=== SLIDE 30 ===
+Sedimentary rocks
+Clastic
+Formed from the accumulation and
+lithification of physical fragments
+(clasts) of pre-existing rocks.
+=== SLIDE 31 ===
+Sedimentary rocks
+Rock Type Grain Size Typical Environment
+Sandstone <0.004 mm Talus slopes, debris flows
+Breccia 0.004–0.0625 mm Rivers, beaches, deserts
+Shale / Mudstone >2 mm, rounded Deltas, floodplains
+Siltstone >2 mm, angular Lakes, deep marine, lagoons
+Conglomerate 0.0625–2 mm Lakes, deep marine, lagoons
+Claystone <0.004–0.0625 mm River channels, alluvial fans
+Activity:
+Connect the rock type with its
+grain size and typical setting
+Clastic
+=== SLIDE 32 ===
+Sedimentary rocks
+Rock Type Grain Size Typical Setting
+Claystone <0.004 mm Lakes, deep marine, lagoons
+Siltstone 0.004–0.0625 mm Deltas, floodplains
+Shale / Mudstone <0.004–0.0625 mm Lakes, deep marine, lagoons
+Sandstone 0.0625–2 mm Rivers, beaches, deserts
+Breccia >2 mm, angular Talus slopes, debris flows
+Conglomerate >2 mm, rounded River channels, alluvial fans
+Clastic
+=== SLIDE 33 ===
+Sedimentary rocks
+=== SLIDE 34 ===
+Sedimentary rocks
+=== SLIDE 35 ===
+Sedimentary rocks
+Conglomerate
+• Grain size: Coarse, >2
+mm
+• Clast shape: Rounded
+• Composition: Varied
+rock and mineral
+clasts with finer matrix
+• Depositional
+environment: River
+channels, alluvial fans,
+gravel beaches
+=== SLIDE 36 ===
+Sedimentary rocks
+Breccia
+• Grain size: Coarse, >2
+mm
+• Clast shape: Angular
+• Composition: Varied
+mineral and rock
+clasts with finer matrix
+• Depositional
+environment: Talus
+slopes, debris flows,
+fault zones
+=== SLIDE 37 ===
+Sedimentary rocks
+Sandstone
+• Grain size: Medium,
+0.0625–2 mm
+• Clast shape: Usually
+rounded to subangular
+• Composition: Mainly
+quartz, may include
+feldspar and lithic
+fragments
+• Depositional
+environment: Rivers,
+beaches, deserts, deltas
+=== SLIDE 38 ===
+Sedimentary rocks
+Siltstone
+• Grain size: Fine, 0.004–
+0.0625 mm
+• Clast shape: Too small
+to see; generally
+angular to subangular
+• Composition: Quartz,
+clay minerals, minor
+feldspar
+• Depositional
+environment:
+Floodplains, deltas, lake
+margins
+=== SLIDE 39 ===
+Sedimentary rocks
+Claystone
+• Grain size: Fine, <0.004
+mm
+• Clast shape: Too small
+to see; very fine-
+grained
+• Composition: Clay
+minerals (e.g. kaolinite,
+illite)
+• Depositional
+environment: Lakes,
+deep marine, lagoons,
+floodplains
+=== SLIDE 40 ===
+Sedimentary rocks
+Mudstone
+• Grain size: Fine, clay or
+silt particles, <0.0625
+mm
+• Clast shape: Too small
+to see; generally
+angular to subangular
+• Composition: Quartz,
+clay minerals, minor
+feldspar
+• Depositional
+environment: Lakes,
+deep marine, lagoons,
+floodplains, deltas
+=== SLIDE 41 ===
+Sedimentary rocks
+Shale
+• Grain size: Fine, clay or
+silt particles, <0.0625
+mm
+• Clast shape: Too small
+to see; generally
+angular to subangular
+• Composition: Quartz,
+clay minerals, minor
+feldspar
+• Depositional
+environment: Lakes,
+deep marine, lagoons,
+floodplains, deltas
+➢ Same as mudstone
+but fissile – breaks in
+planes
+=== SLIDE 42 ===
+Sedimentary rocks
+Chemical
+Formed by precipitation of minerals
+from solution, typically in evaporative
+or inorganic chemical conditions.
+=== SLIDE 43 ===
+Sedimentary rocks
+Rock Type Main Component Typical Environment
+Chert Halite, gypsum Springs, caves
+Evaporite Calcite Altered limestones
+Travertine Microcrystalline silica Warm shallow marine, lakes
+Dolostone Calcite Deep marine, replacement
+Limestone Dolomite Arid basins, sabkhas
+Activity:
+Connect the rock type with its main
+mineral component and typical setting
+Chemical
+=== SLIDE 44 ===
+Sedimentary rocks
+Chemical
+Rock Type Main Component Typical Environment
+Limestone Calcite Warm shallow marine, lakes
+Dolostone Dolomite Altered limestones
+Chert Microcrystalline silica Deep marine, replacement
+Evaporite Halite, gypsum Arid basins, sabkhas
+Travertine Calcite Springs, caves (fresh water)
+=== SLIDE 45 ===
+Sedimentary rocks
+=== SLIDE 46 ===
+Sedimentary rocks
+=== SLIDE 47 ===
+Sedimentary rocks
+Limestone
+• Mineralogy: Primarily
+calcite (CaCO₃)
+• Texture: Mostly
+microcrystalline, may
+include fossils
+• Color: Typically gray,
+white, cream, or tan
+• Depositional
+environment: Warm,
+shallow marine settings
+(reefs, carbonate
+platforms), lakes, or
+tidal flats
+=== SLIDE 48 ===
+Sedimentary rocks
+Dolostone
+• Mineralogy: Primarily
+dolomite (CaMg(CO₃)₂)
+• Texture: Usually
+crystalline; may
+preserve textures of
+original limestone
+• Color: Commonly gray,
+brown, pink, or beige
+• Depositional
+environment: Shallow
+marine settings, tidal
+flats, sabkhas, or areas
+of secondary alteration
+of limestone
+=== SLIDE 49 ===
+Sedimentary rocks
+Travertine
+• Mineralogy: Calcite
+(CaCO₃)
+• Texture: Crystalline,
+porous, often banded
+or layered
+• Color: White, cream,
+tan, or light brown
+• Depositional
+environment: Springs,
+caves, and other
+freshwater settings
+with active CO₂
+degassing
+=== SLIDE 50 ===
+Sedimentary rocks
+Chert
+• Mineralogy:
+Microcrystalline silica
+(SiO₂)
+• Texture: Very fine-
+grained, hard,
+conchoidal fracture
+• Color: Gray, brown,
+black, red, or white
+• Depositional
+environment: Deep
+marine (siliceous ooze),
+or formed by
+replacement in
+limestones
+=== SLIDE 51 ===
+Sedimentary rocks
+Evaporite
+• Mineralogy: Halite,
+gypsum, or other
+• Texture: Crystalline to
+granular, may show
+layering or nodular
+structures
+• Color: White, colorless,
+gray, or pinkish
+• Depositional
+environment: Arid
+continental or marine
+basins with high
+evaporation rates
+(playas, sabkhas,
+restricted lagoons)
+=== SLIDE 52 ===
+Sedimentary rocks
+Biogenic
+Form from the accumulation of
+organic materials such as plants,
+algae, corals, or microorganisms.
+=== SLIDE 53 ===
+Sedimentary rocks
+Coal
+• Mineralogy:
+Predominantly organic
+carbon from plant
+material
+• Texture: Layered,
+compact; ranges from
+dull to shiny
+• Color: Black to dark
+brown
+• Depositional
+environment: Swamps
+and peat-forming
+wetlands in humid,
+low-energy settings
+=== SLIDE 54 ===
+Sedimentary rocks
+Biogenic limestone
+• Mineralogy: Primarily
+calcite (CaCO₃)
+• Texture: Contains
+abundant visible to
+microscopic fossils
+Color: Typically gray,
+white, cream, or tan
+• Depositional
+environment: Warm,
+shallow marine settings
+• Different rock types
+based on the fossil
+types (chalk, coquina,
+fossiliferous
+limestone…)
+=== SLIDE 55 ===
+Sedimentary rocks
+=== SLIDE 56 ===
+Thanks for your
+attention

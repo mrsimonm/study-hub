@@ -1,0 +1,281 @@
+{
+ "num": 12,
+ "title": "Citizen science: new tools & data",
+ "short": "Citizen science",
+ "sub": "Symposium topic 10 · Silvertown 2009 vs Fraisl et al. 2022",
+ "blurb": "From 'new dawn' to 'new standard': GBIF, eBird, the Ten Principles and Haklay's participation levels.",
+ "h1": "From new dawn to new standard: citizen science in ecology",
+ "lede": "Group 10's topic. Classic: Silvertown (2009), 'A new dawn for citizen science'. Recent: Fraisl et al. (2022), citizen science in environmental and ecological sciences.",
+ "six": [
+  "**Citizen science**: members of the public take part in real research, mostly by contributing observations.",
+  "Volunteer data are biased (easy places and times, a few heavy contributors), so **filter for quality** and **model the observation process** (effort, occupancy–detection).",
+  "**eBird** collects bird checklists with effort data; **GBIF** aggregates occurrence records. Volunteers supply 50 %+ of GBIF data.",
+  "**Ten Principles of Citizen Science** (ECSA, 2015): good practice from genuine science outcomes to feedback, open data, credit and ethics.",
+  "**Haklay's levels**: 1 crowdsourcing → 2 distributed intelligence → 3 participatory science → 4 extreme citizen science.",
+  "Silvertown: modern citizen science is open to all, not a privileged few. Fraisl: it is now a standard method, with quality control and ethics built in."
+ ],
+ "must": "Haklay levels and data quality",
+ "foot": "Source: Group 10 symposium slides and study guide; glossary section 10.",
+ "questions": [
+  {
+   "id": "t12-def",
+   "q": "Citizen science is…",
+   "answer": "Members of the public contributing to real research",
+   "wrong": [
+    "Science done only by governments",
+    "Science reported in newspapers",
+    "Research about citizens' opinions"
+   ],
+   "e": "Public participation in scientific research and knowledge production.",
+   "fol": true
+  },
+  {
+   "id": "t12-bias",
+   "q": "Why must citizen-science data be analysed carefully?",
+   "answer": "They are biased toward easy places and times",
+   "wrong": [
+    "They are always fake",
+    "They have no locations",
+    "They are too precise"
+   ],
+   "e": "Filter for quality and model the observation process.",
+   "fol": true
+  },
+  {
+   "id": "t12-ebird",
+   "q": "What does eBird collect?",
+   "answer": "Bird observations with explicit effort (start time, duration)",
+   "wrong": [
+    "Satellite images of forests",
+    "DNA from soil",
+    "Weather data"
+   ],
+   "e": "Complete checklists with bounded effort are best."
+  },
+  {
+   "id": "t12-gbif",
+   "q": "What does GBIF do?",
+   "answer": "Aggregates occurrence records and sampling-event datasets",
+   "wrong": [
+    "Counts only birds at Christmas",
+    "Runs camera traps",
+    "Writes the Ten Principles"
+   ],
+   "e": "Volunteers supply over 50 % of GBIF data."
+  },
+  {
+   "id": "t12-l1",
+   "q": "Haklay's Level 1, where volunteers only collect data, is…",
+   "answer": "Crowdsourcing",
+   "wrong": [
+    "Extreme citizen science",
+    "Participatory science",
+    "Distributed intelligence"
+   ],
+   "e": "Level 1 of 4.",
+   "fol": true
+  },
+  {
+   "id": "t12-l4",
+   "q": "At which level do citizens co-design questions, methods, analysis and use of results?",
+   "answer": "Extreme citizen science",
+   "wrong": [
+    "Crowdsourcing",
+    "Distributed intelligence",
+    "Opportunistic recording"
+   ],
+   "e": "Level 4: scientists act as facilitators."
+  },
+  {
+   "id": "t12-arn",
+   "q": "How does Haklay's typology differ from Arnstein's ladder?",
+   "answer": "Every Haklay level has value; Arnstein runs from bad to good",
+   "wrong": [
+    "Haklay's has 8 rungs",
+    "Arnstein's is about birds",
+    "They are identical"
+   ],
+   "e": "Haklay's levels are flexible and people can move between them."
+  },
+  {
+   "id": "t12-ten",
+   "q": "Who wrote the Ten Principles of Citizen Science?",
+   "answer": "The European Citizen Science Association (ECSA)",
+   "wrong": [
+    "Cornell Lab of Ornithology",
+    "The IUCN",
+    "GBIF"
+   ],
+   "e": "Written 2013–2015, for good practice, a framework and credibility.",
+   "fol": true
+  },
+  {
+   "id": "t12-p5",
+   "q": "Which principle is served by newsletters telling volunteers what came of their data?",
+   "answer": "Participant feedback",
+   "wrong": [
+    "Open data and metadata",
+    "Legal and ethical issues",
+    "Active citizen involvement"
+   ],
+   "e": "Principle 5."
+  },
+  {
+   "id": "t12-cbc",
+   "q": "The Christmas Bird Count started in…",
+   "answer": "1900",
+   "wrong": [
+    "1800",
+    "1958",
+    "2009"
+   ],
+   "e": "Proposed by ornithologist Frank Chapman instead of the Christmas 'side hunt'."
+  },
+  {
+   "id": "t12-silver",
+   "q": "What separates modern citizen science from its historical form, according to Silvertown?",
+   "answer": "It is potentially available to all, not just a privileged few",
+   "wrong": [
+    "It is paid",
+    "It uses no technology",
+    "It only studies birds"
+   ],
+   "e": "His three drivers: technology, the public as a free resource, funders demanding outreach."
+  },
+  {
+   "id": "t12-qaqc",
+   "q": "Quality assurance vs quality control?",
+   "answer": "QA happens before and during collection; QC happens after",
+   "wrong": [
+    "QA happens after; QC before",
+    "They are the same",
+    "QC is only for satellite data"
+   ],
+   "e": "QA: training, protocols. QC: flagging outliers, checking photos."
+  },
+  {
+   "id": "t12-spipoll",
+   "q": "What is Spipoll's protocol?",
+   "answer": "Photograph every insect visiting one flowering plant for 20 minutes",
+   "wrong": [
+    "Count birds in a 24 km circle",
+    "Set camera traps for mammals",
+    "Collect soil samples"
+   ],
+   "e": "French pollinator survey (MNHN and OPIE, since 2010)."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Basics",
+   "term": "Citizen science",
+   "meaning": "Public participation in scientific research and knowledge production."
+  },
+  {
+   "group": "Basics",
+   "term": "Contributory citizen science",
+   "meaning": "Designed by scientists; volunteers mainly collect data."
+  },
+  {
+   "group": "Basics",
+   "term": "Opportunistic data",
+   "meaning": "Records made by chance with no sampling design, so uneven and biased."
+  },
+  {
+   "group": "Data",
+   "term": "eBird",
+   "meaning": "Bird observation platform that records effort (start time, duration)."
+  },
+  {
+   "group": "Data",
+   "term": "GBIF",
+   "meaning": "Global aggregator of occurrence records and sampling-event datasets."
+  },
+  {
+   "group": "Data",
+   "term": "Occupancy–detection model",
+   "meaning": "Statistical model that separates where a species is from whether it was detected."
+  },
+  {
+   "group": "Data",
+   "term": "Quality assurance",
+   "meaning": "Checks before and during collection (training, protocols)."
+  },
+  {
+   "group": "Data",
+   "term": "Quality control",
+   "meaning": "Checks after collection (outlier flags, photo checks)."
+  },
+  {
+   "group": "Data",
+   "term": "FAIR principles",
+   "meaning": "Data should be Findable, Accessible, Interoperable, Reusable."
+  },
+  {
+   "group": "Participation",
+   "term": "Ten Principles of Citizen Science",
+   "meaning": "ECSA's 2015 good-practice standard."
+  },
+  {
+   "group": "Participation",
+   "term": "Haklay typology",
+   "meaning": "Four levels of participation from crowdsourcing to extreme citizen science."
+  },
+  {
+   "group": "Participation",
+   "term": "Crowdsourcing",
+   "meaning": "Haklay Level 1: volunteers contribute data or computing."
+  },
+  {
+   "group": "Participation",
+   "term": "Extreme citizen science",
+   "meaning": "Haklay Level 4: citizens and scientists collaborate at every stage."
+  },
+  {
+   "group": "Participation",
+   "term": "BioBlitz",
+   "meaning": "Short, intense public survey recording as many species as possible in one place."
+  }
+ ],
+ "confusable": [
+  [
+   "Crowdsourcing",
+   "Extreme citizen science"
+  ],
+  [
+   "Quality assurance",
+   "Quality control"
+  ],
+  [
+   "eBird",
+   "GBIF"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Silvertown's 2009 paper was called 'A new {dawn|standard|age|hope} for citizen science'."
+  ],
+  [
+   1,
+   "The Christmas Bird Count began in {1900|1800|1950|2009}."
+  ],
+  [
+   2,
+   "Volunteers supply more than {50|5|10|90} % of GBIF data."
+  ],
+  [
+   2,
+   "Checks after data collection are quality {control|assurance|design|feedback}."
+  ],
+  [
+   3,
+   "Haklay's Level 1 is {crowdsourcing|extreme citizen science|participatory science|co-creation}."
+  ],
+  [
+   3,
+   "The Ten Principles were written by {ECSA|IUCN|GBIF|NASA}."
+  ]
+ ],
+ "id": "t12"
+}

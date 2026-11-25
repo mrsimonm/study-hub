@@ -1,0 +1,252 @@
+{
+ "num": 4,
+ "title": "Allee effects & population ecology",
+ "short": "Allee effects",
+ "sub": "Symposium topic 2 · Stephens et al. 1999 vs Muir et al. 2024",
+ "blurb": "Why small populations can do worse: component vs demographic, strong vs weak, rescue effect.",
+ "h1": "Allee effects: curiosity or fundamental driver?",
+ "lede": "Group 2's question: are Allee effects an ecological curiosity or a fundamental driver of population dynamics? Classic paper Stephens, Sutherland & Freckleton (1999), recent paper Muir, Lajeunesse & Kramer (2024).",
+ "six": [
+  "**Allee effect**: the smaller the population, the lower each individual's chance of surviving or reproducing.",
+  "**Component** Allee effect: one fitness component (e.g. pup survival) drops at low density. **Demographic**: overall growth per individual of the whole population drops.",
+  "**Strong** Allee effect: a threshold below which growth is negative and extinction is likely. **Weak**: growth is slower at low density, but no hard threshold.",
+  "**Rescue effect**: immigrants from other populations prevent or delay local extinction.",
+  "Mechanisms: mates (sea urchins), safety (island marmots), teamwork (African wild dogs), changing habitat (bark beetles).",
+  "Group 2's answer: **not a curiosity, but a fundamental driver** for small, declining and harvested populations, often before we can detect it."
+ ],
+ "must": "component vs demographic, strong vs weak Allee effect",
+ "foot": "Source: Group 2 symposium slides and notes; glossary section 3.",
+ "questions": [
+  {
+   "id": "t4-def",
+   "q": "What is the Allee effect, in one line?",
+   "answer": "Smaller populations mean lower individual survival or reproduction",
+   "wrong": [
+    "Larger populations always grow faster",
+    "Competition increases at high density",
+    "Populations grow until carrying capacity"
+   ],
+   "e": "Group 2: the smaller the population, the lower each individual's chance of surviving or reproducing.",
+   "fol": true
+  },
+  {
+   "id": "t4-comp",
+   "q": "A positive relationship between ONE measurable fitness component and density is a…",
+   "answer": "Component Allee effect",
+   "wrong": [
+    "Demographic Allee effect",
+    "Strong Allee effect",
+    "Rescue effect"
+   ],
+   "e": "Glossary 3a; e.g. pup survival in African wild dogs.",
+   "fol": true
+  },
+  {
+   "id": "t4-demo",
+   "q": "When the whole population's growth per individual drops at low numbers, it is a…",
+   "answer": "Demographic Allee effect",
+   "wrong": [
+    "Component Allee effect",
+    "Weak competition",
+    "Trophic cascade"
+   ],
+   "e": "Demographic = overall individual fitness vs density (e.g. Vancouver Island marmot)."
+  },
+  {
+   "id": "t4-strong",
+   "q": "What defines a STRONG Allee effect?",
+   "answer": "A threshold density below which growth is negative",
+   "wrong": [
+    "Growth is slower at low density but always positive",
+    "It affects only one fitness component",
+    "It only happens on islands"
+   ],
+   "e": "Below the threshold, extinction is likely.",
+   "fol": true
+  },
+  {
+   "id": "t4-weak",
+   "q": "A weak Allee effect means…",
+   "answer": "Growth slows at low density but there is no hard threshold",
+   "wrong": [
+    "The population always goes extinct",
+    "Immigration is impossible",
+    "Density has no effect"
+   ],
+   "e": "The population can in principle still recover from very low numbers."
+  },
+  {
+   "id": "t4-dogs",
+   "q": "African wild dogs were Group 2's example of which mechanism?",
+   "answer": "Teamwork (cooperative hunting and pup care)",
+   "wrong": [
+    "Mate finding",
+    "Changing habitat",
+    "Safety in numbers against cold"
+   ],
+   "e": "Fewer pack members → lower pup survival: a component Allee effect."
+  },
+  {
+   "id": "t4-urchin",
+   "q": "Sea urchins illustrated which Allee mechanism?",
+   "answer": "Finding mates",
+   "wrong": [
+    "Teamwork",
+    "Changing habitat",
+    "Predator swamping by birds"
+   ],
+   "e": "Mechanisms slide: mates (sea urchins), safety (marmots), teamwork (wild dogs), changing habitat (bark beetles)."
+  },
+  {
+   "id": "t4-rescue",
+   "q": "What is the rescue effect?",
+   "answer": "Immigrants from other populations prevent or delay local extinction",
+   "wrong": [
+    "Humans reintroducing species",
+    "A predator saving its prey",
+    "Fast reproduction after a crash"
+   ],
+   "e": "Glossary 3c; works only if patches are connected.",
+   "fol": true
+  },
+  {
+   "id": "t4-moth",
+   "q": "In gypsy moths, colonies below about 107 males tend to…",
+   "answer": "Shrink on their own",
+   "wrong": [
+    "Grow fastest",
+    "Stay stable",
+    "Merge with other colonies"
+   ],
+   "e": "A real threshold: a strong Allee effect (Liebhold & Bascompte 2003)."
+  },
+  {
+   "id": "t4-meta",
+   "q": "Muir et al. 2024 is…",
+   "answer": "A meta-analysis of 62 experimental studies",
+   "wrong": [
+    "The paper that first defined Allee effects",
+    "A single field study on marmots",
+    "A model of Neanderthals"
+   ],
+   "e": "Stephens et al. 1999 defined the terms; Muir et al. 2024 measured them."
+  },
+  {
+   "id": "t4-gap",
+   "q": "What gap did both papers point out, 25 years apart?",
+   "answer": "Theory focuses on demographic effects, experiments mostly measure component effects",
+   "wrong": [
+    "Nobody has studied Allee effects",
+    "Allee effects exist only in plants",
+    "Field data contradict experiments"
+   ],
+   "e": "Same gap in 1999 and 2024."
+  },
+  {
+   "id": "t4-strict",
+   "q": "What happens to the evidence for Allee effects as the test gets stricter?",
+   "answer": "It becomes rarer",
+   "wrong": [
+    "It becomes stronger",
+    "It stays the same",
+    "It disappears completely"
+   ],
+   "e": "Clear effects in experiments; only ~1 % of wild population-level records show it."
+  },
+  {
+   "id": "t4-answer",
+   "q": "Group 2's final answer?",
+   "answer": "A fundamental driver, deciding the fate of small, declining and harvested populations",
+   "wrong": [
+    "Only a curiosity of lab experiments",
+    "Irrelevant for conservation",
+    "Only important for pests"
+   ],
+   "e": "Often decisive before we can even detect it."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Allee",
+   "term": "Allee effect",
+   "meaning": "Smaller population → lower chance for each individual to survive or reproduce."
+  },
+  {
+   "group": "Allee",
+   "term": "Component Allee effect",
+   "meaning": "One fitness component (survival, mate finding, pups per adult) drops at low density."
+  },
+  {
+   "group": "Allee",
+   "term": "Demographic Allee effect",
+   "meaning": "The whole population's growth per individual drops at low density."
+  },
+  {
+   "group": "Allee",
+   "term": "Strong Allee effect",
+   "meaning": "A critical threshold density below which growth is negative and extinction likely."
+  },
+  {
+   "group": "Allee",
+   "term": "Weak Allee effect",
+   "meaning": "Growth slows at low density but there is no hard threshold."
+  },
+  {
+   "group": "Allee",
+   "term": "Threshold (point of no return)",
+   "meaning": "Population size below which a strong Allee effect drives decline."
+  },
+  {
+   "group": "Connectivity",
+   "term": "Rescue effect",
+   "meaning": "Immigrants prevent or delay local extinction."
+  },
+  {
+   "group": "Connectivity",
+   "term": "Allee pit",
+   "meaning": "Model result where some connectivity can first harm, before it helps, a population with Allee effects."
+  },
+  {
+   "group": "Connectivity",
+   "term": "Dispersal",
+   "meaning": "Movement of individuals between habitat patches."
+  }
+ ],
+ "confusable": [
+  [
+   "Component Allee effect",
+   "Demographic Allee effect"
+  ],
+  [
+   "Strong Allee effect",
+   "Weak Allee effect"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "In an Allee effect, smaller populations have {lower|higher|equal|random} individual fitness."
+  ],
+  [
+   2,
+   "A component Allee effect concerns {one|every|no|two} fitness component."
+  ],
+  [
+   2,
+   "Pup survival rising with pack size in African wild dogs is a {component|demographic|strong|weak} Allee effect."
+  ],
+  [
+   3,
+   "A strong Allee effect has a critical {threshold|peak|ceiling|cycle} density."
+  ],
+  [
+   3,
+   "Immigrants preventing local extinction is the {rescue|Allee|founder|edge} effect."
+  ],
+  [
+   4,
+   "Muir et al. 2024 analysed {62|12|154|1198} experimental studies."
+  ]
+ ],
+ "id": "t4"
+}

@@ -1,0 +1,556 @@
+{
+  "num": 3,
+  "id": "t3",
+  "title": "Viruses – Introduction to Virology",
+  "short": "Viruses",
+  "sub": "Lecture 3 · RNDr. Jiří Černý, Ph.D. · 16 Oct 2026",
+  "blurb": "The lecture opens with a review of molecular and cell biology (DNA vs RNA, RNA structure levels, amino-acid classes, protein structure levels, prokaryotic vs eukaryotic cells).",
+  "h1": "Viruses – Introduction to Virology",
+  "lede": "The lecture opens with a review of molecular and cell biology (DNA vs RNA, RNA structure levels, amino-acid classes, protein structure levels, prokaryotic vs eukaryotic cells). It then asks what viruses are (non-cellular obligate intracellular parasites; the \"virocell\" idea), and shows how small (~120 nm, coronavirus) and genetically simple (2–2,500 genes) they are. The history runs from polio in Ancient Egypt, variolation in China, Jenner and Pasteur to TMV and the discovery of viruses. Then come virus structure (capsid, capsomers, envelope, nucleocapsid; icosahedral, filamentous and head-tail shapes; HIV as an example) and classification (by structure, host, nucleic acid type, the Baltimore classification and taxonomy). The six steps of replication follow, then pathogenesis, ecological cycles, vectors, and beneficial viruses.",
+  "six": [
+    "Definition: non-cellular obligate intracellular parasite",
+    "Size of viruses vs bacteria and cells",
+    "Who discovered viruses (Ivanovsky, Beijerinck, TMV; Loeffler, FMD) and the first vaccinations (Jenner, Pasteur)",
+    "Virus structure: capsid, capsomer, nucleocapsid, envelope",
+    "Shapes: icosahedral, filamentous, head-tail",
+    "Baltimore classes with examples"
+  ],
+  "must": "Viruses",
+  "questions": [
+    {
+      "id": "t3-q01",
+      "q": "Viruses are best described as:",
+      "answer": "non-cellular obligate intracellular parasites",
+      "wrong": [
+        "simple eukaryotes",
+        "unicellular prokaryotes",
+        "free-living organisms with their own metabolism"
+      ],
+      "e": "Viruses are non-cellular, obligate intracellular parasites. (Slides: p. 14)",
+      "fol": true
+    },
+    {
+      "id": "t3-q02",
+      "q": "Who first showed that the tobacco mosaic agent passes through bacterial filters (1892)?",
+      "answer": "Ivanovsky",
+      "wrong": [
+        "Mayer",
+        "Beijerinck",
+        "Pasteur"
+      ],
+      "e": "Dmitri Ivanovsky, 1892. (Slides: p. 32)",
+      "fol": true
+    },
+    {
+      "id": "t3-q03",
+      "q": "The first vaccination was performed by:",
+      "answer": "Edward Jenner in 1796",
+      "wrong": [
+        "Louis Pasteur in 1885",
+        "Robert Koch in 1882",
+        "Martinus Beijerinck in 1898"
+      ],
+      "e": "Jenner vaccinated James Phipps on 14 May 1796. (Slides: p. 30)",
+      "fol": true
+    },
+    {
+      "id": "t3-q04",
+      "q": "Capsid + genomic nucleic acid together form the:",
+      "answer": "nucleocapsid",
+      "wrong": [
+        "matrix",
+        "envelope",
+        "capsomer"
+      ],
+      "e": "Nucleocapsid = capsid + genome. (Slides: p. 43)",
+      "fol": true
+    },
+    {
+      "id": "t3-q05",
+      "q": "Influenza virus and Ebola virus belong to Baltimore class:",
+      "answer": "V (−ssRNA)",
+      "wrong": [
+        "VI (ssRNA-RT)",
+        "III (dsRNA)",
+        "IV (+ssRNA)"
+      ],
+      "e": "Both are negative-sense ssRNA viruses. (Slides: p. 54)"
+    },
+    {
+      "id": "t3-q06",
+      "q": "Which is the correct order of viral replication steps?",
+      "answer": "attachment, penetration, uncoating, replication, assembly, release",
+      "wrong": [
+        "attachment, uncoating, penetration, replication, release, assembly",
+        "uncoating, attachment, penetration, replication, assembly, release",
+        "penetration, attachment, uncoating, assembly, replication, release"
+      ],
+      "e": "Attachment → penetration → uncoating → replication → assembly → release. (Slides: p. 57)"
+    },
+    {
+      "id": "t3-q07",
+      "q": "Which is NOT a mode of virus release?",
+      "answer": "Uncoating",
+      "wrong": [
+        "Exocytosis",
+        "Cell lysis",
+        "Budding"
+      ],
+      "e": "Uncoating releases the genome inside the cell; release is budding, exocytosis or lysis. (Slides: p. 62)"
+    },
+    {
+      "id": "t3-q08",
+      "q": "DNA viruses usually replicate in the:",
+      "answer": "nucleus",
+      "wrong": [
+        "Golgi apparatus",
+        "mitochondria",
+        "cytoplasm"
+      ],
+      "e": "DNA viruses usually replicate in the nucleus, RNA viruses in the cytoplasm. (Slides: p. 61)"
+    },
+    {
+      "id": "t3-q09",
+      "q": "Approximate size of a coronavirus particle:",
+      "answer": "120 nm",
+      "wrong": [
+        "3 µm",
+        "30 µm",
+        "1.2 nm"
+      ],
+      "e": "~120 nm (10⁻⁷ m); E. coli is ~3 µm. (Slides: p. 16–17)"
+    },
+    {
+      "id": "t3-q10",
+      "q": "Viruses that infect bacteria are called:",
+      "answer": "bacteriophages",
+      "wrong": [
+        "retroviruses",
+        "arboviruses",
+        "prions"
+      ],
+      "e": "Bacterial viruses = bacteriophages. (Slides: p. 51)"
+    },
+    {
+      "id": "t3-q11",
+      "q": "Which statement about genes in viruses is true?",
+      "answer": "No gene is universal for all viruses",
+      "wrong": [
+        "Viruses have no genes",
+        "All viruses have at least 100 genes",
+        "All viruses share the polymerase gene"
+      ],
+      "e": "Slide 41: no genes universal for all viruses. (Slides: p. 41)"
+    },
+    {
+      "id": "t3-q12",
+      "q": "Retroviruses such as HIV are in Baltimore class:",
+      "answer": "VI",
+      "wrong": [
+        "IV",
+        "V",
+        "VII"
+      ],
+      "e": "Class VI: ssRNA viruses using reverse transcription. (Slides: p. 54)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Viruses",
+      "term": "Virus",
+      "meaning": "non-cellular, obligate intracellular parasite"
+    },
+    {
+      "group": "Viruses",
+      "term": "Virocell",
+      "meaning": "an infected cell functioning as a virus-producing entity"
+    },
+    {
+      "group": "Viruses",
+      "term": "Capsomer",
+      "meaning": "protein subunit building the capsid"
+    },
+    {
+      "group": "Viruses",
+      "term": "Capsid",
+      "meaning": "protein shell around the viral genome"
+    },
+    {
+      "group": "Viruses",
+      "term": "Nucleocapsid",
+      "meaning": "capsid + genomic nucleic acid"
+    },
+    {
+      "group": "Viruses",
+      "term": "Envelope",
+      "meaning": "phospholipid membrane with glycoproteins around some viruses"
+    },
+    {
+      "group": "Viruses",
+      "term": "Matrix proteins",
+      "meaning": "layer between envelope and capsid"
+    },
+    {
+      "group": "Viruses",
+      "term": "Bacteriophage",
+      "meaning": "virus infecting bacteria"
+    },
+    {
+      "group": "Viruses",
+      "term": "Arbovirus",
+      "meaning": "arthropod-borne virus"
+    },
+    {
+      "group": "Viruses",
+      "term": "Baltimore classification",
+      "meaning": "7 virus classes by genome type and mRNA synthesis"
+    },
+    {
+      "group": "Viruses",
+      "term": "Variolation",
+      "meaning": "deliberate inoculation with smallpox material (ancient China)"
+    },
+    {
+      "group": "Viruses",
+      "term": "Vaccination",
+      "meaning": "Jenner, cowpox, 1796"
+    },
+    {
+      "group": "Viruses",
+      "term": "Contagium vivum fluidum",
+      "meaning": "Beijerinck's \"soluble living germ\" = virus"
+    },
+    {
+      "group": "Viruses",
+      "term": "LUCA",
+      "meaning": "last universal common ancestor, ~3 billion years ago"
+    },
+    {
+      "group": "Viruses",
+      "term": "Triangulation number (T)",
+      "meaning": "describes icosahedral capsid size"
+    },
+    {
+      "group": "Viruses",
+      "term": "Viraemia",
+      "meaning": "virus in the blood (primary and secondary)"
+    },
+    {
+      "group": "Viruses",
+      "term": "Reservoir host",
+      "meaning": "species maintaining the virus in nature (bats for Ebola)"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Viruses: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Define a virus.",
+        "grp": "Viruses",
+        "a": "A non-cellular, obligate intracellular parasite."
+      },
+      {
+        "n": "Who said \"a virus is a piece of bad news wrapped up in protein\"?",
+        "grp": "Viruses",
+        "a": "Sir Peter Medawar (Nobel Prize 1960)."
+      },
+      {
+        "n": "How big is a coronavirus?",
+        "grp": "Viruses",
+        "a": "About 120 nm (10⁻⁷ m)."
+      },
+      {
+        "n": "Which giant virus is about 1 µm in size?",
+        "grp": "Viruses",
+        "a": "Pandoravirus."
+      },
+      {
+        "n": "Which virus has the smallest genome shown (2 genes, ~1,700 nt)?",
+        "grp": "Viruses",
+        "a": "Circovirus."
+      },
+      {
+        "n": "How many genes does the human genome have?",
+        "grp": "Viruses",
+        "a": "About 20,000."
+      },
+      {
+        "n": "Who performed the first vaccination, and when?",
+        "grp": "Viruses",
+        "a": "Edward Jenner, 14 May 1796 (James Phipps)."
+      },
+      {
+        "n": "Who vaccinated Joseph Meister in 1885?",
+        "grp": "Viruses",
+        "a": "Louis Pasteur (rabies, artificial vaccine)."
+      },
+      {
+        "n": "What did Ivanovsky show in 1892?",
+        "grp": "Viruses",
+        "a": "The agent of tobacco mosaic disease passes through bacterial filters."
+      },
+      {
+        "n": "Who named the \"virus\" (contagium vivum fluidum)?",
+        "grp": "Viruses",
+        "a": "Martinus Beijerinck, 1898."
+      },
+      {
+        "n": "Which animal disease did Loeffler show to be viral in 1898?",
+        "grp": "Viruses",
+        "a": "Foot-and-mouth disease (FMD)."
+      },
+      {
+        "n": "Why can't viruses be seen in a light microscope?",
+        "grp": "Viruses",
+        "a": "Resolution is ~200 nm (λ/2); most viruses are smaller."
+      },
+      {
+        "n": "When were viruses first observed in the electron microscope?",
+        "grp": "Viruses",
+        "a": "1931."
+      },
+      {
+        "n": "Which genome types can viruses have?",
+        "grp": "Viruses",
+        "a": "RNA (ds, +ss, −ss, circular) or DNA (ds, ss)."
+      },
+      {
+        "n": "Is there a gene shared by all viruses?",
+        "grp": "Viruses",
+        "a": "No, no gene is universal for all viruses."
+      },
+      {
+        "n": "What is LUCA?",
+        "grp": "Viruses",
+        "a": "The last universal common ancestor of cellular life, ~3 billion years ago."
+      },
+      {
+        "n": "What is a nucleocapsid?",
+        "grp": "Viruses",
+        "a": "Capsid + genomic nucleic acid."
+      },
+      {
+        "n": "What are capsomers?",
+        "grp": "Viruses",
+        "a": "Capsid protein subunits that build the capsid."
+      },
+      {
+        "n": "Name the parts of HIV.",
+        "grp": "Viruses",
+        "a": "Phospholipid envelope, envelope glycoproteins, matrix proteins, capsid (capsomers), genomic RNA, virus-associated enzymes."
+      },
+      {
+        "n": "Three structural shapes of viruses?",
+        "grp": "Viruses",
+        "a": "Icosahedral, filamentous, head-tail."
+      },
+      {
+        "n": "What are bacteriophages?",
+        "grp": "Viruses",
+        "a": "Viruses infecting bacteria."
+      },
+      {
+        "n": "What does the Baltimore classification classify by?",
+        "grp": "Viruses",
+        "a": "Genome type and how the virus makes mRNA (7 classes)."
+      },
+      {
+        "n": "Baltimore class of influenza and Ebola?",
+        "grp": "Viruses",
+        "a": "Class V, −ssRNA."
+      },
+      {
+        "n": "Baltimore class of retroviruses (HIV)?",
+        "grp": "Viruses",
+        "a": "Class VI, ssRNA with reverse transcription."
+      },
+      {
+        "n": "Baltimore class of hepatitis B virus?",
+        "grp": "Viruses",
+        "a": "Class VII, dsDNA with reverse transcription."
+      },
+      {
+        "n": "Baltimore class of poliovirus?",
+        "grp": "Viruses",
+        "a": "Class IV, +ssRNA."
+      },
+      {
+        "n": "Six steps of viral replication?",
+        "grp": "Viruses",
+        "a": "Attachment, penetration, uncoating, replication, assembly, release."
+      },
+      {
+        "n": "What happens in attachment?",
+        "grp": "Viruses",
+        "a": "The virus binds a host-cell receptor, sometimes also co-receptors (HIV: CD4 + CCR5/CXCR4)."
+      },
+      {
+        "n": "Three ways of penetration?",
+        "grp": "Viruses",
+        "a": "Membrane fusion, receptor-mediated endocytosis, membrane penetration."
+      },
+      {
+        "n": "Where do RNA and DNA viruses usually replicate?",
+        "grp": "Viruses",
+        "a": "RNA viruses in the cytoplasm, DNA viruses in the nucleus (with exceptions)."
+      },
+      {
+        "n": "Three modes of viral release?",
+        "grp": "Viruses",
+        "a": "Budding, exocytosis, cell lysis."
+      },
+      {
+        "n": "Reservoir hosts of Ebola virus?",
+        "grp": "Viruses",
+        "a": "Bats (believed)."
+      },
+      {
+        "n": "Example of a beneficial virus from the lecture?",
+        "grp": "Viruses",
+        "a": "A virus in a fungus in a plant gives the plant heat tolerance (three-way symbiosis); also phages."
+      },
+      {
+        "n": "Genus and family of SARS-CoV-2?",
+        "grp": "Viruses",
+        "a": "Betacoronavirus, Coronaviridae (order Nidovirales)."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Genome vs Example <small>(p. 54)</small>",
+      [
+        "Baltimore class",
+        "Genome",
+        "Example"
+      ],
+      [
+        [
+          "I",
+          "dsDNA",
+          "adenovirus, herpes simplex"
+        ],
+        [
+          "II",
+          "ssDNA",
+          "parvovirus"
+        ],
+        [
+          "III",
+          "dsRNA",
+          "reovirus, rotavirus"
+        ],
+        [
+          "IV",
+          "+ssRNA",
+          "poliovirus (SARS-CoV-2)"
+        ],
+        [
+          "V",
+          "−ssRNA",
+          "influenza, Ebola"
+        ],
+        [
+          "VI",
+          "ssRNA-RT",
+          "retroviruses (HIV)"
+        ],
+        [
+          "VII",
+          "dsDNA-RT",
+          "hepatitis B"
+        ]
+      ]
+    ],
+    [
+      "Unenveloped vs Enveloped <small>(p. 49)</small>",
+      [
+        "",
+        "Unenveloped",
+        "Enveloped"
+      ],
+      [
+        [
+          "Layers",
+          "genome + capsid (+ surface proteins)",
+          "genome + capsid + lipid envelope with surface proteins"
+        ]
+      ]
+    ],
+    [
+      "Release mode <small>(p. 62)</small>",
+      [
+        "Release mode",
+        ""
+      ],
+      [
+        [
+          "Budding",
+          "through the membrane (enveloped viruses)"
+        ],
+        [
+          "Exocytosis",
+          "via vesicles"
+        ],
+        [
+          "Cell lysis",
+          "cell bursts"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/03 Viruses - Introduction to Virology.pdf (73 pages; many picture slides, read visually). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Viruses: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Coronavirus <b>120 nm</b>; <i>E. coli</i> <b>3 µm</b>; eukaryotic cell <b>30 µm</b>; hair <b>100 µm</b>; pandoravirus <b>~1 µm</b>",
+            "p. 16–21"
+          ],
+          [
+            "Circovirus <b>~1,700 nt, 2 genes</b>; herpesvirus ~150,000 bp, ~150 genes; human ~3.2 billion bp, ~20,000 genes",
+            "p. 22–26"
+          ],
+          [
+            "Light-microscope resolution <b>~200 nm</b>",
+            "p. 33"
+          ],
+          [
+            "<b>1931</b>: first viruses in the electron microscope",
+            "p. 33"
+          ],
+          [
+            "Jenner <b>1796</b>; Pasteur <b>1885</b>; Mayer <b>1876</b>; Ivanovsky <b>1892</b>; Beijerinck &amp; Loeffler <b>1898</b>",
+            "p. 30–32"
+          ],
+          [
+            "HIV variation in one patient <b>5 %</b>; DENV isolates <b>~30 %</b>",
+            "p. 41"
+          ],
+          [
+            "LUCA <b>~3 billion years</b> ago",
+            "p. 40"
+          ]
+        ]
+      }
+    ]
+  }
+}

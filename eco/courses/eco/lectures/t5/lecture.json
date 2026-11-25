@@ -1,0 +1,262 @@
+{
+ "num": 5,
+ "title": "Predators & prey: top-down or bottom-up?",
+ "short": "Top-down vs bottom-up",
+ "sub": "Symposium topic 3 · Krebs et al. 1995 vs Oli et al. 2026",
+ "blurb": "Snowshoe hare cycles in Yukon: predation, food, trophic cascades.",
+ "h1": "Does predation grip prey numbers?",
+ "lede": "Group 3's question: top-down control or bottom-up release? The test case is the snowshoe hare cycle in Kluane, Yukon. Classic: Krebs et al. (1995). Recent: Oli et al. (2026).",
+ "six": [
+  "**Top-down control**: consumers (predators) regulate the lower trophic levels.",
+  "**Bottom-up control**: resource supply (food, nutrients, plant productivity) sets the higher levels.",
+  "**Predation** in the glossary is broad: anything that reduces prey's future survival or reproduction to zero (parasitoids, herbivory, seed predation too).",
+  "**Trophic cascade**: a change at one level ripples down, with alternating rises and falls in biomass.",
+  "Krebs 1995: food addition AND predator exclusion together gave the biggest effect (~11×), but the decline still came.",
+  "Oli 2026: 43 years of capture-mark-recapture; declines come from lower survival, mainly before weaning. Verdict: predation matters a lot, but food and demography matter too."
+ ],
+ "must": "top-down vs bottom-up control",
+ "foot": "Source: Group 3 symposium slides; glossary section 4.",
+ "questions": [
+  {
+   "id": "t5-td",
+   "q": "Top-down control means…",
+   "answer": "Consumers mainly regulate the lower trophic levels",
+   "wrong": [
+    "Resources mainly regulate the higher levels",
+    "Plants control predators",
+    "Climate controls everything"
+   ],
+   "e": "Glossary 4b.",
+   "fol": true
+  },
+  {
+   "id": "t5-bu",
+   "q": "Bottom-up control means…",
+   "answer": "Resource supply mainly determines the higher trophic levels",
+   "wrong": [
+    "Predators control prey",
+    "Decomposers control plants",
+    "Parasites control hosts"
+   ],
+   "e": "Glossary 4c: nutrients and primary production.",
+   "fol": true
+  },
+  {
+   "id": "t5-pred",
+   "q": "Which of these counts as predation under the glossary's broad definition?",
+   "answer": "A parasitoid that inevitably kills its host",
+   "wrong": [
+    "Two plants competing for light",
+    "A bird nesting in a tree",
+    "Bacteria decomposing a log"
+   ],
+   "e": "Predation reduces prey's future survival or reproduction to zero; includes parasitoids, parasitic castration, herbivory and seed predation."
+  },
+  {
+   "id": "t5-casc",
+   "q": "A trophic cascade is…",
+   "answer": "Effects passing down a food web, with alternating rises and falls in biomass",
+   "wrong": [
+    "A waterfall habitat",
+    "Energy loss between levels",
+    "A single predator eating many prey"
+   ],
+   "e": "E.g. more predators → fewer herbivores → more plants.",
+   "fol": true
+  },
+  {
+   "id": "t5-cycle",
+   "q": "How long is the snowshoe hare population cycle?",
+   "answer": "9 to 11 years",
+   "wrong": [
+    "1 year",
+    "3 to 4 years",
+    "About 50 years"
+   ],
+   "e": "Numbers grow very large, then crash sharply."
+  },
+  {
+   "id": "t5-where",
+   "q": "Where were both hare studies done?",
+   "answer": "Kluane Lake, Yukon, Canada",
+   "wrong": [
+    "Lake Nakuru, Kenya",
+    "The Galápagos",
+    "Białowieża Forest, Poland"
+   ],
+   "e": "Boreal forest of Kluane, Yukon."
+  },
+  {
+   "id": "t5-krebs",
+   "q": "Which Krebs et al. 1995 treatment gave the biggest increase in hare density?",
+   "answer": "Food addition plus predator exclusion",
+   "wrong": [
+    "Food addition alone",
+    "Predator exclusion alone",
+    "Forest fertilisation"
+   ],
+   "e": "Combined ≈11×: food and predation interact.",
+   "fol": true
+  },
+  {
+   "id": "t5-why",
+   "q": "Why did the hare decline still happen in the Krebs experiment?",
+   "answer": "Birds of prey still hunted and hares could leave the fenced areas",
+   "wrong": [
+    "The food ran out",
+    "The fences were removed",
+    "Disease killed the hares"
+   ],
+   "e": "The decline was delayed, not prevented."
+  },
+  {
+   "id": "t5-oli",
+   "q": "What method did Oli et al. 2026 use?",
+   "answer": "Capture-mark-recapture models on 43 years of data",
+   "wrong": [
+    "A fencing experiment",
+    "Satellite images",
+    "A meta-analysis of 62 studies"
+   ],
+   "e": "Data 1977–2020, more than 20,000 captures of over 7,000 hares."
+  },
+  {
+   "id": "t5-olires",
+   "q": "What mainly drove population declines in Oli et al. 2026?",
+   "answer": "Reduced survival, mainly before weaning",
+   "wrong": [
+    "Fewer births only",
+    "Emigration",
+    "Lower adult body size"
+   ],
+   "e": "Survival was higher in the increase phase."
+  },
+  {
+   "id": "t5-levels",
+   "q": "In the hare food web, the hares are…",
+   "answer": "Primary consumers",
+   "wrong": [
+    "Primary producers",
+    "Secondary consumers",
+    "Decomposers"
+   ],
+   "e": "Plants (producers) → hares (primary consumers) → predators (secondary consumers)."
+  },
+  {
+   "id": "t5-nonlethal",
+   "q": "Risk-induced stress and behaviour changes in prey are…",
+   "answer": "Non-lethal effects of predation",
+   "wrong": [
+    "Bottom-up effects",
+    "Lethal effects",
+    "Allee effects"
+   ],
+   "e": "Lethal = killing; non-lethal = fear, stress, behaviour shifts."
+  },
+  {
+   "id": "t5-answer",
+   "q": "Group 3's final answer?",
+   "answer": "Predation plays a major role, but food and demographic processes are also essential",
+   "wrong": [
+    "Only predators matter",
+    "Only food matters",
+    "Neither matters; cycles are random"
+   ],
+   "e": "The two studies give complementary evidence."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Control",
+   "term": "Top-down control",
+   "meaning": "Consumers (predators, herbivores) mainly regulate the lower trophic levels."
+  },
+  {
+   "group": "Control",
+   "term": "Bottom-up control",
+   "meaning": "Resource supply (nutrients, primary production) mainly determines the higher trophic levels."
+  },
+  {
+   "group": "Control",
+   "term": "Trophic cascade",
+   "meaning": "Direct and indirect effects passing down a food web, with alternating rises and falls in biomass."
+  },
+  {
+   "group": "Predation",
+   "term": "Predation",
+   "meaning": "Interaction that reduces prey's future survival or reproduction to zero."
+  },
+  {
+   "group": "Predation",
+   "term": "Parasitoid",
+   "meaning": "An organism that develops on a host and inevitably kills it."
+  },
+  {
+   "group": "Predation",
+   "term": "Lethal effect",
+   "meaning": "Prey killed and eaten."
+  },
+  {
+   "group": "Predation",
+   "term": "Non-lethal effect",
+   "meaning": "Fear, stress and behaviour changes caused by predation risk."
+  },
+  {
+   "group": "Food web",
+   "term": "Primary producer",
+   "meaning": "Organism making its own food (plants)."
+  },
+  {
+   "group": "Food web",
+   "term": "Primary consumer",
+   "meaning": "Herbivore eating producers (the hares)."
+  },
+  {
+   "group": "Food web",
+   "term": "Secondary consumer",
+   "meaning": "Predator eating herbivores."
+  },
+  {
+   "group": "Methods",
+   "term": "Capture-mark-recapture",
+   "meaning": "Catching, marking and recatching animals to estimate survival and population size."
+  }
+ ],
+ "confusable": [
+  [
+   "Top-down control",
+   "Bottom-up control"
+  ],
+  [
+   "Lethal effect",
+   "Non-lethal effect"
+  ],
+  [
+   "Primary consumer",
+   "Secondary consumer"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Top-down control is driven by {consumers|resources|climate|decomposers}."
+  ],
+  [
+   1,
+   "Bottom-up control is driven by {resources|predators|parasites|humans}."
+  ],
+  [
+   2,
+   "The snowshoe hare cycle lasts about {10|2|50|100} years."
+  ],
+  [
+   3,
+   "Food plus predator exclusion raised hare density about {11|2|100|50} times."
+  ],
+  [
+   4,
+   "Oli et al. found declines come mainly from lower survival before {weaning|winter|birth|migration}."
+  ]
+ ],
+ "id": "t5"
+}

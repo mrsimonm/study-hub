@@ -1,0 +1,571 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Igneous rocks
+and processes
+=== SLIDE 2 ===
+What is
+igneous petrology?
+• Igneous = Magmatic
+• Petrology = Study of rocks and
+their formative processes
+=== SLIDE 3 ===
+Content
+• Magma properties
+• Rock classification
+• Igneous structures
+• Igneous rocks
+=== SLIDE 4 ===
+What is
+magma?
+Magma properties
+=== SLIDE 5 ===
+“Hot fluid or semi-fluid material
+below or within the
+Earth's crust from which lava and
+other igneous rock is formed on
+cooling.”
+Magma properties
+- Oxford languages
+=== SLIDE 6 ===
+“Molten silicate material
+containing liquid, solid, and gas
+phases.”
+Magma properties
+- My “compositional” definition
+=== SLIDE 7 ===
+Magma properties
+Liquid Solid Gas
+• Viscous fluid
+• Most commonly silicate
+composition
+• Crystalizing crystals
+• Residue after partial
+melting
+• Fragments assimilated
+from the surrounding
+rock (xenoliths)
+• Bubbles filled with
+volatile components
+(H2O, CO2, H2S, Cl…)
+• Form with pressure
+decrease
+• Cause of eruptions
+=== SLIDE 8 ===
+Magma properties
+Felsic Intermediate Ultramafic
+• High SiO2, Na2O, K2O
+• Low FeO, MgO, CaO
+• High gas content
+• Low density
+• Low temperature
+• High viscosity
+• Highly explosive
+• Key minerals: Quartz, K-
+feldspar, Plagioclase, Mica
+• Rhyolite, granite
+• Lava domes
+Mafic
+• Average SiO2, Na2O, K2O
+• Average FeO, MgO, CaO
+• Average gas content
+• Average density
+• Average temperature
+• Average viscosity
+• Rather explosive
+• Key minerals: Quartz,
+Plagioclase, Amphibole
+• Andesite, diorite
+• Stratovolcanoes
+• Low SiO2, Na2O, K2O
+• High FeO, MgO, CaO
+• Low gas content
+• High density
+• High temperature
+• Low viscosity
+• Effusive
+• Key minerals: Plagioclase,
+Amphibole, Pyroxene
+• Basalt, gabbro
+• Shield volcanoes
+• Very low SiO2, Na2O, K2O
+• Very high FeO, MgO, CaO
+• Low gas content
+• High density
+• High temperature
+• Very low viscosity
+• Effusive
+• Key minerals: Olivine,
+Pyroxene
+• Picrite, komatiite
+peridotite
+=== SLIDE 9 ===
+Magma properties
+=== SLIDE 10 ===
+Magma properties
+Basaltic lava flow:
+https://www.youtube.com/shorts/eSPNZnZQGzs
+Andesitic/rhyolitic eruption:
+https://www.youtube.com/watch?v=8qHJO_4mXfQ&t=1s
+=== SLIDE 11 ===
+How can we
+describe them and
+classify them?
+Igneous rocks
+=== SLIDE 12 ===
+Igneous rocks
+• Texture
+• Mineral composition
+• Chemical composition
+Rock identification
+Other useful thigs to look at:
+• Color
+• Weigh (density)
+• Structure
+• Field relationships
+• Weathering features
+• Magnetic anisotropy
+• Radioactivity
+=== SLIDE 13 ===
+Igneous rocks
+=== SLIDE 14 ===
+Igneous rocks
+Plutonic rocks
+• = intrusive
+• Form when magma
+„freezes“ (crystallizes)
+beneath Earth surface
+• Slow cooling
+• Phaneritic or porphyritic
+texture
+=== SLIDE 15 ===
+Igneous rocks
+Volcanic rocks
+• = extrusive
+• Form when magma erupts
+on surface
+• Rapid cooling
+• Aphanitic, glassy, vesicular
+or porphyritic texture
+• Explosive vs efusive
+(depending on the magma
+composition and gas
+content)
+=== SLIDE 16 ===
+Igneous rocks
+Pyroclastic rocks
+• fragmented volcanic
+material ejected and
+deposited during explosive
+eruptions
+• Composed of volcanic ash,
+lapilli, blocks, or bombs
+• Clastic texture – made of
+angular fragments (not
+interlocking crystals)
+=== SLIDE 17 ===
+Igneous rocks
+Pyroclastic rocks
+• Ash (<2 mm) → forms tuff
+• Lapilli (2–64 mm) → forms
+lapilli tuff or lapillistone
+• Blocks and bombs (>64
+mm) → form agglomerate
+or volcanic breccia
+=== SLIDE 18 ===
+Igneous rocks
+Activity:
+Fill in names of
+the rock-
+forming
+minerals in the
+blank spaces
+=== SLIDE 19 ===
+Igneous rocks
+Relationship
+between SiO2
+content, rock
+name, and
+mineral
+composition
+=== SLIDE 20 ===
+Igneous rocks
+QAPF diagram:
+Classification based
+on proportions of
+Q: Quartz
+F: Foid
+A: Alkali feldspar
+P: Plagiocalse
+=== SLIDE 21 ===
+Igneous rocks
+QAPF diagram:
+What you need to
+know
+=== SLIDE 22 ===
+Igneous rocks
+Gabbroids
+classification based
+on proportions of
+Plagioclase
+Opx: Orthopyroxene
+Cpx: Clinopyroxene
+and
+Plag: Plagioclase
+Px: Pyroxene
+Ol: Olivine
+=== SLIDE 23 ===
+Igneous rocks
+Ultramafic rocks
+classification based
+on proportions of
+Ol: Olivine
+Opx: Orthopyroxene
+Cpx: Clinopyroxene
+=== SLIDE 24 ===
+Igneous rocks – geochemical analyses
+Ultramafic Mafic Intermediate Felsic
+Oxide Picrite Basalt Andesite Rhyolite
+SiO2 46.4 53.8 60.0 73.2
+TiO2 2.0 2.0 1.0 0.2
+Al2O3 8.5 13.9 16.0 14.0
+Fe2O3 2.5 2.6 1.9 0.6
+FeO 9.8 9.3 6.2 1.7
+MnO 0.2 0.2 0.2 0.0
+MgO 20.8 4.1 3.9 0.4
+CaO 7.4 7.9 5.9 1.3
+Na2O 1.6 3.0 3.9 3.9
+K2O 0.3 1.5 0.9 4.1
+P2O5 0.2 0.4 0.2 0.0
+Example of
+chemical
+compositions of
+different igneous
+rocks
+=== SLIDE 25 ===
+Igneous rocks
+TAS (Total alkali–
+silica) diagram:
+classification
+based on SiO2 vs
+Na2O+K2O
+contents
+(volcanic)
+=== SLIDE 26 ===
+Igneous rocks
+TAS diagram:
+classification
+based on SiO2 vs
+Na2O+K2O
+contents
+(plutonic)
+=== SLIDE 27 ===
+Igneous structures
+• Plutonic vs. volcanic
+• Primary (magmatic) vs. secondary (weathering)
+=== SLIDE 28 ===
+Igneous structures
+Activity:
+Name the
+individual
+intrusive bodies
+=== SLIDE 29 ===
+Igneous structures
+=== SLIDE 30 ===
+Igneous structures
+Batholiths: are large
+mass of intrusive
+igneous that forms from
+cooled magma deep in
+the Earth's crust.
+Batholiths are almost
+always made mostly of
+felsic or intermediate
+rock types, such as
+granite, quartz
+monzonite, or diorite.
+Half Dome,
+Yosemite
+National
+Park, Sierra
+Nevada
+Batholith
+Map of
+North
+American
+batholiths
+=== SLIDE 31 ===
+Igneous structures
+Stock: is a discordant
+igneous intrusion having
+a surface exposure of
+less than 100 km2,
+differing from batholiths
+only in being smaller.
+The term stock usually
+refers to individual,
+relatively small plutons
+(<20 km diameter). Most
+stocks are probably the
+cupolas of hidden
+batholith.
+Syeniticstock,
+southern Israel
+=== SLIDE 32 ===
+Igneous structures
+Lopolith: a large igneous
+intrusion which is
+lenticular in shape with a
+depressed central region.
+Lopoliths are generally
+concordant with the
+intruded strata, with dike
+or funnel-shaped feeder
+bodies below the body.
+Lopoliths can be huge in
+size; the Bushveld
+intrusive complex in
+South Africa, for example,
+has an area of about
+66,000 square kilometers
+and an exposed thickness
+of 8 kilometers.
+Magmatic
+layering in the
+Bushveld
+complex
+(lopolith),
+South Africa
+=== SLIDE 33 ===
+Igneous structures
+Laccolith: is a sheet
+intrusion (or concordant
+pluton) that has been
+injected between two
+layers of sedimentary
+rock. The pressure of the
+magma is high enough
+that the overlying strata
+are forced upward, giving
+the laccolith a dome or
+mushroom-like form with
+a generally planar base.
+Enchanted
+Rock laccolith,
+Texas
+=== SLIDE 34 ===
+Igneous structures
+Sill: is a tabular sheet
+intrusion that has
+intruded between older
+layers of sedimentary
+rock, beds of volcanic
+lava or tuff, or along the
+direction of foliation in a
+metamorphic rock. A sill
+is a concordant intrusive
+sheet, meaning that a sill
+does not cut across
+preexisting rock beds.
+Basaltic sill,
+Yellowstone
+National Park
+=== SLIDE 35 ===
+Igneous structures
+Dike or dyke: is a
+discordant tabular
+pluton; it forms from
+magma that is forced
+into cracks rather
+than between beds of
+sedimentary rock.
+Pegmatite dykes
+near Essex,
+Connecticut
+=== SLIDE 36 ===
+Igneous structures – volcanic landforms
+=== SLIDE 37 ===
+Igneous structures
+Shield volcano:
+broad, gentle slopes,
+formed by fluid
+basaltic lava.
+Shield volcano,
+Hawaii
+=== SLIDE 38 ===
+Igneous structures
+Stratovolcano: steep
+slopes, layered
+structure of lava, ash,
+and debris; often
+andesitic.
+Stratovolcano,
+Mt. Fuji, Japan
+=== SLIDE 39 ===
+Igneous structures
+Lava dome: steep-
+sided dome formed
+by viscous lava, often
+rhyolitic; may
+collapse explosively.
+Lava dome,
+Chaiten, Chile
+=== SLIDE 40 ===
+Igneous structures
+Cinder cone– steep,
+conical hill made of
+loose pyroclastic
+fragments.
+Cinder cone,
+Mt. Aso, Japan
+=== SLIDE 41 ===
+Igneous structures
+Caldera: large
+depression formed by
+collapse after magma
+withdrawal.
+Caldera Blanca,
+Canary Islands
+=== SLIDE 42 ===
+Igneous structures
+Pillow lava: bulbous,
+rounded lava forms
+produced during
+underwater
+eruptions.
+https://www.youtube.
+com/watch?v=DdIUu
+UY0L9c
+Pillow lava,
+Oamaru, New
+Zeeland
+=== SLIDE 43 ===
+Igneous structures
+Columnar jointing:
+polygonal columns
+formed during
+cooling contraction,
+common in basalt.
+Columnar jointing in
+basalt, Giant’s Causeway,
+Northern Ireland
+=== SLIDE 44 ===
+Igneous rocks
+Granite
+• Type: Plutonic
+• SiO₂ content: ~70–77 wt %
+(felsic)
+Color: Light-colored (white,
+pink, or gray)
+Minerals: Quartz, K-
+feldspar, plagioclase,
+biotite, ± muscovite
+=== SLIDE 45 ===
+Igneous rocks
+Granodiorite/tonalite
+• Type: Plutonic
+• SiO₂ content: ~63–70 wt %
+(felsic to intermediate)
+• Color: Light to medium
+gray
+• Minerals: Plagioclase,
+quartz, biotite, amphibole, ±
+K-feldspar
+=== SLIDE 46 ===
+Igneous rocks
+Diorite
+• Type: Plutonic
+• SiO₂ content: ~55–63 wt %
+(intermediate)
+• Color: „Pepper and salt“,
+medium to dark gray
+• Minerals: Plagioclase,
+amphibole, biotite, ±
+pyroxene
+=== SLIDE 47 ===
+Igneous rocks
+Gabbro
+• Type: Plutonic
+• SiO₂ content: ~45–52 wt %
+(mafic)
+• Color: Dark gray to black
+• Minerals: Plagioclase,
+pyroxene, ± olivine, ±
+amphibole
+=== SLIDE 48 ===
+Igneous rocks
+Peridotite
+• Type: Plutonic
+• SiO₂ content: <45 wt %
+(ultramafic)
+• Color: Dark green to black
+• Minerals: Olivine,
+pyroxene, ± amphibole, ±
+spinel, ± garnet
+=== SLIDE 49 ===
+Igneous rocks
+Rhyolite
+• Type: Volcanic
+• SiO₂ content: ~70–77 wt %
+(felsic)
+• Color: Light- to red-colored
+(white, pink, orange, gray)
+• Minerals: Quartz, K-
+feldspar, plagioclase,
+biotite, ± muscovite
+=== SLIDE 50 ===
+Igneous rocks
+Dacite
+• Type: Volcanic
+• SiO₂ content: ~63–70 wt %
+(felsic to intermediate)
+• Color: Light to medium
+gray
+• Minerals: Plagioclase,
+quartz, biotite, hornblende,
+± K-feldspar
+=== SLIDE 51 ===
+Igneous rocks
+Andesite
+• Type: Volcanic
+• SiO₂ content: ~55–63 wt %
+(intermediate)
+• Color: Medium to dark gray
+• Minerals: Plagioclase,
+amphibole, biotite, ±
+pyroxene
+=== SLIDE 52 ===
+Igneous rocks
+Basalt
+• Type: Volcanic
+• SiO₂ content: ~45–52 wt %
+(mafic)
+• Color: Dark gray to black
+• Minerals: Plagioclase,
+pyroxene, ± olivine, ±
+amphibole
+=== SLIDE 53 ===
+Igneous rocks
+Pegmatite
+• Type: Plutonic
+• SiO₂ content: Variable
+(usually felsic)
+• Color: Light-colored (white,
+pink, gray)
+• Minerals: Very coarse-
+grained quartz, K-feldspar,
+plagioclase, ± muscovite, ±
+tourmaline
+=== SLIDE 54 ===
+Igneous rocks
+Relationship
+between SiO2
+content, rock
+name, and
+mineral
+composition
+=== SLIDE 55 ===
+See you on practicals
+You survived
+volcanoes!

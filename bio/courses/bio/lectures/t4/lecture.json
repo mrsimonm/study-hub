@@ -1,0 +1,579 @@
+{
+  "num": 4,
+  "id": "t4",
+  "title": "Cells and their organisation I – cell theory, prokaryotes vs eukaryotes, organelles, membranes and transport",
+  "short": "Cells I",
+  "sub": "Lecture 4 · Lucie Panská · 23 Oct 2026",
+  "blurb": "History and principles of cell theory; the origin of cells (Earth 4.6 billion years, first organic molecules 4.0–4.2, first cells 3.8; LUCA → bacteria and archaea).",
+  "h1": "Cells and their organisation I – cell theory, prokaryotes vs eukaryotes, organelles, membranes and transport",
+  "lede": "History and principles of cell theory; the origin of cells (Earth 4.6 billion years, first organic molecules 4.0–4.2, first cells 3.8; LUCA → bacteria and archaea). A detailed prokaryote vs eukaryote comparison, prokaryotic structure (surface layers, flagella, nucleoid, plasmids) and eukaryotic organelles: nucleus, chromatin, ribosomes (70S vs 80S), ER, Golgi, vesicles, mitochondria, plastids and the cytoskeleton (3 filament types). Then plant vs animal cells, biological membranes (phospholipids, glycolipids, cholesterol; asymmetry; membrane proteins) and membrane transport: passive (simple and facilitated diffusion, channels) vs active (transporters, symport, ATP pumps, the Na⁺/K⁺ pump).",
+  "six": [
+    "Cell theory principles and the scientists behind them",
+    "Prokaryote vs eukaryote table (ribosomes, wall, introns, DNA, size)",
+    "Organelle functions (nucleolus, rough vs smooth ER, Golgi, lysosome, peroxisome, mitochondria, chloroplast)",
+    "Endosymbiosis; semi-autonomous organelles",
+    "Three cytoskeleton filaments: size, protein, function",
+    "Plant vs animal cell differences"
+  ],
+  "must": "Cells I",
+  "questions": [
+    {
+      "id": "t4-q01",
+      "q": "Prokaryotic ribosomes are:",
+      "answer": "70S (30S + 50S)",
+      "wrong": [
+        "60S (20S + 40S)",
+        "90S (40S + 50S)",
+        "80S (40S + 60S)"
+      ],
+      "e": "Prokaryotes have 70S, eukaryotes 80S ribosomes. (Slides: p. 20)",
+      "fol": true
+    },
+    {
+      "id": "t4-q02",
+      "q": "Who stated that living cells arise only from other living cells?",
+      "answer": "Rudolf Virchow",
+      "wrong": [
+        "Antonie van Leeuwenhoek",
+        "Robert Hooke",
+        "Theodor Schwann"
+      ],
+      "e": "Virchow (~1850). (Slides: p. 2)",
+      "fol": true
+    },
+    {
+      "id": "t4-q03",
+      "q": "Peptidoglycan (murein) is found in the cell wall of:",
+      "answer": "bacteria",
+      "wrong": [
+        "animals",
+        "fungi",
+        "plants"
+      ],
+      "e": "Prokaryotic walls contain murein; eukaryotic walls never do. (Slides: p. 10)",
+      "fol": true
+    },
+    {
+      "id": "t4-q04",
+      "q": "Which organelle is the main site of rRNA synthesis?",
+      "answer": "Nucleolus",
+      "wrong": [
+        "Rough ER",
+        "Golgi apparatus",
+        "Lysosome"
+      ],
+      "e": "The nucleolus synthesises rRNA. (Slides: p. 17)",
+      "fol": true
+    },
+    {
+      "id": "t4-q05",
+      "q": "The thickest cytoskeletal filaments, made of tubulin, are:",
+      "answer": "microtubules",
+      "wrong": [
+        "actin filaments",
+        "microfilaments",
+        "intermediate filaments"
+      ],
+      "e": "Microtubules, 25 nm. (Slides: p. 30)"
+    },
+    {
+      "id": "t4-q06",
+      "q": "Which organelle protects the cell from hydrogen peroxide?",
+      "answer": "Peroxisome",
+      "wrong": [
+        "Vacuole",
+        "Phagosome",
+        "Lysosome"
+      ],
+      "e": "Peroxisomes break down H₂O₂. (Slides: p. 24)"
+    },
+    {
+      "id": "t4-q07",
+      "q": "Mitochondria are thought to originate from:",
+      "answer": "an aerobic bacterium engulfed by an archaeal cell",
+      "wrong": [
+        "the nuclear envelope",
+        "invagination of the plasma membrane",
+        "a photosynthetic bacterium engulfed by a plant cell"
+      ],
+      "e": "Endosymbiosis of an aerobic bacterium into an archaeal cell. (Slides: p. 26)"
+    },
+    {
+      "id": "t4-q08",
+      "q": "Which feature is typical of plant but not animal cells?",
+      "answer": "Large central vacuole",
+      "wrong": [
+        "Many small vacuoles",
+        "Centrioles",
+        "Lysosomes"
+      ],
+      "e": "Plant cells have a large central vacuole, plastids, a wall and glyoxysomes. (Slides: p. 35)"
+    },
+    {
+      "id": "t4-q09",
+      "q": "Which statement about ion channels is true?",
+      "answer": "They allow only passive transport down the gradient",
+      "wrong": [
+        "They need ATP",
+        "They are always open",
+        "They perform active transport"
+      ],
+      "e": "Channels are passive, selective and gated. (Slides: p. 50)"
+    },
+    {
+      "id": "t4-q10",
+      "q": "The Na⁺/K⁺ pump per ATP hydrolysed transports:",
+      "answer": "3 Na⁺ out and 2 K⁺ in",
+      "wrong": [
+        "3 K⁺ out and 2 Na⁺ in",
+        "2 Na⁺ out and 3 K⁺ in",
+        "1 Na⁺ out and 1 K⁺ in"
+      ],
+      "e": "3 Na⁺ out, 2 K⁺ in. (Slides: p. 55)"
+    },
+    {
+      "id": "t4-q11",
+      "q": "Which type of ATP-driven pump makes most of the cell's ATP?",
+      "answer": "F-type ATPase",
+      "wrong": [
+        "V-type",
+        "P-type",
+        "ABC transporter"
+      ],
+      "e": "F-type ATPase in mitochondria. (Slides: p. 54)"
+    },
+    {
+      "id": "t4-q12",
+      "q": "Glycolipids in the plasma membrane are located:",
+      "answer": "only on the non-cytosolic (outer) side",
+      "wrong": [
+        "only on the cytosolic side",
+        "on both sides equally",
+        "inside the hydrophobic core"
+      ],
+      "e": "The bilayer is asymmetric; glycolipids face away from the cytosol. (Slides: p. 42)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Cells I",
+      "term": "Cell theory",
+      "meaning": "all organisms consist of cells; cells are the basic units of life; cells come from cells"
+    },
+    {
+      "group": "Cells I",
+      "term": "LUCA",
+      "meaning": "last universal common ancestor, ~3.8 billion years ago"
+    },
+    {
+      "group": "Cells I",
+      "term": "Prokaryote / Eukaryote",
+      "meaning": "without / with nucleus and membrane organelles"
+    },
+    {
+      "group": "Cells I",
+      "term": "Binary fission",
+      "meaning": "prokaryotic cell division"
+    },
+    {
+      "group": "Cells I",
+      "term": "Chemotaxis",
+      "meaning": "movement along a chemical gradient"
+    },
+    {
+      "group": "Cells I",
+      "term": "Peptidoglycan (murein)",
+      "meaning": "bacterial cell-wall polymer"
+    },
+    {
+      "group": "Cells I",
+      "term": "Plasmid",
+      "meaning": "extra-chromosomal circular DNA"
+    },
+    {
+      "group": "Cells I",
+      "term": "Lamins",
+      "meaning": "fibrous proteins of the inner nuclear membrane"
+    },
+    {
+      "group": "Cells I",
+      "term": "Nucleolus",
+      "meaning": "site of rRNA synthesis"
+    },
+    {
+      "group": "Cells I",
+      "term": "Svedberg unit (S)",
+      "meaning": "sedimentation coefficient unit used for ribosomes"
+    },
+    {
+      "group": "Cells I",
+      "term": "Cristae",
+      "meaning": "folds of the inner mitochondrial membrane"
+    },
+    {
+      "group": "Cells I",
+      "term": "Semi-autonomous organelle",
+      "meaning": "has its own DNA and ribosomes (mitochondria, plastids)"
+    },
+    {
+      "group": "Cells I",
+      "term": "Thylakoid / Granum",
+      "meaning": "flat sac in a chloroplast / a stack of thylakoids"
+    },
+    {
+      "group": "Cells I",
+      "term": "Amphiphilic",
+      "meaning": "having both hydrophilic and hydrophobic parts"
+    },
+    {
+      "group": "Cells I",
+      "term": "Symport / Uniport",
+      "meaning": "two solutes moved the same way / one solute moved"
+    },
+    {
+      "group": "Cells I",
+      "term": "P-type, ABC, V-type, F-type",
+      "meaning": "classes of ATP-driven pumps"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Cells I: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Who first used the word \"cell\", and when?",
+        "grp": "Cells I",
+        "a": "Robert Hooke, 1665, looking at cork."
+      },
+      {
+        "n": "Who said cells arise only from other living cells?",
+        "grp": "Cells I",
+        "a": "Rudolf Virchow (~1850)."
+      },
+      {
+        "n": "Who proposed in 1839 that cells are the basic unit of life?",
+        "grp": "Cells I",
+        "a": "Matthias Schleiden and Theodor Schwann."
+      },
+      {
+        "n": "Three principles of cell theory?",
+        "grp": "Cells I",
+        "a": "All organisms are made of cells; cells are the basic units of life; all cells come from existing cells."
+      },
+      {
+        "n": "When did the first cells appear?",
+        "grp": "Cells I",
+        "a": "About 3.8 billion years ago (Earth formed 4.6 billion)."
+      },
+      {
+        "n": "Which two groups arose from LUCA?",
+        "grp": "Cells I",
+        "a": "Bacteria and archaea."
+      },
+      {
+        "n": "What does \"prokaryote\" mean?",
+        "grp": "Cells I",
+        "a": "Pro- (before) + karyon (kernel): an organism without a nucleus."
+      },
+      {
+        "n": "Size of prokaryotic cells?",
+        "grp": "Cells I",
+        "a": "0.1–5 µm."
+      },
+      {
+        "n": "How do prokaryotes divide?",
+        "grp": "Cells I",
+        "a": "By binary fission."
+      },
+      {
+        "n": "Three surface barriers of bacteria?",
+        "grp": "Cells I",
+        "a": "Cell membrane (semipermeable), cell wall (peptidoglycan), capsule (polysaccharides)."
+      },
+      {
+        "n": "What is chemotaxis?",
+        "grp": "Cells I",
+        "a": "Movement of bacteria along a chemical gradient (e.g. toward glucose) using flagella."
+      },
+      {
+        "n": "What are plasmids, and why are they important?",
+        "grp": "Cells I",
+        "a": "Extra-chromosomal circular DNA; their exchange spreads antibiotic resistance."
+      },
+      {
+        "n": "Of what is the eukaryotic cell wall made?",
+        "grp": "Cells I",
+        "a": "Cellulose (plants, algae) or chitin (fungi, insects, crustaceans); never murein."
+      },
+      {
+        "n": "What is the nucleolus for?",
+        "grp": "Cells I",
+        "a": "rRNA synthesis."
+      },
+      {
+        "n": "What are lamins?",
+        "grp": "Cells I",
+        "a": "Fibrous proteins of the inner nuclear membrane (structure, gene regulation); mutations cause laminopathies."
+      },
+      {
+        "n": "Prokaryotic vs eukaryotic ribosomes?",
+        "grp": "Cells I",
+        "a": "Prokaryotic 70S (30S + 50S); eukaryotic 80S (40S + 60S)."
+      },
+      {
+        "n": "Rough vs smooth ER functions?",
+        "grp": "Cells I",
+        "a": "Rough: protein synthesis, folding, glycosylation. Smooth: lipids, hormones, calcium metabolism."
+      },
+      {
+        "n": "Function of the Golgi apparatus?",
+        "grp": "Cells I",
+        "a": "Completes modification of ER products and sends them in vesicles to their destination."
+      },
+      {
+        "n": "What do lysosomes contain?",
+        "grp": "Cells I",
+        "a": "Hydrolytic enzymes for intracellular digestion."
+      },
+      {
+        "n": "What do peroxisomes do?",
+        "grp": "Cells I",
+        "a": "Protect the cell from hydrogen peroxide using specific enzymes."
+      },
+      {
+        "n": "Which processes take place in mitochondria?",
+        "grp": "Cells I",
+        "a": "Citrate cycle, β-oxidation of fatty acids (and ATP production)."
+      },
+      {
+        "n": "How did mitochondria originate?",
+        "grp": "Cells I",
+        "a": "An archaeal cell engulfed an aerobic bacterium (endosymbiosis)."
+      },
+      {
+        "n": "Why are mitochondria and plastids \"semi-autonomous\"?",
+        "grp": "Cells I",
+        "a": "They have their own circular DNA and protein-synthesis apparatus."
+      },
+      {
+        "n": "Three types of plastids?",
+        "grp": "Cells I",
+        "a": "Leukoplasts (storage), chromoplasts (carotenes, xanthophylls), chloroplasts (chlorophyll)."
+      },
+      {
+        "n": "What are grana?",
+        "grp": "Cells I",
+        "a": "Stacks of thylakoids in chloroplasts."
+      },
+      {
+        "n": "Thickest cytoskeletal fibre and its protein?",
+        "grp": "Cells I",
+        "a": "Microtubules, 25 nm, tubulin."
+      },
+      {
+        "n": "Thinnest cytoskeletal fibre and its protein?",
+        "grp": "Cells I",
+        "a": "Microfilaments, 5–9 nm, actin."
+      },
+      {
+        "n": "Diameter and role of intermediate filaments?",
+        "grp": "Cells I",
+        "a": "8–12 nm; strength, anchoring the nucleus and desmosomes, nuclear lamina."
+      },
+      {
+        "n": "Which filaments form the mitotic spindle, cilia and flagella?",
+        "grp": "Cells I",
+        "a": "Microtubules."
+      },
+      {
+        "n": "Which organelles do plants have but animals lack?",
+        "grp": "Cells I",
+        "a": "Cell wall, plastids, a large central vacuole, glyoxysomes."
+      },
+      {
+        "n": "How thick is the lipid bilayer?",
+        "grp": "Cells I",
+        "a": "About 5 nm."
+      },
+      {
+        "n": "Three main membrane lipids?",
+        "grp": "Cells I",
+        "a": "Phospholipids, glycolipids, cholesterol."
+      },
+      {
+        "n": "Why is the membrane asymmetric?",
+        "grp": "Cells I",
+        "a": "Different lipids on each side, e.g. glycolipids only on the non-cytosolic side."
+      },
+      {
+        "n": "What share of animal proteins are membrane proteins?",
+        "grp": "Cells I",
+        "a": "About 30 %."
+      },
+      {
+        "n": "Transporters vs channels?",
+        "grp": "Cells I",
+        "a": "Transporters bind, change shape and release; channels are continuous selective pores with weak binding."
+      },
+      {
+        "n": "Three energy sources for active transport?",
+        "grp": "Cells I",
+        "a": "A concentration/electrochemical gradient, ATP hydrolysis, light."
+      },
+      {
+        "n": "What does the Na⁺/K⁺ pump do?",
+        "grp": "Cells I",
+        "a": "Per ATP, pumps 3 Na⁺ out and 2 K⁺ in (P-type pump)."
+      },
+      {
+        "n": "Which pump makes most of the cell's ATP?",
+        "grp": "Cells I",
+        "a": "F-type ATPase (in mitochondria)."
+      },
+      {
+        "n": "How does glucose enter intestinal cells?",
+        "grp": "Cells I",
+        "a": "Na⁺–glucose symport, driven by the Na⁺ gradient kept by the Na⁺/K⁺ pump."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Prokaryote vs Eukaryote <small>(p. 10–11)</small>",
+      [
+        "Feature",
+        "Prokaryote",
+        "Eukaryote"
+      ],
+      [
+        [
+          "Size",
+          "0.1–5 µm",
+          "up to 40 µm (0.5–100 µm)"
+        ],
+        [
+          "Genetic material",
+          "circular DNA free in cytosol (nucleoid)",
+          "linear chromosomes in a double-membrane nucleus"
+        ],
+        [
+          "Replication origins",
+          "single",
+          "multiple"
+        ],
+        [
+          "Introns",
+          "none",
+          "present"
+        ],
+        [
+          "Organelles",
+          "none membrane-bound",
+          "many"
+        ],
+        [
+          "Cell wall",
+          "present, <b>peptidoglycan (murein)</b>",
+          "plants (cellulose), fungi (chitin); never murein; absent in animals"
+        ],
+        [
+          "Ribosomes",
+          "<b>70S</b>",
+          "<b>80S</b>"
+        ],
+        [
+          "Transcription/translation",
+          "together in cytosol",
+          "nucleus / cytosol"
+        ],
+        [
+          "Division",
+          "binary fission",
+          "mitosis/meiosis"
+        ]
+      ]
+    ],
+    [
+      "Passive vs Active <small>(p. 47–51)</small>",
+      [
+        "",
+        "Passive",
+        "Active"
+      ],
+      [
+        [
+          "Energy",
+          "none",
+          "gradient, ATP or light"
+        ],
+        [
+          "Direction",
+          "down gradient",
+          "against gradient"
+        ],
+        [
+          "Proteins",
+          "channels, transporters",
+          "transporters only"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/04 Cell organisation I.pdf (58 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Cells I: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Hooke <b>1665</b>; Leeuwenhoek <b>1673</b>; Schleiden &amp; Schwann <b>1839</b>; Virchow <b>~1850</b>",
+            "p. 2"
+          ],
+          [
+            "Earth <b>4.6</b>, first organic molecules <b>4.0–4.2</b>, first cells <b>3.8</b> billion years",
+            "p. 4"
+          ],
+          [
+            "Prokaryote <b>0.1–5 µm</b>; eukaryote <b>0.5–100 µm</b>",
+            "p. 11, p. 15"
+          ],
+          [
+            "Ribosomes <b>70S (30S + 50S)</b> vs <b>80S (40S + 60S)</b>",
+            "p. 20"
+          ],
+          [
+            "Microtubules <b>25 nm</b>, microfilaments <b>5–9 nm</b>, intermediate filaments <b>8–12 nm</b>",
+            "p. 30–32"
+          ],
+          [
+            "Bilayer <b>~5 nm</b> thick; fatty acids <b>14–24 C</b>",
+            "p. 40, p. 42"
+          ],
+          [
+            "<b>~30 %</b> of animal proteins are membrane proteins",
+            "p. 44"
+          ],
+          [
+            "Na⁺/K⁺ pump: <b>3 Na⁺ out / 2 K⁺ in</b> per ATP",
+            "p. 55"
+          ]
+        ]
+      }
+    ]
+  }
+}

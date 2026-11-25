@@ -1,0 +1,421 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Structural
+geology and
+tectonics
+=== SLIDE 2 ===
+Field Scale Focus
+Earth Structure Global Composition and
+layering
+Tectonics Regional to global Large-scale plate
+interactions
+Structural Geology Outcrop to
+regional
+Deformational
+features in rocks
+Structural geology
+and tectonics
+=== SLIDE 3 ===
+Content
+1. Structural geology
+• Principles of deformation
+• Deformational structures
+• Relation to
+geomorphology
+2. Tectonics
+• Tectonic plates
+• Plate boundaries
+• Wilson cycle
+=== SLIDE 4 ===
+Structural geology
+Why bother?
+• Reconstruction of the
+history of a rock/region
+• Geomorphology
+• Natural resource
+exploration
+• Geohazard assessment
+• Building foundations
+Structural geology is the
+branch of geology that studies
+the architecture of the Earth’s
+crust and the processes
+responsible for its deformation.
+=== SLIDE 5 ===
+Structural geology
+Why bother? Example: natural resources exploration
+=== SLIDE 6 ===
+Structural geology
+Why bother? Example: natural hazard assesement
+Examples:
+• Cracking
+• Earthquakes
+• Rockfalls
+• Landslides
+• Tsunami
+=== SLIDE 7 ===
+Principles of deformation
+Deformation and internal strength
+• Deformation is a general term
+describing any change in a rock’s
+shape, position, or orientation
+due to stress.
+• Internal strength is the ability of
+a rock to resist deformation under
+stress, controlled by its
+composition, temperature,
+pressure, and strain rate.
+Stress and strain
+• Stress is the force exerted per
+unit area
+• Strain is the physical change
+that results in response to that
+force.
+=== SLIDE 8 ===
+Principles of deformation
+When applied stress is greater
+than the internal strength of
+rock, strain results in the form
+of deformation of the rock.
+=== SLIDE 9 ===
+Principles of deformation
+Types of stress:
+• Tensional: pulling in
+opposite directions
+• Compressional: pushing
+together
+• Shear: transverse forces
+=== SLIDE 10 ===
+Principles of deformation
+Types of strain:
+• Elastic: reversible after a
+stress is released
+• Ductile: material changes
+its shape permanently
+• Brittle: material fractures
+=== SLIDE 11 ===
+Principles of deformation
+Factors influencing the
+strain character:
+• High temperature->
+ductile
+• High pressure-> ductile
+• High strain rate-> brittle
+• Fluids
+• Composition
+=== SLIDE 12 ===
+Deformational structures
+Brittle deformation
+• Joints: Planar fractures
+along which there has been
+no visible displacement.
+• Faults: Planar fractures
+along which displacement
+has occurred.
+• Veins: Fracture fillings
+formed when minerals
+precipitate from fluids in
+open cracks.
+=== SLIDE 13 ===
+Deformational structures
+Typical conditions of brittle
+deformation
+• Depth: 0–15 km
+• Temperature: <~300 °C
+• Pressure: Low confining
+pressure
+• Strain rate: Higher strain
+rate favors brittle behavior
+• Result: Fracturing, faulting
+=== SLIDE 14 ===
+Deformational structures
+What are these structures?
+A B
+C
+Joints
+Faults
+Veins
+=== SLIDE 15 ===
+Deformational structures
+Fault description
+• Fault plane: plane of
+displacement
+• Hanging wall: upper block
+• Foot wall: lower block
+• Fault line: where the fault
+plane intersects surface
+• Fault scarp: a steep slope
+or cliff on the surface
+created by a fault
+=== SLIDE 16 ===
+Deformational structures
+Types of faults
+• Normal fault: extension,
+hanging wall move down
+• Reverse fault: compression,
+hanging wall moves up
+• Thrust fault: compression,
+hanging wall moves up but
+under low angle
+• Strike-slip fault: shear
+stress, blocks move laterally
+=== SLIDE 17 ===
+Deformational structures
+Ductile deformation
+• Folds: Curved or bent layers
+formed by ductile bending
+• Foliation: A planar fabric
+formed by the alignment of
+platy or elongate minerals
+(e.g., micas), or by
+compositional layering
+during ductile deformation
+Barrandovská skála, Prague
+=== SLIDE 18 ===
+Deformational structures
+Types of folds
+• Syncline:
+Convex shape (U)
+• Anticline:
+Concave shape (በ)
+=== SLIDE 19 ===
+Deformational structures
+Types of foliation
+• Slaty cleavage: fine-
+grained, planar, low-grade
+• Schistosity: wavy planar,
+mica alignment, medium-
+grade
+• Gneissic banding:
+compositional segregation,
+high-grade
+=== SLIDE 20 ===
+Deformational structures
+Typical conditions of ductile
+deformation
+• Depth: >~10 km
+• Temperature: >~300 °C
+• Pressure: High confining
+pressure
+• Strain rate: Lower strain
+rate favors ductile behavior
+• Result: Folding, crystal-
+plastic deformation
+=== SLIDE 21 ===
+Deformational structures
+Activity:
+Which
+deformation
+is which?
+=== SLIDE 22 ===
+Deformational structures
+and geomorphology
+How does structural geology
+influence the Earth‘s surface?
+Geomorphology is
+the science of how
+Earth’s surface
+landscapes are formed
+and changed by
+natural processes.
+Ridgeand Valley
+sectionofthe
+Appalachians
+=== SLIDE 23 ===
+Deformational structures
+and geomorphology
+How does structural geology
+influence the Earth‘s surface?
+Geomorphology is
+the science of how
+Earth’s surface
+landscapes are formed
+and changed by
+natural processes.
+Ridgeand Valley
+sectionofthe
+Appalachians:
+crosssection
+=== SLIDE 24 ===
+Deformational structures
+and geomorphology
+Great Rift
+Valleyin
+East Africa
+=== SLIDE 25 ===
+Tectonics
+=== SLIDE 26 ===
+Tectonics
+Tectonic (lithospheric) plates
+• The lithosphere is broken
+into a mosaic of rigid plates.
+• Each plate behaves as a rigid
+block internally, but
+deformation concentrates
+along plate boundaries.
+=== SLIDE 27 ===
+Tectonics
+Tectonic (lithospheric) plates
+• Plates move at rates of a few
+cm per year.
+• Motion is measured using
+GPS
+• How is it possible?
+=== SLIDE 28 ===
+Earth structure–internal processes
+Mantle convection
+Mantle rocks heat near the core
+➢ Increases volume and decreases density
+➢ Rises to the surface
+➢ There it cools and sinks again
+Rigid lithospheric plates
+“float” on a viscous
+asthenosphere.
+=== SLIDE 29 ===
+Tectonics
+Plate Boundaries
+• Sites of deformation,
+earthquakes, and magmatism
+1. Divergent boundaries:
+plates move apart →crustal
+extension
+2. Convergent boundaries:
+plates converge, collide →
+crustal compression
+3. Transform boundaries:
+plates slide past each other
+→horizontal shear
+=== SLIDE 30 ===
+Tectonics
+Divergent boundaries
+• Where two tectonic plates
+move apart
+• Main stress regime: tensional
+• Melting of upper mantle →
+magma cooling and
+crystalisation→formation of
+mafic rocks (gabbro, basalt)
+• Foramtion of normal faults,
+mid-ocean ridges and rift
+valleys
+=== SLIDE 31 ===
+Tectonics
+Divergent boundaries
+1. Continental crust:
+continental rift
+• Formation of rift valleys
+• Examples: East African Rift,
+Eger Rift (Czechia, 18 Ma)
+2. Oceanic crust: Mid-ocean
+ridge
+• Formation of new oceanic
+crust
+• Examples: Mid-Atlantic ridge,
+East-pacific rise
+=== SLIDE 32 ===
+Tectonics
+Convergent boundaries
+1. Oceanic plate x Oceanic
+plate
+• Intra-oceanic subduction
+2. Oceanic plate x Continental
+plate
+• Ocean–continent subduction
+(Andean-type subduction)
+3. Continental plate x
+Continental plate
+• Continental collision
+=== SLIDE 33 ===
+Tectonics
+Convergent boundaries
+1. Oceanic plate x Oceanic
+plate
+• Intra-oceanic subduction
+• Formation of an island arc
+• Dominantly andesitic
+volcanism and dioritic to
+granodioritic plutonism
+=== SLIDE 34 ===
+Tectonics
+Convergent boundaries
+2. Oceanic plate x Continental plate
+• Ocean–continent subduction (Andean-type subduction)
+• Formation of a continental arc (accretionary orogen)
+• Dominantly andesitic volcanism and dioritic to
+granodioritic plutonism
+=== SLIDE 35 ===
+Tectonics
+Subduction factory
+1. Magmatism
+• Large plutons and volcanoes,
+dominantly intermediate
+composition
+2. Metamorphism
+• Paired metamorphism:
+High P/T (blueschist–
+eclogite) and medium P/T
+(greenschist–amphibolite–
+granulite)
+=== SLIDE 36 ===
+Tectonics
+Subduction factory
+1. Magmatism
+2. Metamorphism
+3. Earthquakes
+• Follow the subducting plate
+=== SLIDE 37 ===
+Tectonics
+Convergent boundaries
+3. Continental plate x
+Continental plate
+• Continental collision
+• Formation of orogenic belts
+(mountain belts)
+• Thrusting, folding
+• Regional metamorphism
+• Plutonic magmatism (not
+much volcanic)
+• Earthquakes
+=== SLIDE 38 ===
+Tectonics
+Transform boundaries
+• Continental or oceanic plates
+slide past each other
+• Strike-slip faults
+• No significant metamorphism
+• No significant magmatism
+• Earthquakes!
+=== SLIDE 39 ===
+Tectonics
+Plate tectonics: The Earth dynamics at fingernail speed
+=== SLIDE 40 ===
+Tectonics
+Wilson cycle
+• Describes the
+repeated opening and
+closing of ocean
+basins through plate
+tectonic processes.
+• Life cycle of plate
+tectonics
+https://www.youtube.co
+m/watch?v=I_q3sAcuzIY
+=== SLIDE 41 ===
+=== SLIDE 42 ===
+Recommended videos
+https://www.youtube.com/watch?v=1gMU7zfDqfg
+Landscapes/structural geology/tectonics educational video:
+Wilson cycle:
+Continental drift, paleogeography:
+https://www.youtube.com/watch?v=g_iEWvtKcuQ&t=4s
+https://www.youtube.com/watch?v=I_q3sAcuzIY
+=== SLIDE 43 ===
+Prepare for practicals
+You will create a poster describing geological structures
+You will select a region and analyze it using AI
+You will create teams of two or three
+Bring scissors and markers
+=== SLIDE 44 ===
+Thanks for your attention

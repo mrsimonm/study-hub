@@ -1,0 +1,21 @@
+{
+  "title": "Bio Hub",
+  "code": "ZEX108E",
+  "subtitle": "CZU Prague · Fundamentals of Biology",
+  "intro": "Fundamentals of Biology (ZEX108E) at CZU Prague, all 12 lectures in one place. The exam is a written test of 24 questions based only on the lectures, with 3 exam terms. Lessons in small bites, flashcards, games, mock tests and review.",
+  "footer": "Built from the ZEX108E lecture slides (Mandák, Černý, Panská, Dvořák, Krak, Kocourková, Bílý, Růžička; CZU Faculty of Environmental Sciences). Facts follow the slides; if anything here disagrees with the slides, the slides win.",
+  "testsCard": false,
+  "lectures": [
+    "lectures/t1", "lectures/t2", "lectures/t3", "lectures/t4", "lectures/t5", "lectures/t6",
+    "lectures/t7", "lectures/t8", "lectures/t9", "lectures/t10", "lectures/t11", "lectures/t12"
+  ],
+  "tests": [
+    {
+      "id": "exam",
+      "title": "Final exam · 24-question test",
+      "sub": "A written test of 24 questions based only on the lectures. 3 exam terms; if you first come on the last listed term, you don't get two more. Pass mark and time limit are not published. Dates are in UIS.",
+      "badge": "Exam period",
+      "all": true
+    }
+  ]
+}

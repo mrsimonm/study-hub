@@ -1,0 +1,1559 @@
+{
+  "num": 8,
+  "id": "t8",
+  "title": "Historical & regional geology I",
+  "short": "Historical geology I",
+  "sub": "Lecture 8 · 23 Nov · weekly test at the next lecture + final exam",
+  "blurb": "Relative and absolute dating, radioactive decay and half-life, the geological time scale, the Hadean, Archean and Proterozoic, cratons and shields, and the supercontinent cycle.",
+  "h1": "Historical and regional geology I, one step at a time",
+  "lede": "How do geologists put Earth's history in order and give it numbers? First **dating**: relative dating puts rocks in order, absolute (radiometric) dating gives an age in years. Then **geological time** and how it is divided. Then the **early Earth** (Hadean, Archean, Proterozoic) and the **supercontinent cycle**.",
+  "six": [
+    "**Relative dating** puts events in order: **superposition** (younger on top), **original horizontality**, **lateral continuity**, **cross-cutting** (whatever cuts is younger).",
+    "**Absolute dating** = the age in years from **radioactive decay**. **Parent** isotope → **daughter** isotope; **half-life** = time for half of the parent atoms to decay.",
+    "Pairs: **U-238 → Pb-206** (4.5 billion yr), **K-40 → Ar-40**, **Rb-87 → Sr-87** for old rocks; **C-14 → N-14** (5,730 yr) only for young events.",
+    "Time units **eon > era > period > epoch > age** (geochronology); the rocks formed in them: **eonthem > erathem > system > series > stage** (chronostratigraphy).",
+    "Earth ~**4.6 Ga**. **Hadean** 4.6–4 Ga (lava planet, no rocks), **Archean** 4–2.5 Ga (first continental crust, stromatolites, photosynthesis), **Proterozoic** 2.5 Ga–540 Ma (oxygen rise, eukaryotes, multicellular life). **Phanerozoic** from ~540 Ma.",
+    "**Supercontinent cycle** = the Wilson cycle repeated: **Kenorland** ~2.7 Ga, **Columbia (Nuna)** ~1.8 Ga, **Rodinia** ~1.0 Ga, **Pannotia** ~600 Ma, **Pangea** ~300 Ma."
+  ],
+  "must": "dating principles, half-life and the eons",
+  "next": "Monday 30 Nov",
+  "mockNote": "Questions come from the lecture 8 slides only (there is no recording of this lecture yet).",
+  "foot": "Source: lecture 8 slides \"Historical and regional geology I\" (Mgr. Václav Santolík, PhD, CZU). No class recording was available, so nothing here is marked \"recording\". Dates follow the slides; a few grey notes give the current values from the International Chronostratigraphic Chart where the slide rounds them.",
+  "questions": [
+    {
+      "id": "t8-histdef",
+      "q": "What is historical geology (palaeogeology)?",
+      "answer": "Using the principles and methods of geology to reconstruct the geological history of Earth",
+      "wrong": [
+        "The study of how minerals form crystals",
+        "The study of present-day earthquakes only",
+        "The history of the science of geology"
+      ],
+      "e": "Slide definition (Levin & King, The Earth Through Time)."
+    },
+    {
+      "id": "t8-regdef",
+      "q": "What is regional geology?",
+      "answer": "The geological study of large-scale regions, combining several geological disciplines to piece together an area's history",
+      "wrong": [
+        "The study of a single mineral sample",
+        "The study of the Earth's core",
+        "Mapping only the soils of a region"
+      ],
+      "e": "Regional geology works at the scale of a large region and uses many disciplines together."
+    },
+    {
+      "id": "t8-super",
+      "q": "Which principle says that sedimentary layers get younger upwards?",
+      "h": "One layer lies on top of the other.",
+      "answer": "Superposition",
+      "wrong": [
+        "Original horizontality",
+        "Lateral continuity",
+        "Cross-cutting relationships"
+      ],
+      "e": "Superposition: in undisturbed layers the bottom one is oldest, the top one youngest.",
+      "fol": true
+    },
+    {
+      "id": "t8-horiz",
+      "q": "Which principle says sedimentary layers were originally laid down flat?",
+      "answer": "Original horizontality",
+      "wrong": [
+        "Superposition",
+        "Lateral continuity",
+        "Uniformitarianism"
+      ],
+      "e": "So tilted or folded layers must have been deformed later.",
+      "fol": true
+    },
+    {
+      "id": "t8-lateral",
+      "q": "Which principle says sedimentary layers spread out in all directions until they reach the edge of the basin?",
+      "answer": "Lateral continuity",
+      "wrong": [
+        "Original horizontality",
+        "Superposition",
+        "Cross-cutting relationships"
+      ],
+      "e": "That is why the same layer can be matched on both sides of a valley, like in the Badlands.",
+      "fol": true
+    },
+    {
+      "id": "t8-cross",
+      "q": "A dike cuts through three sedimentary layers. What does the principle of cross-cutting relationships tell you?",
+      "answer": "The dike is younger than all three layers",
+      "wrong": [
+        "The dike is older than all three layers",
+        "The dike is the same age as the middle layer",
+        "Nothing; cross-cutting only works for faults"
+      ],
+      "e": "Folds, faults and igneous intrusions are younger than the rocks they cut or deform.",
+      "fol": true
+    },
+    {
+      "id": "t8-puzzle-old",
+      "q": "In the slide 9 diagram (layers A on top, B, C at the bottom; dike D; fault E), which unit is the OLDEST?",
+      "h": "Superposition.",
+      "answer": "C",
+      "wrong": [
+        "A",
+        "D",
+        "E"
+      ],
+      "e": "C is the lowest sedimentary layer and everything else cuts it or lies on it."
+    },
+    {
+      "id": "t8-puzzle-young",
+      "q": "In the slide 9 diagram, fault E offsets dike D. Which event is the YOUNGEST?",
+      "h": "What cuts what?",
+      "answer": "Fault E",
+      "wrong": [
+        "Dike D",
+        "Layer A",
+        "Layer C"
+      ],
+      "e": "Order: C → B → A → D → E. The fault cuts the dike, so the fault is younger.",
+      "fol": true
+    },
+    {
+      "id": "t8-absdef",
+      "q": "What is absolute dating?",
+      "answer": "Finding the precise age (in years) using radiometric techniques",
+      "wrong": [
+        "Putting rock layers in order without numbers",
+        "Dating rocks by their colour",
+        "Counting the number of fossils in a layer"
+      ],
+      "e": "Relative dating gives an order; absolute dating gives a number."
+    },
+    {
+      "id": "t8-becq",
+      "q": "Who discovered radioactivity, and when?",
+      "answer": "Henri Becquerel, 1896",
+      "wrong": [
+        "James Hutton, 1788",
+        "Charles Darwin, 1859",
+        "Alfred Wegener, 1912"
+      ],
+      "e": "Becquerel, 1896: the spontaneous decay of radioactive isotopes."
+    },
+    {
+      "id": "t8-alpha",
+      "q": "In alpha decay, what is ejected from the nucleus?",
+      "answer": "A helium nucleus",
+      "wrong": [
+        "An electron",
+        "Only electromagnetic radiation",
+        "A neutron that stays inside"
+      ],
+      "e": "Alpha = helium nucleus (2 protons + 2 neutrons). U-238 → Th-234.",
+      "fol": true
+    },
+    {
+      "id": "t8-beta",
+      "q": "In beta decay, what happens?",
+      "answer": "A neutron breaks down into a proton and an electron, and the electron is ejected",
+      "wrong": [
+        "A helium nucleus is ejected",
+        "Two atoms join together",
+        "The atom loses all its protons"
+      ],
+      "e": "Beta decay: C-14 → N-14. The atomic number goes up by one."
+    },
+    {
+      "id": "t8-gamma",
+      "q": "What are gamma rays in radioactive decay?",
+      "answer": "Accompanying electromagnetic radiation",
+      "wrong": [
+        "Ejected helium nuclei",
+        "Ejected electrons",
+        "Stable daughter atoms"
+      ],
+      "e": "Gamma rays come along with alpha or beta decay."
+    },
+    {
+      "id": "t8-paper",
+      "q": "In the slide 12 figure, which radiation is stopped by a sheet of paper?",
+      "answer": "Alpha",
+      "wrong": [
+        "Beta",
+        "Gamma",
+        "None of them"
+      ],
+      "e": "Alpha is stopped by paper, beta by aluminium; gamma is only weakened by thick concrete.",
+      "x": true
+    },
+    {
+      "id": "t8-parent",
+      "q": "What is the parent isotope?",
+      "answer": "The original radioactive element",
+      "wrong": [
+        "The decay product",
+        "The stable end of a decay chain",
+        "The oldest rock layer"
+      ],
+      "e": "Parent = original; daughter = decay product.",
+      "fol": true
+    },
+    {
+      "id": "t8-halflife",
+      "q": "What is a half-life?",
+      "answer": "The time for half of the parent atoms to decay",
+      "wrong": [
+        "Half of the age of the Earth",
+        "The time for all atoms to decay",
+        "The time for a daughter atom to form a crystal"
+      ],
+      "e": "After one half-life 1/2 of the parent is left, after two 1/4, after three 1/8.",
+      "fol": true
+    },
+    {
+      "id": "t8-halfcalc",
+      "q": "A rock has gone through 2 half-lives since it formed. How much of the original parent isotope is left?",
+      "h": "Halve it twice.",
+      "answer": "25 %",
+      "wrong": [
+        "50 %",
+        "0 %",
+        "12.5 %"
+      ],
+      "e": "100 % → 50 % → 25 %. Three half-lives would leave 12.5 %.",
+      "fol": true
+    },
+    {
+      "id": "t8-chain",
+      "q": "What is a decay chain?",
+      "answer": "A series of radioactive parents and daughters that ends with a stable daughter",
+      "wrong": [
+        "A row of fossils in one layer",
+        "A single alpha decay",
+        "A line of volcanoes along a plate boundary"
+      ],
+      "e": "Example from the slide: U-238 → … → Pb-206 (stable)."
+    },
+    {
+      "id": "t8-u238",
+      "q": "What is the stable daughter of uranium-238?",
+      "answer": "Lead-206",
+      "wrong": [
+        "Lead-207",
+        "Thorium-234",
+        "Argon-40"
+      ],
+      "e": "U-238 → Pb-206, half-life 4.5 billion years. (U-235 → Pb-207.)"
+    },
+    {
+      "id": "t8-k40",
+      "q": "Potassium-40 decays to which daughter?",
+      "answer": "Argon-40",
+      "wrong": [
+        "Strontium-87",
+        "Nitrogen-14",
+        "Lead-206"
+      ],
+      "e": "K-40 → Ar-40, half-life 1.25 billion years."
+    },
+    {
+      "id": "t8-c14",
+      "q": "Why is carbon-14 used only for young events?",
+      "answer": "Its half-life is short: 5,730 years",
+      "wrong": [
+        "Its half-life is 4.5 billion years",
+        "It only exists in igneous rocks",
+        "It does not decay"
+      ],
+      "e": "With a short half-life almost nothing is left after a few tens of thousands of years. U-Pb, K-Ar and Rb-Sr are for old events.",
+      "fol": true
+    },
+    {
+      "id": "t8-longest",
+      "q": "Which pair on the slide has the LONGEST half-life?",
+      "answer": "Rubidium-87 / Strontium-87",
+      "wrong": [
+        "Uranium-238 / Lead-206",
+        "Potassium-40 / Argon-40",
+        "Carbon-14 / Nitrogen-14"
+      ],
+      "e": "Rb-87: 48.8 billion years. U-238: 4.5 billion. K-40: 1.25 billion. U-235: 704 million. C-14: 5,730 years."
+    },
+    {
+      "id": "t8-hutton",
+      "q": "Who said \"The present is the key to the past\" and \"No vestige of a beginning, no prospect of an end\"?",
+      "answer": "James Hutton",
+      "wrong": [
+        "Charles Darwin",
+        "Henri Becquerel",
+        "Alfred Wegener"
+      ],
+      "e": "Hutton, Siccar Point, Scotland. Processes we see today worked the same way in the past, over immense time."
+    },
+    {
+      "id": "t8-unconf",
+      "q": "At Siccar Point, what is the unconformity (the red line on slide 17)?",
+      "h": "A gap in the record.",
+      "answer": "A hiatus: a period of non-deposition or active erosion between two rock sequences",
+      "wrong": [
+        "A fault along which the layers moved sideways",
+        "An igneous dike cutting the layers",
+        "A layer of volcanic ash"
+      ],
+      "e": "Below: vertical Silurian ocean rocks (~425 Ma). Above: tilted Devonian desert rocks (~345 Ma). The surface between them is the unconformity.",
+      "fol": true
+    },
+    {
+      "id": "t8-darwin",
+      "q": "Why did Charles Darwin need deep geological time?",
+      "answer": "To explain the evolution of species",
+      "wrong": [
+        "To date rocks with radioactivity",
+        "To explain plate tectonics",
+        "To measure the age of the Moon"
+      ],
+      "e": "Evolution by natural selection needs a very long time."
+    },
+    {
+      "id": "t8-units",
+      "q": "What is the correct order of geochronological units, from largest to smallest?",
+      "answer": "Eon, era, period, epoch, age",
+      "wrong": [
+        "Era, eon, period, age, epoch",
+        "Period, era, eon, epoch, age",
+        "Eon, period, era, age, epoch"
+      ],
+      "e": "Eon > era > period > epoch > age.",
+      "fol": true
+    },
+    {
+      "id": "t8-system",
+      "q": "Which chronostratigraphic unit matches the geochronological PERIOD?",
+      "h": "Rocks formed during a period.",
+      "answer": "System",
+      "wrong": [
+        "Series",
+        "Stage",
+        "Erathem"
+      ],
+      "e": "Eon–eonthem, era–erathem, period–system, epoch–series, age–stage."
+    },
+    {
+      "id": "t8-holo",
+      "q": "Which epoch are we living in now?",
+      "answer": "Holocene",
+      "wrong": [
+        "Pleistocene",
+        "Pliocene",
+        "Paleocene"
+      ],
+      "e": "Quaternary period = Pleistocene, then Holocene (since ~10 ka on the slide)."
+    },
+    {
+      "id": "t8-strat",
+      "q": "What is stratigraphy?",
+      "answer": "The study of rock layers and their relationships in space and time",
+      "wrong": [
+        "The study of minerals under a microscope",
+        "The study of the atmosphere's layers",
+        "The study of earthquake waves"
+      ],
+      "e": "Slide 20 definition."
+    },
+    {
+      "id": "t8-litho",
+      "q": "Which kind of stratigraphy is based on rock type (lithology), with units like formation, member and group?",
+      "answer": "Lithostratigraphy",
+      "wrong": [
+        "Biostratigraphy",
+        "Chronostratigraphy",
+        "Geochronology"
+      ],
+      "e": "Litho = rock. Bio = fossils (biozone). Chrono = relative time (system, series, stage)."
+    },
+    {
+      "id": "t8-bio",
+      "q": "Biostratigraphy divides rocks by …",
+      "answer": "Their fossil content (biozones)",
+      "wrong": [
+        "Their rock type",
+        "Absolute radiometric ages",
+        "Their magnetic direction only"
+      ],
+      "e": "Biostratigraphy uses fossils; the unit is the biozone."
+    },
+    {
+      "id": "t8-age",
+      "q": "How old is the Earth?",
+      "answer": "About 4.6 billion years (4.6 Ga)",
+      "wrong": [
+        "About 540 million years",
+        "About 13.8 billion years",
+        "About 2.5 billion years"
+      ],
+      "e": "~4.6 Ga. (13.8 billion years is the age of the universe.)",
+      "fol": true
+    },
+    {
+      "id": "t8-phan",
+      "q": "When did the Phanerozoic begin?",
+      "answer": "About 540 Ma",
+      "wrong": [
+        "About 4 Ga",
+        "About 2.5 Ga",
+        "About 66 Ma"
+      ],
+      "e": "~540 Ma, at the start of the Cambrian. Everything before is the Precambrian."
+    },
+    {
+      "id": "t8-ga",
+      "q": "What does \"Ma\" mean?",
+      "answer": "Millions of years ago",
+      "wrong": [
+        "Billions of years ago",
+        "Thousands of years ago",
+        "Metres above sea level"
+      ],
+      "e": "Ga = billions, Ma = millions, ka = thousands of years ago."
+    },
+    {
+      "id": "t8-life",
+      "q": "According to the slide, when did life first appear?",
+      "answer": "More than 3.5 Ga",
+      "wrong": [
+        "About 540 Ma",
+        "About 4.6 Ga",
+        "About 300 Ma"
+      ],
+      "e": "First emergence of life: >3.5 Ga, in the Archean."
+    },
+    {
+      "id": "t8-nebular",
+      "q": "According to the nebular theory, how did the Earth form?",
+      "answer": "From a rotating cloud of gas and dust: the Sun formed in the centre, the planets in orbit",
+      "wrong": [
+        "It broke off from the Sun after a collision with another star",
+        "It formed 540 million years ago from a supercontinent",
+        "It condensed from the Moon"
+      ],
+      "e": "Nebular theory, ~4.6 Ga. HL Tauri is an example of a young star with a protoplanetary disk."
+    },
+    {
+      "id": "t8-hadean",
+      "q": "Which eon is described as a \"lava planet\" with no rocks preserved, only very rare zircons?",
+      "answer": "Hadean",
+      "wrong": [
+        "Archean",
+        "Proterozoic",
+        "Phanerozoic"
+      ],
+      "e": "Hadean, 4.6–4 Ga: differentiation into core, mantle and crust; cooling, degassing, likely oceans by the end.",
+      "fol": true
+    },
+    {
+      "id": "t8-diff",
+      "q": "What happened during differentiation in the Hadean?",
+      "answer": "The Earth separated into core, mantle and crust",
+      "wrong": [
+        "The continents joined into Pangea",
+        "The first animals appeared",
+        "Oxygen filled the atmosphere"
+      ],
+      "e": "Heavy material sank to form the core; lighter material rose. Degassing made the first atmosphere."
+    },
+    {
+      "id": "t8-archean",
+      "q": "In which eon did the first continental crust and the first microbial life (stromatolites) appear?",
+      "answer": "Archean",
+      "wrong": [
+        "Hadean",
+        "Proterozoic",
+        "Phanerozoic"
+      ],
+      "e": "Archean, 4–2.5 Ga: first continental crust, stromatolites, first photosynthesis.",
+      "fol": true
+    },
+    {
+      "id": "t8-strom",
+      "q": "What are stromatolites?",
+      "answer": "Layered structures built by microbial mats; the first microbial life",
+      "wrong": [
+        "Fossil fish scales",
+        "Crystals of zircon",
+        "Volcanic bombs"
+      ],
+      "e": "They formed in the Archean and still grow today in a few places (present-day stromatolites, slide 27)."
+    },
+    {
+      "id": "t8-prot",
+      "q": "Which eon saw the first eukaryotic cells and the first multicellular life?",
+      "answer": "Proterozoic",
+      "wrong": [
+        "Archean",
+        "Hadean",
+        "Cenozoic"
+      ],
+      "e": "Proterozoic, 2500–540 Ma: continents grow, modern plate tectonics, oxygen rise, eukaryotes, multicellular life.",
+      "fol": true
+    },
+    {
+      "id": "t8-eons",
+      "q": "What is the correct order of the eons, from oldest to youngest?",
+      "answer": "Hadean, Archean, Proterozoic, Phanerozoic",
+      "wrong": [
+        "Archean, Hadean, Proterozoic, Phanerozoic",
+        "Hadean, Proterozoic, Archean, Phanerozoic",
+        "Proterozoic, Archean, Hadean, Phanerozoic"
+      ],
+      "e": "H-A-P-P: Hadean 4.6–4 Ga, Archean 4–2.5 Ga, Proterozoic 2.5 Ga–540 Ma, Phanerozoic 540 Ma–today.",
+      "fol": true
+    },
+    {
+      "id": "t8-growth",
+      "q": "On the slide 28 map, what lies at the cores of today's continents?",
+      "answer": "Archean cratons, surrounded by Proterozoic shields and younger Phanerozoic orogens",
+      "wrong": [
+        "Phanerozoic orogens, surrounded by Archean cratons",
+        "Young volcanic islands",
+        "Only Quaternary sediments"
+      ],
+      "e": "Continents grew outwards around very old Archean cores."
+    },
+    {
+      "id": "t8-craton",
+      "q": "What is a craton?",
+      "answer": "The old (Precambrian), stable core of a continent",
+      "wrong": [
+        "A young mountain belt",
+        "A subsiding area where sediments collect",
+        "A volcanic crater"
+      ],
+      "e": "Shield = exposed craton; platform = craton covered by younger sediments.",
+      "fol": true
+    },
+    {
+      "id": "t8-shield",
+      "q": "What is a shield?",
+      "answer": "The exposed part of a craton, with Precambrian basement at the surface",
+      "wrong": [
+        "A craton covered by younger sediments",
+        "A mountain belt from convergence",
+        "A crustal block with a foreign history"
+      ],
+      "e": "Shield = exposed. Platform = covered."
+    },
+    {
+      "id": "t8-platform",
+      "q": "A craton covered by younger, mostly sedimentary rocks is called a …",
+      "answer": "Platform",
+      "wrong": [
+        "Shield",
+        "Terrane",
+        "Orogen"
+      ],
+      "e": "Platform = covered craton."
+    },
+    {
+      "id": "t8-terrane",
+      "q": "What is a terrane?",
+      "answer": "A crustal block with a geological history different from the rocks around it",
+      "wrong": [
+        "The old stable core of a continent",
+        "A subsiding sedimentary basin",
+        "A layer of sedimentary cover"
+      ],
+      "e": "Terranes get attached to continents, often during collisions."
+    },
+    {
+      "id": "t8-orogen",
+      "q": "What is an orogen?",
+      "answer": "A mountain belt formed by tectonic convergence",
+      "wrong": [
+        "The exposed part of a craton",
+        "A subsiding basin",
+        "A fracture with no displacement"
+      ],
+      "e": "Orogen = mountain belt (lecture 7: continental collision)."
+    },
+    {
+      "id": "t8-scc",
+      "q": "What is the supercontinent cycle?",
+      "answer": "The repetition of the Wilson cycle: all continents merge into one and then break up again",
+      "wrong": [
+        "The yearly movement of plates",
+        "The cycle of rock types",
+        "The cycle of ice ages only"
+      ],
+      "e": "Supercontinents form and break up again and again over hundreds of millions of years.",
+      "fol": true
+    },
+    {
+      "id": "t8-pangea",
+      "q": "When did Pangea exist?",
+      "answer": "About 300 Ma",
+      "wrong": [
+        "About 1.0 Ga",
+        "About 2.7 Ga",
+        "About 600 Ma"
+      ],
+      "e": "Pangea ~300 Ma. Rodinia ~1.0 Ga, Pannotia ~600 Ma, Kenorland ~2.7 Ga."
+    },
+    {
+      "id": "t8-sccorder",
+      "q": "What is the correct order of supercontinents, from oldest to youngest?",
+      "answer": "Kenorland, Columbia (Nuna), Rodinia, Pannotia, Pangea",
+      "wrong": [
+        "Pangea, Rodinia, Pannotia, Columbia, Kenorland",
+        "Rodinia, Kenorland, Pangea, Columbia, Pannotia",
+        "Columbia, Kenorland, Pannotia, Rodinia, Pangea"
+      ],
+      "e": "~2.7 Ga, ~1.8 Ga, ~1.0 Ga, ~600 Ma, ~300 Ma.",
+      "fol": true
+    },
+    {
+      "id": "t8-future",
+      "q": "What does the slide say about the future?",
+      "answer": "There will probably be another supercontinent",
+      "wrong": [
+        "The continents will never meet again",
+        "Pangea will re-form exactly as before next century",
+        "Plate tectonics will stop within a million years"
+      ],
+      "e": "Today the continents are dispersed; in the future they will probably merge again."
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Fields",
+      "term": "Historical geology",
+      "meaning": "Also palaeogeology. Uses the principles and methods of geology to reconstruct the geological history of Earth."
+    },
+    {
+      "group": "Fields",
+      "term": "Regional geology",
+      "meaning": "The geological study of large-scale regions, combining several disciplines to piece together an area's history."
+    },
+    {
+      "group": "Relative dating",
+      "term": "Relative dating",
+      "meaning": "Putting rocks and events in order (older or younger) without giving an age in years."
+    },
+    {
+      "group": "Relative dating",
+      "term": "Superposition",
+      "meaning": "Principle: sedimentary layers get younger upwards."
+    },
+    {
+      "group": "Relative dating",
+      "term": "Original horizontality",
+      "meaning": "Principle: sedimentary layers were originally deposited horizontally."
+    },
+    {
+      "group": "Relative dating",
+      "term": "Lateral continuity",
+      "meaning": "Principle: sedimentary layers spread laterally in all directions until they hit the edge of the basin."
+    },
+    {
+      "group": "Relative dating",
+      "term": "Cross-cutting relationships",
+      "meaning": "Principle: folds, faults and igneous intrusions are younger than the rocks they deform or cut across."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Absolute dating",
+      "meaning": "Determining the precise age in years using radiometric techniques."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Radioactivity",
+      "meaning": "The spontaneous decay of radioactive isotopes. Discovered by Henri Becquerel in 1896."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Alpha decay",
+      "meaning": "Decay in which a helium nucleus is ejected, e.g. U-238 → Th-234."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Beta decay",
+      "meaning": "A neutron breaks down into a proton and an electron; the electron is ejected, e.g. C-14 → N-14."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Gamma rays",
+      "meaning": "Electromagnetic radiation that accompanies radioactive decay."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Parent isotope",
+      "meaning": "The original radioactive element."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Daughter isotope",
+      "meaning": "The product of radioactive decay."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Half-life",
+      "meaning": "The time it takes for half of the parent atoms to decay."
+    },
+    {
+      "group": "Absolute dating",
+      "term": "Decay chain",
+      "meaning": "A series of radioactive parents and daughters that ends in a stable (non-radioactive) daughter, e.g. U-238 → Pb-206."
+    },
+    {
+      "group": "Geological time",
+      "term": "Geological time",
+      "meaning": "The immense timescales over which geological processes operate (\"deep time\")."
+    },
+    {
+      "group": "Geological time",
+      "term": "Geochronology",
+      "meaning": "Divides time itself: eon, era, period, epoch, age. Also the absolute dating of rocks, e.g. 341 ± 3 Ma."
+    },
+    {
+      "group": "Geological time",
+      "term": "Chronostratigraphy",
+      "meaning": "Divides rocks by the relative time they represent: eonthem, erathem, system, series, stage."
+    },
+    {
+      "group": "Geological time",
+      "term": "Unconformity",
+      "meaning": "A surface between two rock sequences that marks a hiatus: a period of non-deposition or active erosion. Example: Siccar Point, Scotland."
+    },
+    {
+      "group": "Geological time",
+      "term": "Stratigraphy",
+      "meaning": "The study of rock layers and their relationships in space and time."
+    },
+    {
+      "group": "Geological time",
+      "term": "Lithostratigraphy",
+      "meaning": "Stratigraphy based on rock type (lithology). Units: formation, member, group."
+    },
+    {
+      "group": "Geological time",
+      "term": "Biostratigraphy",
+      "meaning": "Stratigraphy based on fossil content. Unit: biozone."
+    },
+    {
+      "group": "Geological time",
+      "term": "Eon",
+      "meaning": "The largest unit of geological time, e.g. Archean, Phanerozoic. Matching rock unit: eonthem."
+    },
+    {
+      "group": "Geological time",
+      "term": "Holocene",
+      "meaning": "The present epoch of the Quaternary period, since ~10 ka (slide 21)."
+    },
+    {
+      "group": "Geological time",
+      "term": "Period",
+      "meaning": "A unit of geological time inside an era, e.g. Jurassic. Matching rock unit: system."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Nebular theory",
+      "meaning": "The Solar System formed ~4.6 Ga from a rotating cloud of gas and dust: the Sun in the centre, the planets in orbit."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Hadean",
+      "meaning": "Eon 4.6–4 Ga. \"Lava planet\"; differentiation into core, mantle and crust; no rocks, only very rare zircons."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Archean",
+      "meaning": "Eon 4–2.5 Ga. First continental crust, first microbial life (stromatolites), first photosynthesis."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Proterozoic",
+      "meaning": "Eon 2500–540 Ma. Continents grow, modern plate tectonics, oxygen rise, first eukaryotes and multicellular life."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Phanerozoic",
+      "meaning": "Eon from ~540 Ma to today: Paleozoic, Mesozoic and Cenozoic eras."
+    },
+    {
+      "group": "Early Earth",
+      "term": "Stromatolite",
+      "meaning": "A layered structure built by microbial mats; among the oldest evidence of life (Archean), still forming today."
+    },
+    {
+      "group": "Continents",
+      "term": "Craton",
+      "meaning": "The old (Precambrian), stable core of a continent."
+    },
+    {
+      "group": "Continents",
+      "term": "Shield",
+      "meaning": "The exposed part of a craton; Precambrian basement at the surface."
+    },
+    {
+      "group": "Continents",
+      "term": "Platform",
+      "meaning": "A craton covered by younger, mostly sedimentary rocks."
+    },
+    {
+      "group": "Continents",
+      "term": "Basement",
+      "meaning": "Older crystalline rocks underlying younger sedimentary cover."
+    },
+    {
+      "group": "Continents",
+      "term": "Sedimentary cover",
+      "meaning": "Younger sediments or sedimentary rocks deposited over the basement."
+    },
+    {
+      "group": "Continents",
+      "term": "Orogen",
+      "meaning": "A mountain belt formed by tectonic convergence."
+    },
+    {
+      "group": "Continents",
+      "term": "Terrane",
+      "meaning": "A crustal block with a geological history distinct from the surrounding rocks."
+    },
+    {
+      "group": "Continents",
+      "term": "Basin",
+      "meaning": "A subsiding area where sediments accumulate."
+    },
+    {
+      "group": "Supercontinents",
+      "term": "Supercontinent cycle",
+      "meaning": "The repetition of the Wilson cycle: all continents merge into one and then break up again."
+    },
+    {
+      "group": "Supercontinents",
+      "term": "Rodinia",
+      "meaning": "Supercontinent at ~1.0 Ga."
+    },
+    {
+      "group": "Supercontinents",
+      "term": "Pangea",
+      "meaning": "The most recent supercontinent, ~300 Ma."
+    }
+  ],
+  "confusable": [
+    [
+      "Superposition",
+      "Original horizontality",
+      "Lateral continuity",
+      "Cross-cutting relationships"
+    ],
+    [
+      "Relative dating",
+      "Absolute dating"
+    ],
+    [
+      "Alpha decay",
+      "Beta decay",
+      "Gamma rays"
+    ],
+    [
+      "Parent isotope",
+      "Daughter isotope",
+      "Half-life",
+      "Decay chain"
+    ],
+    [
+      "Geochronology",
+      "Chronostratigraphy",
+      "Lithostratigraphy",
+      "Biostratigraphy",
+      "Stratigraphy"
+    ],
+    [
+      "Hadean",
+      "Archean",
+      "Proterozoic",
+      "Phanerozoic"
+    ],
+    [
+      "Craton",
+      "Shield",
+      "Platform",
+      "Basement",
+      "Sedimentary cover"
+    ],
+    [
+      "Orogen",
+      "Terrane",
+      "Basin"
+    ],
+    [
+      "Rodinia",
+      "Pangea"
+    ]
+  ],
+  "facts": [
+    [
+      1,
+      "Historical geology is also called {palaeogeology|petrology|mineralogy|geomorphology}."
+    ],
+    [
+      1,
+      "Regional geology studies {large-scale regions|single crystals|the inner core|the atmosphere} and combines several geological disciplines."
+    ],
+    [
+      2,
+      "By the principle of superposition, sedimentary layers get {younger|older|thicker|harder} upwards."
+    ],
+    [
+      2,
+      "By the principle of original horizontality, sedimentary layers were first deposited {horizontally|vertically|folded|at 45°}."
+    ],
+    [
+      2,
+      "Sedimentary layers spread laterally until they hit the edge of the {basin|mantle|craton|fault}."
+    ],
+    [
+      2,
+      "A fault, fold or intrusion is {younger|older|the same age|always 1 Ma older} than the rocks it cuts."
+    ],
+    [
+      3,
+      "In the slide 9 diagram the youngest event is the {fault E|dike D|layer A|layer C}."
+    ],
+    [
+      3,
+      "In the slide 9 diagram the oldest unit is {layer C|layer A|dike D|fault E}."
+    ],
+    [
+      4,
+      "Radioactivity was discovered by {Henri Becquerel|James Hutton|Charles Darwin|Marie Tharp} in 1896."
+    ],
+    [
+      4,
+      "In alpha decay a {helium|hydrogen|carbon|lead} nucleus is ejected."
+    ],
+    [
+      4,
+      "In beta decay a neutron breaks down into a proton and an {electron|alpha particle|neutrino only|helium nucleus}, which is ejected."
+    ],
+    [
+      4,
+      "Beta radiation is stopped by {aluminium|paper|nothing|air}."
+    ],
+    [
+      5,
+      "The half-life is the time for {half|all|a quarter|a tenth} of the parent atoms to decay."
+    ],
+    [
+      5,
+      "After three half-lives, {12.5 %|25 %|33 %|0 %} of the parent isotope is left."
+    ],
+    [
+      5,
+      "Uranium-238 decays to the stable daughter {lead-206|lead-207|argon-40|strontium-87}."
+    ],
+    [
+      5,
+      "The half-life of uranium-238 is about {4.5 billion years|5,730 years|704 million years|48.8 billion years}."
+    ],
+    [
+      5,
+      "Carbon-14 has a half-life of {5,730 years|4.5 billion years|1.25 billion years|704 million years}, so it dates only young events."
+    ],
+    [
+      5,
+      "Potassium-40 decays to {argon-40|nitrogen-14|lead-206|strontium-87}."
+    ],
+    [
+      6,
+      "\"The present is the key to the past\" was said by {James Hutton|Charles Darwin|Henri Becquerel|Alfred Wegener}."
+    ],
+    [
+      6,
+      "Hutton's famous unconformity is at {Siccar Point, Scotland|the Badlands, USA|Barrandovská skála, Prague|the Grand Canyon}."
+    ],
+    [
+      6,
+      "Darwin needed deep time to explain the {evolution of species|age of the Moon|radioactive decay|ice ages}."
+    ],
+    [
+      6,
+      "At Siccar Point the lower, vertical rocks were deposited in a deep {ocean|desert|lake|glacier} about 425 Ma."
+    ],
+    [
+      6,
+      "An unconformity marks a hiatus: a period of non-deposition or active {erosion|folding|volcanism|metamorphism}."
+    ],
+    [
+      7,
+      "The geochronological units from largest to smallest are eon, era, {period|age|stage|system}, epoch, age."
+    ],
+    [
+      7,
+      "The rock unit that matches a period is a {system|series|stage|erathem}."
+    ],
+    [
+      7,
+      "The rock unit that matches an epoch is a {series|system|stage|eonthem}."
+    ],
+    [
+      7,
+      "The Mesozoic era contains the Triassic, Jurassic and {Cretaceous|Permian|Devonian|Neogene} periods."
+    ],
+    [
+      7,
+      "The Carboniferous is split into the Mississippian and the {Pennsylvanian|Permian|Devonian|Silurian}."
+    ],
+    [
+      8,
+      "Lithostratigraphy is based on {rock type|fossils|absolute ages|magnetism} and uses formations, members and groups."
+    ],
+    [
+      8,
+      "The unit of biostratigraphy is the {biozone|formation|stage|eon}."
+    ],
+    [
+      8,
+      "The Earth is about {4.6|2.5|13.8|0.54} billion years old."
+    ],
+    [
+      8,
+      "The Phanerozoic began about {540|66|2,500|4,000} million years ago."
+    ],
+    [
+      8,
+      "The abbreviation {Ga|Ma|ka|BP} means billions of years ago."
+    ],
+    [
+      9,
+      "According to the nebular theory, the Solar System formed from a rotating cloud of {gas and dust|water and ice|molten iron|granite}."
+    ],
+    [
+      9,
+      "The Hadean eon lasted from 4.6 to {4|2.5|3.5|0.54} Ga."
+    ],
+    [
+      9,
+      "From the Hadean no rocks survive, only very rare {zircons|stromatolites|fossils|diamonds}."
+    ],
+    [
+      9,
+      "Degassing during the Hadean produced the early {atmosphere|core|crust|continents}."
+    ],
+    [
+      10,
+      "The first continental crust formed in the {Archean|Hadean|Proterozoic|Phanerozoic} eon."
+    ],
+    [
+      10,
+      "The first microbial life is recorded by {stromatolites|trilobites|ammonites|dinosaur bones}."
+    ],
+    [
+      10,
+      "The first eukaryotic cells appeared in the {Proterozoic|Archean|Hadean|Phanerozoic}."
+    ],
+    [
+      10,
+      "The Proterozoic eon ended about {540|2,500|4,000|66} million years ago."
+    ],
+    [
+      11,
+      "A craton is the old, stable, {Precambrian|Cenozoic|Jurassic|Quaternary} core of a continent."
+    ],
+    [
+      11,
+      "A craton covered by younger sedimentary rocks is a {platform|shield|terrane|orogen}."
+    ],
+    [
+      11,
+      "A crustal block with a history different from its surroundings is a {terrane|craton|basin|platform}."
+    ],
+    [
+      11,
+      "A subsiding area where sediments accumulate is a {basin|shield|orogen|craton}."
+    ],
+    [
+      12,
+      "The supercontinent cycle is the repetition of the {Wilson|rock|carbon|water} cycle."
+    ],
+    [
+      12,
+      "Rodinia existed about {1.0 Ga|300 Ma|2.7 Ga|600 Ma}."
+    ],
+    [
+      12,
+      "The oldest supercontinent on the slide is {Kenorland|Rodinia|Pangea|Pannotia}, about 2.7 Ga."
+    ],
+    [
+      12,
+      "Columbia is also called {Nuna|Gondwana|Laurasia|Baltica}."
+    ]
+  ],
+  "cards": {
+    "tab": "Time cards",
+    "h1": "Eons, isotopes and supercontinents",
+    "who": "Which one am I?",
+    "lede": "Tap a card to flip it. Say the age and one key point before you flip.",
+    "labels": {
+      "w": "When / what",
+      "k": "Key point",
+      "x": "Clue"
+    },
+    "keys": [
+      "w",
+      "k",
+      "x"
+    ],
+    "items": [
+      {
+        "n": "Hadean",
+        "grp": "Eons",
+        "w": "4.6–4 Ga",
+        "k": "Lava planet; differentiation into core, mantle, crust",
+        "x": "No rocks, only rare zircons"
+      },
+      {
+        "n": "Archean",
+        "grp": "Eons",
+        "w": "4–2.5 Ga",
+        "k": "First continental crust, first microbial life",
+        "x": "Stromatolites, first photosynthesis"
+      },
+      {
+        "n": "Proterozoic",
+        "grp": "Eons",
+        "w": "2500–540 Ma",
+        "k": "Continents grow; modern plate tectonics; oxygen rise",
+        "x": "First eukaryotes and multicellular life"
+      },
+      {
+        "n": "Phanerozoic",
+        "grp": "Eons",
+        "w": "~540 Ma to today",
+        "k": "Paleozoic, Mesozoic, Cenozoic",
+        "x": "Starts with the Cambrian"
+      },
+      {
+        "n": "Uranium-238",
+        "grp": "Isotopes",
+        "w": "Decays to lead-206",
+        "k": "Half-life 4.5 billion years",
+        "x": "Old events"
+      },
+      {
+        "n": "Uranium-235",
+        "grp": "Isotopes",
+        "w": "Decays to lead-207",
+        "k": "Half-life 704 million years",
+        "x": "Old events"
+      },
+      {
+        "n": "Potassium-40",
+        "grp": "Isotopes",
+        "w": "Decays to argon-40",
+        "k": "Half-life 1.25 billion years",
+        "x": "Old events"
+      },
+      {
+        "n": "Rubidium-87",
+        "grp": "Isotopes",
+        "w": "Decays to strontium-87",
+        "k": "Half-life 48.8 billion years",
+        "x": "Old events; longest on the slide"
+      },
+      {
+        "n": "Carbon-14",
+        "grp": "Isotopes",
+        "w": "Decays to nitrogen-14 (beta decay)",
+        "k": "Half-life 5,730 years",
+        "x": "Young events only"
+      },
+      {
+        "n": "Kenorland",
+        "grp": "Supercontinents",
+        "w": "~2.7 Ga",
+        "k": "Oldest on the slide",
+        "x": "Archean"
+      },
+      {
+        "n": "Columbia (Nuna)",
+        "grp": "Supercontinents",
+        "w": "~1.8 Ga",
+        "k": "Two names",
+        "x": "Proterozoic"
+      },
+      {
+        "n": "Rodinia",
+        "grp": "Supercontinents",
+        "w": "~1.0 Ga",
+        "k": "One billion years ago",
+        "x": "Proterozoic"
+      },
+      {
+        "n": "Pannotia",
+        "grp": "Supercontinents",
+        "w": "~600 Ma",
+        "k": "Just before the Phanerozoic",
+        "x": "Late Proterozoic"
+      },
+      {
+        "n": "Pangea",
+        "grp": "Supercontinents",
+        "w": "~300 Ma",
+        "k": "The most recent supercontinent",
+        "x": "Late Paleozoic"
+      }
+    ]
+  },
+  "names": {
+    "tab": "Key facts",
+    "h1": "Historical geology I at a glance",
+    "small": "Dating, time units, eons, supercontinents",
+    "intro": "Which facts do you need? **Must know** rows matter most for the weekly test and the exam.",
+    "tables": [
+      {
+        "title": "Relative dating principles",
+        "head": [
+          "Principle",
+          "Says",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "Superposition",
+            "Layers get younger upwards",
+            "must"
+          ],
+          [
+            "Original horizontality",
+            "Layers were deposited horizontally",
+            "must"
+          ],
+          [
+            "Lateral continuity",
+            "Layers spread until the edge of the basin",
+            "must"
+          ],
+          [
+            "Cross-cutting relationships",
+            "What cuts or deforms is younger",
+            "must"
+          ]
+        ]
+      },
+      {
+        "title": "Radiometric pairs (slide 14)",
+        "head": [
+          "Parent → daughter",
+          "Half-life",
+          "Use",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "U-238 → Pb-206",
+            "4.5 billion years",
+            "Old events",
+            "must"
+          ],
+          [
+            "U-235 → Pb-207",
+            "704 million years",
+            "Old events",
+            "nice"
+          ],
+          [
+            "K-40 → Ar-40",
+            "1.25 billion years",
+            "Old events",
+            "nice"
+          ],
+          [
+            "Rb-87 → Sr-87",
+            "48.8 billion years",
+            "Old events",
+            "nice"
+          ],
+          [
+            "C-14 → N-14",
+            "5,730 years",
+            "Young events",
+            "must"
+          ]
+        ]
+      },
+      {
+        "title": "Key numbers (slide 21)",
+        "head": [
+          "Event",
+          "When",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "Age of the Earth",
+            "~4.6 Ga",
+            "must"
+          ],
+          [
+            "First life",
+            ">3.5 Ga",
+            "must"
+          ],
+          [
+            "Start of the Phanerozoic",
+            "~540 Ma",
+            "must"
+          ],
+          [
+            "Start of the Quaternary",
+            "~2 Ma",
+            "nice"
+          ],
+          [
+            "Start of the Holocene",
+            "~10 ka",
+            "nice"
+          ]
+        ]
+      },
+      {
+        "title": "Eons",
+        "head": [
+          "Eon",
+          "Time",
+          "Highlights",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "Hadean",
+            "4.6–4 Ga",
+            "Lava planet, differentiation, degassing, rare zircons",
+            "must"
+          ],
+          [
+            "Archean",
+            "4–2.5 Ga",
+            "First continental crust, stromatolites, photosynthesis",
+            "must"
+          ],
+          [
+            "Proterozoic",
+            "2500–540 Ma",
+            "Continents grow, plate tectonics, O₂ rise, eukaryotes, multicellular life",
+            "must"
+          ],
+          [
+            "Phanerozoic",
+            "540 Ma–today",
+            "Paleozoic, Mesozoic, Cenozoic",
+            "must"
+          ]
+        ]
+      },
+      {
+        "title": "Supercontinents",
+        "head": [
+          "Supercontinent",
+          "Age",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "Kenorland",
+            "~2.7 Ga",
+            "nice"
+          ],
+          [
+            "Columbia (Nuna)",
+            "~1.8 Ga",
+            "nice"
+          ],
+          [
+            "Rodinia",
+            "~1.0 Ga",
+            "must"
+          ],
+          [
+            "Pannotia",
+            "~600 Ma",
+            "nice"
+          ],
+          [
+            "Pangea",
+            "~300 Ma",
+            "must"
+          ]
+        ]
+      },
+      {
+        "title": "Exact chart ages",
+        "head": [
+          "Boundary",
+          "Slide 19 chart",
+          "Need it?"
+        ],
+        "rows": [
+          [
+            "Cambrian / Paleozoic begins",
+            "542 Ma",
+            "skip"
+          ],
+          [
+            "Triassic / Mesozoic begins",
+            "251 Ma",
+            "skip"
+          ],
+          [
+            "Paleogene / Cenozoic begins",
+            "65.5 Ma",
+            "skip"
+          ]
+        ]
+      }
+    ]
+  },
+  "sheet": [
+    [
+      "Relative dating",
+      [
+        "Principle",
+        "Meaning"
+      ],
+      [
+        [
+          "Superposition",
+          "Younger upwards"
+        ],
+        [
+          "Original horizontality",
+          "Deposited flat"
+        ],
+        [
+          "Lateral continuity",
+          "Spread to the basin edge"
+        ],
+        [
+          "Cross-cutting",
+          "Cutter is younger"
+        ]
+      ]
+    ],
+    [
+      "Absolute dating",
+      [
+        "Term",
+        "Meaning"
+      ],
+      [
+        [
+          "Alpha decay",
+          "Helium nucleus ejected (U-238 → Th-234)"
+        ],
+        [
+          "Beta decay",
+          "Neutron → proton + electron, electron ejected (C-14 → N-14)"
+        ],
+        [
+          "Gamma rays",
+          "Accompanying electromagnetic radiation"
+        ],
+        [
+          "Parent / daughter",
+          "Original isotope / decay product"
+        ],
+        [
+          "Half-life",
+          "Time for half the parent atoms to decay"
+        ],
+        [
+          "Decay chain",
+          "Parents and daughters until a stable daughter (U-238 → Pb-206)"
+        ]
+      ]
+    ],
+    [
+      "Time units",
+      [
+        "Time (geochronology)",
+        "Rock (chronostratigraphy)"
+      ],
+      [
+        [
+          "Eon",
+          "Eonthem"
+        ],
+        [
+          "Era",
+          "Erathem"
+        ],
+        [
+          "Period",
+          "System"
+        ],
+        [
+          "Epoch",
+          "Series"
+        ],
+        [
+          "Age",
+          "Stage"
+        ]
+      ]
+    ],
+    [
+      "Stratigraphy",
+      [
+        "Type",
+        "Based on",
+        "Unit"
+      ],
+      [
+        [
+          "Chronostratigraphy",
+          "Relative time in rocks",
+          "System, series, stage"
+        ],
+        [
+          "Lithostratigraphy",
+          "Rock type",
+          "Formation, member, group"
+        ],
+        [
+          "Biostratigraphy",
+          "Fossils",
+          "Biozone"
+        ],
+        [
+          "Geochronology",
+          "Absolute dating",
+          "Age, e.g. 341 ± 3 Ma"
+        ]
+      ]
+    ],
+    [
+      "Eons",
+      [
+        "Eon",
+        "Time"
+      ],
+      [
+        [
+          "Hadean",
+          "4.6–4 Ga"
+        ],
+        [
+          "Archean",
+          "4–2.5 Ga"
+        ],
+        [
+          "Proterozoic",
+          "2500–540 Ma"
+        ],
+        [
+          "Phanerozoic",
+          "540 Ma–today"
+        ]
+      ]
+    ]
+  ]
+}

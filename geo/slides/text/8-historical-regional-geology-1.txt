@@ -1,0 +1,1557 @@
+
+=== SLIDE 1 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Historical and
+regional
+geology I
+=== SLIDE 2 ===
+￼
+“Historical geology or
+palaeogeology is a discipline that
+uses the principles and methods
+of geology to reconstruct the
+geological history of Earth“
+Historical geology
+- Levin & King, TheEarthThroughTime
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 3 ===
+￼
+“Regional geology is the
+geological study of large-scale
+regions. Usually, it encompasses
+multiple geological disciplines to
+piece together the history of an
+area.“
+Regional geology
+- Wikipedia
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 4 ===
+￼
+Historical and regional geology
+Why bother?
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 5 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Content
+1. Dating techniques
+• Relative dating
+• Absolute dating
+2. Geological time
+3. Early Earth evolution
+• Hadean
+• Archean
+• Proterozoic
+4. Supercontinent cycle
+=== SLIDE 6 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Dating techniques:
+Relative dating
+=== SLIDE 7 ===
+￼
+Principle of superposition
+• Sedimentary layers get younger
+upwards
+Relative dating
+Principle of original horizontality
+• The original position of sedimentary
+layers was horizontal
+Principle of lateral continuity
+• Sedimentary layers spread laterally
+in all directions until they hit the
+edge of the basin
+￼
+Badlands, USA
+=== SLIDE 8 ===
+Relative dating
+￼
+Principle of superposition
+• Sedimentary layers get younger
+upwards
+Principle of original horizontality
+• The original position of sedimentary
+layers was horizontal
+Principle of lateral continuity
+• Sedimentary layers spread laterally
+in all directions until they hit the
+edge of the basin
+Principle of cross-cutting
+relationships
+• Deformation events like folds,
+faults, and igneous intrusions that
+cut across rocks, are younger than
+the rocks they deform or cut across
+￼
+=== SLIDE 9 ===
+￼
+Relative dating
+=== SLIDE 10 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Dating techniques:
+Absolute dating
+=== SLIDE 11 ===
+Absolute dating
+￼
+Absolute dating
+• Determination of the precise age
+using radiometric techniques
+Radioactivity
+• Discovered by Henri Becquerel in
+1896
+• Spontaneous decay of radioactive
+isotopes
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 12 ===
+Absolute dating
+￼
+Alpha decay
+• Ejection of helium nucleus
+• 92
+238𝑈 → 90
+234𝑇ℎ
+Beta decay
+• Neutron breaks down to form a
+proton and electron, electron is
+ejected
+• 6
+14𝐶 → 7
+14𝑁
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Gamma rays
+• Accompanying electromagnetic
+radiation
+￼
+￼
+=== SLIDE 13 ===
+Absolute dating
+￼
+Parent isotope:
+• Original radioactive element
+Daughter isotope:
+• Radioactive decay product
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Half life:
+• Time for half of the atoms to decay
+￼
+Decay chain:
+• Process of producing radioactive
+parents and daughters until a stable,
+or non-radioactive, daughter is
+formed
+• 92
+238𝑈 → 82
+206𝑃𝑏
+=== SLIDE 14 ===
+Absolute dating
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Elements Parent
+symbol
+Daughter
+symbol Half-life Use
+Uranium-
+238/Lead-206
+238U 206Pb 4.5 billion years Old events
+Uranium-
+235/Lead-207
+235U 207Pb 704 million years Old events
+Potassium-
+40/Argon-40
+40K 40Ar 1.25 billion years Old events
+Rubidium-
+87/Strontium-87
+87Rb 87Sr 48.8 billion years Old events
+Carbon-
+14/Nitrogen-14
+14C 14N 5,730 years Young events
+=== SLIDE 15 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Geological time
+=== SLIDE 16 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Activity:
+Play the Geological
+time– events quiz
+in moodle
+Geological time refers to the immense timescales
+over which geological processes operate.
+Geological time
+￼
+Activity:
+Play the Geological
+time– processes
+quiz in moodle
+=== SLIDE 17 ===
+Geological time
+￼
+￼
+￼
+"The present is the
+key to the past."
+￼
+"No vestige of a
+beginning, no prospect
+of an end."
+James Hutton
+Siccar point, Scotland
+=== SLIDE 18 ===
+Geological time
+￼
+"Endless forms most
+beautiful and most
+wonderful have been,
+and are being,
+evolved."
+￼
+Charles Darwin
+￼
+Needed deep time to explain
+the evolution of species
+￼
+=== SLIDE 19 ===
+￼
+Geological time
+￼
+International Stratigraphic
+chart:
+https://stratigraphy.org/chart/
+￼
+Geochronology:
+• Eon
+• Era
+• Period
+• Epoch
+• Age
+Chronostratigraphy:
+• Eonthem
+• Erathem
+• System
+• Series
+• Stage
+Geological time is divided into:
+=== SLIDE 20 ===
+￼
+Geological time
+Stratigraphy:
+Stratigraphy is the study of
+rock layers and their
+relationships in space and
+time.
+￼
+Type Based on Typical unit
+Chronostratigraphy Relative geological time
+represented by rocks System, Series, Stage
+Lithostratigraphy Rock type, lithology Formation, Member, Group
+Biostratigraphy Fossil content Biozone
+Geochronology Absolute dating Age, e.g., 341 ± 3 Ma
+￼
+￼
+=== SLIDE 21 ===
+￼
+￼
+Geological time
+￼
+Age of the Earth:
+~4.6 Ga
+First emergence of life:
+>3.5 Ga
+Beginning of the Phanerozoic:
+~540 Ma
+Beginning of the Quatenary:
+~ 2 Ma
+Beginning of the Holocene:
+~ 10 Ka
+Abbreviations:
+Ga: billions of years ago
+Ma: millions of years ago
+Ka: thousands of years ago
+=== SLIDE 22 ===
+Early Earth
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 23 ===
+Early Earth
+￼
+Origin of the Earth:
+Nebular theory
+• Rotating cloud of gas and
+dust
+• ~ 4.6 Ga
+• Center -> Sun
+• Orbit -> Planets
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+HL Tauri and its protoplanetary disk
+=== SLIDE 24 ===
+Early Earth
+￼
+Hadean eon
+• 4.6 –4 Ga
+• “Lava planet”
+• Differentiation: Core, Mantle
+Crust
+• Cooling -> crust
+• Degassing -> atmosphere
+• Likely liquid water (oceans) by
+the end
+• No rocks, very rare zircons
+preserved
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Artistic visualization of the Hadean
+=== SLIDE 25 ===
+Early Earth
+￼
+Archean eon
+• 4 –2.5 Ga
+• Earth continued cooling
+• First continental crust
+• First microbial life
+(stromatolites)
+• First photosynthesis –Oxygen
+rise
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Artistic visualization of the Archean
+=== SLIDE 26 ===
+Early Earth
+￼
+Archean eon
+• 4 –2.5 Ga
+• Earth continued cooling
+• First continental crust
+• First microbial life
+(stromatolites)
+• First photosynthesis –Oxygen
+rise
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 27 ===
+Early Earth
+￼
+Archean eon
+• 4 –2.5 Ga
+• Earth continued cooling
+• First continental crust
+• First microbial life
+(stromatolites)
+• First photosynthesis –Oxygen
+rise
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Present-day stromatolites
+=== SLIDE 28 ===
+Early Earth
+￼
+Proterozoic eon
+• 2500–540 Ma
+• Stabilization and growth of
+continents
+• Development of modern-style
+plate tectonics and
+supercontinent cycle
+• Atmospheric oxygen rise
+• First appearance of eukaryotic
+cells
+• First multicellular life
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 29 ===
+Early Earth
+￼
+Proterozoic eon
+• 2500–540 Ma
+• Stabilization and growth of
+continents
+• Development of modern-style
+plate tectonics and
+supercontinent cycle
+• Atmospheric oxygen rise
+• First appearance of eukaryotic
+cells
+• First multicellular life
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Late-Proterozoic fauna
+=== SLIDE 30 ===
+Early Earth
+￼
+Vocabulary
+• Craton–old (Precambrian), stable core of a continent
+• Shield–exposed part of a craton; Precambrian basement at the surface
+• Platform–craton covered by younger, mostly sedimentary rocks
+• Basement–older crystalline rocks underlying younger sedimentary cover
+• Sedimentary cover–younger sediments/rocks deposited over basement
+• Orogen–mountain belt formed by tectonic convergence
+• Terrane–crustal block with a geological history distinct from surrounding rocks
+• Basin–subsiding area where sediments accumulate
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+=== SLIDE 31 ===
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Supercontinent
+cycle
+=== SLIDE 32 ===
+Supercontinent cycle
+￼
+Supercontinent cycle
+• Repetition of the Wilson cycle
+• All continents merge at one
+point and then break up again
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+Wilson cycle
+￼
+• Kenorland →~2.7 Ga
+• Columbia (Nuna) →~1.8 Ga
+• Rodinia →~1.0 Ga
+• Pannotia →~600 Ma
+• Pangea →~300 Ma
+• Today →dispersed continents
+• Future →probably another
+supercontinent
+=== SLIDE 33 ===
+￼
+=== SLIDE 34 ===
+Thanks for
+your attention
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼
+￼

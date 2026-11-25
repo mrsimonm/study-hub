@@ -1,0 +1,537 @@
+{
+  "num": 7,
+  "id": "t7",
+  "title": "Metabolism – Respiratory chain",
+  "short": "Respiration",
+  "sub": "Lecture 7 · Jan Dvořák · 13 Nov 2026",
+  "blurb": "Catabolism vs anabolism; how cells get energy by stepwise oxidation; oxidation and reduction (electron transfer, hydrogenation and dehydrogenation, C–H bonds).",
+  "h1": "Metabolism – Respiratory chain",
+  "lede": "Catabolism vs anabolism; how cells get energy by stepwise oxidation; oxidation and reduction (electron transfer, hydrogenation and dehydrogenation, C–H bonds). Activated carriers (ATP, NADH, NADPH): ATP coupling and condensation reactions (glutamine synthesis), and NAD⁺ vs NADP⁺. Glycolysis (glucose → 2 pyruvate, net 2 ATP + 2 NADH), then fermentation (lactate, or ethanol + CO₂) vs respiration. The four steps of respiration: glycolysis → citric acid cycle (3 NADH, 1 FADH₂, 1 GTP, 2 CO₂ per turn) → electron-transport chain (Complex I, ubiquinone, cytochrome b-c1, cytochrome c, cytochrome c oxidase; O₂ → H₂O) → oxidative phosphorylation (~30 ATP per glucose vs 2 from glycolysis). Proteins and fats feed into the same pathways.",
+  "six": [
+    "Catabolism vs anabolism",
+    "Oxidation = loss of electrons / dehydrogenation; always paired with reduction",
+    "Activated carriers: ATP, NADH, NADPH; NADH (catabolism) vs NADPH (anabolism)",
+    "Glycolysis: where, inputs and outputs, net yield",
+    "Fermentation types and why (NAD⁺ regeneration)",
+    "Four steps of respiration and their locations"
+  ],
+  "must": "Respiration",
+  "questions": [
+    {
+      "id": "t7-q01",
+      "q": "The net ATP yield of glycolysis per glucose is:",
+      "answer": "2",
+      "wrong": [
+        "30",
+        "4",
+        "1"
+      ],
+      "e": "2 ATP used, 4 produced → net 2 ATP (+2 NADH). (Slides: s. 21)",
+      "fol": true
+    },
+    {
+      "id": "t7-q02",
+      "q": "Glycolysis takes place in the:",
+      "answer": "cytosol",
+      "wrong": [
+        "mitochondrial matrix",
+        "nucleus",
+        "inner mitochondrial membrane"
+      ],
+      "e": "Glycolysis occurs in the cytosol. (Slides: s. 20)",
+      "fol": true
+    },
+    {
+      "id": "t7-q03",
+      "q": "Which statement about oxidation is correct?",
+      "answer": "It is the loss of electrons and always pairs with reduction",
+      "wrong": [
+        "It increases the number of C–H bonds",
+        "It is the gain of electrons",
+        "It is the same as hydrogenation"
+      ],
+      "e": "Oxidation = removal of electrons; always coupled with reduction. (Slides: s. 7, s. 10)",
+      "fol": true
+    },
+    {
+      "id": "t7-q04",
+      "q": "NADPH is used mainly in:",
+      "answer": "anabolism",
+      "wrong": [
+        "the citric acid cycle",
+        "fermentation",
+        "catabolism"
+      ],
+      "e": "NADPH → anabolism; NADH → catabolism. (Slides: s. 19)",
+      "fol": true
+    },
+    {
+      "id": "t7-q05",
+      "q": "In the first step of the citric acid cycle, acetyl-CoA combines with:",
+      "answer": "oxaloacetate",
+      "wrong": [
+        "succinate",
+        "citrate",
+        "pyruvate"
+      ],
+      "e": "Acetyl + oxaloacetate (4C) → citric acid (6C). (Slides: s. 34)"
+    },
+    {
+      "id": "t7-q06",
+      "q": "One turn of the citric acid cycle produces:",
+      "answer": "3 NADH, 1 FADH₂, 1 GTP, 2 CO₂",
+      "wrong": [
+        "4 NADH, 0 FADH₂, 1 ATP, 3 CO₂",
+        "2 NADH, 2 FADH₂, 2 ATP, 1 CO₂",
+        "1 NADH, 1 FADH₂, 3 GTP, 2 CO₂"
+      ],
+      "e": "Net result shown in the cycle diagram. (Slides: p. 33)"
+    },
+    {
+      "id": "t7-q07",
+      "q": "The final electron acceptor of the respiratory chain is:",
+      "answer": "O₂",
+      "wrong": [
+        "ubiquinone",
+        "NAD⁺",
+        "cytochrome c"
+      ],
+      "e": "Electrons + O₂ + H⁺ → H₂O. (Slides: s. 40)"
+    },
+    {
+      "id": "t7-q08",
+      "q": "Cytochrome c oxidase contains:",
+      "answer": "2 cytochrome hemes and 3 copper atoms",
+      "wrong": [
+        "only ubiquinone",
+        "3 hemes and 1 Fe–S cluster",
+        "FMN and 8 Fe–S clusters"
+      ],
+      "e": "Cytochrome c oxidase = 2 hemes + 3 Cu. (Slides: s. 39)"
+    },
+    {
+      "id": "t7-q09",
+      "q": "Complete oxidation of one glucose yields about:",
+      "answer": "30 ATP",
+      "wrong": [
+        "15 ATP",
+        "4 ATP",
+        "2 ATP"
+      ],
+      "e": "~30 ATP vs 2 by glycolysis alone. (Slides: s. 41)"
+    },
+    {
+      "id": "t7-q10",
+      "q": "Skeletal muscle in oxygen shortage produces:",
+      "answer": "lactate",
+      "wrong": [
+        "citric acid",
+        "ethanol",
+        "acetyl-CoA"
+      ],
+      "e": "Lactate fermentation. (Slides: s. 26, p. 26)"
+    },
+    {
+      "id": "t7-q11",
+      "q": "The ETC pumps protons:",
+      "answer": "from the matrix to the intermembrane space",
+      "wrong": [
+        "into the thylakoid lumen",
+        "from the cytosol to the matrix",
+        "from the intermembrane space to the matrix"
+      ],
+      "e": "H⁺ pumped from the matrix to the intermembrane space. (Slides: s. 35)"
+    },
+    {
+      "id": "t7-q12",
+      "q": "Which carrier transfers electrons from Complex I to cytochrome b-c1?",
+      "answer": "Ubiquinone (ubiquinol)",
+      "wrong": [
+        "Cytochrome c",
+        "FADH₂",
+        "NADPH"
+      ],
+      "e": "Complex I reduces ubiquinone to ubiquinol, which passes electrons on. (Slides: s. 37)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Respiration",
+      "term": "Catabolism / Anabolism",
+      "meaning": "breakdown releasing energy / synthesis using energy"
+    },
+    {
+      "group": "Respiration",
+      "term": "Oxidation / Reduction",
+      "meaning": "loss / gain of electrons (or dehydrogenation / hydrogenation)"
+    },
+    {
+      "group": "Respiration",
+      "term": "Redox reaction",
+      "meaning": "coupled oxidation and reduction"
+    },
+    {
+      "group": "Respiration",
+      "term": "Activated carrier",
+      "meaning": "molecule storing energy in an exchangeable form (ATP, NADH, NADPH)"
+    },
+    {
+      "group": "Respiration",
+      "term": "ATP",
+      "meaning": "adenosine triphosphate; its hydrolysis drives unfavourable reactions"
+    },
+    {
+      "group": "Respiration",
+      "term": "Condensation reaction",
+      "meaning": "joining two molecules with release of water"
+    },
+    {
+      "group": "Respiration",
+      "term": "NAD⁺ / NADP⁺",
+      "meaning": "electron carriers; NADP⁺ has an extra phosphate"
+    },
+    {
+      "group": "Respiration",
+      "term": "Hydride ion (H⁻)",
+      "meaning": "2 e⁻ + H⁺ carried by NADH/NADPH"
+    },
+    {
+      "group": "Respiration",
+      "term": "Glycolysis",
+      "meaning": "glucose → 2 pyruvate in the cytosol, net 2 ATP + 2 NADH"
+    },
+    {
+      "group": "Respiration",
+      "term": "Fermentation",
+      "meaning": "anaerobic regeneration of NAD⁺ (lactate, or ethanol + CO₂)"
+    },
+    {
+      "group": "Respiration",
+      "term": "Acetyl-CoA",
+      "meaning": "product of pyruvate oxidation entering the citric acid cycle"
+    },
+    {
+      "group": "Respiration",
+      "term": "Citric acid cycle",
+      "meaning": "matrix cycle oxidising acetyl to CO₂, making NADH, FADH₂, GTP"
+    },
+    {
+      "group": "Respiration",
+      "term": "Oxaloacetate / Citrate",
+      "meaning": "4C acceptor / 6C product of the first step"
+    },
+    {
+      "group": "Respiration",
+      "term": "Ubiquinone (Q)",
+      "meaning": "lipid-soluble electron carrier"
+    },
+    {
+      "group": "Respiration",
+      "term": "Cytochrome c",
+      "meaning": "small soluble carrier in the crista space"
+    },
+    {
+      "group": "Respiration",
+      "term": "Oxidative phosphorylation",
+      "meaning": "ATP synthesis driven by the ETC-made H⁺ gradient"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Respiration: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Catabolism vs anabolism?",
+        "grp": "Respiration",
+        "a": "Catabolism breaks complex molecules into simple ones and releases energy; anabolism uses energy to build molecules."
+      },
+      {
+        "n": "How do cells extract energy from food?",
+        "grp": "Respiration",
+        "a": "By gradual, stepwise, enzyme-catalysed oxidation."
+      },
+      {
+        "n": "Define oxidation in terms of electrons.",
+        "grp": "Respiration",
+        "a": "Removal of electrons (e.g. Fe²⁺ → Fe³⁺)."
+      },
+      {
+        "n": "Why does oxidation always occur with reduction?",
+        "grp": "Respiration",
+        "a": "Electrons are conserved; those removed must be accepted by another molecule."
+      },
+      {
+        "n": "Hydrogenation and dehydrogenation correspond to what?",
+        "grp": "Respiration",
+        "a": "Hydrogenation = reduction; dehydrogenation = oxidation."
+      },
+      {
+        "n": "How do C–H bonds change on oxidation?",
+        "grp": "Respiration",
+        "a": "Their number decreases (it increases on reduction)."
+      },
+      {
+        "n": "Name the three main activated carriers.",
+        "grp": "Respiration",
+        "a": "ATP, NADH, NADPH."
+      },
+      {
+        "n": "Is ATP hydrolysis favourable?",
+        "grp": "Respiration",
+        "a": "Yes; synthesis from ADP is unfavourable, hydrolysis favourable."
+      },
+      {
+        "n": "How does ATP drive a condensation reaction?",
+        "grp": "Respiration",
+        "a": "It phosphorylates one molecule into a high-energy intermediate, which then reacts with the second (net: A–B + ADP + Pi + H₂O)."
+      },
+      {
+        "n": "Which amino-acid synthesis illustrates ATP coupling?",
+        "grp": "Respiration",
+        "a": "Glutamine from glutamic acid + ammonia."
+      },
+      {
+        "n": "What do NAD⁺/NADP⁺ accept when reduced?",
+        "grp": "Respiration",
+        "a": "2 electrons + 1 H⁺ (a hydride ion)."
+      },
+      {
+        "n": "Difference between NAD⁺ and NADP⁺?",
+        "grp": "Respiration",
+        "a": "NADP⁺ has an extra phosphate; this changes its shape (different enzymes), not its electron transfer."
+      },
+      {
+        "n": "Which carrier serves anabolism and which catabolism?",
+        "grp": "Respiration",
+        "a": "NADPH → anabolism; NADH → catabolism."
+      },
+      {
+        "n": "Where does glycolysis occur, and does it need O₂?",
+        "grp": "Respiration",
+        "a": "In the cytosol; no, it is anaerobic."
+      },
+      {
+        "n": "What does glycolysis convert, and to what?",
+        "grp": "Respiration",
+        "a": "1 glucose (6C) into 2 pyruvate (3C)."
+      },
+      {
+        "n": "Net yield of glycolysis?",
+        "grp": "Respiration",
+        "a": "2 ATP and 2 NADH per glucose (uses 2, makes 4 ATP)."
+      },
+      {
+        "n": "What decides fermentation vs respiration?",
+        "grp": "Respiration",
+        "a": "Absence vs presence of O₂."
+      },
+      {
+        "n": "Why do cells ferment?",
+        "grp": "Respiration",
+        "a": "To regenerate NAD⁺ from NADH so glycolysis can continue."
+      },
+      {
+        "n": "Products of fermentation?",
+        "grp": "Respiration",
+        "a": "Lactate, or ethanol + CO₂."
+      },
+      {
+        "n": "Which human cells ferment when short of O₂?",
+        "grp": "Respiration",
+        "a": "Skeletal muscle."
+      },
+      {
+        "n": "Four basic steps of respiration?",
+        "grp": "Respiration",
+        "a": "Glycolysis, citric acid cycle, electron-transport chain, oxidative phosphorylation."
+      },
+      {
+        "n": "What is pyruvate converted to in the mitochondrion?",
+        "grp": "Respiration",
+        "a": "Acetyl-CoA + CO₂."
+      },
+      {
+        "n": "Where does the citric acid cycle occur?",
+        "grp": "Respiration",
+        "a": "In the mitochondrial matrix."
+      },
+      {
+        "n": "First reaction of the citric acid cycle?",
+        "grp": "Respiration",
+        "a": "Acetyl (2C) + oxaloacetate (4C) → citric acid (6C)."
+      },
+      {
+        "n": "Products per turn of the citric acid cycle?",
+        "grp": "Respiration",
+        "a": "3 NADH, 1 FADH₂, 1 GTP, 2 CO₂."
+      },
+      {
+        "n": "Which step of oxidative catabolism uses O₂ directly?",
+        "grp": "Respiration",
+        "a": "Oxidative phosphorylation (the end of the ETC)."
+      },
+      {
+        "n": "Where are H⁺ pumped by the ETC?",
+        "grp": "Respiration",
+        "a": "From the matrix into the intermembrane space."
+      },
+      {
+        "n": "What does Complex I contain, and where does it send electrons?",
+        "grp": "Respiration",
+        "a": "FMN and 8 Fe–S clusters; to ubiquinone."
+      },
+      {
+        "n": "What carries electrons between cytochrome b-c1 and cytochrome c oxidase?",
+        "grp": "Respiration",
+        "a": "Cytochrome c (small soluble protein in the crista space, one electron at a time)."
+      },
+      {
+        "n": "What does cytochrome c oxidase contain?",
+        "grp": "Respiration",
+        "a": "2 cytochrome hemes and 3 copper atoms."
+      },
+      {
+        "n": "How many electrons and protons reduce one O₂?",
+        "grp": "Respiration",
+        "a": "4 electrons + 4 protons → 2 H₂O."
+      },
+      {
+        "n": "ATP yield of complete glucose oxidation vs glycolysis alone?",
+        "grp": "Respiration",
+        "a": "~30 ATP vs 2 ATP."
+      },
+      {
+        "n": "Do fats and proteins use the same pathways?",
+        "grp": "Respiration",
+        "a": "Yes, they feed into glycolysis, acetyl-CoA and the citric acid cycle."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Fermentation vs Respiration <small>(s. 25–29, s. 41)</small>",
+      [
+        "",
+        "Fermentation",
+        "Respiration"
+      ],
+      [
+        [
+          "O₂",
+          "absent",
+          "required"
+        ],
+        [
+          "Location",
+          "cytosol",
+          "cytosol + mitochondrion"
+        ],
+        [
+          "Pyruvate becomes",
+          "lactate or ethanol + CO₂",
+          "acetyl-CoA → CO₂ + H₂O"
+        ],
+        [
+          "ATP per glucose",
+          "2 (glycolysis)",
+          "~30"
+        ],
+        [
+          "Who",
+          "yeasts, bacteria, skeletal muscle in O₂ shortage",
+          "most animal and plant cells"
+        ]
+      ]
+    ],
+    [
+      "NADH vs NADPH <small>(s. 18–19)</small>",
+      [
+        "",
+        "NADH",
+        "NADPH"
+      ],
+      [
+        [
+          "Structure",
+          "no extra phosphate",
+          "extra phosphate group"
+        ],
+        [
+          "Role",
+          "catabolism",
+          "anabolism"
+        ]
+      ]
+    ],
+    [
+      "Contains vs Passes electrons to <small>(s. 37–39)</small>",
+      [
+        "ETC complex",
+        "Contains",
+        "Passes electrons to"
+      ],
+      [
+        [
+          "NADH dehydrogenase (I)",
+          "FMN, 8 Fe–S clusters",
+          "ubiquinone"
+        ],
+        [
+          "Cytochrome b-c1 (cytochrome c reductase)",
+          "dimer; 3 hemes + 1 Fe–S per monomer",
+          "cytochrome c"
+        ],
+        [
+          "Cytochrome c oxidase",
+          "2 hemes, 3 Cu atoms",
+          "O₂ → H₂O"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/07 Respiratory chain (updated).pptx (42 slides, main source) + 07 Respiratory chain.pdf (41 pages, same content; used for diagrams). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Respiration: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Glycolysis: −2 ATP, +4 ATP → <b>net 2 ATP + 2 NADH</b> per glucose",
+            "s. 21"
+          ],
+          [
+            "Citric acid cycle per turn: <b>3 NADH, 1 FADH₂, 1 GTP, 2 CO₂</b>",
+            "p. 33"
+          ],
+          [
+            "Complex I: <b>8</b> Fe–S clusters; b-c1: <b>3</b> hemes + 1 Fe–S per monomer; oxidase: <b>2</b> hemes + <b>3</b> Cu",
+            "s. 37–39"
+          ],
+          [
+            "<b>4 e⁻ + 4 H⁺</b> per O₂ → 2 H₂O",
+            "s. 39"
+          ],
+          [
+            "Complete oxidation: <b>~30 ATP</b> per glucose vs <b>2</b> from glycolysis",
+            "s. 41"
+          ]
+        ]
+      }
+    ]
+  }
+}

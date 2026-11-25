@@ -1,0 +1,249 @@
+{
+ "num": 9,
+ "title": "Are we in a sixth mass extinction?",
+ "short": "Sixth extinction",
+ "sub": "Symposium topic 7 · Ceballos et al. 2015 vs Wiens & Saban 2025",
+ "blurb": "The Big Five, background vs contemporary extinction rates, extinction debt.",
+ "h1": "Are we facing a sixth mass extinction?",
+ "lede": "Group 7's question. Classic: Ceballos et al. (2015), 'Entering the sixth mass extinction'. Recent: Wiens & Saban (2025), 'Questioning the sixth mass extinction'.",
+ "six": [
+  "**Big Five**: periods with ≥75 % species lost: End-Ordovician, Late Devonian, End-Permian, End-Triassic, End-Cretaceous.",
+  "**Background extinction rate**: the natural pace from the fossil record, about **2 E/MSY** (extinctions per million species-years).",
+  "**Ceballos 2015** defines mass extinction by **rate**: modern rates vastly exceed background, even with conservative data.",
+  "**Wiens & Saban 2025** define it by **total loss** (75 %), and total loss so far is very low.",
+  "**Extinction debt**: species already committed to extinction by past damage, with a time lag of years to centuries.",
+  "Group 7's verdict: the warning is real (rates are high, humans drive them), but by the 75 % definition we are not there yet. Conservation is the window."
+ ],
+ "must": "background vs contemporary rates and the Big Five",
+ "foot": "Source: Group 7 symposium slides; glossary section 7.",
+ "questions": [
+  {
+   "id": "t9-big5",
+   "q": "Which list gives the Big Five mass extinctions in order?",
+   "answer": "End-Ordovician, Late Devonian, End-Permian, End-Triassic, End-Cretaceous",
+   "wrong": [
+    "Late Devonian, End-Ordovician, End-Triassic, End-Permian, End-Cretaceous",
+    "End-Cambrian, End-Permian, End-Jurassic, End-Triassic, End-Cretaceous",
+    "End-Ordovician, End-Permian, Late Devonian, End-Cretaceous, End-Triassic"
+   ],
+   "e": "Glossary 7c.",
+   "fol": true
+  },
+  {
+   "id": "t9-75",
+   "q": "What share of species is lost in a mass extinction by the classic definition?",
+   "answer": "At least 75 %",
+   "wrong": [
+    "At least 10 %",
+    "At least 50 %",
+    "100 %"
+   ],
+   "e": "≥75 % in a relatively short period."
+  },
+  {
+   "id": "t9-bger",
+   "q": "What is the background extinction rate used by Ceballos et al.?",
+   "answer": "About 2 extinctions per million species-years",
+   "wrong": [
+    "About 2 extinctions per year",
+    "About 200 E/MSY",
+    "Zero"
+   ],
+   "e": "0.1–1 E/MSY rounded up to a conservative 2 E/MSY: about 1 extinction per 10,000 species per 100 years.",
+   "fol": true
+  },
+  {
+   "id": "t9-bgdef",
+   "q": "Background extinction rates are inferred from…",
+   "answer": "The fossil record in geologically normal periods",
+   "wrong": [
+    "IUCN Red List data",
+    "Satellite images",
+    "Museum visitor numbers"
+   ],
+   "e": "Glossary 7a."
+  },
+  {
+   "id": "t9-ceb",
+   "q": "How does Ceballos et al. 2015 define a mass extinction?",
+   "answer": "By how fast species disappear compared with background rates",
+   "wrong": [
+    "By the total share of species lost",
+    "By the number of new species",
+    "By changes in body size"
+   ],
+   "e": "Rate-based definition.",
+   "fol": true
+  },
+  {
+   "id": "t9-wiens",
+   "q": "How do Wiens & Saban 2025 define a mass extinction?",
+   "answer": "By total species loss, requiring 75 %",
+   "wrong": [
+    "By the extinction rate only",
+    "By habitat loss",
+    "By the number of invasive species"
+   ],
+   "e": "By that measure total loss so far remains very low.",
+   "fol": true
+  },
+  {
+   "id": "t9-vert",
+   "q": "According to Ceballos, the vertebrate extinctions of the last 100 years would naturally have taken…",
+   "answer": "800 to 1,000 years",
+   "wrong": [
+    "10 years",
+    "100 years",
+    "1 million years"
+   ],
+   "e": "One of the reasons FOR the sixth mass extinction."
+  },
+  {
+   "id": "t9-hc",
+   "q": "The 'highly conservative' scenario counts…",
+   "answer": "Only species officially listed as extinct",
+   "wrong": [
+    "Extinct plus possibly extinct species",
+    "All threatened species",
+    "Only island species"
+   ],
+   "e": "Conservative adds extinct in the wild and possibly extinct."
+  },
+  {
+   "id": "t9-against",
+   "q": "Which is a reason AGAINST calling it a sixth mass extinction?",
+   "answer": "Historical extinctions are heavily biased toward islands",
+   "wrong": [
+    "Modern rates exceed background rates",
+    "Vertebrate extinctions are accelerating",
+    "Habitat loss is widespread"
+   ],
+   "e": "Others: total loss still very low; invertebrates omitted."
+  },
+  {
+   "id": "t9-debt",
+   "q": "Extinction debt is…",
+   "answer": "Future extinctions already committed by past habitat damage",
+   "wrong": [
+    "The cost of protecting species",
+    "Extinctions that already happened",
+    "Species brought back from extinction"
+   ],
+   "e": "There is a time lag between cause and extinction.",
+   "fol": true
+  },
+  {
+   "id": "t9-lag",
+   "q": "How long can the time lag in extinction debt be?",
+   "answer": "Years, decades or even centuries",
+   "wrong": [
+    "Only a few days",
+    "Exactly one generation",
+    "Millions of years"
+   ],
+   "e": "That lag is a window for restoration."
+  },
+  {
+   "id": "t9-shrub",
+   "q": "The New Zealand shrub Rhabdothamnus solandri is in extinction debt because…",
+   "answer": "Several of its bird pollinators went locally extinct around 1870",
+   "wrong": [
+    "It was overharvested",
+    "Its seeds are eaten by rats",
+    "Its habitat flooded"
+   ],
+   "e": "It relies on native bird pollinators."
+  },
+  {
+   "id": "t9-habitat",
+   "q": "Habitat loss and fragmentation endanger what share of species on the IUCN Red List?",
+   "answer": "85 %",
+   "wrong": [
+    "5 %",
+    "25 %",
+    "100 %"
+   ],
+   "e": "Agriculture is a big factor."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Rates",
+   "term": "Background extinction rate",
+   "meaning": "The natural pace of extinction from the fossil record, without humans (about 2 E/MSY)."
+  },
+  {
+   "group": "Rates",
+   "term": "Contemporary extinction rate",
+   "meaning": "Today's, much higher, human-driven rate of species loss."
+  },
+  {
+   "group": "Rates",
+   "term": "E/MSY",
+   "meaning": "Extinctions per million species-years."
+  },
+  {
+   "group": "Mass extinctions",
+   "term": "Big Five",
+   "meaning": "End-Ordovician, Late Devonian, End-Permian, End-Triassic, End-Cretaceous."
+  },
+  {
+   "group": "Mass extinctions",
+   "term": "Mass extinction",
+   "meaning": "Loss of ≥75 % of species in a geologically short time."
+  },
+  {
+   "group": "Mass extinctions",
+   "term": "Sixth mass extinction",
+   "meaning": "The idea that human-driven losses could match the Big Five; still debated."
+  },
+  {
+   "group": "Debt",
+   "term": "Extinction debt",
+   "meaning": "Future extinctions already committed by past damage, with a time lag."
+  },
+  {
+   "group": "Debt",
+   "term": "Conservation window",
+   "meaning": "The time during an extinction debt when restoration can still prevent losses."
+  },
+  {
+   "group": "Data",
+   "term": "IUCN Red List",
+   "meaning": "Global list of species' extinction risk."
+  }
+ ],
+ "confusable": [
+  [
+   "Background extinction rate",
+   "Contemporary extinction rate"
+  ],
+  [
+   "Mass extinction",
+   "Extinction debt"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "A mass extinction removes at least {75|25|50|95} % of species."
+  ],
+  [
+   1,
+   "The last of the Big Five was the End-{Cretaceous|Permian|Triassic|Ordovician}."
+  ],
+  [
+   2,
+   "The conservative background rate is {2|20|200|0.2} E/MSY."
+  ],
+  [
+   2,
+   "Ceballos defines mass extinction by the {rate|total|cause|place} of species loss."
+  ],
+  [
+   3,
+   "Future losses already committed by past damage are an extinction {debt|rate|wave|pulse}."
+  ]
+ ],
+ "id": "t9"
+}

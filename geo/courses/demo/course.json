@@ -1,0 +1,11 @@
+{
+  "_help": "Demo course: open index.html?course=courses/demo/course.json. It shows a lecture built purely from data files.",
+  "title": "Demo course",
+  "code": "DEMO",
+  "subtitle": "example lecture built from data files",
+  "intro": "A demo of a lecture written only as lecture.json + steps.md. The content is an example, not course material.",
+  "footer": "Example content for demonstrating the data-file format.",
+  "testsCard": false,
+  "planned": [],
+  "lectures": ["lectures/t7"]
+}

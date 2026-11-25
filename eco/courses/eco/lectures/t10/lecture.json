@@ -1,0 +1,243 @@
+{
+ "num": 10,
+ "title": "Drivers of the biodiversity crisis",
+ "short": "Biodiversity drivers",
+ "sub": "Symposium topic 8 · Bar-On et al. 2018 vs Jaureguiberry et al. 2022",
+ "blurb": "Direct vs indirect drivers, and how humans and livestock took over Earth's biomass.",
+ "h1": "What drives the current biodiversity crisis?",
+ "lede": "Group 8's question. Readings: Jaureguiberry et al. (2022), the direct drivers of recent global biodiversity loss, and Bar-On, Phillips & Milo (2018), the biomass distribution on Earth.",
+ "six": [
+  "**Biodiversity crisis**: global declines in species, populations and ecosystem integrity driven by humans.",
+  "**Direct drivers**: measurable pressures that change ecosystems right away (habitat conversion, harvesting, pollution, introductions, greenhouse gases).",
+  "**Indirect drivers**: social, economic, demographic, technological and institutional processes behind the direct ones.",
+  "Jaureguiberry et al. screened **45,162 studies** down to **154** for their synthesis, and compared terrestrial, freshwater and marine realms and world regions.",
+  "Bar-On et al.: biomass measured in **gigatons of carbon**. Plants ≈ 450 Gt C dominate; animals only ≈ 2 Gt C.",
+  "**Biomass reallocation**: livestock (0.1 Gt C) and humans (0.06) far outweigh wild mammals (0.007); wild mammal biomass fell by ~82.5 %."
+ ],
+ "must": "direct vs indirect drivers and biomass reallocation",
+ "foot": "Source: Group 8 symposium slides; glossary section 8.",
+ "questions": [
+  {
+   "id": "t10-crisis",
+   "q": "The biodiversity crisis is…",
+   "answer": "Global declines in species, populations and ecosystem integrity driven by humans",
+   "wrong": [
+    "A shortage of new species descriptions",
+    "A natural cycle in biodiversity",
+    "The loss of museum collections"
+   ],
+   "e": "Driven by habitat change, exploitation, climate, pollution and invasions.",
+   "fol": true
+  },
+  {
+   "id": "t10-direct",
+   "q": "Which is a DIRECT driver of biodiversity loss?",
+   "answer": "Habitat conversion",
+   "wrong": [
+    "Population growth",
+    "Economic policy",
+    "Technological change"
+   ],
+   "e": "Direct = measurable physical, biological or chemical pressures.",
+   "fol": true
+  },
+  {
+   "id": "t10-indirect",
+   "q": "Which is an INDIRECT driver?",
+   "answer": "Economic and demographic processes",
+   "wrong": [
+    "Harvesting",
+    "Pollution",
+    "Species introductions"
+   ],
+   "e": "Indirect drivers shape the direct pressures in space and time.",
+   "fol": true
+  },
+  {
+   "id": "t10-screen",
+   "q": "How many studies did Jaureguiberry et al. start from before narrowing to 154?",
+   "answer": "45,162",
+   "wrong": [
+    "154",
+    "1,198",
+    "62"
+   ],
+   "e": "Extensive screening down to 154."
+  },
+  {
+   "id": "t10-realms",
+   "q": "Which three realms did Group 8 compare drivers across?",
+   "answer": "Terrestrial, freshwater and marine",
+   "wrong": [
+    "Tropical, temperate and polar",
+    "Urban, rural and wild",
+    "Producers, consumers and decomposers"
+   ],
+   "e": "Drivers differ by realm and by world region."
+  },
+  {
+   "id": "t10-unit",
+   "q": "In Bar-On et al. 2018, biomass is measured in…",
+   "answer": "Gigatons of carbon",
+   "wrong": [
+    "Tonnes of wet weight",
+    "Number of individuals",
+    "Hectares"
+   ],
+   "e": "Excludes water; 1 Gt C = 10¹⁵ g carbon."
+  },
+  {
+   "id": "t10-plants",
+   "q": "Which group makes up most of Earth's biomass?",
+   "answer": "Plants (about 450 Gt C)",
+   "wrong": [
+    "Bacteria",
+    "Animals",
+    "Fungi"
+   ],
+   "e": "Then bacteria ≈70, fungi ≈12, archaea ≈7, protists ≈4, animals ≈2.",
+   "fol": true
+  },
+  {
+   "id": "t10-animals",
+   "q": "Roughly how much of Earth's biomass is animals?",
+   "answer": "About 2 Gt C",
+   "wrong": [
+    "About 450 Gt C",
+    "About 70 Gt C",
+    "About 200 Gt C"
+   ],
+   "e": "A tiny share compared with plants and bacteria."
+  },
+  {
+   "id": "t10-realloc",
+   "q": "Biomass reallocation refers to…",
+   "answer": "The shift of vertebrate biomass from wild species to humans and livestock",
+   "wrong": [
+    "Moving plants between continents",
+    "Carbon moving from oceans to air",
+    "Animals migrating with the seasons"
+   ],
+   "e": "Glossary 8c.",
+   "fol": true
+  },
+  {
+   "id": "t10-rank",
+   "q": "Which is the correct order from heaviest to lightest?",
+   "answer": "Livestock, humans, wild mammals, wild birds",
+   "wrong": [
+    "Wild mammals, livestock, humans, wild birds",
+    "Humans, livestock, wild birds, wild mammals",
+    "Wild birds, wild mammals, humans, livestock"
+   ],
+   "e": "0.1, 0.06, 0.007 and 0.002 Gt C."
+  },
+  {
+   "id": "t10-mammal",
+   "q": "By how much has total wild mammal biomass fallen, per Group 8?",
+   "answer": "About 82.5 %",
+   "wrong": [
+    "About 5 %",
+    "About 25 %",
+    "It has increased"
+   ],
+   "e": "Land mammals −85 %, marine mammals −80 %; plants about −50 %."
+  },
+  {
+   "id": "t10-census",
+   "q": "What is a biomass census?",
+   "answer": "A quantitative estimate of the total mass of all living organisms in a scope",
+   "wrong": [
+    "A count of human population",
+    "A list of endangered species",
+    "A survey of farm animals only"
+   ],
+   "e": "Combines existing studies, DNA sequencing, satellite data and sampling."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Crisis",
+   "term": "Biodiversity crisis",
+   "meaning": "Global human-driven declines in species, populations and ecosystem integrity."
+  },
+  {
+   "group": "Drivers",
+   "term": "Direct driver",
+   "meaning": "Measurable pressure that immediately changes ecosystems (habitat conversion, harvesting, pollution, introductions, greenhouse gases)."
+  },
+  {
+   "group": "Drivers",
+   "term": "Indirect driver",
+   "meaning": "Social, economic, demographic, technological or institutional process behind direct drivers."
+  },
+  {
+   "group": "Drivers",
+   "term": "Habitat conversion",
+   "meaning": "Turning natural habitat into farmland, cities or other uses."
+  },
+  {
+   "group": "Drivers",
+   "term": "Direct exploitation",
+   "meaning": "Harvesting, hunting, fishing or logging of wild species."
+  },
+  {
+   "group": "Biomass",
+   "term": "Biomass",
+   "meaning": "Total mass of living organisms, here in gigatons of carbon."
+  },
+  {
+   "group": "Biomass",
+   "term": "Gigaton of carbon (Gt C)",
+   "meaning": "10¹⁵ g of carbon; the unit of the biomass census."
+  },
+  {
+   "group": "Biomass",
+   "term": "Biomass census",
+   "meaning": "Quantitative estimate of the mass of all living organisms in a scope."
+  },
+  {
+   "group": "Biomass",
+   "term": "Biomass reallocation",
+   "meaning": "Shift of vertebrate biomass from wild species to humans and livestock."
+  },
+  {
+   "group": "Monitoring",
+   "term": "Essential Biodiversity Variables",
+   "meaning": "Standard dimensions monitored to track biodiversity."
+  }
+ ],
+ "confusable": [
+  [
+   "Direct driver",
+   "Indirect driver"
+  ],
+  [
+   "Biomass",
+   "Biomass census"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Habitat conversion is a {direct|indirect|natural|minor} driver."
+  ],
+  [
+   1,
+   "Economic growth is an {indirect|direct|abiotic|biotic} driver."
+  ],
+  [
+   2,
+   "Jaureguiberry et al. narrowed their studies to {154|62|1000|45} for the synthesis."
+  ],
+  [
+   3,
+   "Plants make up about {450|45|2|70} Gt C of biomass."
+  ],
+  [
+   3,
+   "Wild mammals weigh less than {livestock|wild birds|insects|fungi}."
+  ]
+ ],
+ "id": "t10"
+}

@@ -1,0 +1,240 @@
+{
+ "num": 11,
+ "title": "Ecosystem services & the value of nature",
+ "short": "Value of nature",
+ "sub": "Symposium topic 9 · Costanza et al. 1997 vs Díaz et al. 2018",
+ "blurb": "From dollar values to nature's contributions to people: intrinsic, instrumental and relational value.",
+ "h1": "From services to contributions: valuing nature",
+ "lede": "Group 9's topic. Classic: Costanza et al. (1997), the value of the world's ecosystem services and natural capital. Recent: Díaz et al. (2018), assessing nature's contributions to people.",
+ "six": [
+  "**Ecosystem services**: regulating (climate, floods, water purification), material (crops, fish, timber, medicine), non-material (recreation, beauty, identity).",
+  "**Intrinsic value**: nature is worth something in itself. **Instrumental**: useful for human needs. **Relational**: value from people's relationships with nature.",
+  "Costanza 1997 put nature's services at about **US$33 trillion a year**, about **1.8×** the global economy.",
+  "Díaz 2018 (nature's contributions to people) describes **multiple ways of valuing** nature, not only money.",
+  "The two papers overlap: same ground (food, water, regulation), both want nature to count in decisions.",
+  "**Nature-based solutions**: conserve, restore or manage ecosystems to solve societal problems while helping biodiversity and people."
+ ],
+ "must": "intrinsic vs instrumental vs relational value",
+ "foot": "Source: Group 9 symposium slides and notes; glossary section 9.",
+ "questions": [
+  {
+   "id": "t11-es",
+   "q": "Flood protection and water purification are which kind of ecosystem service?",
+   "answer": "Regulating",
+   "wrong": [
+    "Material",
+    "Non-material",
+    "Cultural only"
+   ],
+   "e": "Regulating: climate regulation, flood protection, water purification.",
+   "fol": true
+  },
+  {
+   "id": "t11-mat",
+   "q": "Crops, fish, timber and medicinal plants are which kind of service?",
+   "answer": "Material",
+   "wrong": [
+    "Regulating",
+    "Non-material",
+    "Supporting"
+   ],
+   "e": "Glossary 9a."
+  },
+  {
+   "id": "t11-nonmat",
+   "q": "Outdoor recreation and cultural identity are…",
+   "answer": "Non-material benefits",
+   "wrong": [
+    "Material benefits",
+    "Regulating services",
+    "Direct drivers"
+   ],
+   "e": "Glossary 9a."
+  },
+  {
+   "id": "t11-intr",
+   "q": "'A flower has value simply because it is a living organism.' Which value is this?",
+   "answer": "Intrinsic value",
+   "wrong": [
+    "Instrumental value",
+    "Relational value",
+    "Market value"
+   ],
+   "e": "Independent of any human use.",
+   "fol": true
+  },
+  {
+   "id": "t11-instr",
+   "q": "'A flower is valuable as a nectar source for pollinating bees.' Which value?",
+   "answer": "Instrumental value",
+   "wrong": [
+    "Intrinsic value",
+    "Relational value",
+    "Option value"
+   ],
+   "e": "Valued as a means to an end.",
+   "fol": true
+  },
+  {
+   "id": "t11-rel",
+   "q": "Seeing a forest you care for as part of your community's tradition is…",
+   "answer": "Relational value",
+   "wrong": [
+    "Intrinsic value",
+    "Instrumental value",
+    "Natural capital"
+   ],
+   "e": "Value from relationships between people and nature.",
+   "fol": true
+  },
+  {
+   "id": "t11-33",
+   "q": "Costanza et al. valued the world's ecosystem services at about…",
+   "answer": "US$33 trillion per year",
+   "wrong": [
+    "US$33 billion per year",
+    "US$3.3 trillion in total",
+    "US$330 trillion per year"
+   ],
+   "e": "About 1.8 times the global economy at the time."
+  },
+  {
+   "id": "t11-money",
+   "q": "How do the two papers differ in how value is expressed?",
+   "answer": "1997 uses dollar values; 2018 uses multiple ways of describing value",
+   "wrong": [
+    "Both use only dollars",
+    "1997 rejects money entirely",
+    "2018 uses only dollar values"
+   ],
+   "e": "Group 9: not really opposites."
+  },
+  {
+   "id": "t11-same",
+   "q": "What do Costanza 1997 and Díaz 2018 have in common?",
+   "answer": "Both want nature to count in decisions",
+   "wrong": [
+    "Both reject ecosystem services",
+    "Both focus only on forests",
+    "Both ignore water and food"
+   ],
+   "e": "They cover the same ground and admit categories overlap."
+  },
+  {
+   "id": "t11-nbs",
+   "q": "Nature-based solutions are…",
+   "answer": "Conserving, restoring or managing ecosystems to tackle societal problems while helping biodiversity",
+   "wrong": [
+    "Replacing nature with technology",
+    "Moving people out of nature reserves",
+    "Putting a price on every species"
+   ],
+   "e": "E.g. climate adaptation, disaster risk, food and water security."
+  },
+  {
+   "id": "t11-bee",
+   "q": "Group 9's bee example showed one species with two perceptions. Which two?",
+   "answer": "A service (moving pollen) and a practice of care (relationships with obligations)",
+   "wrong": [
+    "A pest and a food source",
+    "A predator and a prey",
+    "A native and an invasive species"
+   ],
+   "e": "Pollination ≈ US$117 billion a year vs totemic relationships."
+  },
+  {
+   "id": "t11-tev",
+   "q": "In Costanza's valuation, total economic value = net rent (producer surplus) + …",
+   "answer": "Consumer surplus",
+   "wrong": [
+    "Natural capital",
+    "Relational value",
+    "Intrinsic value"
+   ],
+   "e": "From Group 9's notes on how values were calculated."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Services",
+   "term": "Ecosystem services",
+   "meaning": "Benefits nature gives people: regulating, material and non-material."
+  },
+  {
+   "group": "Services",
+   "term": "Regulating services",
+   "meaning": "Climate regulation, flood protection, water purification."
+  },
+  {
+   "group": "Services",
+   "term": "Material benefits",
+   "meaning": "Crops, fish, timber, medicinal plants."
+  },
+  {
+   "group": "Services",
+   "term": "Non-material benefits",
+   "meaning": "Recreation, aesthetic enjoyment, cultural identity."
+  },
+  {
+   "group": "Values",
+   "term": "Intrinsic value",
+   "meaning": "Nature's worth in itself, independent of human use."
+  },
+  {
+   "group": "Values",
+   "term": "Instrumental value",
+   "meaning": "Nature's usefulness for meeting human needs."
+  },
+  {
+   "group": "Values",
+   "term": "Relational value",
+   "meaning": "Value from people's relationships with nature (stewardship, home, tradition)."
+  },
+  {
+   "group": "Values",
+   "term": "Nature's contributions to people",
+   "meaning": "Díaz et al.'s framing: many ways, not only money, to describe what nature gives."
+  },
+  {
+   "group": "Values",
+   "term": "Consumer surplus",
+   "meaning": "Extra value buyers get when paying less than they would be willing to."
+  },
+  {
+   "group": "Action",
+   "term": "Nature-based solutions",
+   "meaning": "Using ecosystems to solve societal challenges while benefiting biodiversity and people."
+  }
+ ],
+ "confusable": [
+  [
+   "Intrinsic value",
+   "Instrumental value",
+   "Relational value"
+  ],
+  [
+   "Material benefits",
+   "Non-material benefits",
+   "Regulating services"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "Flood protection is a {regulating|material|non-material|cultural} service."
+  ],
+  [
+   2,
+   "Valuing nature in itself, regardless of use, is {intrinsic|instrumental|relational|economic} value."
+  ],
+  [
+   2,
+   "Valuing a landscape because it feels like home is {relational|intrinsic|instrumental|material} value."
+  ],
+  [
+   3,
+   "Costanza valued nature's services at about {33|3|330|1.8} trillion dollars a year."
+  ]
+ ],
+ "id": "t11"
+}

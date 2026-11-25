@@ -1,0 +1,781 @@
+{
+  "num": 9,
+  "id": "t9",
+  "title": "Physiological functions in plants",
+  "short": "Plant physiology",
+  "sub": "Lecture 9 · Jana Kocourková · 27 Nov 2026",
+  "blurb": "Plant physiology: its 5 key areas and what it studies.",
+  "h1": "Physiological functions in plants",
+  "lede": "Plant physiology: its 5 key areas and what it studies. Phytochemistry and secondary metabolites; cell signalling and cell–cell communication (plasmodesmata, symplast vs apoplast); growth and development terms (totipotency, differentiation, dedifferentiation). Plant tissues (meristem; parenchyma, collenchyma, sclerenchyma) and organs (leaf, flower, root, stem; taproot vs fibrous root). Mineral nutrition (Liebig's law of the minimum; 17 essential elements; macro- and micronutrients with uptake forms and roles). Symbioses: mycorrhizae (ecto-, arbuscular, orchid, ericoid, arbutoid, monotropoid), root-nodule bacteria (Rhizobium), parasitic plants (haustoria). Transport: xylem vs phloem, transpiration stream, stomata and guard cells, translocation. Biomechanics and environmental physiology; C3/C4/CAM recap. Pigments (chlorophylls, carotenoids, anthocyanins, betalains). Phytohormones (auxins, cytokinins, gibberellins, ABA, ethylene, brassinosteroids, jasmonates, salicylic acid, strigolactones). Plant movements (tropisms, nastic movements), photoperiodism (phytochrome Pr/Pfr, cryptochrome), circadian rhythms, and model plant organisms.",
+  "six": [
+    "Parenchyma vs collenchyma vs sclerenchyma",
+    "Taproot (dicots) vs fibrous root (monocots)",
+    "Macro vs micronutrients (examples, Mg in chlorophyll); law of the minimum",
+    "Mycorrhiza types (ECM: Hartig net; AM: arbuscules; orchid, ericoid)",
+    "Rhizobium nodules in Fabaceae; haustoria in parasites",
+    "Xylem vs phloem table"
+  ],
+  "must": "Plant physiology",
+  "questions": [
+    {
+      "id": "t9-q01",
+      "q": "Which plant tissue consists of dead cells with lignified walls?",
+      "answer": "Sclerenchyma",
+      "wrong": [
+        "Collenchyma",
+        "Parenchyma",
+        "Chlorenchyma"
+      ],
+      "e": "Sclerenchyma is dead at maturity, with lignified walls. (Slides: p. 12)",
+      "fol": true
+    },
+    {
+      "id": "t9-q02",
+      "q": "Which element is a central component of chlorophyll?",
+      "answer": "Magnesium",
+      "wrong": [
+        "Iron",
+        "Potassium",
+        "Calcium"
+      ],
+      "e": "Mg is essential for chlorophyll. (Slides: p. 19)",
+      "fol": true
+    },
+    {
+      "id": "t9-q03",
+      "q": "Which is a micronutrient?",
+      "answer": "Boron",
+      "wrong": [
+        "Sulfur",
+        "Phosphorus",
+        "Nitrogen"
+      ],
+      "e": "Micronutrients: Fe, B, Cl, Mn, Zn, Cu, Mo, Ni. (Slides: p. 18)",
+      "fol": true
+    },
+    {
+      "id": "t9-q04",
+      "q": "The Hartig net is characteristic of:",
+      "answer": "ectomycorrhizae",
+      "wrong": [
+        "root nodules",
+        "arbuscular mycorrhizae",
+        "orchid mycorrhizae"
+      ],
+      "e": "In ECM, hyphae grow between root cortex cells forming the Hartig net. (Slides: p. 24)",
+      "fol": true
+    },
+    {
+      "id": "t9-q05",
+      "q": "The most common type of mycorrhiza is:",
+      "answer": "arbuscular mycorrhiza",
+      "wrong": [
+        "ectomycorrhiza",
+        "orchid mycorrhiza",
+        "ericoid mycorrhiza"
+      ],
+      "e": "AM ~72 % of plants; Glomeromycota. (Slides: p. 28)"
+    },
+    {
+      "id": "t9-q06",
+      "q": "Nitrogen-fixing Rhizobium bacteria form symbiosis mainly with:",
+      "answer": "Fabaceae",
+      "wrong": [
+        "Poaceae",
+        "Ericaceae",
+        "Orchidaceae"
+      ],
+      "e": "Root nodules typical of Fabaceae. (Slides: p. 33)"
+    },
+    {
+      "id": "t9-q07",
+      "q": "Which statement about xylem is correct?",
+      "answer": "It transports water and minerals upward and is dead at maturity",
+      "wrong": [
+        "It consists of sieve tubes and companion cells",
+        "It is living tissue",
+        "It transports sugars bidirectionally"
+      ],
+      "e": "Xylem: water + minerals, unidirectional, dead, lignified. (Slides: p. 37)"
+    },
+    {
+      "id": "t9-q08",
+      "q": "Which hormone closes stomata under water stress?",
+      "answer": "Abscisic acid",
+      "wrong": [
+        "Cytokinin",
+        "Gibberellin",
+        "Auxin"
+      ],
+      "e": "ABA causes guard cells to lose turgor. (Slides: p. 61)"
+    },
+    {
+      "id": "t9-q09",
+      "q": "Which phytohormone is a gas involved in fruit ripening?",
+      "answer": "Ethylene",
+      "wrong": [
+        "Salicylic acid",
+        "Auxin",
+        "Brassinosteroid"
+      ],
+      "e": "Ethylene. (Slides: p. 62)"
+    },
+    {
+      "id": "t9-q10",
+      "q": "Gibberellins were first isolated from:",
+      "answer": "the fungus Gibberella fujikuroi",
+      "wrong": [
+        "human urine",
+        "yeast",
+        "rapeseed pollen"
+      ],
+      "e": "Gibberella fujikuroi, causing abnormal rice growth. (Slides: p. 60)"
+    },
+    {
+      "id": "t9-q11",
+      "q": "Positive gravitropism is shown by:",
+      "answer": "roots",
+      "wrong": [
+        "shoots",
+        "leaves opening at night",
+        "flowers closing in the dark"
+      ],
+      "e": "Roots grow toward gravity; shoots are negatively gravitropic. (Slides: p. 67)"
+    },
+    {
+      "id": "t9-q12",
+      "q": "Red light converts phytochrome:",
+      "answer": "from Pr to Pfr (active form)",
+      "wrong": [
+        "into chlorophyll",
+        "from Pfr to Pr",
+        "into cryptochrome"
+      ],
+      "e": "Red → Pfr (active); far-red → Pr (inactive). (Slides: p. 69)"
+    },
+    {
+      "id": "t9-q13",
+      "q": "Betalains are found only in:",
+      "answer": "Caryophyllales",
+      "wrong": [
+        "Fabaceae",
+        "Poaceae",
+        "Ericaceae"
+      ],
+      "e": "Betalains occur only in Caryophyllales and never with anthocyanins. (Slides: p. 55)"
+    },
+    {
+      "id": "t9-q14",
+      "q": "Which hormone was first isolated by Kögl in 1933 from human urine?",
+      "answer": "Auxin (IAA)",
+      "wrong": [
+        "Cytokinin",
+        "Ethylene",
+        "Abscisic acid"
+      ],
+      "e": "Indole-3-acetic acid. (Slides: p. 59)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Plant physiology",
+      "term": "Plasmodesmata",
+      "meaning": "cytoplasmic channels between plant cells"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Symplast / Apoplast",
+      "meaning": "transport through cytoplasm / through walls"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Totipotency",
+      "meaning": "ability of a cell to regenerate a whole plant"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Dedifferentiation",
+      "meaning": "regaining multiple developmental options"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Parenchyma / Collenchyma / Sclerenchyma",
+      "meaning": "living filler / living flexible support / dead rigid support"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Chlorenchyma / Aerenchyma",
+      "meaning": "photosynthetic / air-filled parenchyma"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Law of the minimum",
+      "meaning": "growth is limited by the scarcest essential nutrient (Liebig)"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Macronutrient / Micronutrient",
+      "meaning": "needed in large / trace amounts"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Mycorrhiza",
+      "meaning": "symbiosis of fungus and root"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Hartig net",
+      "meaning": "hyphal network between root cortex cells (ECM)"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Extramatrical hyphae",
+      "meaning": "hyphae extending into the soil"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Arbuscule",
+      "meaning": "branched hypha inside a root cell (AM)"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Mycotrophic plant",
+      "meaning": "gets carbon from fungi"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Root nodule",
+      "meaning": "N₂-fixing structure with Rhizobium"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Haustorium",
+      "meaning": "parasitic plant organ tapping host vessels"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Vessel / Tracheid",
+      "meaning": "xylem conducting cells"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Sieve tube / Companion cell",
+      "meaning": "phloem cells"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Transpiration / Transpiration pull",
+      "meaning": "water evaporation / suction drawing water up"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Guard cells",
+      "meaning": "pair of cells controlling the stoma"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Translocation",
+      "meaning": "phloem transport of sugars and amino acids"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Mechanotransduction",
+      "meaning": "sensing mechanical signals"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Hatch–Slack cycle",
+      "meaning": "C4 pathway"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Tropism / Nastic movement / Taxis",
+      "meaning": "directional growth / non-directional movement / whole-organism movement"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Photoperiodism",
+      "meaning": "response to night length"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Phytochrome (Pr/Pfr) / Cryptochrome",
+      "meaning": "red / blue-UV-A photoreceptors"
+    },
+    {
+      "group": "Plant physiology",
+      "term": "Circadian rhythm",
+      "meaning": "endogenous ~24 h cycle"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Plant physiology: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Five key areas of plant physiology?",
+        "grp": "Plant physiology",
+        "a": "Phytochemistry, cellular interactions, molecular &amp; cell biology, plant morphology, environmental interactions."
+      },
+      {
+        "n": "What are plasmodesmata?",
+        "grp": "Plant physiology",
+        "a": "Channels connecting the cytosol of neighbouring plant cells (symplastic transport); pass molecules &lt; 1,000 Da, regulated up to 10,000 Da."
+      },
+      {
+        "n": "Symplastic vs apoplastic transport?",
+        "grp": "Plant physiology",
+        "a": "Symplastic: through cytoplasm via plasmodesmata. Apoplastic: through cell walls between microfibrils (water, minerals)."
+      },
+      {
+        "n": "What is totipotency?",
+        "grp": "Plant physiology",
+        "a": "The ability of a plant cell to regenerate a whole plant under appropriate conditions."
+      },
+      {
+        "n": "Three permanent plant tissues?",
+        "grp": "Plant physiology",
+        "a": "Parenchyma, collenchyma, sclerenchyma."
+      },
+      {
+        "n": "Which tissue is dead with lignified walls?",
+        "grp": "Plant physiology",
+        "a": "Sclerenchyma (rigidity, strength)."
+      },
+      {
+        "n": "Which tissue has walls thickened at the corners and gives flexibility?",
+        "grp": "Plant physiology",
+        "a": "Collenchyma."
+      },
+      {
+        "n": "What are chlorenchyma and aerenchyma?",
+        "grp": "Plant physiology",
+        "a": "Photosynthetic parenchyma / parenchyma with large air spaces (buoyancy in aquatic plants)."
+      },
+      {
+        "n": "Parts of the stamen and of the pistil?",
+        "grp": "Plant physiology",
+        "a": "Stamen: filament + anther. Pistil: stigma + style + ovary."
+      },
+      {
+        "n": "Taproots vs fibrous roots occur in?",
+        "grp": "Plant physiology",
+        "a": "Taproots in dicots and gymnosperms; fibrous roots in monocots and most grasses."
+      },
+      {
+        "n": "State Liebig's law of the minimum.",
+        "grp": "Plant physiology",
+        "a": "Without an essential nutrient the plant cannot complete its life cycle; growth is limited by the scarcest nutrient."
+      },
+      {
+        "n": "How many essential plant elements are there?",
+        "grp": "Plant physiology",
+        "a": "17."
+      },
+      {
+        "n": "List the macronutrients.",
+        "grp": "Plant physiology",
+        "a": "N, P, K, Ca, S, Mg (+ C, O, H)."
+      },
+      {
+        "n": "List the micronutrients.",
+        "grp": "Plant physiology",
+        "a": "Fe, B, Cl, Mn, Zn, Cu, Mo, Ni."
+      },
+      {
+        "n": "Which element is essential for chlorophyll?",
+        "grp": "Plant physiology",
+        "a": "Magnesium (Mg²⁺)."
+      },
+      {
+        "n": "In which forms is nitrogen taken up?",
+        "grp": "Plant physiology",
+        "a": "NO₃⁻ and NH₄⁺."
+      },
+      {
+        "n": "Role of boron?",
+        "grp": "Plant physiology",
+        "a": "Cross-linking pectin."
+      },
+      {
+        "n": "How old is plant–mycorrhizal symbiosis?",
+        "grp": "Plant physiology",
+        "a": "About 475 million years."
+      },
+      {
+        "n": "What is the Hartig net?",
+        "grp": "Plant physiology",
+        "a": "Fungal hyphae growing between root cortex cells in ectomycorrhizae."
+      },
+      {
+        "n": "Benefits of ectomycorrhiza to trees?",
+        "grp": "Plant physiology",
+        "a": "More nutrients (especially P), larger soil volume, more active root area, tolerance to drought/heat/pH/heavy metals, protection against pathogens."
+      },
+      {
+        "n": "What does the fungus get from the plant?",
+        "grp": "Plant physiology",
+        "a": "4–20 % of the plant's photosynthetically fixed carbon."
+      },
+      {
+        "n": "Most common mycorrhiza type and its fungal group?",
+        "grp": "Plant physiology",
+        "a": "Arbuscular mycorrhiza (~72 %), Glomeromycota."
+      },
+      {
+        "n": "What are arbuscules?",
+        "grp": "Plant physiology",
+        "a": "Tree-like branched hyphae inside root cells in AM; they break down after ~2 weeks, releasing nutrients."
+      },
+      {
+        "n": "Why do orchids need mycorrhiza at germination?",
+        "grp": "Plant physiology",
+        "a": "Their tiny seeds lack reserves; the fungus supplies carbohydrates."
+      },
+      {
+        "n": "Which plants have ericoid mycorrhiza?",
+        "grp": "Plant physiology",
+        "a": "Ericaceae (heather, blueberries, cranberries, Rhododendron) on acidic, poor soils; fungus Hymenoscyphus ericae."
+      },
+      {
+        "n": "Which bacteria form root nodules, and with which family?",
+        "grp": "Plant physiology",
+        "a": "Rhizobium, Bradyrhizobium; with Fabaceae (legumes)."
+      },
+      {
+        "n": "What are haustoria?",
+        "grp": "Plant physiology",
+        "a": "Modified roots of parasitic plants that connect to the host's vascular bundles (e.g. mistletoe, Cuscuta)."
+      },
+      {
+        "n": "What does xylem carry, and in which direction?",
+        "grp": "Plant physiology",
+        "a": "Water and minerals, upward only (unidirectional); dead tissue."
+      },
+      {
+        "n": "What does phloem carry, and in which direction?",
+        "grp": "Plant physiology",
+        "a": "Sugars (sucrose) and amino acids, both ways from source to sink; living tissue."
+      },
+      {
+        "n": "Two types of xylem conducting cells?",
+        "grp": "Plant physiology",
+        "a": "Vessels (long, multicellular, no end walls) and tracheids (single, shorter, dead)."
+      },
+      {
+        "n": "What is the transpiration pull?",
+        "grp": "Plant physiology",
+        "a": "Suction created by water evaporating from leaves that draws water up from the roots."
+      },
+      {
+        "n": "How do guard cells open a stoma?",
+        "grp": "Plant physiology",
+        "a": "By day they accumulate sugar, take in water by osmosis, become turgid and bend apart."
+      },
+      {
+        "n": "What is translocation?",
+        "grp": "Plant physiology",
+        "a": "Active (ATP-using) transport of sucrose and amino acids in the phloem."
+      },
+      {
+        "n": "When and why did C4 plants evolve?",
+        "grp": "Plant physiology",
+        "a": "When CO₂ fell in the Miocene, making photorespiration very limiting."
+      },
+      {
+        "n": "Another name for the C4 pathway?",
+        "grp": "Plant physiology",
+        "a": "Hatch–Slack cycle."
+      },
+      {
+        "n": "Which pigments are porphyrins absorbing red and blue light?",
+        "grp": "Plant physiology",
+        "a": "Chlorophylls."
+      },
+      {
+        "n": "Which algae have chlorophyll c instead of b?",
+        "grp": "Plant physiology",
+        "a": "Kelps, diatoms and other heterokonts."
+      },
+      {
+        "n": "Name three carotenoids and their colours.",
+        "grp": "Plant physiology",
+        "a": "Carotene (orange), lutein (yellow), lycopene (red, tomatoes)."
+      },
+      {
+        "n": "How do betalains differ from anthocyanins?",
+        "grp": "Plant physiology",
+        "a": "Betalains come from tyrosine, occur only in Caryophyllales (e.g. beetroot) and never co-occur with anthocyanins."
+      },
+      {
+        "n": "Why do plants not need hormone glands?",
+        "grp": "Plant physiology",
+        "a": "Every plant cell can produce hormones."
+      },
+      {
+        "n": "Six main classes of phytohormones?",
+        "grp": "Plant physiology",
+        "a": "Auxins, cytokinins, gibberellins, abscisic acid, ethylene, brassinosteroids."
+      },
+      {
+        "n": "Main auxin, and who isolated it?",
+        "grp": "Plant physiology",
+        "a": "Indole-3-acetic acid (IAA); Kögl, 1933, from human urine."
+      },
+      {
+        "n": "Main functions of auxins?",
+        "grp": "Plant physiology",
+        "a": "Cell enlargement, bud formation, root initiation, tropisms."
+      },
+      {
+        "n": "Main functions of cytokinins?",
+        "grp": "Plant physiology",
+        "a": "Cell division, shoot formation, delaying senescence."
+      },
+      {
+        "n": "From which organism were gibberellins first isolated?",
+        "grp": "Plant physiology",
+        "a": "The fungus Gibberella fujikuroi (abnormal rice growth)."
+      },
+      {
+        "n": "What do gibberellins promote?",
+        "grp": "Plant physiology",
+        "a": "Cell elongation."
+      },
+      {
+        "n": "Roles of abscisic acid?",
+        "grp": "Plant physiology",
+        "a": "Growth inhibitor; dormancy, seed drying, leaf fall; closes stomata under water stress."
+      },
+      {
+        "n": "Which hormone is a gas, and what does it do?",
+        "grp": "Plant physiology",
+        "a": "Ethylene: fruit ripening; stops elongation and makes stems thicken."
+      },
+      {
+        "n": "Only steroid hormones in plants?",
+        "grp": "Plant physiology",
+        "a": "Brassinosteroids (brassinolide, rapeseed pollen, 1979)."
+      },
+      {
+        "n": "Jasmonates vs salicylic acid in defence?",
+        "grp": "Plant physiology",
+        "a": "Jasmonates: against herbivores and necrotrophic pathogens. Salicylic acid: against biotrophic pathogens."
+      },
+      {
+        "n": "What do strigolactones do?",
+        "grp": "Plant physiology",
+        "a": "Promote AM fungi and parasitic weed germination (Striga); inhibit shoot branching."
+      },
+      {
+        "n": "Three steps of a tropism?",
+        "grp": "Plant physiology",
+        "a": "Perception, signal transduction, directional growth."
+      },
+      {
+        "n": "Root vs shoot gravitropism?",
+        "grp": "Plant physiology",
+        "a": "Roots positive (toward gravity); shoots negative (against gravity)."
+      },
+      {
+        "n": "Tropism vs nastic movement?",
+        "grp": "Plant physiology",
+        "a": "Tropism: directional growth set by stimulus direction, slow. Nastic: independent of stimulus direction, faster, growth or turgor."
+      },
+      {
+        "n": "What is thigmonasty?",
+        "grp": "Plant physiology",
+        "a": "A nastic response to touch."
+      },
+      {
+        "n": "What is photoperiodism?",
+        "grp": "Plant physiology",
+        "a": "A plant's response to the length of the night/dark period (e.g. flowering)."
+      },
+      {
+        "n": "Three photoperiodic groups of plants?",
+        "grp": "Plant physiology",
+        "a": "Short-day, long-day, day-neutral."
+      },
+      {
+        "n": "How does red vs far-red light affect phytochrome?",
+        "grp": "Plant physiology",
+        "a": "Red converts Pr → Pfr (active); far-red converts Pfr → Pr (inactive)."
+      },
+      {
+        "n": "Which light do cryptochromes absorb?",
+        "grp": "Plant physiology",
+        "a": "Blue light and UV-A."
+      },
+      {
+        "n": "Which gene cluster controls cyanobacterial circadian rhythm?",
+        "grp": "Plant physiology",
+        "a": "kaiABC (Synechococcus)."
+      },
+      {
+        "n": "Which plant has the smallest genome?",
+        "grp": "Plant physiology",
+        "a": "Selaginella moellendorffii (a lycophyte)."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Ectomycorrhiza vs Arbuscular (endo) mycorrhiza <small>(p. 24–29)</small>",
+      [
+        "",
+        "Ectomycorrhiza",
+        "Arbuscular (endo) mycorrhiza"
+      ],
+      [
+        [
+          "Hyphae",
+          "sheath + <b>between</b> cells (Hartig net)",
+          "<b>inside</b> cells (arbuscules, vesicles)"
+        ],
+        [
+          "Share of plants",
+          "trees (~2,000 spp.)",
+          "~72 % of plants (~300,000 spp.)"
+        ],
+        [
+          "Fungi",
+          "&gt; 5,000 spp.",
+          "~230 spp. (Glomeromycota)"
+        ],
+        [
+          "Habitat",
+          "temperate forests",
+          "herbs, tropics, crops"
+        ],
+        [
+          "Age",
+          "Cretaceous",
+          "~460 million years"
+        ]
+      ]
+    ],
+    [
+      "Tropism vs Nastic movement <small>(p. 66–68)</small>",
+      [
+        "",
+        "Tropism",
+        "Nastic movement"
+      ],
+      [
+        [
+          "Stimulus direction",
+          "determines response",
+          "doesn't matter"
+        ],
+        [
+          "Speed",
+          "slow",
+          "faster"
+        ],
+        [
+          "Mechanism",
+          "always growth",
+          "growth or turgor"
+        ],
+        [
+          "Examples",
+          "phototropism, gravitropism",
+          "nyctinasty, seismonasty, thigmonasty"
+        ]
+      ]
+    ],
+    [
+      "Colour vs Soluble in vs Notes <small>(p. 51–55)</small>",
+      [
+        "Pigment",
+        "Colour",
+        "Soluble in",
+        "Notes"
+      ],
+      [
+        [
+          "Chlorophyll",
+          "green",
+          "lipids",
+          "porphyrin; absorbs red + blue"
+        ],
+        [
+          "Carotenoids",
+          "red/orange/yellow",
+          "lipids",
+          "tetraterpenoids; accessory; carotene, lutein, lycopene"
+        ],
+        [
+          "Anthocyanins",
+          "red/blue/violet",
+          "water",
+          "stress protection, osmotic adjustment"
+        ],
+        [
+          "Betalains",
+          "red/yellow",
+          "water",
+          "from tyrosine; Caryophyllales only; never with anthocyanins"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/09 Physiological functions in plants.pdf (75 pages; the largest lecture, ~8,800 words). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Plant physiology: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Plasmodesmata: &lt; <b>1,000 Da</b> freely, up to <b>10,000 Da</b> regulated; apoplast spaces ~<b>4 nm</b>",
+            "p. 7"
+          ],
+          [
+            "<b>17</b> essential elements",
+            "p. 18"
+          ],
+          [
+            "Mycorrhizal symbiosis ~<b>475</b> million years; AM fossils <b>460</b> million years",
+            "p. 22, p. 28"
+          ],
+          [
+            "ECM fungus up to <b>40 %</b> of root mass; plant gives <b>4–20 %</b> of fixed C",
+            "p. 24, p. 27"
+          ],
+          [
+            "AM: ~<b>72 %</b> of plants, ~<b>300,000</b> plant spp., ~<b>230</b> fungal spp.",
+            "p. 28"
+          ],
+          [
+            "RuBisCO &gt; <b>50 %</b> of leaf protein",
+            "p. 38"
+          ],
+          [
+            "K⁺ ~<b>100 mM</b> in cells",
+            "p. 74"
+          ],
+          [
+            "IAA isolated <b>1933</b> (Kögl), confirmed in plants <b>1946</b>; brassinolide <b>1979</b>",
+            "p. 59, p. 63"
+          ]
+        ]
+      }
+    ]
+  }
+}

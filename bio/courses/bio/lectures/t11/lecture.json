@@ -1,0 +1,607 @@
+{
+  "num": 11,
+  "id": "t11",
+  "title": "Taxonomy and nomenclature",
+  "short": "Taxonomy",
+  "sub": "Lecture 11 · Jan Růžička · 4 Dec 2026",
+  "blurb": "Taxonomy is the science of classifying living and extinct organisms, with four tasks: description, identification, nomenclature, classification.",
+  "h1": "Taxonomy and nomenclature",
+  "lede": "Taxonomy is the science of classifying living and extinct organisms, with four tasks: description, identification, nomenclature, classification. Topics: Linnaeus and the hierarchical ranks (plant and animal examples); characters and character states; identification keys (dichotomous, pictorial); types of classification (intuitive, phenetic, cladistic/phylogenetic); phylogenetic terms (apomorphy, synapomorphy, autapomorphy, sister taxa, polytomy, outgroup, parsimony); homology vs homoplasy (convergence, reversal). Nomenclature: binominal names and how to write them in botany vs zoology; starting points (1753 plants, 1758 animals); the codes (ICN, ICZN, ICNP, Biocode, PhyloCode); and the five principles priority, availability, typification, homonymy, synonymy. Ends with curious scientific names.",
+  "six": [
+    "Four tasks of taxonomy; Linnaeus; rank order",
+    "Phenetic vs cladistic classification",
+    "Apomorphy, synapomorphy, autapomorphy (feathers, fur, amniotic egg examples)",
+    "Homology vs homoplasy (convergence, reversal) with examples",
+    "How to write binominal names: capitalisation, italics, author/year, brackets",
+    "1753 vs 1758; ICN vs ICZN vs ICNP"
+  ],
+  "must": "Taxonomy",
+  "questions": [
+    {
+      "id": "t11-q01",
+      "q": "Which classification groups organisms by shared derived characters?",
+      "answer": "Cladistic (phylogenetic)",
+      "wrong": [
+        "Intuitive",
+        "Alphabetical",
+        "Phenetic"
+      ],
+      "e": "Cladistic classification is based on shared advanced characters (synapomorphies). (Slides: p. 10)",
+      "fol": true
+    },
+    {
+      "id": "t11-q02",
+      "q": "A shared derived character state defining a lineage is a(n):",
+      "answer": "synapomorphy",
+      "wrong": [
+        "autapomorphy",
+        "plesiomorphy",
+        "homoplasy"
+      ],
+      "e": "Synapomorphy = derived state shared by a lineage. (Slides: p. 13)",
+      "fol": true
+    },
+    {
+      "id": "t11-q03",
+      "q": "The spines of cacti and euphorbs are an example of:",
+      "answer": "homoplasy by convergence",
+      "wrong": [
+        "synapomorphy",
+        "typification",
+        "homology"
+      ],
+      "e": "Not closely related; similarity by convergence. (Slides: p. 18–19)",
+      "fol": true
+    },
+    {
+      "id": "t11-q04",
+      "q": "The starting point of zoological nomenclature is:",
+      "answer": "1758",
+      "wrong": [
+        "1707",
+        "1753",
+        "1999"
+      ],
+      "e": "1758 (animals); 1753 (plants). (Slides: p. 26)",
+      "fol": true
+    },
+    {
+      "id": "t11-q05",
+      "q": "Which is correctly written according to zoological rules?",
+      "answer": "Homo sapiens Linnaeus, 1758",
+      "wrong": [
+        "homo sapiens Linnaeus, 1758 (both parts lowercase)",
+        "Homo Sapiens Linnaeus, 1758 (both parts capitalised)",
+        "Homo sapiens L. (no year required in zoology)"
+      ],
+      "e": "Genus capitalised, epithet lowercase, italics, author + year. (Slides: p. 23, p. 25)"
+    },
+    {
+      "id": "t11-q06",
+      "q": "Brackets around the author in Pan troglodytes (Blumenbach, 1775) mean that:",
+      "answer": "the species was originally described in a different genus",
+      "wrong": [
+        "the author is unknown",
+        "the species is extinct",
+        "the name is a junior synonym"
+      ],
+      "e": "Originally Simia troglodytes. (Slides: p. 25)"
+    },
+    {
+      "id": "t11-q07",
+      "q": "The code for naming animals is the:",
+      "answer": "ICZN",
+      "wrong": [
+        "ICNP",
+        "BioCode",
+        "ICN"
+      ],
+      "e": "International Code of Zoological Nomenclature (1999). (Slides: p. 27)"
+    },
+    {
+      "id": "t11-q08",
+      "q": "Under the principle of priority, the valid name is:",
+      "answer": "the oldest available name",
+      "wrong": [
+        "the most widely used one",
+        "the name chosen by the museum",
+        "the newest name"
+      ],
+      "e": "The first (oldest) name is used; later ones are junior synonyms. (Slides: p. 30)"
+    },
+    {
+      "id": "t11-q09",
+      "q": "The name-bearing type of a genus is:",
+      "answer": "a type species",
+      "wrong": [
+        "a holotype",
+        "a syntype",
+        "a type genus"
+      ],
+      "e": "Species → holotype; genus → type species; family → type genus. (Slides: p. 33)"
+    },
+    {
+      "id": "t11-q10",
+      "q": "Iris is used for a plant genus and an insect genus. This is:",
+      "answer": "allowed, because homonymy applies only within one code",
+      "wrong": [
+        "a synonym",
+        "an unavailable name",
+        "forbidden; one must be renamed"
+      ],
+      "e": "Homonyms can be duplicated between plants, animals and bacteria. (Slides: p. 36)"
+    },
+    {
+      "id": "t11-q11",
+      "q": "Which is NOT one of Linnaeus' seven ranks?",
+      "answer": "Domain",
+      "wrong": [
+        "Family",
+        "Class",
+        "Order"
+      ],
+      "e": "The seven: kingdom, phylum, class, order, family, genus, species (domain is a later, higher rank). (Slides: p. 5, p. 7)"
+    },
+    {
+      "id": "t11-q12",
+      "q": "Similarity resulting from common ancestry is called:",
+      "answer": "homology",
+      "wrong": [
+        "reversal",
+        "homoplasy",
+        "convergence"
+      ],
+      "e": "Homology, e.g. vertebrate forelimb bones. (Slides: p. 18)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Taxonomy",
+      "term": "Taxonomy",
+      "meaning": "science of describing, identifying, naming and classifying organisms"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Taxon / taxa",
+      "meaning": "taxonomic group(s)"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Character / Character state",
+      "meaning": "a feature / its form"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Dichotomous key",
+      "meaning": "identification key of paired alternatives"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Phenetic classification",
+      "meaning": "by overall similarity"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Cladistic / phylogenetic classification",
+      "meaning": "by shared derived characters, reflecting evolutionary history"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Node / Sister taxa / Polytomy / Outgroup",
+      "meaning": "branch point / closest relatives / unresolved node / reference taxon outside the group"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Apomorphy",
+      "meaning": "derived character state"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Synapomorphy",
+      "meaning": "shared derived character state"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Autapomorphy",
+      "meaning": "derived state unique to one taxon"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Parsimony",
+      "meaning": "choosing the tree with the fewest changes"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Homology",
+      "meaning": "similarity due to common ancestry"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Homoplasy",
+      "meaning": "similarity due to convergence or reversal"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Binominal nomenclature",
+      "meaning": "genus + species epithet"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "ICN / ICZN / ICNP",
+      "meaning": "codes for plants+fungi+algae / animals / prokaryotes"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "PhyloCode",
+      "meaning": "rank-free phylogenetic nomenclature"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Priority",
+      "meaning": "the oldest name is valid"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Availability",
+      "meaning": "criteria for a validly published name"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Holotype",
+      "meaning": "single name-bearing specimen"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Type species / Type genus",
+      "meaning": "name-bearing type of a genus / family"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Senior / Junior homonym",
+      "meaning": "older valid / younger preoccupied identical name"
+    },
+    {
+      "group": "Taxonomy",
+      "term": "Junior synonym",
+      "meaning": "a younger name for the same taxon"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Taxonomy: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Define taxonomy.",
+        "grp": "Taxonomy",
+        "a": "The science of classifying living and extinct organisms: description, identification, nomenclature, classification."
+      },
+      {
+        "n": "From which Greek words does \"taxonomy\" come?",
+        "grp": "Taxonomy",
+        "a": "Taxis (arrangement) + nomos (law)."
+      },
+      {
+        "n": "Who founded the hierarchical classification, and when did he live?",
+        "grp": "Taxonomy",
+        "a": "Carolus Linnaeus (Carl von Linné), Swedish, 1707–1778."
+      },
+      {
+        "n": "List the 7 Linnaean ranks from broad to specific.",
+        "grp": "Taxonomy",
+        "a": "Kingdom, phylum, class, order, family, genus, species."
+      },
+      {
+        "n": "Full classification of the domestic dog?",
+        "grp": "Taxonomy",
+        "a": "Eukarya – Animalia – Chordata – Mammalia – Carnivora – Canidae – Canis – Canis lupus – Canis lupus familiaris."
+      },
+      {
+        "n": "Character vs character state?",
+        "grp": "Taxonomy",
+        "a": "Character = a feature (body colour); state = its form (orange/black)."
+      },
+      {
+        "n": "What is a dichotomous key?",
+        "grp": "Taxonomy",
+        "a": "An identification key of paired alternatives leading step by step to a species."
+      },
+      {
+        "n": "Three types of classification?",
+        "grp": "Taxonomy",
+        "a": "Intuitive, phenetic (overall similarity), cladistic (shared derived characters)."
+      },
+      {
+        "n": "Example of intuitive classification?",
+        "grp": "Taxonomy",
+        "a": "Putting bats with birds because both fly."
+      },
+      {
+        "n": "What is an apomorphy?",
+        "grp": "Taxonomy",
+        "a": "A newly evolved, derived character state."
+      },
+      {
+        "n": "What is a synapomorphy?",
+        "grp": "Taxonomy",
+        "a": "A shared derived character state that defines a lineage."
+      },
+      {
+        "n": "What is an autapomorphy? Example?",
+        "grp": "Taxonomy",
+        "a": "A derived trait unique to one taxon, e.g. feathers for birds + related dinosaurs."
+      },
+      {
+        "n": "For which taxa is the amniotic egg a synapomorphy in the lecture example?",
+        "grp": "Taxonomy",
+        "a": "Turtles and leopards (amniotes)."
+      },
+      {
+        "n": "What is a polytomy?",
+        "grp": "Taxonomy",
+        "a": "A node with more than two branches (unresolved relationships)."
+      },
+      {
+        "n": "Define homology.",
+        "grp": "Taxonomy",
+        "a": "Similarity resulting from common ancestry (forelimb bones of human, cat, dolphin, bat)."
+      },
+      {
+        "n": "Define homoplasy and give examples.",
+        "grp": "Taxonomy",
+        "a": "Similarity from convergence (spines of cacti and euphorbs) or reversal (eye loss in cave beetles)."
+      },
+      {
+        "n": "How does phylogenetic classification place lizard, crocodile and bird?",
+        "grp": "Taxonomy",
+        "a": "Crocodile and bird are sister taxa; phenetics would group lizard with crocodile."
+      },
+      {
+        "n": "Rules for writing a binominal name?",
+        "grp": "Taxonomy",
+        "a": "Genus capitalised, species epithet lowercase, both italicised."
+      },
+      {
+        "n": "How is a plant author cited?",
+        "grp": "Taxonomy",
+        "a": "Abbreviated, without a year (Artemisia vulgaris L.)."
+      },
+      {
+        "n": "How is an animal author cited?",
+        "grp": "Taxonomy",
+        "a": "With the year (Homo sapiens Linnaeus, 1758)."
+      },
+      {
+        "n": "Why is it Pan troglodytes (Blumenbach, 1775) in brackets?",
+        "grp": "Taxonomy",
+        "a": "It was originally described in another genus (Simia); brackets show the change of genus."
+      },
+      {
+        "n": "Italics for higher taxa: botany vs zoology?",
+        "grp": "Taxonomy",
+        "a": "Botany italicises family names; zoology does not."
+      },
+      {
+        "n": "Starting dates of nomenclature?",
+        "grp": "Taxonomy",
+        "a": "1753 for plants and fungi; 1758 for animals."
+      },
+      {
+        "n": "Which code covers plants, algae and fungi, and what is its latest version?",
+        "grp": "Taxonomy",
+        "a": "ICN, Shenzhen Code 2017."
+      },
+      {
+        "n": "Which code covers animals, and what is its latest version?",
+        "grp": "Taxonomy",
+        "a": "ICZN, 1999."
+      },
+      {
+        "n": "Which code covers bacteria and archaea?",
+        "grp": "Taxonomy",
+        "a": "ICNP (International Code of Nomenclature of Prokaryotes), 2015."
+      },
+      {
+        "n": "What is the PhyloCode?",
+        "grp": "Taxonomy",
+        "a": "A proposed phylogenetic nomenclature without mandatory ranks, defining names by phylogeny (draft 1998)."
+      },
+      {
+        "n": "Five principles of nomenclature?",
+        "grp": "Taxonomy",
+        "a": "Priority, availability, typification, homonymy, synonymy."
+      },
+      {
+        "n": "Principle of priority?",
+        "grp": "Taxonomy",
+        "a": "The oldest available name for a taxon is valid; younger names are junior synonyms."
+      },
+      {
+        "n": "Since when are online-only zoological publications valid?",
+        "grp": "Taxonomy",
+        "a": "From 1 Jan 2013, if registered in ZooBank and archived."
+      },
+      {
+        "n": "What is a holotype?",
+        "grp": "Taxonomy",
+        "a": "The single specimen bearing a species name, deposited in a museum."
+      },
+      {
+        "n": "Type of a genus name and of a family name?",
+        "grp": "Taxonomy",
+        "a": "Type species; type genus."
+      },
+      {
+        "n": "What is a junior homonym?",
+        "grp": "Taxonomy",
+        "a": "A younger identical name for a different taxon; it is preoccupied and must be replaced."
+      },
+      {
+        "n": "Are Laridae and Larridae homonyms?",
+        "grp": "Taxonomy",
+        "a": "No, a one-letter difference is enough."
+      },
+      {
+        "n": "Can a plant and an animal genus share a name?",
+        "grp": "Taxonomy",
+        "a": "Yes: homonymy only applies within one code (e.g. Iris, Bacillus)."
+      },
+      {
+        "n": "Shortest genus name mentioned?",
+        "grp": "Taxonomy",
+        "a": "Aa (a mollusc)."
+      },
+      {
+        "n": "Does nomenclature lead taxonomy?",
+        "grp": "Taxonomy",
+        "a": "No, nomenclature only follows taxonomy (taxonomy = science, nomenclature = tool)."
+      },
+      {
+        "n": "Which classification is preferred today?",
+        "grp": "Taxonomy",
+        "a": "Cladistic (phylogenetic)."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Botany (ICN) vs Zoology (ICZN) <small>(p. 24–27)</small>",
+      [
+        "",
+        "Botany (ICN)",
+        "Zoology (ICZN)"
+      ],
+      [
+        [
+          "Starting point",
+          "1753",
+          "1758"
+        ],
+        [
+          "Author citation",
+          "abbreviated, <b>no year</b> (<i>Artemisia vulgaris</i> L.)",
+          "author <b>+ year</b> (<i>Homo sapiens</i> Linnaeus, 1758)"
+        ],
+        [
+          "Moved species",
+          "(original author) + combining author: <i>A. montana</i> (Nakai) Pamp.",
+          "(author, year) in brackets: <i>Pan troglodytes</i> (Blumenbach, 1775)"
+        ],
+        [
+          "Higher taxa",
+          "in italics",
+          "not in italics (convention)"
+        ],
+        [
+          "Latest code",
+          "2017 (Shenzhen)",
+          "1999"
+        ]
+      ]
+    ],
+    [
+      "Phenetic vs Phylogenetic (cladistic) <small>(p. 10, p. 21)</small>",
+      [
+        "",
+        "Phenetic",
+        "Phylogenetic (cladistic)"
+      ],
+      [
+        [
+          "Basis",
+          "overall morphological similarity",
+          "ancestral relations, shared derived traits"
+        ],
+        [
+          "Lizard–crocodile–bird",
+          "lizard + crocodile grouped",
+          "crocodile + bird are sisters"
+        ]
+      ]
+    ],
+    [
+      "Homology vs Homoplasy <small>(p. 18–20)</small>",
+      [
+        "",
+        "Homology",
+        "Homoplasy"
+      ],
+      [
+        [
+          "Cause",
+          "common ancestry",
+          "convergence or reversal"
+        ],
+        [
+          "Example",
+          "forelimb bones of human, cat, dolphin, bat",
+          "spines of cacti vs euphorbs; eye loss in cave beetles"
+        ]
+      ]
+    ],
+    [
+      "Synonym vs Homonym <small>(p. 30–35)</small>",
+      [
+        "",
+        "Synonym",
+        "Homonym"
+      ],
+      [
+        [
+          "Meaning",
+          "different names, same taxon",
+          "same name, different taxa"
+        ],
+        [
+          "Valid one",
+          "oldest (senior synonym)",
+          "oldest (senior homonym); junior renamed"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/11 Taxonomy and nomenclature.pdf (50 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Taxonomy: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Linnaeus <b>1707–1778</b>; <b>7</b> basic ranks",
+            "p. 5"
+          ],
+          [
+            "Starting points: <b>1753</b> (plants), <b>1758</b> (animals)",
+            "p. 26"
+          ],
+          [
+            "ICN <b>2017</b> (Shenzhen), ICZN <b>1999</b>, ICNP <b>2015</b>; BioCode 1997/2011; PhyloCode 1998",
+            "p. 27–28"
+          ],
+          [
+            "Online publication valid after <b>1 Jan 2013</b> with <b>ZooBank</b> registration; CD-ROM 1985–2013",
+            "p. 32"
+          ],
+          [
+            "<i>Agra</i>: &gt; <b>600</b> species",
+            "p. 44"
+          ]
+        ]
+      }
+    ]
+  }
+}

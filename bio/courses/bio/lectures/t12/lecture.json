@@ -1,0 +1,626 @@
+{
+  "num": 12,
+  "id": "t12",
+  "title": "Tree of life – systematic biology and evolution",
+  "short": "Evolution",
+  "sub": "Lecture 12 · Jan Růžička · 18 Dec 2026",
+  "blurb": "History of evolutionary thought: Lamarck (striving toward perfection, inheritance of acquired traits), Darwin (HMS Beagle, natural selection, 1858 with Wallace, On the Origin of Species 1859), Mendel (laws 1865–66, rediscovered 1900), the modern synthesis (1920s–40s; Dobzhansky's \"nothing in biology makes sense except in the light of evolution\"), evo-devo and the extended synthesis.",
+  "h1": "Tree of life – systematic biology and evolution",
+  "lede": "History of evolutionary thought: Lamarck (striving toward perfection, inheritance of acquired traits), Darwin (HMS Beagle, natural selection, 1858 with Wallace, On the Origin of Species 1859), Mendel (laws 1865–66, rediscovered 1900), the modern synthesis (1920s–40s; Dobzhansky's \"nothing in biology makes sense except in the light of evolution\"), evo-devo and the extended synthesis. Microevolution: natural selection (3 conditions, adaptation, steps), stabilising, disruptive and directional selection (peppered moth), sexual selection (giraffe necks, peacocks), mutation, gene flow, genetic drift (bottleneck, founder effect), domestication. Macroevolution: speciation (allopatric; adaptive radiation in Galápagos finches and cichlids; gradualism vs punctuated equilibrium), extinction, the history of life as a 24-hour clock, and the five mass extinctions.",
+  "six": [
+    "Lamarck vs Darwin; inheritance of acquired traits",
+    "Darwin's dates, the Beagle, Galápagos finches, Wallace, 1859",
+    "Mendel: Brno, peas, 1865–66, rediscovered 1900",
+    "Modern synthesis; Dobzhansky's quote",
+    "Three conditions for natural selection; the definition of adaptation",
+    "Stabilising / disruptive / directional selection with examples"
+  ],
+  "must": "Evolution",
+  "questions": [
+    {
+      "id": "t12-q01",
+      "q": "Lamarck's theory is based on:",
+      "answer": "inheritance of acquired traits",
+      "wrong": [
+        "genetic drift",
+        "Mendelian laws",
+        "natural selection of random mutations"
+      ],
+      "e": "Lamarck: tendency to perfection + inheritance of acquired traits. (Slides: p. 3)",
+      "fol": true
+    },
+    {
+      "id": "t12-q02",
+      "q": "On the Origin of Species was published in:",
+      "answer": "1859",
+      "wrong": [
+        "1838",
+        "1900",
+        "1858"
+      ],
+      "e": "1859; 1858 was the joint paper with Wallace. (Slides: p. 5)",
+      "fol": true
+    },
+    {
+      "id": "t12-q03",
+      "q": "Mendel's laws were rediscovered in:",
+      "answer": "1900",
+      "wrong": [
+        "1866",
+        "1859",
+        "1930"
+      ],
+      "e": "Proposed 1865–66, rediscovered 1900. (Slides: p. 6)",
+      "fol": true
+    },
+    {
+      "id": "t12-q04",
+      "q": "Which is NOT a condition for natural selection?",
+      "answer": "The environment creates the favourable trait",
+      "wrong": [
+        "Heritability of the trait",
+        "Variation in a trait",
+        "Differential reproduction"
+      ],
+      "e": "Selection acts only on existing variation. (Slides: p. 12, p. 21)",
+      "fol": true
+    },
+    {
+      "id": "t12-q05",
+      "q": "Human birth weight is an example of:",
+      "answer": "stabilising selection",
+      "wrong": [
+        "sexual selection",
+        "directional selection",
+        "disruptive selection"
+      ],
+      "e": "Intermediate weights are favoured. (Slides: p. 14)"
+    },
+    {
+      "id": "t12-q06",
+      "q": "Industrial melanism in the peppered moth is an example of:",
+      "answer": "directional selection",
+      "wrong": [
+        "disruptive selection",
+        "stabilising selection",
+        "genetic drift"
+      ],
+      "e": "Shift toward dark forms due to pollution and bird predation. (Slides: p. 17)"
+    },
+    {
+      "id": "t12-q07",
+      "q": "According to the lecture, the long neck of giraffes results from:",
+      "answer": "sexual selection (male fights)",
+      "wrong": [
+        "reaching high trees",
+        "genetic drift",
+        "inheritance of acquired traits"
+      ],
+      "e": "Long neck = sexual selection, not adaptation to high trees. (Slides: p. 18)"
+    },
+    {
+      "id": "t12-q08",
+      "q": "Random change of allele frequencies, strongest in small populations, is:",
+      "answer": "genetic drift",
+      "wrong": [
+        "mutation",
+        "gene flow",
+        "natural selection"
+      ],
+      "e": "Genetic drift. (Slides: p. 24–25)"
+    },
+    {
+      "id": "t12-q09",
+      "q": "A new population founded by a few individuals loses genetic variation. This is the:",
+      "answer": "founder effect",
+      "wrong": [
+        "adaptive radiation",
+        "gene flow",
+        "bottleneck effect"
+      ],
+      "e": "Founder effect. (Slides: p. 27)"
+    },
+    {
+      "id": "t12-q10",
+      "q": "Rapid diversification of a single ancestral line (e.g. Galápagos finches) is called:",
+      "answer": "adaptive radiation",
+      "wrong": [
+        "gradualism",
+        "extinction",
+        "convergence"
+      ],
+      "e": "Adaptive radiation. (Slides: p. 32)"
+    },
+    {
+      "id": "t12-q11",
+      "q": "The punctuated equilibrium model proposes:",
+      "answer": "long stasis interrupted by rapid change",
+      "wrong": [
+        "no change at all",
+        "continuous, slow change",
+        "change only by drift"
+      ],
+      "e": "Discontinuous change vs gradualism. (Slides: p. 34)"
+    },
+    {
+      "id": "t12-q12",
+      "q": "A mass extinction is defined as the loss of:",
+      "answer": "> 75 % of organisms in a short time",
+      "wrong": [
+        "> 10 % of species",
+        "> 50 % of species",
+        "all species"
+      ],
+      "e": "Five mass extinctions, each > 75 %. (Slides: p. 37)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Evolution",
+      "term": "Lamarckism",
+      "meaning": "inheritance of acquired traits + drive toward perfection"
+    },
+    {
+      "group": "Evolution",
+      "term": "Natural selection",
+      "meaning": "differential survival and reproduction of heritable variants"
+    },
+    {
+      "group": "Evolution",
+      "term": "Adaptation",
+      "meaning": "heritable trait that improves survival and reproduction"
+    },
+    {
+      "group": "Evolution",
+      "term": "Modern synthesis",
+      "meaning": "natural selection + Mendelian population genetics"
+    },
+    {
+      "group": "Evolution",
+      "term": "Evo-devo",
+      "meaning": "evolutionary developmental biology (Hox genes)"
+    },
+    {
+      "group": "Evolution",
+      "term": "Epigenetics / Memes",
+      "meaning": "non-genetic inheritance (molecular / cultural)"
+    },
+    {
+      "group": "Evolution",
+      "term": "Microevolution / Macroevolution",
+      "meaning": "within-population allele change / large-scale change and speciation"
+    },
+    {
+      "group": "Evolution",
+      "term": "Descent with modification",
+      "meaning": "Darwin's phrase for evolution"
+    },
+    {
+      "group": "Evolution",
+      "term": "Gene pool",
+      "meaning": "all alleles in a population"
+    },
+    {
+      "group": "Evolution",
+      "term": "Stabilising / Disruptive / Directional selection",
+      "meaning": "favours the middle / both extremes / one extreme"
+    },
+    {
+      "group": "Evolution",
+      "term": "Industrial melanism",
+      "meaning": "increase of dark forms in polluted areas (peppered moth)"
+    },
+    {
+      "group": "Evolution",
+      "term": "Sexual selection",
+      "meaning": "selection by mate choice or rivalry"
+    },
+    {
+      "group": "Evolution",
+      "term": "Gene flow",
+      "meaning": "allele movement through migration"
+    },
+    {
+      "group": "Evolution",
+      "term": "Genetic drift",
+      "meaning": "random allele-frequency change"
+    },
+    {
+      "group": "Evolution",
+      "term": "Bottleneck effect",
+      "meaning": "drift after a sudden population crash"
+    },
+    {
+      "group": "Evolution",
+      "term": "Founder effect",
+      "meaning": "drift when few individuals found a new population"
+    },
+    {
+      "group": "Evolution",
+      "term": "Panmixia",
+      "meaning": "random mating in a population"
+    },
+    {
+      "group": "Evolution",
+      "term": "Speciation / Allopatric speciation",
+      "meaning": "origin of new species / via geographic separation"
+    },
+    {
+      "group": "Evolution",
+      "term": "Adaptive radiation",
+      "meaning": "rapid diversification from one ancestor"
+    },
+    {
+      "group": "Evolution",
+      "term": "Neoendemic",
+      "meaning": "recently evolved species restricted to an area"
+    },
+    {
+      "group": "Evolution",
+      "term": "Gradualism / Punctuated equilibrium",
+      "meaning": "continuous / stepwise model of change"
+    },
+    {
+      "group": "Evolution",
+      "term": "Mass extinction",
+      "meaning": "loss of > 75 % of organisms in a short period"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Evolution: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Two main ideas of Lamarck?",
+        "grp": "Evolution",
+        "a": "A tendency toward perfection and the inheritance of acquired traits."
+      },
+      {
+        "n": "How would Lamarck explain the giraffe's neck?",
+        "grp": "Evolution",
+        "a": "Giraffes stretched their necks, and the longer neck was passed on to offspring."
+      },
+      {
+        "n": "When did Darwin sail on HMS Beagle?",
+        "grp": "Evolution",
+        "a": "1831–1836 (Galápagos finches, South American fossils)."
+      },
+      {
+        "n": "When did Darwin conceive natural selection?",
+        "grp": "Evolution",
+        "a": "In 1838."
+      },
+      {
+        "n": "Who published jointly with Darwin in 1858?",
+        "grp": "Evolution",
+        "a": "Alfred Russel Wallace."
+      },
+      {
+        "n": "When was On the Origin of Species published?",
+        "grp": "Evolution",
+        "a": "1859."
+      },
+      {
+        "n": "Where did Mendel work, and on what plant?",
+        "grp": "Evolution",
+        "a": "St Thomas' Abbey in Brno; peas (Fabaceae)."
+      },
+      {
+        "n": "When were Mendel's laws proposed and rediscovered?",
+        "grp": "Evolution",
+        "a": "Proposed 1865–1866; rediscovered 1900."
+      },
+      {
+        "n": "What did the modern synthesis unite?",
+        "grp": "Evolution",
+        "a": "Natural selection and population genetics based on Mendelian inheritance (1920s–1940s)."
+      },
+      {
+        "n": "Who said \"Nothing in biology makes sense except in the light of evolution\"?",
+        "grp": "Evolution",
+        "a": "Theodosius Dobzhansky (1973)."
+      },
+      {
+        "n": "What is evo-devo?",
+        "grp": "Evolution",
+        "a": "Evolutionary developmental biology: how evolution acts on development (e.g. Hox genes)."
+      },
+      {
+        "n": "What does the extended evolutionary synthesis add?",
+        "grp": "Evolution",
+        "a": "Non-genetic inheritance: epigenetics, parental effects, ecological and cultural inheritance (memes)."
+      },
+      {
+        "n": "Microevolution vs macroevolution?",
+        "grp": "Evolution",
+        "a": "Micro: small allele-frequency changes within a population. Macro: large-scale, long-term change incl. new species."
+      },
+      {
+        "n": "Four mechanisms of microevolution?",
+        "grp": "Evolution",
+        "a": "Natural selection, mutation, gene flow, genetic drift."
+      },
+      {
+        "n": "Three conditions for natural selection?",
+        "grp": "Evolution",
+        "a": "Variation in a trait, heritability of the trait, differential reproduction."
+      },
+      {
+        "n": "Define adaptation.",
+        "grp": "Evolution",
+        "a": "A heritable trait that enables organisms to survive and reproduce."
+      },
+      {
+        "n": "Stabilising selection and an example?",
+        "grp": "Evolution",
+        "a": "Intermediate forms favoured; human birth weight, clutch size."
+      },
+      {
+        "n": "Disruptive selection and an example?",
+        "grp": "Evolution",
+        "a": "Both extremes favoured, intermediates eliminated (rare); bill size in African finches."
+      },
+      {
+        "n": "Directional selection and an example?",
+        "grp": "Evolution",
+        "a": "Shift in one direction; peppered moth industrial melanism."
+      },
+      {
+        "n": "What is industrial melanism?",
+        "grp": "Evolution",
+        "a": "The increase of dark peppered moths (Biston betularia) in polluted Industrial-Revolution Britain, due to bird predation."
+      },
+      {
+        "n": "According to the lecture, why do giraffes have long necks?",
+        "grp": "Evolution",
+        "a": "Sexual selection: males fight with their necks, not reaching tall trees."
+      },
+      {
+        "n": "Two forms of sexual selection?",
+        "grp": "Evolution",
+        "a": "Female choice and male–male competition."
+      },
+      {
+        "n": "Can the environment create favourable heritable traits?",
+        "grp": "Evolution",
+        "a": "No; selection only acts on alleles already present (new ones arise by mutation)."
+      },
+      {
+        "n": "Three responses of a population to environmental change?",
+        "grp": "Evolution",
+        "a": "Migrate, be already adapted, or die (local extinction)."
+      },
+      {
+        "n": "What is gene flow?",
+        "grp": "Evolution",
+        "a": "Movement of alleles by emigration and immigration."
+      },
+      {
+        "n": "What is genetic drift, and where is it strongest?",
+        "grp": "Evolution",
+        "a": "Random change in allele frequencies by chance; strongest in small populations."
+      },
+      {
+        "n": "Bottleneck effect?",
+        "grp": "Evolution",
+        "a": "Drift after a sudden drop in population size, e.g. a catastrophe."
+      },
+      {
+        "n": "Founder effect?",
+        "grp": "Evolution",
+        "a": "Loss of variation when a new population is founded by very few individuals."
+      },
+      {
+        "n": "Is dog breeding natural selection?",
+        "grp": "Evolution",
+        "a": "No, domestication is artificial selection."
+      },
+      {
+        "n": "Define speciation.",
+        "grp": "Evolution",
+        "a": "Divergence of one species into two or more descendant species."
+      },
+      {
+        "n": "What is adaptive radiation? Examples?",
+        "grp": "Evolution",
+        "a": "Rapid diversification of one ancestral line; Galápagos finches, Lake Tanganyika cichlids."
+      },
+      {
+        "n": "Gradualism vs punctuated equilibrium?",
+        "grp": "Evolution",
+        "a": "Gradualism: continuous slow change. Punctuated: long stasis with sudden change."
+      },
+      {
+        "n": "When did life originate?",
+        "grp": "Evolution",
+        "a": "3.6–3.8 billion years ago."
+      },
+      {
+        "n": "On a 24-hour clock of Earth's history, when do modern humans appear?",
+        "grp": "Evolution",
+        "a": "About 2 seconds before midnight."
+      },
+      {
+        "n": "Define a mass extinction. How many have there been?",
+        "grp": "Evolution",
+        "a": "Loss of &gt; 75 % of organisms in a short time; five."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Lamarck vs Darwin <small>(p. 3–5, p. 18)</small>",
+      [
+        "",
+        "Lamarck",
+        "Darwin"
+      ],
+      [
+        [
+          "Mechanism",
+          "use/disuse, striving for perfection",
+          "natural selection of existing variation"
+        ],
+        [
+          "Inheritance",
+          "acquired traits inherited",
+          "only heritable variation passed on"
+        ],
+        [
+          "Giraffe neck",
+          "stretched necks passed to offspring",
+          "(lecture: actually sexual selection via male fights)"
+        ]
+      ]
+    ],
+    [
+      "Favoured vs Example <small>(p. 14–17)</small>",
+      [
+        "Selection",
+        "Favoured",
+        "Example"
+      ],
+      [
+        [
+          "Stabilising",
+          "intermediate",
+          "human birth weight, clutch size"
+        ],
+        [
+          "Disruptive",
+          "both extremes (rare)",
+          "bill size in African finches"
+        ],
+        [
+          "Directional",
+          "one extreme",
+          "peppered moth (industrial melanism)"
+        ]
+      ]
+    ],
+    [
+      "Natural selection vs Sexual selection <small>(p. 17–20)</small>",
+      [
+        "",
+        "Natural selection",
+        "Sexual selection"
+      ],
+      [
+        [
+          "Driver",
+          "environment (survival)",
+          "reproduction (mate choice, rivalry)"
+        ],
+        [
+          "Example",
+          "peppered moth",
+          "giraffe neck, peacock tail"
+        ]
+      ]
+    ],
+    [
+      "Bottleneck vs Founder effect <small>(p. 26–28)</small>",
+      [
+        "",
+        "Bottleneck",
+        "Founder effect"
+      ],
+      [
+        [
+          "Cause",
+          "sudden crash (catastrophe)",
+          "migration of a few individuals"
+        ],
+        [
+          "Result",
+          "loss of variation, changed allele frequencies",
+          "same, in the new population"
+        ]
+      ]
+    ],
+    [
+      "Gradualism vs Punctuated equilibrium <small>(p. 34)</small>",
+      [
+        "",
+        "Gradualism",
+        "Punctuated equilibrium"
+      ],
+      [
+        [
+          "Change",
+          "continuous, slow",
+          "long stasis + rapid bursts"
+        ]
+      ]
+    ],
+    [
+      "Microevolution vs Macroevolution <small>(p. 9)</small>",
+      [
+        "",
+        "Microevolution",
+        "Macroevolution"
+      ],
+      [
+        [
+          "Scale",
+          "within a population/species",
+          "above species level, long-term"
+        ],
+        [
+          "Processes",
+          "selection, mutation, gene flow, drift",
+          "speciation, radiation, extinction"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/12 Tree of life - evolution.pdf (38 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Evolution: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "Lamarck <b>1744–1829</b>; Darwin <b>1809–1882</b>; Mendel <b>1822–1884</b>",
+            "p. 3–6"
+          ],
+          [
+            "Beagle voyage <b>1831–1836</b>; theory <b>1838</b>; with Wallace <b>1858</b>; <i>Origin</i> <b>1859</b>",
+            "p. 4–5"
+          ],
+          [
+            "Mendel's laws <b>1865–1866</b>, rediscovered <b>1900</b>",
+            "p. 6"
+          ],
+          [
+            "Modern synthesis <b>1920s–1940s</b>; Dobzhansky quote <b>1973</b>",
+            "p. 5, p. 7"
+          ],
+          [
+            "Origin of life <b>3.6–3.8 billion</b> years ago",
+            "p. 36"
+          ],
+          [
+            "Mass extinction = <b>&gt; 75 %</b> of organisms; <b>5</b> of them",
+            "p. 37"
+          ]
+        ]
+      }
+    ]
+  }
+}

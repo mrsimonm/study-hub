@@ -1,0 +1,391 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Earth structure
+=== SLIDE 2 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Practicals 12. 11.
+CANCELLED
+=== SLIDE 3 ===
+Earth structure and
+structural geology
+What do the terms
+“Earth structure”
+and “Structural
+geology” mean?
+=== SLIDE 4 ===
+Earth structure and
+structural geology
+Field Scale Focus
+Earth Structure Global Composition and
+layering
+Tectonics Regional to global Large-scale plate
+interactions
+Structural Geology Outcrop to
+regional
+Deformation
+features in rocks
+=== SLIDE 5 ===
+Content
+1. Global dynamics
+2. Earth structure
+• Chemical layers
+• Physical layers
+• Earth systems
+3. Structural geology –
+next lecture
+4. Tectonics –next lecture
+=== SLIDE 6 ===
+Earth structure
+Intro
+• Earth is dynamic
+intrconected system
+• Internal processes:
+Endogeneous
+• External processes:
+Exogenous
+=== SLIDE 7 ===
+Earth structure
+Earth dynamics driver: Heat
+• Solar energy (external
+source)
+• Primordial heat: the heat
+from the formation of
+Earth (internal source)
+• Radiogenic heat: the heat
+from decay of radioactive
+elements, mainly K, Th, U
+(internal source)
+=== SLIDE 8 ===
+Earth structure
+Internal heat controls:
+• Endogenous processes
+• Movement of material in
+the Earth
+• Plate tectonics
+• Magmatism
+• Metamorphism
+Solar heat controls:
+• Exogenous processes
+• Climate and weather systems
+• Ocean circulation and winds
+• Weathering, erosion,
+evoporation…
+• Biological activity
+Remember?
+Geothermal Gradient!
+=== SLIDE 9 ===
+Earth structure
+Earth dynamics driver:
+Gravity
+• Responsible for the
+layered structure of the
+planet based on density
+(dense materials sink, light
+materials rise)
+• Exogenous geological
+processes like erosion and
+transport
+Earth dynamics driver:
+Rotation
+• Affects the atmosphere
+and ocean currents
+• Affects the outer core
+=== SLIDE 10 ===
+Earth structure–chemical layers
+What are the three
+main chemical
+(compositional)
+layers in the Earth?
+=== SLIDE 11 ===
+Earth structure–chemical layers
+1. Crust
+• Uppermost layer
+• 5 –70 km thick
+• Sillicate (basaltic to granitic) composition
+2. Mantle
+• Middle layer
+• Sillicate (peridotitic) composition
+3. Core
+• Innermost layer
+• Fe-Ni alloy
+Reflect the chemical composition
+=== SLIDE 12 ===
+Earth structure–chemical layers
+Mantle–crust boundary:
+Mohorovičić discontinuity (Moho)
+• Ca. 5 –70 km deep
+Core–mantle boundary:
+Guttenberg discontinuity
+• Ca. 2900 km deep
+Total Earth depth (radius of the
+Earth):
+• 6378 km
+=== SLIDE 13 ===
+Earth structure–chemical layers
+How do we know this?
+1. Geological mapping,
+sampling and
+analyzing rocks
+• Outcrops, drilling,
+mining
+Mining Drilling
+Sampling
+an outcrop
+=== SLIDE 14 ===
+Earth structure–chemical layers
+Xenoliths:
+Peridotite
+(dunite) in
+basalt
+Xenoliths:
+Diamond-
+bearing
+eclogite
+Ophiolites:
+Pieces of
+oceanic
+crust
+exposed
+on land
+=== SLIDE 15 ===
+Earth structure–chemical layers
+How do we know this?
+2. Meteorite composition
+• The Earth and chondritic
+meteorites formed from the
+same material (solar nebula)
+and therefore have the same
+chemical composition.
+3. Laboratory experiments
+• How rocks and minerals
+behave under high pressures
+and temperatures
+=== SLIDE 16 ===
+Earth structure–chemical layers
+How do we know this?
+4. Geochemical and
+geophysical modeling
+• Mathematical formulas to
+calculate chemical and
+physical properties under high
+pressure and temperature
+=== SLIDE 17 ===
+Earth structure–physical layers
+What are the five
+main physical
+(rheological) layers
+in the Earth?
+=== SLIDE 18 ===
+Earth structure–physical layers
+Reflect mechanical (rheological)
+behavior
+1. Lithosphere
+• Rigid
+• Crust + uppermost mantle
+2. Asthenosphere
+• Plastic (very viscous liquid)
+• Upper mantle
+3. Mesosphere
+• More rigid than asthenosphere
+• Lower mantle
+=== SLIDE 19 ===
+Earth structure–physical layers
+Reflect mechanical (rheological)
+behavior
+4. Outer core
+• Liquid
+5. Inner core
+• Rigid
+=== SLIDE 20 ===
+Earth structure–physical layers
+How do we know this?
+1. Seismology
+• Study of seismic waves
+• Seismic waves develop due to
+earthquake
+• Different waves travel through
+different materials (solid vs.
+liquid)
+https://www.youtube.co
+m/watch?v=7c-m0-FICio
+=== SLIDE 21 ===
+=== SLIDE 22 ===
+Earth structure–physical layers
+How do we know this?
+1. Seismology
+• Study of seismic waves
+• Seismic waves develop due to
+earthquake
+• Their speed depends on
+rigidity and density
+=== SLIDE 23 ===
+Earth structure–physical layers
+How do we know this?
+1. Seismology
+• Study of seismic waves
+• Seismic waves develop due to
+earthquake
+• Their speed depends on
+rigidity and density
+➢ Mantle tomography
+=== SLIDE 24 ===
+Earth structure–physical layers
+How do we know this?
+2. Magnetic field
+• We observe magnetic field on
+the surface (compass)
+• The magnetic poles roughly
+align with geographical poles
+• Magnetic poles move (polar
+wander)
+=== SLIDE 25 ===
+Earth structure–physical layers
+How do we know this?
+2. Magnetic field
+• The liquid outer core
+composed of iron and nickel
+creates electrical currents
+which generate magnetic field
+➢ Geodynamo
+=== SLIDE 26 ===
+Earth layers
+Activity
+1. Fill in the terms on the sheets.
+2. Fill in also the following terms:
+Moho discontinuity and its depth
+Gutenberg discontinuity and its depth
+Liquid
+Plastic Rigid
+Ni-Fe alloy
+Peridotite
+Granite Basalt
+=== SLIDE 27 ===
+Earth layers
+Earth’s core
+• 2900 –6378 km deep
+• Outer and inner core
+• Ni-Fe alloy
+• Dense (~10-13 g/cm3)
+• Generates Earth’s magnetic
+field
+• No samples -> studied
+through experiments and
+modelling
+=== SLIDE 28 ===
+Earth layers
+Earth’s mantle
+• ~30 –2900 km deep
+• Mesosphere, asthenosphere,
+lithosphere
+• Ultramafic composition
+(peridotite)
+• Dense (~3.3-5.5 g/cm3)
+• Samples only from the
+uppermost (lithospheric) part
+=== SLIDE 29 ===
+Crust composition
+Oceanic crust
+• Formed at mid-ocean ridges
+• Mantle melting
+• Basaltic (basalt and gabbro) +
+deep oceanic sediments
+• Thin (5-7 km thick)
+• Dense (~3 g/cm3)
+• Young (up to ~200 million
+years)
+=== SLIDE 30 ===
+Oceanic crust
+• Formed at mid-ocean ridges
+• Mantle melting
+• Basaltic (basalt and gabbro) +
+deep oceanic sediments
+• Thin (5-7 km thick)
+• Dense (~3 g/cm3)
+• Young (up to ~200 million
+years)
+Crust composition
+=== SLIDE 31 ===
+=== SLIDE 32 ===
+Continental crust
+• Old (various ages up to
+billions of years)
+• Constitutes of all types of
+igneous, metamorphic, and
+sedimentary rocks
+• Thick (average 35 km)
+• Buoyant (low density, ~2.7
+cm/g3)
+Crust composition
+=== SLIDE 33 ===
+=== SLIDE 34 ===
+Earth systems
+=== SLIDE 35 ===
+Earth structure–
+Earth systems
+Earth system: interconnected spheres
+• Physical, chemical, and biological
+subsystems that constantly interact
+through the flow of matter and energy
+• Geosphere
+• Hydrosphere
+• Cryosphere
+• Atmosphere
+• Biosphere
+=== SLIDE 36 ===
+Earth structure–Earth systems
+Geosphere
+• The solid Earth:
+rocks, minerals,
+and the
+processes that
+shape them.
+=== SLIDE 37 ===
+Earth structure–Earth systems
+Hydrosphere
+• All water on,
+within, and above
+the Earth’s
+surface.
+• Oceans, seas,
+rivers, lakes,
+glaciers,
+groundwater,
+atmospheric
+water vapor
+=== SLIDE 38 ===
+Earth structure–Earth systems
+Cryosphere
+• All frozen water
+on Earth (ice and
+snow)
+• Glaciers, ice caps,
+ice sheets,
+permafrost, sea
+ice
+=== SLIDE 39 ===
+Earth structure–Earth systems
+Atmosphere
+• The gaseous
+envelope
+surrounding the
+Earth.
+=== SLIDE 40 ===
+Earth structure–Earth systems
+Biosphere
+• All living
+organisms and
+the ecosystems
+they form.
+• Plants, Animals,
+Fungi, Protists,
+Bacteria, Archaea
+=== SLIDE 41 ===
+Thanks for your
+attention
+Practicals 12. 11.
+CANCELLED
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD

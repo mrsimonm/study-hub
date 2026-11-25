@@ -1,0 +1,939 @@
+=== SLIDE 1 ===
+Faculty of Environmental Sciences, Czech University of Life Sciences, Prague
+Mgr. Václav Santolík, PhD
+Geology
+Minerals
+=== SLIDE 2 ===
+What is a
+mineral?
+Minerals
+=== SLIDE 3 ===
+Minerals
+“A mineral is an element or a
+chemical compound that is
+normally crystallineand that has
+been formed as a result of
+geological processes."
+- E. H. Nickel, 1995
+=== SLIDE 4 ===
+Minerals
+A mineral is any naturally occurring
+homogeneous solid that has a
+definite (but not fixed) chemical
+composition and a distinctive
+internal crystal structure.
+- Britannica
+=== SLIDE 5 ===
+Content
+• Chemical elements
+• Mineral structure
+• Mineral properties
+• Mineral species
+=== SLIDE 6 ===
+Chemical elements
+What is an atom
+build from?
+=== SLIDE 7 ===
+Chemical elements
+=== SLIDE 8 ===
+Chemical elements
+Recommended video:
+https://www.youtube.com/watch?v=CJ4EHnvCeFE&t=546s
+=== SLIDE 9 ===
+Chemical elements
+Element
+• Defined by a certain number of protons in an atom (atomic number)
+Ion
+• Has a different number of electrons -> different electrical charge
+• Cation: positive charge (less electrons)
+• Anion: negative charge (more electrons)
+Isotope
+• Has a different number of neutrons -> different weight
+• Every element has several isotopes
+=== SLIDE 10 ===
+Chemical elements
+Periodic-table notation
+=== SLIDE 11 ===
+Chemical elements
+Real-life notation
+=== SLIDE 12 ===
+Chemical elements
+Periodic table
+• A table of chemical elements ordered
+by increasing atomic number
+• 7 Rows = Periods
+• 18 Columns = Groups
+• Created by Dmitrii Mendeleev in 1869
+(predicted the existence of several
+unknown elements by that time)
+=== SLIDE 13 ===
+=== SLIDE 14 ===
+Chemical elements
+Activity:
+Highlight the
+following element
+groups:
+• Alkali metals
+• Alkaline earth metals
+• Transitional metals
+• Lanthanoids (Rare
+Earth Elements)
+• Actinoids
+• Other metals
+• Metalloids
+• Halogens
+• Noble gases
+• Other nonmetals
+=== SLIDE 15 ===
+=== SLIDE 16 ===
+Chemical elements
+Goldschmidt
+classification of
+elements:
+Based on where
+they tend to go
+during Earth’s
+formation and
+differentiation
+• Lithophile
+("rock-loving")
+• Siderophile
+("iron-loving")
+• Chalcophile
+(„sulfur-loving")
+• Atmophile
+(„gas-loving")
+=== SLIDE 17 ===
+Chemical elements
+Goldschmidt classification
+• Lithophile ("rock-
+loving")– Prefer silicate
+or oxide minerals.
+Common in the Earth's
+crust.
+• Siderophile ("iron-
+loving")– Prefer
+metallic iron and are
+concentrated in the
+Earth's core.
+=== SLIDE 18 ===
+Chemical elements
+Goldschmidt classification
+• Chalcophile ("sulfur-
+loving")– Prefer
+bonding with sulfur and
+tend to form sulfide
+minerals.
+• Atmophile ("gas-
+loving") – Volatile
+elements that dominantly
+occur as gases at surface
+conditions. Concentrated
+in the atmosphere.
+=== SLIDE 19 ===
+Mineral structure
+=== SLIDE 20 ===
+Mineral structure
+Solid phases
+• Crystaline: its
+constituents (such as
+atoms, molecules, or
+ions) are arranged in a
+highly ordered
+microscopic structure,
+forming a crystal lattice
+that extends in all
+directions.
+• Amorphous: lacks any
+long-range order.
+=== SLIDE 21 ===
+Mineral structure
+• Crystal lattice: an
+ordered, symmetrical,
+and 3-dimensional
+arrangement of the
+atoms of a solid
+substance.
+• Unit cell: the smallest
+group of particles that
+constitutes this repeating
+pattern.
+=== SLIDE 22 ===
+Crystal systems classify
+minerals based on their
+symmetry and unit cell
+geometry into seven groups
+=== SLIDE 23 ===
+Natural crystals have
+defects:
+• Substitutional atoms
+• Interstitial atoms
+• Vacancies
+• Dislocations
+Mineral structure
+=== SLIDE 24 ===
+Efects of crystals defects
+on chemistry:
+• Molecular formula:
+theoretical chemical
+formula
+• Empirical formula:
+real chemical
+composition put in a
+formula
+Mineral structure
+Example:
+Molecular vs. empirical
+formula of K-feldspar
+• Molecular formula:
+KAlSi3O8
+• Empirical formula:
+K0.9Na0.03Ca0.01Al0.97Si2.87O8
+=== SLIDE 25 ===
+Mineral properties
+How do we describe a crystal?
+What are the macroscopic
+physical properties?
+=== SLIDE 26 ===
+Mineral properties
+Color
+Hardness
+Streak
+Luster
+The color of
+the mineral
+The color the it
+makes when
+dragged on a
+plate (porcelain,
+paper)
+The way it
+refelcts light,
+e.g., dull,
+vitreous, metallic
+Tested by
+scratching the
+mineral; Mohs
+scale from 1
+(talc) to 10
+(diamond)
+=== SLIDE 27 ===
+Mineral properties
+Cleavage
+Fracture
+Density
+Habit
+The way it breakes
+apart creating
+cleavage planes
+• perfect/poor
+• basal/
+prismatic/
+cubic…
+The way it breakes
+apart when not
+following cleavage
+planes
+• conchoidal/
+uneven/
+fibrous…
+Mass over volume
+= how heavy is it;
+water = 1g/cm3
+quartz = 2.65g/cm3
+gold = 19.3g/cm3
+The overal
+appearance
+• equant/
+massive/
+tabular/
+prismatic/
+fibrous…
+=== SLIDE 28 ===
+Mineral properties
+Electrical
+conductivity
+Magnetism
+Fluorescence
+Reaction
+with acid
+Other specific
+physical properties
+=== SLIDE 29 ===
+Minerals - summary
+Recommended video
+First half: recap
+Second half: interesting expanding info
+https://www.youtube.com/watch?v=cjbzAJrC8-Y
+=== SLIDE 30 ===
+Activity:
+1) Open moodle
+2) Take the Minerals quiz
+=== SLIDE 31 ===
+Introduction
+• There are ~6,240 recognized
+mineral species
+• Several new are being
+discovered every year
+• Only about 100 minerals are
+common in the Earth’s crust
+• (Only) 22 for you to learn
+• Many minerals are economically
+critical (ores of metals, industrial
+materials, gemstones)
+• Organized in 9 classes of the
+mineralogical system
+Minerals
+=== SLIDE 32 ===
+Mineral system (classes)
+1. Native Elements
+2. Sulfides
+3. Oxides
+4. Halides
+5. Carbonates
+6. Sulfates
+7. Phosphates
+8. Silicates
+9. Organic Minerals
+Minerals
+=== SLIDE 33 ===
+• Composed of a single chemical element
+• Form under specific conditions in igneous, hydrothermal, or
+weathering environments
+• Economically important (gold, silver, diamonds)
+• Include metals, semimetals, and nonmetals.
+Minerals– Elements
+=== SLIDE 34 ===
+Gold
+• Formula: Au
+• Crystal system: Cubic
+(isometric)
+• Properties: Metallic luster,
+yellow color, very soft (Mohs
+2.5–3), high density (~19.3
+g/cm³), malleable
+• Occurrence: Hydrothermal
+quartz veins, placer deposits
+• Use: Jewelry, electronics,
+currency, investment
+Minerals– Elements
+=== SLIDE 35 ===
+Silver
+• Formula: Ag
+• Crystal system: Cubic
+• Properties: Metallic luster, silver-
+white, very soft (Mohs 2.5–3),
+tarnishes to black
+• Occurrence: Hydrothermal veins,
+associated with sulfides (e.g.,
+galena)
+• Use: Electronics, jewelry,
+silverware, photography
+(historically)
+Minerals– Elements
+=== SLIDE 36 ===
+Copper
+• Formula: Cu
+• Crystal system: Cubic
+• Properties: Reddish metallic
+color, soft (Mohs 2.5–3), ductile
+• Occurrence: Hydrothermal
+veins, oxidized zones of Cu
+deposits
+• Use: Wiring, plumbing, coins,
+alloys (bronze, brass)
+Minerals– Elements
+=== SLIDE 37 ===
+Sulfur
+• Formula: S
+• Crystal system: Orthorhombic
+• Properties: Bright yellow,
+resinous luster, soft (Mohs
+1.5–2.5), lightweight
+• Occurrence: Volcanic
+fumaroles, evaporites, hot
+springs
+• Use: Fertilizers, sulfuric acid,
+gunpowder
+Minerals– Elements
+=== SLIDE 38 ===
+Graphite
+• Formula: C
+• Crystal system: Hexagonal
+• Properties: Dark grey, writes on
+paper, metallic to dull luster,
+very soft (Mohs 1–2), conducts
+electricity
+• Occurrence: Metamorphic
+rocks (e.g., marbles, schists),
+organic-rich sedimentary rocks
+• Use: Pencils, lubricants,
+batteries, crucibles
+Minerals– Elements
+=== SLIDE 39 ===
+Diamond
+• Formula: C
+• Crystal system: Cubic
+• Properties: Extremely hard
+(Mohs 10), adamantine luster,
+typically colorless or pale yellow
+• Occurrence: Kimberlite pipes,
+mantle-derived rocks
+• Use: Gemstones, cutting tools
+Minerals– Elements
+=== SLIDE 40 ===
+• Composed of metal cations + sulfur anions (S²⁻)
+• Key ore minerals for many metals, like copper, lead,
+nickel, zinc
+• Common in hydrothermal and magmatic deposits
+Minerals– Sulfides
+=== SLIDE 41 ===
+Pyrite
+• Formula: FeS₂
+• Crystal system: Cubic
+• Properties: Brass-yellow, metallic
+luster, Mohs 6–6.5, often forms
+well-developed cubic crystals
+• Occurrence: Widespread in
+sedimentary, igneous, and
+metamorphic rocks; common in
+hydrothermal veins
+• Use: Sulfuric acid production,
+minor iron ore
+Minerals– Sulfides
+=== SLIDE 42 ===
+Pyrrhotite
+• Formula: Fe₁₋ₓS (where x = 0 to
+0.2)
+• Crystal system: Monoclinic
+Properties: Bronze to brass-
+yellow, metallic luster, Mohs 3.5–
+4.5, weakly magnetic, often
+massive
+• Occurrence: Mafic and ultramafic
+igneous rocks, metamorphic
+skarns, and hydrothermal veins
+Use: Minor iron ore
+Minerals– Sulfides
+=== SLIDE 43 ===
+Pentlandite
+• Formula: (Fe,Ni)₉S₈
+• Crystal system: Cubic
+• Properties: Bronze-yellow,
+metallic luster, Mohs 3.5–4, brittle,
+no strong cleavage
+• Occurrence: Mafic and ultramafic
+igneous rocks (e.g., norites,
+peridotites), magmatic sulfide
+deposits
+• Use: Primary ore of nickel
+Minerals– Sulphides
+=== SLIDE 44 ===
+Galena
+• Formula: PbS
+• Crystal system: Cubic
+• Properties: Lead-gray color,
+bright metallic luster, Mohs 2.5,
+very high density (~7.5 g/cm³),
+perfect cubic cleavage
+• Occurrence: Found in
+hydrothermal veins and various
+Pb deposits
+• Use: Primary ore of lead; often
+contains silver
+Minerals– Sulphides
+=== SLIDE 45 ===
+Chalcopyrite
+• Formula: CuFeS₂
+• Crystal system: Tetragonal
+• Properties: Brass-yellow to
+golden, may show iridescent
+tarnish, metallic luster, Mohs
+3.5–4
+• Occurrence: Common in
+hydrothermal veins, porphyry
+copper deposits
+• Use: Most important copper ore
+Minerals– Sulphides
+=== SLIDE 46 ===
+Sphalerite
+• Formula: ZnS
+• Crystal system: Cubic
+• Properties: Variable color (light
+yellow to dark brown/black),
+resinous to submetallic luster,
+Mohs 3.5–4, good dodecahedral
+cleavage
+• Occurrence: Found in
+hydrothermal veins and various
+Zn deposits
+• Use: Principal ore of zinc
+Minerals– Sulphides
+=== SLIDE 47 ===
+• Consist of metal cations and oxygen anions (O²⁻)
+• Important sources of metals like iron, aluminum,
+chromium, and titanium
+• Common in magmatic, metamorphic, or weathering
+environments
+Minerals– Oxides
+=== SLIDE 48 ===
+Quartz
+• Formula: SiO₂
+• Crystal system: Trigonal (hexagonal
+habit)
+• Properties: Colorless to various
+colors, vitreous luster, Mohs 7,
+conchoidal fracture, no cleavage
+• Occurrence: Ubiquitous– in igneous,
+metamorphic, and sedimentary rocks;
+also in hydrothermal veins
+• Use: Glass and ceramics industry,
+electronics
+Minerals– Oxides
+=== SLIDE 49 ===
+Hematite
+• Formula: Fe₂O₃
+• Crystal system: Trigonal
+• Properties: Steel-gray to reddish-
+brown, metallic to earthy luster,
+Mohs 5–6.5, red streak
+• Occurrence: Common in
+sedimentary (banded iron
+formations), metamorphic, and
+weathered environments
+• Use: Major iron ore
+Minerals– Oxides
+=== SLIDE 50 ===
+Magnetite
+• Formula: Fe₃O₄
+• Crystal system: Cubic
+• Properties: Black, metallic luster,
+Mohs 5.5–6.5, strongly magnetic
+• Occurrence: Common in igneous
+and metamorphic rocks, and
+various iron deposits
+• Use: Major iron ore
+Minerals– Oxides
+=== SLIDE 51 ===
+Spinel
+• Formula: MgAl₂O₄
+• Crystal system: Cubic
+• Properties: Hard (Mohs 7.5–8),
+vitreous luster, various colors,
+octahedral crystals
+• Occurrence: High-grade
+metamorphic rocks (e.g. marbles),
+some peridotites
+• Use: Jewelry (gemstones)
+Minerals– Oxides
+=== SLIDE 52 ===
+Chromite
+• Formula: FeCr₂O₄
+• Crystal system: Cubic
+• Properties: Black to brownish-
+black, metallic to submetallic
+luster, Mohs 5.5, weakly magnetic
+• Occurrence: Ultramafic igneous
+rocks (peridotites, dunites),
+layered intrusions
+• Use: Main ore of chromium (used
+in stainless steel, pigments)
+Minerals– Oxides
+=== SLIDE 53 ===
+Ilmenite
+• Formula: FeTiO₃
+• Crystal system: Trigonal
+• Properties: Black with
+submetallic to metallic luster,
+Mohs 5–6, slightly magnetic
+• Occurrence: Common in
+igneous rocks (especially mafic
+intrusions), beach sands
+• Use: Main ore of titanium
+Minerals– Oxides
+=== SLIDE 54 ===
+Corundum
+• Formula: Al₂O₃
+• Crystal system: Trigonal
+• Properties: Very hard (Mohs 9),
+vitreous to dull luster, variable
+colors (red = ruby, blue =
+sapphire), barrel-shaped crystals
+• Occurrence: Metamorphic rocks
+(mica schists, marbles), syenites,
+placer deposits
+• Use: Jewelry (gemstones),
+abrasives
+Minerals– Oxides
+=== SLIDE 55 ===
+• Composed of metal cations bonded to halogen anions,
+typically Cl⁻, F⁻, Br⁻, or I⁻
+• Often form in evaporitic environments where saline
+water bodies dry out.
+Minerals– Halides
+=== SLIDE 56 ===
+Halite
+• Formula: NaCl
+• Crystal system: Cubic
+• Properties: Colorless to white (or
+pink, gray), vitreous luster, Mohs
+2.5, perfect cubic cleavage, salty
+taste
+• Occurrence: Evaporite deposits
+from drying seas and lakes
+• Use: Table salt, chemical industry,
+de-icing roads
+Minerals– Halides
+=== SLIDE 57 ===
+Fluorite
+• Formula: CaF₂
+• Crystal system: Cubic
+• Properties: Wide color range
+(purple, green, blue, yellow),
+vitreous luster, Mohs 4, perfect
+octahedral cleavage
+• Occurrence: Hydrothermal veins,
+sedimentary rocks
+• Use: Flux in steelmaking, source
+of fluorine, optics (lenses)
+Minerals– Halides
+=== SLIDE 58 ===
+• Consist of metal cations + carbonate anions (CO₃²⁻)
+• Commonly form in sedimentary and low-temperature
+environments
+• Many react with dilute acids
+Minerals– Carbonates
+=== SLIDE 59 ===
+Calcite
+• Formula: CaCO₃
+• Crystal system: Trigonal
+• Properties: Colorless to white or
+variable, vitreous luster, Mohs 3,
+perfect rhombohedral cleavage,
+reacts strongly with HCl
+• Occurrence: Main component of
+limestones and marbles; also in
+veins and hydrothermal deposits
+• Use: Cement and lime
+production, soil conditioner
+Minerals– Carbonates
+=== SLIDE 60 ===
+Aragonite
+• Formula: CaCO₃
+• Crystal system: Orthorhombic
+• Properties: Various colors,
+vitreous luster, Mohs 3.5–4,
+needle-like or columnar crystals,
+reacts vigorously with HCl
+• Occurrence: Marine shells, cave
+speleothems, hydrothermal
+springs
+• Use: Ornamental use,
+biomineralization studies
+Minerals– Carbonates
+=== SLIDE 61 ===
+Dolomite
+• Formula: CaMg(CO₃)₂
+• Crystal system: Trigonal
+• Properties: White to pinkish,
+vitreous, Mohs 3.5–4,
+rhombohedral cleavage, reacts
+only weakly with HCl
+• Occurrence: Dolostone rock
+formations; secondary mineral
+replacing calcite
+• Use: Construction stone, source
+of magnesium, soil amendment
+Minerals– Carbonates
+=== SLIDE 62 ===
+Malachite
+• Formula: Cu₂CO₃(OH)₂
+• Crystal system: Monoclinic
+• Properties: Bright green, silky to
+earthy luster, Mohs 3.5–4, often
+botryoidal or fibrous
+• Occurrence: Secondary copper
+mineral in oxidized zones of
+copper deposits
+• Use: Copper ore, pigment,
+gemstone
+Minerals– Carbonates
+=== SLIDE 63 ===
+Azurite
+• Formula: Cu₃(CO₃)₂(OH)₂
+• Crystal system: Monoclinic
+• Properties: Deep blue, vitreous to
+dull, Mohs 3.5–4, tabular or
+prismatic crystals
+• Occurrence: Forms under the
+same conditions as malachite in
+oxidized copper deposits
+• Use: Copper ore, pigment,
+collector specimens
+Minerals– Carbonates
+=== SLIDE 64 ===
+• Consist of metal cations and sulfate anions (SO₄²⁻)
+• Typically form in evaporitic environments, hydrothermal
+veins, or as weathering products of sulfides.
+Minerals– Sulphates
+=== SLIDE 65 ===
+Gypsum
+• Formula: CaSO₄·2H₂O
+• Crystal system: Monoclinic
+• Properties: Colorless to white,
+vitreous to silky luster, Mohs 2
+(very soft), perfect cleavage, may
+form tabular, fibrous (satin spar),
+or massive (alabaster) forms
+• Occurrence: Evaporite deposits in
+sedimentary basins
+• Use: Plaster, drywall, fertilizer
+Minerals– Sulfates
+=== SLIDE 66 ===
+Minerals– Sulfates
+Gypsum
+crystal cave,
+Naica, Mexico
+=== SLIDE 67 ===
+• Consist of metal cations and phosphate anions (PO₄³⁻)
+• Occur in igneous, metamorphic, and sedimentary rocks
+• Essential for biological processes and industrial use
+Minerals– Phosphates
+=== SLIDE 68 ===
+Apatite
+• Formula: Ca₅(PO₄)₃(F,Cl,OH)
+• Crystal system: Hexagonal
+• Properties: Green to blue-green
+or brown, vitreous luster, Mohs 5,
+often hexagonal prismatic crystals
+• Occurrence: Common accessory
+mineral in igneous and
+metamorphic rocks; also in
+phosphorites, bones, and teeth
+• Use: Fertilizer (phosphate source)
+Minerals– Phosphates
+=== SLIDE 69 ===
+• Consist of metal cations and silicate anions (SiO₄4⁻)
+• By far the largest and most diverse group of minerals,
+making up over 90% of Earth’s crust
+• Crucial for understanding geological processes
+• Some are also economically important (garnet, zeolite,
+mica, spodumene,)
+Minerals– Silicates
+=== SLIDE 70 ===
+Silicate tetrahedron
+• fundamental building block of
+silicates
+• central silicon atom surrounded by
+four oxygen atoms
+• Each tetrahedron carries a –4 charge,
+so it must bond with cations (like
+Mg²⁺, Fe²⁺, K⁺, Ca²⁺, Al³⁺) or share
+oxygen atoms with other tetrahedra.
+Minerals– Silicates
+=== SLIDE 71 ===
+Olivine
+• Formula: (Mg,Fe)₂SiO₄
+• Crystal system: Orthorhombic
+• Properties: Olive green, glassy
+luster, Mohs 6.5–7, granular habit,
+no cleavage
+• Occurrence: Mafic and ultramafic
+igneous rocks, upper mantle
+• Use: Refractory material,
+gemstone (peridot)
+Minerals– Silicates
+=== SLIDE 72 ===
+Pyroxene
+• Formula: (XY)(Si,Al)₂O₆, X,Y=Na,
+Ca, Fe, Mg, Al, Cr…
+• Crystal system: Monoclinic or
+orthorhombic
+• Properties: Dark green to black,
+stubby crystals, Mohs 5–7
+• Occurrence: Mafic/ultramafic
+igneous rocks, high-grade
+metamorphic rocks
+• Use: None industrially; essential
+rock-forming minerals
+Minerals– Silicates
+=== SLIDE 73 ===
+Spodumene
+• Formula: LiAlSi₂O₆
+• Crystal system: Monoclinic
+• Properties: White, gray, green, or
+lilac; vitreous luster; Mohs 6.5–7;
+prismatic crystals with distinct
+cleavage
+• Occurrence: In Li-rich pegmatites
+Use: Major lithium ore
+Minerals– Silicates
+=== SLIDE 74 ===
+Garnet
+• Formula: X₃Y₂(SiO₄)₃ X(2+)=Ca, Fe,
+Mg, Mn; Y(3+)=Al, Cr, Fe
+• Crystal system: Cubic
+• Properties: Red, brown, green
+etc., Mohs 6.5–7.5, dodecahedral
+habitus
+• Occurrence: Metamorphic rocks
+(schists), some igneous rocks
+• Use: Abrasive, gemstone
+Minerals– Silicates
+=== SLIDE 75 ===
+Amphibole
+• Formula: Complex, e.g.,
+Hornblende:
+(Ca,Na)₂(Mg,Fe,Al)₅(Si,Al)₈O₂₂(OH)₂
+• Crystal system: Monoclinic
+• Properties: Dark green to black,
+elongated crystals, Mohs 5–6
+• Occurrence: Common in various
+igneous, metamorphic, and
+sedimentary rocks
+• Use: No major industrial use
+Minerals– Silicates
+=== SLIDE 76 ===
+Biotite – black mica
+• Formula:
+K(Mg,Fe)₃(AlSi₃O₁₀)(OH)₂
+• Crystal system: Monoclinic
+• Properties: Dark brown to black,
+perfect cleavage, flaky habit,
+Mohs 2.5–3
+• Occurrence: Common in various
+igneous, metamorphic, and
+sedimentary rocks
+• Use: No major industrial use
+Minerals– Silicates
+=== SLIDE 77 ===
+Muscovite– white mica
+• Formula: KAl₂(AlSi₃O₁₀)(OH)₂
+• Crystal system: Monoclinic
+• Properties: Silvery-white sheets,
+perfect cleavage, elastic, Mohs 2.5
+• Occurrence: Granitic rocks,
+schists, pegmatites
+• Use: Electrical insulators,
+cosmetics
+Minerals– Silicates
+=== SLIDE 78 ===
+K-feldspar (orthoclase,
+microcline, sanidine)
+• Formula: KAlSi₃O₈
+• Crystal system: Monoclinic,
+triclinic
+• Properties: Pink to white, Mohs 6,
+good cleavage
+• Occurrence: Felsic igneous rocks
+(granite, rhyolite), metamorphic,
+and sedimentary rocks
+• Use: Ceramics, glass, mild
+abrasives
+Minerals– Silicates
+=== SLIDE 79 ===
+Plagioclase (Na–Ca
+feldspar, Anorthite–
+Albite series)
+• Formula: (Na,Ca)(Al,Si)₄O₈
+• Crystal system: Triclinic
+• Properties: White to gray,
+striations on cleavage faces, Mohs
+6–6.5
+• Occurrence: Most igneous rocks;
+major rock-forming mineral
+• Use: Ceramics, filler
+Minerals– Silicates
+=== SLIDE 80 ===
+Tourmaline
+• Formula: Complex borosilicate,
+e.g., Schorl:
+NaFe₃Al₆(BO₃)₃Si₆O₁₈(OH)₄
+• Crystal system: Trigonal
+• Properties: Black (schorl) or
+multicolored, striated prismatic
+crystals, Mohs 7–7.5
+• Occurrence: Granitic pegmatites,
+metamorphic rocks (schists,
+gneisses)
+• Use: Gemstones
+Minerals– Silicates
+=== SLIDE 81 ===
+Zircon
+• Formula: ZrSiO₄
+• Crystal system: Tetragonal
+• Properties: Brown to colorless;
+Mohs 7.5; prismatic crystals; high
+density
+• Occurrence: Common accessory
+mineral in felsic igneous,
+metamorphic, and sedimentary
+rocks
+• Use: Source of zirconium,
+abrasives, geochronology
+Minerals– Silicates
+=== SLIDE 82 ===
+Epidote
+• Formula: Ca₂(Fe³⁺,Al)₃(SiO₄)₃(OH)
+• Crystal system: Monoclinic
+• Properties: Pistachio green,
+prismatic crystals, granular
+aggregates, Mohs 6–7
+• Occurrence: Low- to medium-
+grade metamorphic rocks,
+especially greenschists
+• Use: None major industrially,
+sometimes ornamental
+Minerals– Silicates
+=== SLIDE 83 ===
+Chlorite
+• Formula: Variable; general form
+(Mg,Fe,Al)₆(Si,Al)₄O₁₀(OH)₈
+• Crystal system: Monoclinic or
+triclinic
+• Properties: Green color, flaky or
+scaly habit, Mohs 2–2.5, perfect
+cleavage
+• Occurrence: Low-grade
+metamorphic rocks, alteration
+product
+• Use: None industrially
+Minerals– Silicates
+=== SLIDE 84 ===
+Serpentine
+• Formula: Mg₃Si₂O₅(OH)₄
+• Crystal system: Monoclinic or
+orthorhombic
+• Properties: Green, waxy to
+fibrous habit, Mohs 2.5–4
+• Occurrence: Metamorphic
+ultramafic rocks (serpentinization)
+• Use: Asbestos, decorative stone
+Minerals– Silicates
+=== SLIDE 85 ===
+Zeolite
+• Formula: Variable, e.g., Natrolite:
+Na₂Al₂Si₃O₁₀·2H₂O
+• Crystal system: Usually
+monoclinic or orthorhombic
+• Properties: White to colorless,
+Mohs ~3–5, porous structure
+• Occurrence: Alteration products
+in volcanic rocks; sedimentary
+and hydrothermal settings
+• Use: Water softeners, molecular
+sieves, catalysts
+Minerals– Silicates
+=== SLIDE 86 ===
+Clay minerals (e.g.,
+kaolinite)
+• Formula: Al₂Si₂O₅(OH)₄
+• Crystal system: Triclinic
+• Properties: White, earthy,
+powdery, soft (Mohs ~2), dull
+luster
+• Occurrence: Weathered granite
+and feldspar-rich rocks (tropical
+soils)
+• Use: Porcelain, paper, cosmetics
+Minerals– Silicates

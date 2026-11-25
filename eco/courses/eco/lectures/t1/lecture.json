@@ -1,0 +1,322 @@
+{
+ "num": 1,
+ "title": "Ecology, evolution & key concepts",
+ "short": "Basics & history",
+ "sub": "Lecture 2 · Intro to ecology · glossary section 1",
+ "blurb": "What ecology is, who founded it, natural selection, niche vs habitat.",
+ "h1": "The basics everything else builds on",
+ "lede": "Lecture 2 (Intro to ecology) plus section 1 of the glossary, Ecology in the Anthropocene. Short, but the exam loves the definitions and the Darwin vs Wallace story.",
+ "six": [
+  "**Ecology** = how organisms interact with each other and their physical environment: why they live where they do, in the numbers they do.",
+  "The word comes from Greek **oîkos** (house) + **logía** (study of).",
+  "**Natural selection** needs three things: variation in traits, differential reproduction and heredity.",
+  "**Darwin** saw competition between individuals as the driving force of selection, **Wallace** saw the environment.",
+  "**Habitat** is where an organism lives; the **niche** is its role and requirements.",
+  "**Fundamental niche** = what physiology allows; **realized niche** = what it actually occupies with competitors and predators around."
+ ],
+ "must": "definitions: ecology, natural selection, niche",
+ "foot": "Source: 2026_Ecology_Lecture_2_Intro-to-Ecology.pptx and 2026_glossary.pdf section 1 (Bulla & Mikula).",
+ "questions": [
+  {
+   "id": "t1-def",
+   "q": "Which is the best definition of ecology?",
+   "answer": "The science of how organisms interact with each other and with their physical environment",
+   "wrong": [
+    "The study of how traits are inherited from parents",
+    "The classification and naming of species",
+    "The protection of endangered species"
+   ],
+   "e": "Glossary 1a: ecology asks why organisms are distributed and abundant as they are, shaped by biotic and abiotic processes.",
+   "fol": true
+  },
+  {
+   "id": "t1-greek",
+   "q": "The word ecology comes from Greek oîkos + logía. What does oîkos mean?",
+   "answer": "House",
+   "wrong": [
+    "Life",
+    "Earth",
+    "Nature"
+   ],
+   "e": "oîkos = house, logía = study of: the study of the 'house' of living organisms."
+  },
+  {
+   "id": "t1-ancient",
+   "q": "Which two ancient Greeks does the lecture name at the start of ecology?",
+   "answer": "Aristotle and Theophrastus",
+   "wrong": [
+    "Plato and Socrates",
+    "Linnaeus and Humboldt",
+    "Darwin and Wallace"
+   ],
+   "e": "Aristotle (384–322 BC) and Theophrastus (371–287 BC)."
+  },
+  {
+   "id": "t1-linn",
+   "q": "Who is called the father of modern taxonomy and spoke of the 'economy of nature'?",
+   "answer": "Carl Linnaeus",
+   "wrong": [
+    "Alexander von Humboldt",
+    "Charles Darwin",
+    "Alfred Russel Wallace"
+   ],
+   "e": "Linnaeus (1707–1778), Swedish."
+  },
+  {
+   "id": "t1-1858",
+   "q": "What happened on 1 July 1858?",
+   "answer": "A joint reading of Wallace's essay and Darwin's writings at the Linnean Society",
+   "wrong": [
+    "Darwin published On the Origin of Species",
+    "Wallace sailed to the Galápagos",
+    "Linnaeus published his taxonomy"
+   ],
+   "e": "Darwin received Wallace's Ternate essay on 18 June 1858; the joint Linnean reading followed on 1 July. The Origin came out in 1859.",
+   "fol": true
+  },
+  {
+   "id": "t1-dw",
+   "q": "According to the lecture, what did Wallace see as the main driving force of selection?",
+   "answer": "The environment",
+   "wrong": [
+    "Competition between individuals",
+    "Sexual selection",
+    "Genetic drift"
+   ],
+   "e": "Darwin stressed competition between individuals; Wallace stressed the environment.",
+   "fol": true
+  },
+  {
+   "id": "t1-ns3",
+   "q": "Which three ingredients does natural selection need?",
+   "answer": "Variation in traits, differential reproduction and heredity",
+   "wrong": [
+    "Mutation, migration and drift",
+    "Competition, predation and disease",
+    "Isolation, hybridisation and speciation"
+   ],
+   "e": "With all three, the favoured trait becomes more common in the population.",
+   "fol": true
+  },
+  {
+   "id": "t1-evo",
+   "q": "Which of these is NOT listed in the glossary as a driver of evolution?",
+   "answer": "Photosynthesis",
+   "wrong": [
+    "Genetic drift",
+    "Migration",
+    "Recombination"
+   ],
+   "e": "Evolution is driven by mutation, natural selection, genetic drift, migration and recombination."
+  },
+  {
+   "id": "t1-spec",
+   "q": "Speciation usually happens when populations become…",
+   "answer": "Genetically different and reproductively isolated",
+   "wrong": [
+    "Larger than their carrying capacity",
+    "Mixed through hybridisation",
+    "Adapted to the same niche"
+   ],
+   "e": "Gene flow between them is then strongly reduced or absent."
+  },
+  {
+   "id": "t1-ext",
+   "q": "How does true extinction differ from local extirpation?",
+   "answer": "In extinction no viable population remains anywhere",
+   "wrong": [
+    "Extirpation is permanent, extinction is temporary",
+    "Extinction affects only plants",
+    "There is no difference"
+   ],
+   "e": "Local extirpation is loss in one place; extinction means gone everywhere."
+  },
+  {
+   "id": "t1-niche",
+   "q": "A species could live on a whole mountain, but a competitor keeps it to the lower slopes. The lower slopes are its…",
+   "answer": "Realized niche",
+   "wrong": [
+    "Fundamental niche",
+    "Habitat range",
+    "Keystone zone"
+   ],
+   "e": "Fundamental = set by physiology and resources; realized = what it actually occupies with competitors and predators.",
+   "fol": true
+  },
+  {
+   "id": "t1-hab",
+   "q": "Habitat vs niche: which statement is right?",
+   "answer": "Habitat is where it lives; niche is its role and requirements",
+   "wrong": [
+    "Habitat and niche mean the same",
+    "Niche is where it lives; habitat is its role",
+    "Habitat only covers climate"
+   ],
+   "e": "Habitat = physical and biotic environment; niche = multidimensional role and requirements."
+  },
+  {
+   "id": "t1-modes",
+   "q": "Directional, stabilising and disruptive are three…",
+   "answer": "Modes of selection",
+   "wrong": [
+    "Types of speciation",
+    "Kinds of niche",
+    "Life-history strategies"
+   ],
+   "e": "Lecture 2 shows the three modes of selection."
+  },
+  {
+   "id": "t1-ecto",
+   "q": "Animals whose body temperature mostly follows the environment are…",
+   "answer": "Ectotherms",
+   "wrong": [
+    "Endotherms",
+    "Homeotherms by definition",
+    "Keystone species"
+   ],
+   "e": "Lecture 2: ectotherms vs endotherms, under the role of abiotic conditions (temperature)."
+  },
+  {
+   "id": "t1-radiation",
+   "q": "Galápagos finches and the animals of Madagascar are lecture examples of…",
+   "answer": "Adaptive radiation",
+   "wrong": [
+    "Extinction debt",
+    "Trophic cascades",
+    "Insular dwarfism"
+   ],
+   "e": "Adaptive radiation: one lineage splits into many species filling different niches."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Core",
+   "term": "Ecology",
+   "meaning": "Science of how organisms interact with each other and their physical environment, and why they are distributed and abundant as they are."
+  },
+  {
+   "group": "Core",
+   "term": "Evolution",
+   "meaning": "Change in heritable characteristics of populations across generations (mutation, selection, drift, migration, recombination)."
+  },
+  {
+   "group": "Core",
+   "term": "Natural selection",
+   "meaning": "Heritable traits that raise survival or reproduction become more common because their carriers leave more offspring."
+  },
+  {
+   "group": "Core",
+   "term": "Speciation",
+   "meaning": "New species arise when populations become genetically different and reproductively isolated."
+  },
+  {
+   "group": "Core",
+   "term": "Extinction",
+   "meaning": "A species disappears when its last individuals die; no viable population is left anywhere."
+  },
+  {
+   "group": "Core",
+   "term": "Local extirpation",
+   "meaning": "Loss of a species in one place while it survives elsewhere."
+  },
+  {
+   "group": "Niche",
+   "term": "Habitat",
+   "meaning": "The physical and biotic environment where an organism lives."
+  },
+  {
+   "group": "Niche",
+   "term": "Niche",
+   "meaning": "The species' multidimensional role and requirements: conditions, resources and interactions."
+  },
+  {
+   "group": "Niche",
+   "term": "Fundamental niche",
+   "meaning": "The niche set by physiology and resources alone."
+  },
+  {
+   "group": "Niche",
+   "term": "Realized niche",
+   "meaning": "The part of the niche actually occupied when competitors and predators are present."
+  },
+  {
+   "group": "Selection",
+   "term": "Fitness",
+   "meaning": "How well an individual survives and reproduces compared with others."
+  },
+  {
+   "group": "Selection",
+   "term": "Adaptation",
+   "meaning": "A heritable trait that helps an organism survive or reproduce in its environment."
+  },
+  {
+   "group": "Selection",
+   "term": "Sexual selection",
+   "meaning": "Selection for traits that help win mates."
+  },
+  {
+   "group": "Selection",
+   "term": "Adaptive radiation",
+   "meaning": "One lineage splitting into many species that fill different niches (Galápagos, Madagascar)."
+  },
+  {
+   "group": "Temperature",
+   "term": "Ectotherm",
+   "meaning": "An animal whose body heat comes mostly from the environment."
+  },
+  {
+   "group": "Temperature",
+   "term": "Endotherm",
+   "meaning": "An animal that produces its own body heat."
+  }
+ ],
+ "confusable": [
+  [
+   "Fundamental niche",
+   "Realized niche"
+  ],
+  [
+   "Habitat",
+   "Niche"
+  ],
+  [
+   "Extinction",
+   "Local extirpation"
+  ],
+  [
+   "Ectotherm",
+   "Endotherm"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "The word ecology comes from Greek oîkos, meaning {house|life|earth|nature}."
+  ],
+  [
+   1,
+   "Linnaeus is called the father of modern {taxonomy|ecology|genetics|evolution}."
+  ],
+  [
+   2,
+   "Darwin received Wallace's essay from {Ternate|Galápagos|Madagascar|Borneo} in 1858."
+  ],
+  [
+   2,
+   "On the Origin of Species was published in {1859|1858|1871|1900}."
+  ],
+  [
+   2,
+   "Wallace saw the {environment|competition|mate choice|climate} as the driving force of selection."
+  ],
+  [
+   3,
+   "The niche a species actually occupies with competitors around is the {realized|fundamental|potential|keystone} niche."
+  ],
+  [
+   3,
+   "Natural selection needs variation, differential reproduction and {heredity|migration|isolation|mutation}."
+  ]
+ ],
+ "id": "t1"
+}

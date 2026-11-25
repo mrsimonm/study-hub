@@ -1,0 +1,70 @@
+{
+ "title": "Eco Hub",
+ "code": "",
+ "subtitle": "ČZU Prague · Fundamentals of Ecology · organised by exam",
+ "intro": "Fundamentals of Ecology (Bulla & Mikula, ČZU) for the Moodle exam: 19 questions in 10 minutes, at least 14 of 20 points to pass. Everything on it comes from the lectures, the glossary and the ten symposium presentations, and every one of those is a lesson here.",
+ "footer": "Built from the Fundamentals of Ecology course material of Martin Bulla and Peter Mikula (ČZU Prague): lecture slides, the 2026 glossary and the ten group presentations in github.com/MartinBulla/Ecology_Fund_Gen. If anything here disagrees with that material, the material wins.",
+ "testsCard": false,
+ "exam": {
+  "n": 19,
+  "min": 10
+ },
+ "grades": [
+  [
+   90,
+   "Excellent (90 %+)"
+  ],
+  [
+   80,
+   "Very good (80 %+)"
+  ],
+  [
+   70,
+   "Good (70 %+)"
+  ],
+  [
+   0,
+   "Failed (below 70 %)"
+  ]
+ ],
+ "tickall": "tickall.json",
+ "lectures": [
+  "lectures/t1",
+  "lectures/t2",
+  "lectures/t3",
+  "lectures/t4",
+  "lectures/t5",
+  "lectures/t6",
+  "lectures/t7",
+  "lectures/t8",
+  "lectures/t9",
+  "lectures/t10",
+  "lectures/t11",
+  "lectures/t12"
+ ],
+ "tests": [
+  {
+   "id": "exam",
+   "title": "Exam · Moodle test",
+   "sub": "19 multiple-choice questions in 10 minutes, 20 points, at least 14 to pass. Some questions have 6 options with 1 to 6 correct: one wrong tick = 0. On campus, password given on site.",
+   "badge": "Date not published yet",
+   "lectures": [
+    "t1",
+    "t2",
+    "t3",
+    "t4",
+    "t5",
+    "t6",
+    "t7",
+    "t8",
+    "t9",
+    "t10",
+    "t11",
+    "t12"
+   ]
+  }
+ ],
+ "paths": [
+  "exam"
+ ]
+}

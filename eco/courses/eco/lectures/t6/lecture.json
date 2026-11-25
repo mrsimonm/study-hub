@@ -1,0 +1,243 @@
+{
+ "num": 6,
+ "title": "Food webs & network ecology",
+ "short": "Food webs",
+ "sub": "Symposium topic 4 · Paine 1966 vs Bartley et al. 2019",
+ "blurb": "Keystone species, interaction strength, network structure and rewiring, with Lake Nakuru as the example.",
+ "h1": "From keystone to rewiring",
+ "lede": "Group 4's question: does food-web complexity build local biodiversity? Their example ecosystem was Lake Nakuru in Kenya. Classic: Paine (1966), food web complexity and species diversity. Recent: Bartley et al. (2019), food web rewiring in a changing world.",
+ "six": [
+  "**Keystone species**: a disproportionately large effect relative to its biomass; removing it can trigger cascades or regime shifts.",
+  "**Interaction strength**: how strongly one species affects another's vital rates, abundance or behaviour.",
+  "**Network structure**: degree (number of links; hubs), modularity (clusters), motifs (recurring small patterns).",
+  "**Network rewiring**: who interacts with whom changes over time, from seasons and range shifts or from humans (land use, invasions, climate).",
+  "Complexity (many links, alternative prey, varied niches) supports **resilience**, but complex webs are **not automatically stable**.",
+  "Lake Nakuru: cyanobacteria (Spirulina/Arthrospira) → lesser flamingo and soda tilapia → pelicans, cormorants, fish eagle."
+ ],
+ "must": "keystone species and network rewiring",
+ "foot": "Source: Group 4 symposium slides; glossary section 5.",
+ "questions": [
+  {
+   "id": "t6-key",
+   "q": "A keystone species is one that…",
+   "answer": "Has a disproportionately large effect relative to its biomass or abundance",
+   "wrong": [
+    "Is the most abundant species",
+    "Is the largest predator by body size",
+    "Has the widest geographic range"
+   ],
+   "e": "Glossary 5a: removing it can cause big shifts, cascades or regime shifts.",
+   "fol": true
+  },
+  {
+   "id": "t6-int",
+   "q": "Interaction strength measures…",
+   "answer": "How strongly one species affects another's vital rates, abundance or behaviour",
+   "wrong": [
+    "How many species live in a web",
+    "How fast energy moves up",
+    "How long a food chain is"
+   ],
+   "e": "E.g. per-capita effect of a predator on prey mortality."
+  },
+  {
+   "id": "t6-degree",
+   "q": "In a network, a species' degree is…",
+   "answer": "The number of links it has",
+   "wrong": [
+    "Its trophic level",
+    "Its body size",
+    "Its age"
+   ],
+   "e": "High-degree species act as hubs.",
+   "fol": true
+  },
+  {
+   "id": "t6-mod",
+   "q": "Modularity in a food web means…",
+   "answer": "Clusters of species interact more within than between clusters",
+   "wrong": [
+    "Every species eats every other",
+    "The web has only one chain",
+    "Links never change"
+   ],
+   "e": "Semi-independent clusters (modules)."
+  },
+  {
+   "id": "t6-motif",
+   "q": "Small link patterns that recur more often than chance are called…",
+   "answer": "Motifs",
+   "wrong": [
+    "Modules",
+    "Hubs",
+    "Cascades"
+   ],
+   "e": "Network structure = degree, modularity, motifs."
+  },
+  {
+   "id": "t6-rewire",
+   "q": "Network rewiring is…",
+   "answer": "A change over time in who interacts with whom",
+   "wrong": [
+    "Rebuilding a damaged habitat",
+    "Moving species to new places on purpose",
+    "Adding fences to keep predators out"
+   ],
+   "e": "Links weaken, disappear or form; drivers can be natural or human.",
+   "fol": true
+  },
+  {
+   "id": "t6-cause",
+   "q": "Which is a human driver of rewiring named in the glossary?",
+   "answer": "Species introductions",
+   "wrong": [
+    "Seasons",
+    "Evolution",
+    "Natural range shifts"
+   ],
+   "e": "Human drivers: land-use change, species introductions, climate change."
+  },
+  {
+   "id": "t6-inv",
+   "q": "How do invasive species rewire food webs, according to Group 4?",
+   "answer": "Through resource competition, direct predation, indirect effects and network disruption",
+   "wrong": [
+    "Only by adding food for natives",
+    "By making webs simpler and always more stable",
+    "They have no effect on links"
+   ],
+   "e": "Invaders change links across several trophic levels."
+  },
+  {
+   "id": "t6-stable",
+   "q": "What did Group 4 conclude about complexity and stability?",
+   "answer": "Complexity supports resilience, but highly complex webs are not automatically stable",
+   "wrong": [
+    "Complex webs are always stable",
+    "Simple webs are always more diverse",
+    "Complexity has no effect"
+   ],
+   "e": "Multiple feeding links and alternative prey routes help.",
+   "fol": true
+  },
+  {
+   "id": "t6-flamingo",
+   "q": "At Lake Nakuru, what does the lesser flamingo feed on?",
+   "answer": "Cyanobacteria (Spirulina / Arthrospira)",
+   "wrong": [
+    "Soda tilapia",
+    "Chironomid larvae only",
+    "Terrestrial grasses"
+   ],
+   "e": "A specialised filter feeder and the dominant consumer by biomass."
+  },
+  {
+   "id": "t6-pelican",
+   "q": "At Lake Nakuru, the great white pelican mainly eats…",
+   "answer": "Soda tilapia",
+   "wrong": [
+    "Cyanobacteria",
+    "Flamingos",
+    "Zebras"
+   ],
+   "e": "A specialised piscivore (secondary consumer)."
+  },
+  {
+   "id": "t6-alt",
+   "q": "Why do alternative prey routes help a food web?",
+   "answer": "Diet switching keeps energy flowing when one prey declines",
+   "wrong": [
+    "They remove predators",
+    "They make every link stronger",
+    "They stop invasions"
+   ],
+   "e": "Part of network resilience."
+  }
+ ],
+ "vocab": [
+  {
+   "group": "Species roles",
+   "term": "Keystone species",
+   "meaning": "A species with a much bigger effect on community or ecosystem than its biomass suggests."
+  },
+  {
+   "group": "Species roles",
+   "term": "Hub",
+   "meaning": "A high-degree species with many links."
+  },
+  {
+   "group": "Network",
+   "term": "Interaction strength",
+   "meaning": "How strongly one species affects another's vital rates, abundance or behaviour."
+  },
+  {
+   "group": "Network",
+   "term": "Degree",
+   "meaning": "Number of links a species has in the web."
+  },
+  {
+   "group": "Network",
+   "term": "Modularity",
+   "meaning": "Clusters of species that interact more within than between clusters."
+  },
+  {
+   "group": "Network",
+   "term": "Motif",
+   "meaning": "Small link pattern that recurs more often than by chance."
+  },
+  {
+   "group": "Network",
+   "term": "Network rewiring",
+   "meaning": "Change over time in who interacts with whom."
+  },
+  {
+   "group": "Network",
+   "term": "Resilience",
+   "meaning": "Ability of a web to keep functioning when species decline."
+  },
+  {
+   "group": "Nakuru",
+   "term": "Filter feeder",
+   "meaning": "Animal that sieves small food items from water (lesser flamingo)."
+  },
+  {
+   "group": "Nakuru",
+   "term": "Piscivore",
+   "meaning": "Fish-eater (great white pelican)."
+  }
+ ],
+ "confusable": [
+  [
+   "Degree",
+   "Modularity",
+   "Motif"
+  ],
+  [
+   "Keystone species",
+   "Hub"
+  ]
+ ],
+ "facts": [
+  [
+   1,
+   "The number of links a species has is its {degree|motif|module|level}."
+  ],
+  [
+   1,
+   "Removing a {keystone|dominant|introduced|rare} species can trigger large community shifts."
+  ],
+  [
+   2,
+   "The lesser flamingo eats {cyanobacteria|fish|insects|seeds}."
+  ],
+  [
+   3,
+   "Changes over time in who eats whom are called network {rewiring|modularity|degree|cascades}."
+  ],
+  [
+   3,
+   "Highly complex webs are not automatically {stable|diverse|large|connected}."
+  ]
+ ],
+ "id": "t6"
+}

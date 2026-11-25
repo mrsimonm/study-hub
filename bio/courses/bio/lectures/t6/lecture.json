@@ -1,0 +1,613 @@
+{
+  "num": 6,
+  "id": "t6",
+  "title": "Cell cycle and cell division – mitosis and meiosis",
+  "short": "Cell cycle",
+  "sub": "Lecture 6 · Jan Dvořák · 6 Nov 2026",
+  "blurb": "What the cell cycle has to achieve; its phases (G1, S, G2, M; G0); the control system with three checkpoints (Start/G1-S, G2/M, metaphase-to-anaphase); Cdks and the four cyclin classes; APC/C triggering anaphase (securin → separase → cohesin).",
+  "h1": "Cell cycle and cell division – mitosis and meiosis",
+  "lede": "What the cell cycle has to achieve; its phases (G1, S, G2, M; G0); the control system with three checkpoints (Start/G1-S, G2/M, metaphase-to-anaphase); Cdks and the four cyclin classes; APC/C triggering anaphase (securin → separase → cohesin). The S phase: one replication per cycle through origin licensing, and cohesin holding sister chromatids. The five stages of mitosis (prophase, prometaphase, metaphase, anaphase A/B, telophase) and cytokinesis (contractile ring vs cell plate). Meiosis: two divisions; bivalents, tetrads, crossing-over and chiasmata; the five stages of prophase I (leptotene, zygotene, pachytene, diplotene, diakinesis); and how meiosis differs from mitosis.",
+  "six": [
+    "Phases G1, S, G2, M, G0; the role of gap phases",
+    "Three checkpoints and what each checks",
+    "Cdk + cyclin; four cyclin types; APC/C controls metaphase→anaphase (not cyclin-dependent)",
+    "Cohesin, securin, separase",
+    "Licensing: DNA replicated only once per cycle",
+    "Five mitotic stages and what happens in each; anaphase A vs B"
+  ],
+  "must": "Cell cycle",
+  "questions": [
+    {
+      "id": "t6-q01",
+      "q": "The metaphase-to-anaphase transition is triggered by:",
+      "answer": "APC/C",
+      "wrong": [
+        "S-cyclin–Cdk",
+        "G1/S-cyclin",
+        "M-cyclin–Cdk"
+      ],
+      "e": "It is not cyclin-dependent; APC/C(–Cdc20) triggers it. (Slides: s. 17)",
+      "fol": true
+    },
+    {
+      "id": "t6-q02",
+      "q": "Which protein complex holds sister chromatids together until anaphase?",
+      "answer": "Cohesin",
+      "wrong": [
+        "Condensin",
+        "Separase",
+        "Kinetochore"
+      ],
+      "e": "Cohesin; separase cleaves it at anaphase. (Slides: s. 17, s. 20)",
+      "fol": true
+    },
+    {
+      "id": "t6-q03",
+      "q": "In which phase does the nuclear envelope break down?",
+      "answer": "Prometaphase",
+      "wrong": [
+        "Prophase",
+        "Telophase",
+        "Metaphase"
+      ],
+      "e": "Prometaphase. (Slides: s. 23)",
+      "fol": true
+    },
+    {
+      "id": "t6-q04",
+      "q": "Anaphase B is characterised by:",
+      "answer": "moving apart of the spindle poles",
+      "wrong": [
+        "condensation of chromosomes",
+        "shortening of kinetochore microtubules",
+        "formation of the nuclear envelope"
+      ],
+      "e": "A = kinetochore microtubules shorten; B = poles move apart. (Slides: s. 26)",
+      "fol": true
+    },
+    {
+      "id": "t6-q05",
+      "q": "Which cyclins trigger entry into mitosis?",
+      "answer": "M-cyclins",
+      "wrong": [
+        "G1-cyclins",
+        "S-cyclins",
+        "G1/S-cyclins"
+      ],
+      "e": "M-cyclins act at G2/M. (Slides: s. 15)"
+    },
+    {
+      "id": "t6-q06",
+      "q": "In plant cells, cytokinesis occurs by:",
+      "answer": "formation of a cell plate",
+      "wrong": [
+        "a contractile ring of actin and myosin",
+        "budding",
+        "binary fission"
+      ],
+      "e": "Plants form a cell plate from fused vesicles. (Slides: s. 29)"
+    },
+    {
+      "id": "t6-q07",
+      "q": "Which is the correct order of prophase I stages?",
+      "answer": "leptotene, zygotene, pachytene, diplotene, diakinesis",
+      "wrong": [
+        "leptotene, pachytene, zygotene, diplotene, diakinesis",
+        "pachytene, zygotene, leptotene, diplotene, diakinesis",
+        "zygotene, leptotene, pachytene, diakinesis, diplotene"
+      ],
+      "e": "L-Z-P-D-D. (Slides: s. 33)"
+    },
+    {
+      "id": "t6-q08",
+      "q": "The synaptonemal complex is completed in:",
+      "answer": "pachytene",
+      "wrong": [
+        "zygotene",
+        "leptotene",
+        "diplotene"
+      ],
+      "e": "Pachytene: full synapsis. (Slides: s. 36)"
+    },
+    {
+      "id": "t6-q09",
+      "q": "In meiosis I the following separate:",
+      "answer": "homologous chromosomes",
+      "wrong": [
+        "bivalents of sister chromatids",
+        "centrioles only",
+        "sister chromatids"
+      ],
+      "e": "Meiosis I separates homologs; meiosis II separates sisters. (Slides: s. 30)"
+    },
+    {
+      "id": "t6-q10",
+      "q": "A cell that leaves the cycle under unfavourable conditions in G1 enters:",
+      "answer": "G0",
+      "wrong": [
+        "S",
+        "M",
+        "G2"
+      ],
+      "e": "G0 = resting state. (Slides: s. 6)"
+    },
+    {
+      "id": "t6-q11",
+      "q": "What is checked at the G2/M checkpoint?",
+      "answer": "Completion of DNA replication and DNA integrity",
+      "wrong": [
+        "Cell size only",
+        "Kinetochore attachment",
+        "Nutrients and growth signals"
+      ],
+      "e": "G2/M checks replication completion and DNA integrity. (Slides: s. 9)"
+    },
+    {
+      "id": "t6-q12",
+      "q": "A tetrad consists of:",
+      "answer": "4 chromatids of a bivalent",
+      "wrong": [
+        "2 bivalents",
+        "4 homologous chromosomes",
+        "2 chromatids"
+      ],
+      "e": "Tetrad = the four chromatids of a bivalent. (Slides: s. 32)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Cell cycle",
+      "term": "Cell cycle",
+      "meaning": "ordered sequence of growth, DNA duplication and division"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Interphase",
+      "meaning": "G1 + S + G2"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "G0",
+      "meaning": "resting/non-dividing state"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Restriction point / Start",
+      "meaning": "commitment point in late G1"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Checkpoint",
+      "meaning": "control node where the cycle can stop"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Cdk",
+      "meaning": "cyclin-dependent kinase, phosphorylates targets"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Cyclin",
+      "meaning": "regulatory protein activating Cdks, made and degraded each cycle"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "APC/C",
+      "meaning": "anaphase-promoting complex / cyclosome; ubiquitin ligase"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Securin / Separase",
+      "meaning": "inhibitor / protease that cleaves cohesin"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Cohesin",
+      "meaning": "SMC ring holding sister chromatids together"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Condensin",
+      "meaning": "complex condensing chromosomes in prophase"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Pre-replicative complex / Licensing",
+      "meaning": "origin loaded with inactive helicase in G1"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Sister chromatids",
+      "meaning": "two identical copies of a replicated chromosome"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Centrosome",
+      "meaning": "microtubule-organising centre at the spindle pole"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Kinetochore",
+      "meaning": "protein structure on the centromere linking the chromosome to spindle microtubules"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Spindle checkpoint",
+      "meaning": "checks attachment before anaphase"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Contractile ring",
+      "meaning": "actin + myosin II ring dividing animal cells"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Cell plate",
+      "meaning": "new wall forming between plant daughter cells"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Bivalent / Tetrad",
+      "meaning": "paired homologs / their four chromatids"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Crossing-over",
+      "meaning": "exchange of DNA between homologs"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Chiasma (pl. chiasmata)",
+      "meaning": "visible crossover connection"
+    },
+    {
+      "group": "Cell cycle",
+      "term": "Synaptonemal complex",
+      "meaning": "protein structure zipping homologs together"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Cell cycle: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "What is the basic function of the cell cycle?",
+        "grp": "Cell cycle",
+        "a": "To duplicate the DNA and segregate the copies into two genetically identical daughter cells."
+      },
+      {
+        "n": "Two major phases of the cell cycle?",
+        "grp": "Cell cycle",
+        "a": "S phase (DNA synthesis) and M phase (mitosis + cytokinesis)."
+      },
+      {
+        "n": "Four phases of the eukaryotic cell cycle?",
+        "grp": "Cell cycle",
+        "a": "G1, S, G2, M."
+      },
+      {
+        "n": "What is G0?",
+        "grp": "Cell cycle",
+        "a": "A resting state entered from G1 under unfavourable conditions (temporary or permanent)."
+      },
+      {
+        "n": "What happens in G1 if damage is severe?",
+        "grp": "Cell cycle",
+        "a": "Senescence or apoptosis."
+      },
+      {
+        "n": "Three major cell-cycle checkpoints?",
+        "grp": "Cell cycle",
+        "a": "Start (late G1/S), G2/M, metaphase-to-anaphase."
+      },
+      {
+        "n": "What is checked at G2/M?",
+        "grp": "Cell cycle",
+        "a": "Completion of replication and integrity of DNA."
+      },
+      {
+        "n": "What is checked at metaphase-to-anaphase?",
+        "grp": "Cell cycle",
+        "a": "Correct kinetochore attachment and tension between sister chromatids."
+      },
+      {
+        "n": "What are Cdks?",
+        "grp": "Cell cycle",
+        "a": "Cyclin-dependent kinases: enzymes that phosphorylate target proteins and drive cell-cycle events."
+      },
+      {
+        "n": "What controls Cdk activity?",
+        "grp": "Cell cycle",
+        "a": "Cyclins, which are made and degraded each cycle."
+      },
+      {
+        "n": "Four cyclin types?",
+        "grp": "Cell cycle",
+        "a": "G1/S-cyclins, S-cyclins, M-cyclins, G1-cyclins."
+      },
+      {
+        "n": "Role of M-cyclins?",
+        "grp": "Cell cycle",
+        "a": "Activate Cdks for entry into mitosis at G2/M; levels fall mid-mitosis."
+      },
+      {
+        "n": "What triggers the metaphase-to-anaphase transition?",
+        "grp": "Cell cycle",
+        "a": "APC/C (anaphase-promoting complex/cyclosome), not a cyclin."
+      },
+      {
+        "n": "How does APC/C trigger anaphase?",
+        "grp": "Cell cycle",
+        "a": "APC/C–Cdc20 tags securin for degradation; freed separase cleaves cohesin; sisters separate."
+      },
+      {
+        "n": "How is DNA replicated only once per cycle?",
+        "grp": "Cell cycle",
+        "a": "Origin licensing: inactive helicase is loaded in G1, activated by S-Cdk in S, then removed so the origin can't fire again."
+      },
+      {
+        "n": "What holds sister chromatids together?",
+        "grp": "Cell cycle",
+        "a": "Cohesin, a ring of SMC proteins, from S phase until anaphase."
+      },
+      {
+        "n": "Five stages of mitosis?",
+        "grp": "Cell cycle",
+        "a": "Prophase, prometaphase, metaphase, anaphase, telophase."
+      },
+      {
+        "n": "What happens in prophase?",
+        "grp": "Cell cycle",
+        "a": "Chromosomes condense (condensin); the spindle assembles between the two centrosomes."
+      },
+      {
+        "n": "What happens in prometaphase?",
+        "grp": "Cell cycle",
+        "a": "Nuclear envelope breaks down; chromosomes attach to the spindle via kinetochores."
+      },
+      {
+        "n": "What is a kinetochore?",
+        "grp": "Cell cycle",
+        "a": "A protein structure on the centromere linking the chromosome to spindle microtubules."
+      },
+      {
+        "n": "What happens in metaphase?",
+        "grp": "Cell cycle",
+        "a": "Chromosomes align at the spindle equator, with sisters attached to opposite poles."
+      },
+      {
+        "n": "Anaphase A vs anaphase B?",
+        "grp": "Cell cycle",
+        "a": "A: kinetochore microtubules shorten. B: spindle poles move apart."
+      },
+      {
+        "n": "What can spindle-checkpoint failure cause?",
+        "grp": "Cell cycle",
+        "a": "Aneuploidy."
+      },
+      {
+        "n": "What happens in telophase?",
+        "grp": "Cell cycle",
+        "a": "Chromosomes decondense, nuclear envelopes re-form, the contractile ring starts dividing the cytoplasm."
+      },
+      {
+        "n": "Cytokinesis in animal vs plant cells?",
+        "grp": "Cell cycle",
+        "a": "Animals: contractile ring of actin + myosin II. Plants: cell plate from fused vesicles (pectins, then cellulose and hemicellulose)."
+      },
+      {
+        "n": "What separates in meiosis I and in meiosis II?",
+        "grp": "Cell cycle",
+        "a": "I: homologous chromosomes. II: sister chromatids."
+      },
+      {
+        "n": "How does meiotic recombination start?",
+        "grp": "Cell cycle",
+        "a": "With programmed DNA double-strand breaks."
+      },
+      {
+        "n": "Bivalent, tetrad, chiasma?",
+        "grp": "Cell cycle",
+        "a": "Bivalent = paired homologs; tetrad = their 4 chromatids; chiasma = visible crossover connection."
+      },
+      {
+        "n": "Five stages of prophase I in order?",
+        "grp": "Cell cycle",
+        "a": "Leptotene, zygotene, pachytene, diplotene, diakinesis."
+      },
+      {
+        "n": "In which stage is the synaptonemal complex complete?",
+        "grp": "Cell cycle",
+        "a": "Pachytene (homologs synapsed along their whole length)."
+      },
+      {
+        "n": "In which stage do chiasmata become visible?",
+        "grp": "Cell cycle",
+        "a": "Diplotene (the synaptonemal complex disassembles)."
+      },
+      {
+        "n": "Products of meiosis vs mitosis?",
+        "grp": "Cell cycle",
+        "a": "Meiosis: 4 haploid cells. Mitosis: 2 diploid identical cells."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Mitosis vs Meiosis <small>(s. 30, p. 29, p. 37–38)</small>",
+      [
+        "",
+        "Mitosis",
+        "Meiosis"
+      ],
+      [
+        [
+          "Divisions",
+          "1",
+          "2 (I and II)"
+        ],
+        [
+          "Daughter cells",
+          "2, diploid, identical",
+          "4, haploid, genetically different"
+        ],
+        [
+          "Homolog pairing / crossing-over",
+          "no",
+          "yes (prophase I)"
+        ],
+        [
+          "What separates",
+          "sister chromatids",
+          "I: homologs; II: sister chromatids"
+        ],
+        [
+          "Purpose",
+          "growth, repair",
+          "gametes, sexual reproduction"
+        ]
+      ]
+    ],
+    [
+      "Acts at vs Role <small>(s. 13–17)</small>",
+      [
+        "Cyclin",
+        "Acts at",
+        "Role"
+      ],
+      [
+        [
+          "G1-cyclins",
+          "G1",
+          "help G1/S cyclins"
+        ],
+        [
+          "G1/S-cyclins",
+          "Start (late G1)",
+          "trigger entry; fall in S"
+        ],
+        [
+          "S-cyclins",
+          "after Start",
+          "stimulate DNA duplication"
+        ],
+        [
+          "M-cyclins",
+          "G2/M",
+          "trigger mitosis; fall mid-mitosis"
+        ],
+        [
+          "(APC/C, not a cyclin)",
+          "metaphase → anaphase",
+          "triggers separation"
+        ]
+      ]
+    ],
+    [
+      "Checks <small>(s. 9)</small>",
+      [
+        "Checkpoint",
+        "Checks"
+      ],
+      [
+        [
+          "G1/S (Start)",
+          "environment, growth signals, DNA damage"
+        ],
+        [
+          "G2/M",
+          "replication complete, DNA intact"
+        ],
+        [
+          "Metaphase/anaphase",
+          "kinetochore attachment, tension"
+        ]
+      ]
+    ],
+    [
+      "Animal vs Plant <small>(s. 29)</small>",
+      [
+        "Cytokinesis",
+        "Animal",
+        "Plant"
+      ],
+      [
+        [
+          "Mechanism",
+          "contractile ring (actin + myosin II), cleavage furrow",
+          "cell plate from vesicles (pectins → cellulose, hemicellulose)"
+        ]
+      ]
+    ],
+    [
+      "Key event <small>(s. 33–37)</small>",
+      [
+        "Prophase I stage",
+        "Key event"
+      ],
+      [
+        [
+          "Leptotene",
+          "condensation, DNA breaks, pairing starts"
+        ],
+        [
+          "Zygotene",
+          "synaptonemal complex starts"
+        ],
+        [
+          "Pachytene",
+          "full synapsis, recombination (days)"
+        ],
+        [
+          "Diplotene",
+          "SC disassembles, chiasmata visible"
+        ],
+        [
+          "Diakinesis",
+          "max condensation"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/06 Cell cycle (updated).pptx (40 slides, main source) + 06 Cell cycle, mitosis, meiosis.pdf (38 pages, older version; used for page images). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Cell cycle: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "<b>4</b> phases of the eukaryotic cycle; <b>3</b> checkpoints; <b>4</b> cyclin classes",
+            "s. 5, s. 8, s. 12"
+          ],
+          [
+            "APC/C: <b>11–13</b> subunits",
+            "s. 17"
+          ],
+          [
+            "<b>5</b> stages of mitosis; <b>5</b> stages of prophase I",
+            "s. 21, s. 33"
+          ],
+          [
+            "Pachytene can last <b>several days</b>; human oocytes can stay in diplotene <b>for years</b>",
+            "s. 36, s. 38"
+          ]
+        ]
+      }
+    ]
+  }
+}

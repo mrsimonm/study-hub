@@ -1,0 +1,571 @@
+{
+  "num": 2,
+  "id": "t2",
+  "title": "Basic genetic mechanisms – DNA replication, transcription, translation",
+  "short": "Genetic mechanisms",
+  "sub": "Lecture 2 · Bohumil Mandák · 9 Oct 2026",
+  "blurb": "How genetic information flows from DNA to protein.",
+  "h1": "Basic genetic mechanisms – DNA replication, transcription, translation",
+  "lede": "How genetic information flows from DNA to protein. Replication has three phases: initiation (origins, helicase, topoisomerase, SSB proteins), elongation (primase, RNA primer, DNA polymerase, leading vs lagging strand, Okazaki fragments) and termination (telomeres, telomerase). Transcription by RNA polymerase is followed by post-transcriptional modification (pre-mRNA → mRNA, splicing out introns). Translation on the ribosome uses the genetic code (codons, anticodons, start AUG, stops UAA/UAG/UGA). The lecture ends with post-translational modifications (phosphorylation is the most common).",
+  "six": [
+    "Replication steps and enzyme roles (helicase, topoisomerase, SSB, primase, DNA polymerase)",
+    "Why the lagging strand forms Okazaki fragments (5′→3′ only + antiparallel strands)",
+    "DNA polymerase can't start a strand → needs a primer",
+    "Telomeres and telomerase",
+    "Transcription base-pairing (transcribe a DNA sequence to mRNA)",
+    "Introns vs exons; splicing; pre-mRNA"
+  ],
+  "must": "Genetic mechanisms",
+  "questions": [
+    {
+      "id": "t2-q01",
+      "q": "Which enzyme synthesises the RNA primer during DNA replication?",
+      "answer": "Primase",
+      "wrong": [
+        "Ligase",
+        "DNA polymerase",
+        "Helicase"
+      ],
+      "e": "Primase, a specialised RNA polymerase, makes the RNA primer. (Slides: p. 7)",
+      "fol": true
+    },
+    {
+      "id": "t2-q02",
+      "q": "Okazaki fragments are formed on:",
+      "answer": "the lagging strand",
+      "wrong": [
+        "the leading strand",
+        "both strands equally",
+        "mRNA during transcription"
+      ],
+      "e": "The lagging strand is made discontinuously, away from the fork. (Slides: p. 8)",
+      "fol": true
+    },
+    {
+      "id": "t2-q03",
+      "q": "Which enzyme relaxes supercoiled DNA during replication?",
+      "answer": "Topoisomerase",
+      "wrong": [
+        "Telomerase",
+        "Primase",
+        "Helicase"
+      ],
+      "e": "Topoisomerase relaxes supercoiling; helicase separates strands. (Slides: p. 6)",
+      "fol": true
+    },
+    {
+      "id": "t2-q04",
+      "q": "DNA polymerase synthesises new DNA in which direction?",
+      "answer": "5′ → 3′",
+      "wrong": [
+        "3′ → 5′",
+        "both directions",
+        "depends on the strand"
+      ],
+      "e": "Only 5′→3′, which is why the lagging strand is discontinuous. (Slides: p. 8)",
+      "fol": true
+    },
+    {
+      "id": "t2-q05",
+      "q": "Telomerase is active mainly in:",
+      "answer": "the germ cell line",
+      "wrong": [
+        "mitochondria",
+        "prokaryotes",
+        "all somatic cells"
+      ],
+      "e": "In the germ line, telomerase extends telomere repeats. (Slides: p. 9)"
+    },
+    {
+      "id": "t2-q06",
+      "q": "The DNA template strand reads TAC. The mRNA will be:",
+      "answer": "AUG",
+      "wrong": [
+        "UAC",
+        "TAC",
+        "ATG"
+      ],
+      "e": "T→A, A→U, C→G. (Slides: p. 15)"
+    },
+    {
+      "id": "t2-q07",
+      "q": "Which statement about introns is correct?",
+      "answer": "They are removed from pre-mRNA by splicing",
+      "wrong": [
+        "They are added after translation",
+        "They are translated into protein",
+        "They occur in prokaryotic genes"
+      ],
+      "e": "Introns are non-coding and spliced out. (Slides: p. 20)"
+    },
+    {
+      "id": "t2-q08",
+      "q": "Which codon starts translation?",
+      "answer": "AUG",
+      "wrong": [
+        "UGA",
+        "UAG",
+        "UAA"
+      ],
+      "e": "AUG is the start codon. (Slides: p. 30)"
+    },
+    {
+      "id": "t2-q09",
+      "q": "Which is NOT a stop codon?",
+      "answer": "AUG",
+      "wrong": [
+        "UAA",
+        "UAG",
+        "UGA"
+      ],
+      "e": "Stops are UAA, UAG and UGA; AUG is start. (Slides: p. 32)"
+    },
+    {
+      "id": "t2-q10",
+      "q": "\"Degenerate\" genetic code means that:",
+      "answer": "several codons can code for the same amino acid",
+      "wrong": [
+        "codons overlap",
+        "the code differs between organisms",
+        "the code is read 3′→5′"
+      ],
+      "e": "Degeneracy softens the effect of mutations. (Slides: p. 25)"
+    },
+    {
+      "id": "t2-q11",
+      "q": "Which enzyme attaches amino acids to tRNA?",
+      "answer": "Aminoacyl-tRNA synthetase",
+      "wrong": [
+        "Peptidyl transferase",
+        "RNA polymerase",
+        "Primase"
+      ],
+      "e": "Aminoacyl-tRNA synthetase uses ATP to load tRNAs. (Slides: p. 29)"
+    },
+    {
+      "id": "t2-q12",
+      "q": "The most common post-translational modification is:",
+      "answer": "Phosphorylation",
+      "wrong": [
+        "Methylation",
+        "Ubiquitination",
+        "Glycosylation"
+      ],
+      "e": "Phosphorylation regulates enzyme activity and is the most common PTM. (Slides: p. 33)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Genetic mechanisms",
+      "term": "DNA polymerase",
+      "meaning": "enzyme adding nucleotides to the 3′ end during replication"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Origin of replication",
+      "meaning": "site where replication starts"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Replication fork / bubble",
+      "meaning": "Y-shaped unwound region / two forks moving apart"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Helicase",
+      "meaning": "unwinds and separates DNA strands"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Topoisomerase",
+      "meaning": "relaxes supercoiling"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "SSB proteins",
+      "meaning": "keep single strands apart"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Primase",
+      "meaning": "RNA polymerase making the RNA primer"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Primer",
+      "meaning": "short RNA strand from which DNA polymerase starts"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Leading / lagging strand",
+      "meaning": "continuous / discontinuous synthesis"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Okazaki fragments",
+      "meaning": "short DNA pieces of the lagging strand"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Telomere",
+      "meaning": "repetitive DNA at chromosome ends"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Telomerase",
+      "meaning": "enzyme extending telomeres in the germ line"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Promoter",
+      "meaning": "DNA site where RNA polymerase binds"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Transcription bubble",
+      "meaning": "opened DNA region during transcription"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Pre-mRNA",
+      "meaning": "primary transcript before processing"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Exon / Intron",
+      "meaning": "coding / non-coding sequence"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "RNA splicing",
+      "meaning": "removing introns and joining exons"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Codon / Anticodon",
+      "meaning": "mRNA triplet / complementary tRNA triplet"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Degenerate code",
+      "meaning": "several codons for one amino acid"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Aminoacyl-tRNA synthetase",
+      "meaning": "loads amino acids onto tRNA using ATP"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "Peptide bond",
+      "meaning": "bond linking amino acids"
+    },
+    {
+      "group": "Genetic mechanisms",
+      "term": "PTM",
+      "meaning": "covalent modification after translation"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Genetic mechanisms: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "Which enzyme carries out DNA replication?",
+        "grp": "Genetic mechanisms",
+        "a": "DNA polymerase."
+      },
+      {
+        "n": "To which end does DNA polymerase add nucleotides?",
+        "grp": "Genetic mechanisms",
+        "a": "The 3′ end of an existing strand."
+      },
+      {
+        "n": "What is DNA polymerase's error rate?",
+        "grp": "Genetic mechanisms",
+        "a": "Less than 1 mistake per 10⁷ nucleotides (some polymerases also proofread)."
+      },
+      {
+        "n": "Three phases of DNA replication?",
+        "grp": "Genetic mechanisms",
+        "a": "Initiation, elongation, termination."
+      },
+      {
+        "n": "Where does replication start?",
+        "grp": "Genetic mechanisms",
+        "a": "At origins of replication, recognised by initiator proteins (pre-replication complex)."
+      },
+      {
+        "n": "What does helicase do?",
+        "grp": "Genetic mechanisms",
+        "a": "Unwinds and separates the two DNA strands at the replication fork."
+      },
+      {
+        "n": "What does topoisomerase do?",
+        "grp": "Genetic mechanisms",
+        "a": "Relaxes supercoiled DNA ahead of helicase."
+      },
+      {
+        "n": "Role of SSB proteins?",
+        "grp": "Genetic mechanisms",
+        "a": "Bind single-stranded DNA and prevent re-annealing."
+      },
+      {
+        "n": "Why is a primer needed?",
+        "grp": "Genetic mechanisms",
+        "a": "DNA polymerase cannot initiate a new strand; it only extends an existing 3′ end."
+      },
+      {
+        "n": "Which enzyme makes the RNA primer?",
+        "grp": "Genetic mechanisms",
+        "a": "Primase (a specialised RNA polymerase)."
+      },
+      {
+        "n": "In which direction is DNA synthesised?",
+        "grp": "Genetic mechanisms",
+        "a": "Only 5′ → 3′."
+      },
+      {
+        "n": "Leading vs lagging strand?",
+        "grp": "Genetic mechanisms",
+        "a": "Leading: continuous, toward the fork, one primer. Lagging: discontinuous, away from the fork, Okazaki fragments, many primers."
+      },
+      {
+        "n": "What are Okazaki fragments?",
+        "grp": "Genetic mechanisms",
+        "a": "Short DNA pieces of the lagging strand, each starting with its own RNA primer."
+      },
+      {
+        "n": "What are replication forks and bubbles?",
+        "grp": "Genetic mechanisms",
+        "a": "Forks are Y-shaped unwound regions; two forks moving in opposite directions from an origin form a bubble."
+      },
+      {
+        "n": "What are telomeres?",
+        "grp": "Genetic mechanisms",
+        "a": "Repetitive DNA at chromosome ends that prevents gene loss caused by end shortening."
+      },
+      {
+        "n": "What does telomerase do, and where?",
+        "grp": "Genetic mechanisms",
+        "a": "Extends telomere repeats, in the germ cell line."
+      },
+      {
+        "n": "When was the Nobel Prize for telomeres and telomerase awarded?",
+        "grp": "Genetic mechanisms",
+        "a": "2009."
+      },
+      {
+        "n": "Which enzyme performs transcription?",
+        "grp": "Genetic mechanisms",
+        "a": "RNA polymerase."
+      },
+      {
+        "n": "Where does RNA polymerase bind to start transcription?",
+        "grp": "Genetic mechanisms",
+        "a": "The promoter, together with general transcription factors."
+      },
+      {
+        "n": "Transcribe DNA CAT-TCG into mRNA.",
+        "grp": "Genetic mechanisms",
+        "a": "GUA-AGC."
+      },
+      {
+        "n": "What is pre-mRNA?",
+        "grp": "Genetic mechanisms",
+        "a": "The primary transcript, containing exons and introns, before processing."
+      },
+      {
+        "n": "Exons vs introns?",
+        "grp": "Genetic mechanisms",
+        "a": "Exons are coding sequences; introns are non-coding and removed."
+      },
+      {
+        "n": "What is RNA splicing?",
+        "grp": "Genetic mechanisms",
+        "a": "Removal of introns from pre-mRNA and joining of exons into one continuous molecule."
+      },
+      {
+        "n": "What is a codon?",
+        "grp": "Genetic mechanisms",
+        "a": "A triplet of mRNA bases encoding a particular amino acid."
+      },
+      {
+        "n": "How many entries does the genetic code table have?",
+        "grp": "Genetic mechanisms",
+        "a": "64."
+      },
+      {
+        "n": "Properties of the genetic code?",
+        "grp": "Genetic mechanisms",
+        "a": "Degenerate, non-overlapping (read 5′→3′), universal."
+      },
+      {
+        "n": "Why does a degenerate code help?",
+        "grp": "Genetic mechanisms",
+        "a": "It softens the effect of mutations."
+      },
+      {
+        "n": "Start codon?",
+        "grp": "Genetic mechanisms",
+        "a": "AUG (methionine)."
+      },
+      {
+        "n": "Stop codons?",
+        "grp": "Genetic mechanisms",
+        "a": "UAA, UAG, UGA."
+      },
+      {
+        "n": "What does aminoacyl-tRNA synthetase do?",
+        "grp": "Genetic mechanisms",
+        "a": "Attaches amino acids to their tRNAs using ATP."
+      },
+      {
+        "n": "Which ribosomal subunit binds the mRNA first?",
+        "grp": "Genetic mechanisms",
+        "a": "The small subunit, at the 5′ end."
+      },
+      {
+        "n": "What bond links amino acids?",
+        "grp": "Genetic mechanisms",
+        "a": "The peptide bond."
+      },
+      {
+        "n": "Most common post-translational modification?",
+        "grp": "Genetic mechanisms",
+        "a": "Phosphorylation."
+      },
+      {
+        "n": "What does ubiquitination do?",
+        "grp": "Genetic mechanisms",
+        "a": "Tags a protein for degradation."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Leading strand vs Lagging strand <small>(p. 4, p. 8)</small>",
+      [
+        "",
+        "Leading strand",
+        "Lagging strand"
+      ],
+      [
+        [
+          "Direction",
+          "toward fork",
+          "away from fork"
+        ],
+        [
+          "Synthesis",
+          "continuous",
+          "discontinuous (Okazaki fragments)"
+        ],
+        [
+          "Primers",
+          "one",
+          "many"
+        ]
+      ]
+    ],
+    [
+      "Replication vs Transcription vs Translation <small>(p. 10, p. 12, p. 19)</small>",
+      [
+        "",
+        "Replication",
+        "Transcription",
+        "Translation"
+      ],
+      [
+        [
+          "Template → product",
+          "DNA → DNA",
+          "DNA → RNA",
+          "mRNA → protein"
+        ],
+        [
+          "Key enzyme / machine",
+          "DNA polymerase",
+          "RNA polymerase",
+          "ribosome"
+        ],
+        [
+          "Where (eukaryote)",
+          "nucleus",
+          "nucleus",
+          "cytoplasm"
+        ]
+      ]
+    ],
+    [
+      "→ mRNA base <small>(p. 15)</small>",
+      [
+        "DNA base",
+        "→ mRNA base"
+      ],
+      [
+        [
+          "A",
+          "U"
+        ],
+        [
+          "T",
+          "A"
+        ],
+        [
+          "C",
+          "G"
+        ],
+        [
+          "G",
+          "C"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/02 Basic genetic mechanisms.pdf (34 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Genetic mechanisms: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "DNA polymerase error rate <b>&lt; 1 in 10⁷</b> nucleotides",
+            "p. 3"
+          ],
+          [
+            "Eukaryotic chromosomes: <b>hundreds to thousands</b> of origins",
+            "p. 5"
+          ],
+          [
+            "Genetic code table: <b>64</b> codons; <b>20</b> standard amino acids",
+            "p. 24, p. 33"
+          ],
+          [
+            "Start: <b>AUG</b>; stops: <b>UAA, UAG, UGA</b>",
+            "p. 30, p. 32"
+          ],
+          [
+            "<b>2009</b> Nobel Prize: telomeres and telomerase",
+            "p. 9"
+          ]
+        ]
+      }
+    ]
+  }
+}

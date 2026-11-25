@@ -1,0 +1,117 @@
+{
+  "num": 7,
+  "id": "t7",
+  "title": "Mineral hardness (example)",
+  "short": "Hardness",
+  "sub": "Example lecture · the Mohs scale",
+  "blurb": "What hardness is, the ten Mohs reference minerals and quick field tests.",
+  "h1": "Mineral hardness and the Mohs scale",
+  "lede": "A small example lecture written only as data files. It shows every feature: steps, questions, vocabulary, flashcards, tables and fill-the-gap facts.",
+  "six": [
+    "**Hardness** is how well a mineral resists being scratched.",
+    "The **Mohs scale** ranks 10 reference minerals from **1 (talc)** to **10 (diamond)**.",
+    "It is a **ranking**, not equal steps: diamond is far harder than corundum.",
+    "A harder mineral scratches a softer one, never the other way round.",
+    "Fingernail is about **2.5**, a copper coin about **3.5**, a steel knife or glass about **5.5**.",
+    "**Quartz is 7**: it scratches glass and a steel knife."
+  ],
+  "must": "the Mohs scale",
+  "mockNote": "Example questions only.",
+  "foot": "Example content to demonstrate the data-file format. Not part of any course.",
+
+  "questions": [
+    { "id": "t7-hardest", "q": "Which mineral is the hardest on the Mohs scale?", "h": "Number 10.", "answer": "Diamond", "wrong": ["Quartz", "Corundum", "Topaz"], "e": "Diamond is 10, the top of the Mohs scale.", "fol": true },
+    { "id": "t7-softest", "q": "Which mineral is the softest on the Mohs scale?", "h": "Number 1.", "answer": "Talc", "wrong": ["Gypsum", "Calcite", "Fluorite"], "e": "Talc is 1.", "fol": true },
+    { "id": "t7-quartz", "q": "What is the Mohs hardness of quartz?", "answer": "7", "wrong": ["5", "6", "9"], "e": "Quartz is 7. It is one of the most common minerals.", "fol": true },
+    { "id": "t7-ordinal", "q": "What kind of scale is the Mohs scale?", "h": "It only ranks.", "answer": "A ranking: it shows order, not equal differences", "wrong": ["An exact measure of force", "A scale of equal steps", "A scale of density"], "e": "Mohs is ordinal. The gap between 9 and 10 is much bigger than between 1 and 2." },
+    { "id": "t7-count", "q": "How many reference minerals does the Mohs scale have?", "answer": "10", "wrong": ["5", "7", "12"], "e": "Ten minerals, numbered 1 to 10." },
+    { "id": "t7-scratch", "q": "Which mineral can scratch calcite (hardness 3)?", "h": "It must be harder.", "answer": "Fluorite (4)", "wrong": ["Gypsum (2)", "Talc (1)", "None of these"], "e": "A mineral scratches another only if it is harder. Fluorite is 4, calcite is 3." },
+    { "id": "t7-nail", "q": "A fingernail (about 2.5) can scratch which mineral?", "answer": "Gypsum", "wrong": ["Calcite", "Fluorite", "Quartz"], "e": "2.5 is harder than gypsum (2) but softer than calcite (3)." },
+    { "id": "t7-glass", "q": "Which common object has a hardness of about 5.5?", "answer": "Window glass", "wrong": ["A fingernail", "A copper coin", "A diamond"], "e": "Glass and a steel knife blade are both about 5.5." },
+    { "id": "t7-streak", "q": "What is the streak of a mineral?", "h": "A powder test.", "answer": "The colour of its powder on an unglazed porcelain plate", "wrong": ["Its shininess", "How it breaks", "Its hardness"], "e": "Streak is the colour of the powder. It is often more reliable than the colour of the whole mineral." },
+    { "id": "t7-cleavage", "q": "What is cleavage?", "answer": "Breaking along flat planes of weakness", "wrong": ["Breaking in any random direction", "How shiny a mineral is", "The colour of the powder"], "e": "Cleavage follows planes in the crystal structure. Breaking in an irregular way is called fracture." },
+    { "id": "t7-corundum", "q": "Which is harder: corundum or topaz?", "answer": "Corundum (9)", "wrong": ["Topaz (8)", "They are equal", "It depends on the colour"], "e": "Corundum is 9, topaz is 8. Ruby and sapphire are corundum." },
+    { "id": "t7-lustre", "q": "What does lustre describe?", "answer": "How the surface of a mineral reflects light", "wrong": ["How hard it is", "How heavy it is", "How it dissolves in water"], "e": "Lustre can be metallic, glassy, pearly, dull and so on." }
+  ],
+
+  "vocab": [
+    { "group": "Properties", "term": "Hardness", "meaning": "How well a mineral resists being scratched." },
+    { "group": "Properties", "term": "Mohs scale", "meaning": "A ranking of ten reference minerals from 1 (talc) to 10 (diamond)." },
+    { "group": "Properties", "term": "Streak", "meaning": "The colour of a mineral's powder, seen when it is rubbed on unglazed porcelain." },
+    { "group": "Properties", "term": "Lustre", "meaning": "How the surface of a mineral reflects light." },
+    { "group": "Properties", "term": "Cleavage", "meaning": "The tendency to break along flat planes of weakness." },
+    { "group": "Properties", "term": "Fracture", "meaning": "Breakage that does not follow cleavage planes, for example the curved breaks of quartz." },
+    { "group": "Mohs minerals", "term": "Talc", "meaning": "Mohs hardness 1, the softest mineral on the scale." },
+    { "group": "Mohs minerals", "term": "Gypsum", "meaning": "Mohs hardness 2; a fingernail can scratch it." },
+    { "group": "Mohs minerals", "term": "Calcite", "meaning": "Mohs hardness 3." },
+    { "group": "Mohs minerals", "term": "Fluorite", "meaning": "Mohs hardness 4." },
+    { "group": "Mohs minerals", "term": "Apatite", "meaning": "Mohs hardness 5." },
+    { "group": "Mohs minerals", "term": "Orthoclase", "meaning": "A feldspar with Mohs hardness 6." },
+    { "group": "Mohs minerals", "term": "Quartz", "meaning": "Mohs hardness 7; it scratches glass." },
+    { "group": "Mohs minerals", "term": "Topaz", "meaning": "Mohs hardness 8." },
+    { "group": "Mohs minerals", "term": "Corundum", "meaning": "Mohs hardness 9; ruby and sapphire are varieties of it." },
+    { "group": "Mohs minerals", "term": "Diamond", "meaning": "Mohs hardness 10, the hardest natural mineral." }
+  ],
+
+  "confusable": [
+    ["Cleavage", "Fracture"],
+    ["Hardness", "Streak", "Lustre"],
+    ["Talc", "Gypsum", "Calcite"],
+    ["Corundum", "Diamond", "Topaz"]
+  ],
+
+  "facts": [
+    [1, "Hardness is how well a mineral resists being {scratched|dissolved|heated|weighed}."],
+    [2, "On the Mohs scale, {talc|quartz|calcite|topaz} is the softest mineral."],
+    [2, "The Mohs scale has {10|5|7|12} reference minerals."],
+    [2, "Quartz has a Mohs hardness of {7|5|6|9}."],
+    [3, "A fingernail has a hardness of about {2.5|1.5|4.5|5.5}."],
+    [3, "Window glass has a hardness of about {5.5|3.5|7|9}."]
+  ],
+
+  "cards": {
+    "tab": "Mohs cards",
+    "h1": "The ten Mohs minerals",
+    "who": "Which mineral am I?",
+    "lede": "Tap a card to flip it. Say the hardness before you flip.",
+    "labels": { "h": "Hardness", "t": "Handy test" },
+    "keys": ["h", "t"],
+    "items": [
+      { "n": "Talc", "grp": "Mohs 1", "h": "1", "t": "Easily scratched by a fingernail" },
+      { "n": "Gypsum", "grp": "Mohs 2", "h": "2", "t": "A fingernail (about 2.5) scratches it" },
+      { "n": "Calcite", "grp": "Mohs 3", "h": "3", "t": "Scratched by a copper coin (about 3.5)" },
+      { "n": "Fluorite", "grp": "Mohs 4", "h": "4", "t": "Scratched by a steel knife (about 5.5)" },
+      { "n": "Apatite", "grp": "Mohs 5", "h": "5", "t": "Only just scratched by a steel knife" },
+      { "n": "Orthoclase", "grp": "Mohs 6", "h": "6", "t": "Scratches glass and a steel knife" },
+      { "n": "Quartz", "grp": "Mohs 7", "h": "7", "t": "Scratches glass easily" },
+      { "n": "Topaz", "grp": "Mohs 8", "h": "8", "t": "Scratches quartz" },
+      { "n": "Corundum", "grp": "Mohs 9", "h": "9", "t": "Scratches topaz; ruby and sapphire" },
+      { "n": "Diamond", "grp": "Mohs 10", "h": "10", "t": "Scratches everything else; hardest natural mineral" }
+    ]
+  },
+
+  "names": {
+    "tab": "Key facts",
+    "h1": "Hardness at a glance",
+    "intro": "Which numbers must you know? **Must know** items matter most.",
+    "tables": [
+      {
+        "title": "Everyday tools",
+        "head": ["Object", "Hardness", "Need it?"],
+        "rows": [
+          ["Fingernail", "about 2.5", "must"],
+          ["Copper coin", "about 3.5", "must"],
+          ["Window glass", "about 5.5", "must"],
+          ["Steel knife blade", "about 5.5", "nice"]
+        ]
+      }
+    ]
+  },
+
+  "sheet": [
+    ["The ten minerals", ["Number", "Mineral"], [
+      ["1", "Talc"], ["2", "Gypsum"], ["3", "Calcite"], ["4", "Fluorite"], ["5", "Apatite"],
+      ["6", "Orthoclase"], ["7", "Quartz"], ["8", "Topaz"], ["9", "Corundum"], ["10", "Diamond"]
+    ]]
+  ]
+}

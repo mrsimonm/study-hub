@@ -1,0 +1,575 @@
+{
+  "num": 5,
+  "id": "t5",
+  "title": "Cells and their organisation II – membrane organelles, protein transport, vesicular transport, mitochondria and chloroplasts",
+  "short": "Cells II",
+  "sub": "Lecture 5 · Lucie Panská · 30 Oct 2026",
+  "blurb": "How membrane-enclosed compartments evolved (invagination → nuclear envelope; the endosymbiont hypothesis and its evidence).",
+  "h1": "Cells and their organisation II – membrane organelles, protein transport, vesicular transport, mitochondria and chloroplasts",
+  "lede": "How membrane-enclosed compartments evolved (invagination → nuclear envelope; the endosymbiont hypothesis and its evidence). Rough vs smooth ER. The three ways proteins are transported (gated through nuclear pores, transmembrane via translocators, vesicular), including the nuclear pore complex, import into mitochondria and chloroplasts, SRP and the signal hypothesis. Vesicular traffic (exocytosis, endocytosis, pinocytosis; secretory, endocytic and retrieval pathways; COP I/COP II), the Golgi (cis/medial/trans), lysosomes and peroxisomes. Finally energy: entropy and the need for ATP, chemiosmotic coupling (two stages, ATP synthase), the mitochondrial and chloroplast electron-transport chains, mitochondrion and chloroplast structure, proton-motive force, and the two parts of photosynthesis.",
+  "six": [
+    "Endosymbiont hypothesis and its evidence",
+    "Rough vs smooth ER functions",
+    "Three types of protein transport; NPC; nuclear localisation signal",
+    "Signal hypothesis: SRP, translocator, signal peptidase",
+    "Exocytosis, endocytosis, pinocytosis; secretory, endocytic and retrieval pathways",
+    "COP I vs COP II"
+  ],
+  "must": "Cells II",
+  "questions": [
+    {
+      "id": "t5-q01",
+      "q": "Which coat protein mediates transport from the ER to the Golgi?",
+      "answer": "COP II",
+      "wrong": [
+        "Clathrin",
+        "COP I",
+        "SRP"
+      ],
+      "e": "COP II = ER export; COP I = retrograde Golgi → ER. (Slides: p. 23)",
+      "fol": true
+    },
+    {
+      "id": "t5-q02",
+      "q": "The signal-recognition particle (SRP) directs ribosomes to:",
+      "answer": "the rough ER",
+      "wrong": [
+        "peroxisomes",
+        "mitochondria",
+        "the nucleus"
+      ],
+      "e": "SRP binds the ER signal sequence and docks on the SRP receptor of the rough ER. (Slides: p. 14)",
+      "fol": true
+    },
+    {
+      "id": "t5-q03",
+      "q": "Which is NOT evidence for the endosymbiont hypothesis?",
+      "answer": "Organelles can be made de novo by the cell",
+      "wrong": [
+        "Organelles have two membranes",
+        "Organelles have their own ribosomes",
+        "Organelles divide like prokaryotes"
+      ],
+      "e": "Organelles cannot be made de novo, only by division. (Slides: p. 5)",
+      "fol": true
+    },
+    {
+      "id": "t5-q04",
+      "q": "Lysosomes keep an internal pH of about:",
+      "answer": "4.5–5",
+      "wrong": [
+        "2",
+        "7.4",
+        "8"
+      ],
+      "e": "pH 4.5–5, maintained by an H⁺ pump. (Slides: p. 28)",
+      "fol": true
+    },
+    {
+      "id": "t5-q05",
+      "q": "Which organelle has a single membrane, no DNA, and contains catalase?",
+      "answer": "Peroxisome",
+      "wrong": [
+        "Chloroplast",
+        "Mitochondrion",
+        "Lysosome"
+      ],
+      "e": "Peroxisomes. (Slides: p. 31)"
+    },
+    {
+      "id": "t5-q06",
+      "q": "In chemiosmotic coupling, ATP synthase is driven by:",
+      "answer": "the flow of H⁺ down its electrochemical gradient",
+      "wrong": [
+        "direct transfer of electrons to ADP",
+        "Na⁺ gradient",
+        "hydrolysis of GTP"
+      ],
+      "e": "H⁺ flows back through ATP synthase. (Slides: p. 35)"
+    },
+    {
+      "id": "t5-q07",
+      "q": "In mitochondria, the final electron acceptor is:",
+      "answer": "O₂",
+      "wrong": [
+        "NADP⁺",
+        "H₂O",
+        "CO₂"
+      ],
+      "e": "Electrons combine with O₂ to form water. (Slides: p. 36)"
+    },
+    {
+      "id": "t5-q08",
+      "q": "In chloroplasts, the electron-transport chain and ATP synthase are located in the:",
+      "answer": "thylakoid membrane",
+      "wrong": [
+        "stroma",
+        "inner membrane",
+        "outer membrane"
+      ],
+      "e": "The thylakoid membrane is the third membrane system. (Slides: p. 46)"
+    },
+    {
+      "id": "t5-q09",
+      "q": "Uptake of liquids by vesicles is called:",
+      "answer": "pinocytosis",
+      "wrong": [
+        "phagocytosis",
+        "exocytosis",
+        "autophagy"
+      ],
+      "e": "Pinocytosis. (Slides: p. 19)"
+    },
+    {
+      "id": "t5-q10",
+      "q": "Which transport type moves proteins between the cytosol and the nucleus?",
+      "answer": "Gated transport",
+      "wrong": [
+        "Active symport",
+        "Transmembrane transport",
+        "Vesicular transport"
+      ],
+      "e": "Gated transport through nuclear pores. (Slides: p. 9)"
+    },
+    {
+      "id": "t5-q11",
+      "q": "The Nobel Prize 2013 was awarded for discoveries concerning:",
+      "answer": "vesicle traffic",
+      "wrong": [
+        "telomeres",
+        "the ribosome",
+        "DNA structure"
+      ],
+      "e": "Schekman, Rothman and Südhof, vesicle traffic. (Slides: p. 21)"
+    },
+    {
+      "id": "t5-q12",
+      "q": "The smooth ER is responsible for:",
+      "answer": "lipid synthesis and Ca²⁺ regulation",
+      "wrong": [
+        "ATP synthesis",
+        "rRNA synthesis",
+        "N-glycosylation of proteins"
+      ],
+      "e": "Smooth ER: lipids, detoxification, Ca²⁺. (Slides: p. 7)"
+    }
+  ],
+  "vocab": [
+    {
+      "group": "Cells II",
+      "term": "Endosymbiont hypothesis",
+      "meaning": "mitochondria and plastids derive from engulfed bacteria"
+    },
+    {
+      "group": "Cells II",
+      "term": "Gated / transmembrane / vesicular transport",
+      "meaning": "three protein transport types"
+    },
+    {
+      "group": "Cells II",
+      "term": "Nuclear pore complex (NPC)",
+      "meaning": "~30 nucleoporins forming pores"
+    },
+    {
+      "group": "Cells II",
+      "term": "Nuclear localisation / export signal",
+      "meaning": "tags for import / export"
+    },
+    {
+      "group": "Cells II",
+      "term": "Nuclear lamina",
+      "meaning": "protein meshwork under the inner nuclear membrane"
+    },
+    {
+      "group": "Cells II",
+      "term": "Signal sequence",
+      "meaning": "amino-acid stretch directing a protein's destination"
+    },
+    {
+      "group": "Cells II",
+      "term": "SRP",
+      "meaning": "signal-recognition particle; brings ribosome + chain to the ER"
+    },
+    {
+      "group": "Cells II",
+      "term": "Signal peptidase",
+      "meaning": "removes the signal sequence"
+    },
+    {
+      "group": "Cells II",
+      "term": "Exocytosis / Endocytosis / Pinocytosis / Phagocytosis",
+      "meaning": "export / import / liquid uptake / particle uptake"
+    },
+    {
+      "group": "Cells II",
+      "term": "COP I / COP II",
+      "meaning": "Golgi→ER retrograde / ER→Golgi coat proteins"
+    },
+    {
+      "group": "Cells II",
+      "term": "Cis / trans Golgi",
+      "meaning": "entry / exit face"
+    },
+    {
+      "group": "Cells II",
+      "term": "Autophagy",
+      "meaning": "lysosomal digestion of the cell's own organelles"
+    },
+    {
+      "group": "Cells II",
+      "term": "Catalase",
+      "meaning": "peroxisomal enzyme using H₂O₂"
+    },
+    {
+      "group": "Cells II",
+      "term": "Entropy",
+      "meaning": "disorder; increases spontaneously"
+    },
+    {
+      "group": "Cells II",
+      "term": "Chemiosmotic coupling",
+      "meaning": "ATP synthesis powered by an H⁺ gradient"
+    },
+    {
+      "group": "Cells II",
+      "term": "ATP synthase",
+      "meaning": "proton-driven turbine making ATP"
+    },
+    {
+      "group": "Cells II",
+      "term": "Proton-motive force",
+      "meaning": "pH gradient + membrane potential"
+    },
+    {
+      "group": "Cells II",
+      "term": "Stroma",
+      "meaning": "chloroplast inner space (≈ matrix)"
+    },
+    {
+      "group": "Cells II",
+      "term": "Intermembrane space",
+      "meaning": "20–30 nm gap between mitochondrial membranes"
+    }
+  ],
+  "cards": {
+    "tab": "Flashcards",
+    "h1": "Cells II: flashcards",
+    "who": "Which question does this answer?",
+    "lede": "Read the question, answer it out loud, then flip the card.",
+    "labels": {
+      "a": "Answer"
+    },
+    "keys": [
+      "a"
+    ],
+    "items": [
+      {
+        "n": "State the endosymbiont hypothesis.",
+        "grp": "Cells II",
+        "a": "Mitochondria and plastids come from an aerobic and a photosynthetic bacterium phagocytosed but not digested by an early eukaryote; part of their genes moved to the nucleus."
+      },
+      {
+        "n": "Name evidence for the endosymbiont hypothesis.",
+        "grp": "Cells II",
+        "a": "No de novo origin (only division), own ribosomes and DNA, two different membranes, prokaryote-like metabolism and division, modern endosymbioses (Paramecium–Chlorella, Hydra–Zoochlorella)."
+      },
+      {
+        "n": "How did the nuclear envelope evolve?",
+        "grp": "Cells II",
+        "a": "Invagination of the plasma membrane to protect DNA, ending in a double membrane."
+      },
+      {
+        "n": "Functions of the rough ER?",
+        "grp": "Cells II",
+        "a": "Protein synthesis, protein sorting, N-glycosylation."
+      },
+      {
+        "n": "Functions of the smooth ER?",
+        "grp": "Cells II",
+        "a": "Synthesis of almost all lipids, detoxification, regulation of cytosolic Ca²⁺ (muscle contraction)."
+      },
+      {
+        "n": "What decides where a new protein goes?",
+        "grp": "Cells II",
+        "a": "A sorting signal in its amino-acid sequence (usually at the start)."
+      },
+      {
+        "n": "Three types of protein transport?",
+        "grp": "Cells II",
+        "a": "Gated (nuclear pores), transmembrane (translocators), vesicular."
+      },
+      {
+        "n": "What are nucleoporins?",
+        "grp": "Cells II",
+        "a": "The ~30 proteins forming nuclear pore complexes."
+      },
+      {
+        "n": "What is imported into and exported from the nucleus?",
+        "grp": "Cells II",
+        "a": "Imported: histones, polymerases, transcription regulators. Exported: almost all RNAs."
+      },
+      {
+        "n": "How do proteins enter mitochondria?",
+        "grp": "Cells II",
+        "a": "Unfolded, across both membranes at once, needing a signal sequence, driven by ATP and the membrane potential."
+      },
+      {
+        "n": "What does SRP do?",
+        "grp": "Cells II",
+        "a": "Recognises the ER signal sequence, binds the ribosome and chain, and docks them on the SRP receptor of the rough ER."
+      },
+      {
+        "n": "What does signal peptidase do?",
+        "grp": "Cells II",
+        "a": "Cuts off the signal sequence during translocation into the ER."
+      },
+      {
+        "n": "Exocytosis vs endocytosis vs pinocytosis?",
+        "grp": "Cells II",
+        "a": "Export via secretory vesicles / uptake of outside material in vesicles / uptake of liquids."
+      },
+      {
+        "n": "Who won the 2013 Nobel Prize for vesicle traffic?",
+        "grp": "Cells II",
+        "a": "Randy Schekman, James Rothman, Thomas Südhof."
+      },
+      {
+        "n": "Three vesicular pathways?",
+        "grp": "Cells II",
+        "a": "Secretory (outward), endocytic (inward), retrieval (returns components)."
+      },
+      {
+        "n": "COP II vs COP I?",
+        "grp": "Cells II",
+        "a": "COP II: ER → Golgi. COP I: Golgi → ER (retrograde) and intra-Golgi."
+      },
+      {
+        "n": "Golgi faces?",
+        "grp": "Cells II",
+        "a": "Cis = entry (from ER), medial = modification, trans = exit/sorting."
+      },
+      {
+        "n": "Which polysaccharides does the Golgi make?",
+        "grp": "Cells II",
+        "a": "Pectins and hemicellulose (plant walls), glycosaminoglycans (animal ECM)."
+      },
+      {
+        "n": "Lysosome pH and how it is kept?",
+        "grp": "Cells II",
+        "a": "pH 4.5–5, maintained by an H⁺ pump."
+      },
+      {
+        "n": "How many enzyme types do lysosomes contain?",
+        "grp": "Cells II",
+        "a": "About 40 hydrolytic enzymes."
+      },
+      {
+        "n": "Four routes into lysosomes?",
+        "grp": "Cells II",
+        "a": "Endocytosis, phagocytosis, pinocytosis, autophagy."
+      },
+      {
+        "n": "Peroxisome membranes and DNA?",
+        "grp": "Cells II",
+        "a": "Single membrane, no DNA."
+      },
+      {
+        "n": "Key enzymes of peroxisomes?",
+        "grp": "Cells II",
+        "a": "Catalase and urate oxidase."
+      },
+      {
+        "n": "Peroxisome roles in plants?",
+        "grp": "Cells II",
+        "a": "Photorespiration in leaves; converting lipids to sugars in germinating seeds."
+      },
+      {
+        "n": "Why do cells need constant ATP?",
+        "grp": "Cells II",
+        "a": "To maintain order against entropy (2nd law of thermodynamics)."
+      },
+      {
+        "n": "What is chemiosmotic coupling?",
+        "grp": "Cells II",
+        "a": "ATP synthesis from ADP driven by an H⁺ gradient across a membrane."
+      },
+      {
+        "n": "Two stages of chemiosmotic coupling?",
+        "grp": "Cells II",
+        "a": "1) Electron transport pumps H⁺ (gradient). 2) H⁺ flows back through ATP synthase → ATP."
+      },
+      {
+        "n": "Final electron acceptor in mitochondria?",
+        "grp": "Cells II",
+        "a": "O₂, forming water."
+      },
+      {
+        "n": "Where do chloroplast electrons come from, and where do they end?",
+        "grp": "Cells II",
+        "a": "From water (PS II); they end reducing NADP⁺ to NADPH (after PS I)."
+      },
+      {
+        "n": "How much more efficient is ATP production with mitochondria?",
+        "grp": "Cells II",
+        "a": "About 15×."
+      },
+      {
+        "n": "What are cristae, and what do they contain?",
+        "grp": "Cells II",
+        "a": "Folds of the inner mitochondrial membrane with the ETC and ATP synthase."
+      },
+      {
+        "n": "What does the mitochondrial matrix contain?",
+        "grp": "Cells II",
+        "a": "mtDNA (nucleoids), ribosomes, citric acid cycle enzymes."
+      },
+      {
+        "n": "What is the proton-motive force?",
+        "grp": "Cells II",
+        "a": "pH gradient + membrane potential across the inner membrane, pulling H⁺ back through ATP synthase."
+      },
+      {
+        "n": "Matrix pH?",
+        "grp": "Cells II",
+        "a": "About 8 (higher than the intermembrane space)."
+      },
+      {
+        "n": "Where are the ETC and ATP synthase in chloroplasts?",
+        "grp": "Cells II",
+        "a": "In the thylakoid membrane (third membrane system)."
+      },
+      {
+        "n": "Two parts of photosynthesis?",
+        "grp": "Cells II",
+        "a": "Light reactions (PS I + II → ATP + NADPH) and dark/carbon-fixation reactions (CO₂ → carbohydrates)."
+      },
+      {
+        "n": "Where is the H⁺ gradient formed in chloroplasts vs mitochondria?",
+        "grp": "Cells II",
+        "a": "Inside the thylakoid (large ΔpH) vs in the crista/intermembrane space (small ΔpH)."
+      }
+    ],
+    "sheet": false
+  },
+  "sheet": [
+    [
+      "Mitochondrion vs Chloroplast <small>(p. 33–49)</small>",
+      [
+        "",
+        "Mitochondrion",
+        "Chloroplast"
+      ],
+      [
+        [
+          "Energy source",
+          "food (oxidative phosphorylation)",
+          "sunlight (photosynthesis)"
+        ],
+        [
+          "Electron source / final acceptor",
+          "NADH / O₂ → H₂O",
+          "H₂O / NADP⁺ → NADPH"
+        ],
+        [
+          "Membranes",
+          "2 (inner folded into cristae)",
+          "3 systems (outer, inner, thylakoid)"
+        ],
+        [
+          "ETC + ATP synthase in",
+          "cristae (inner membrane)",
+          "thylakoid membrane"
+        ],
+        [
+          "H⁺ gradient in",
+          "intermembrane/crista space (small ΔpH)",
+          "thylakoid lumen (large ΔpH)"
+        ],
+        [
+          "ATP made in",
+          "matrix",
+          "stroma"
+        ]
+      ]
+    ],
+    [
+      "COP II vs COP I <small>(p. 23)</small>",
+      [
+        "",
+        "COP II",
+        "COP I"
+      ],
+      [
+        [
+          "Direction",
+          "ER → Golgi (anterograde)",
+          "Golgi → ER (retrograde), intra-Golgi"
+        ]
+      ]
+    ],
+    [
+      "Rough ER vs Smooth ER <small>(p. 6–7)</small>",
+      [
+        "",
+        "Rough ER",
+        "Smooth ER"
+      ],
+      [
+        [
+          "Ribosomes",
+          "yes",
+          "no"
+        ],
+        [
+          "Functions",
+          "protein synthesis, sorting, N-glycosylation",
+          "lipids, detoxification, Ca²⁺ regulation"
+        ]
+      ]
+    ]
+  ],
+  "foot": "From Biology materials/05 Cell organisation II.pdf (49 pages). Slide numbers are shown as (p. N) for PDF pages and (s. N) for PowerPoint slides. If anything here disagrees with the slides, the slides win.",
+  "names": {
+    "tab": "Key facts",
+    "h1": "Cells II: facts and numbers",
+    "tables": [
+      {
+        "title": "Facts and numbers worth memorising",
+        "head": [
+          "Fact",
+          "Slide"
+        ],
+        "rows": [
+          [
+            "NPC made of ~<b>30</b> nucleoporins",
+            "p. 11"
+          ],
+          [
+            "Lysosomes: ~<b>40</b> enzymes, <b>pH 4.5–5</b>",
+            "p. 28"
+          ],
+          [
+            "~<b>25 %</b> of ethanol oxidised in peroxisomes",
+            "p. 31"
+          ],
+          [
+            "Mitochondria: up to <b>20 %</b> of cytoplasm volume; <b>15×</b> more efficient ATP production",
+            "p. 38"
+          ],
+          [
+            "Intermembrane space <b>20–30 nm</b>; matrix pH ≈ <b>8</b>",
+            "p. 41, p. 44"
+          ],
+          [
+            "Human cristae area ≈ <b>football field</b>",
+            "p. 42"
+          ],
+          [
+            "<b>2013</b> Nobel Prize: vesicle traffic (Schekman, Rothman, Südhof)",
+            "p. 21"
+          ]
+        ]
+      }
+    ]
+  }
+}

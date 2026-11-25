@@ -1,0 +1,764 @@
+{
+ "id": "exam",
+ "title": "Exam study path",
+ "short": "the exam",
+ "units": [
+  {
+   "id": "t1",
+   "title": "Lesson 1 · Basics & history",
+   "bites": [
+    {
+     "id": "pe-t1-r1",
+     "type": "read",
+     "title": "The basics everything else builds on",
+     "html": "<p>Lecture 2 (Intro to ecology) plus section 1 of the glossary, Ecology in the Anthropocene. Short, but the exam loves the definitions and the Darwin vs Wallace story.</p>"
+    },
+    {
+     "id": "pe-t1-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Ecology</b> = how organisms interact with each other and their physical environment: why they live where they do, in the numbers they do.</li><li>The word comes from Greek <b>oîkos</b> (house) + <b>logía</b> (study of).</li><li><b>Natural selection</b> needs three things: variation in traits, differential reproduction and heredity.</li></ul>"
+    },
+    {
+     "id": "pe-t1-q1",
+     "type": "quiz",
+     "q": "Which is the best definition of ecology?",
+     "options": [
+      "The science of how organisms interact with each other and with their physical environment",
+      "The study of how traits are inherited from parents",
+      "The classification and naming of species",
+      "The protection of endangered species"
+     ],
+     "right": 0,
+     "why": "Glossary 1a: ecology asks why organisms are distributed and abundant as they are, shaped by biotic and abiotic processes."
+    },
+    {
+     "id": "pe-t1-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Darwin</b> saw competition between individuals as the driving force of selection, <b>Wallace</b> saw the environment.</li><li><b>Habitat</b> is where an organism lives; the <b>niche</b> is its role and requirements.</li><li><b>Fundamental niche</b> = what physiology allows; <b>realized niche</b> = what it actually occupies with competitors and predators around.</li></ul>"
+    },
+    {
+     "id": "pe-t1-q2",
+     "type": "quiz",
+     "q": "What happened on 1 July 1858?",
+     "options": [
+      "A joint reading of Wallace's essay and Darwin's writings at the Linnean Society",
+      "Darwin published On the Origin of Species",
+      "Wallace sailed to the Galápagos",
+      "Linnaeus published his taxonomy"
+     ],
+     "right": 0,
+     "why": "Darwin received Wallace's Ternate essay on 18 June 1858; the joint Linnean reading followed on 1 July. The Origin came out in 1859."
+    },
+    {
+     "id": "pe-t1-q3",
+     "type": "quiz",
+     "q": "According to the lecture, what did Wallace see as the main driving force of selection?",
+     "options": [
+      "The environment",
+      "Competition between individuals",
+      "Sexual selection",
+      "Genetic drift"
+     ],
+     "right": 0,
+     "why": "Darwin stressed competition between individuals; Wallace stressed the environment."
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "title": "Lesson 2 · Rules & islands",
+   "bites": [
+    {
+     "id": "pe-t2-r1",
+     "type": "read",
+     "title": "Patterns in body size, shape and colour",
+     "html": "<p>The end of Lecture 2 (ecogeographical rules) and the Lecture 3 example talk on the island rule, plus how a scientific paper is built. Glossary section 6 i–l.</p>"
+    },
+    {
+     "id": "pe-t2-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Bergmann's rule</b>: larger bodies in colder climates.</li><li><b>Allen's rule</b>: shorter extremities in cold regions.</li><li><b>Gloger's rule</b>: darker pigmentation in warm, humid areas.</li></ul>"
+    },
+    {
+     "id": "pe-t2-q1",
+     "type": "quiz",
+     "q": "Which rule says animals in colder climates tend to have larger bodies?",
+     "options": [
+      "Bergmann's rule",
+      "Allen's rule",
+      "Gloger's rule",
+      "Island rule"
+     ],
+     "right": 0,
+     "why": "Bergmann: larger bodies in colder climates."
+    },
+    {
+     "id": "pe-t2-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Island rule</b> (Foster's rule): small species get bigger (<b>gigantism</b>), large species get smaller (<b>dwarfism</b>) on islands.</li><li>A <b>meta-analysis</b> statistically combines results of many studies; for the island rule, author groups disagree, so the verdict is: it generally holds, but depends on context and lineage, and methods matter.</li><li>Abstract → Introduction (what is known), Methods (data &amp; stats), Results, Discussion (interpretation).</li></ul>"
+    },
+    {
+     "id": "pe-t2-q2",
+     "type": "quiz",
+     "q": "Which rule says animals in cold regions have shorter extremities (ears, legs)?",
+     "options": [
+      "Allen's rule",
+      "Bergmann's rule",
+      "Gloger's rule",
+      "Foster's rule"
+     ],
+     "right": 0,
+     "why": "Allen: shorter extremities in cold regions."
+    },
+    {
+     "id": "pe-t2-q3",
+     "type": "quiz",
+     "q": "Which rule links darker pigmentation to warm, humid areas?",
+     "options": [
+      "Gloger's rule",
+      "Bergmann's rule",
+      "Allen's rule",
+      "Island rule"
+     ],
+     "right": 0,
+     "why": "Gloger: darker colour in warm, humid areas."
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "title": "Lesson 3 · Life histories",
+   "bites": [
+    {
+     "id": "pe-t3-r1",
+     "type": "read",
+     "title": "Does the fast–slow continuum capture life-history variation?",
+     "html": "<p>Group 1's question: does the fast–slow continuum capture life-history variation across taxa, or do we need several axes? Classic paper Stearns (1977), recent paper Stott et al. (2024), 'Life histories are not just fast or slow'.</p>"
+    },
+    {
+     "id": "pe-t3-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Life-history traits</b>: growth, age and size at maturity, number and size of offspring, lifespan.</li><li><b>Fast</b> = early reproduction, many small offspring, short life, high mortality. <b>Slow</b> = the opposite.</li><li>The <b>slow–fast continuum</b> is the main axis, defined by the trade-off between time spent on reproduction and development versus survival.</li></ul>"
+    },
+    {
+     "id": "pe-t3-q1",
+     "type": "quiz",
+     "q": "Which of these is a life-history trait?",
+     "options": [
+      "Age at maturity",
+      "Feather colour",
+      "Habitat type",
+      "Trophic level"
+     ],
+     "right": 0,
+     "why": "Life-history traits concern growth, reproduction and survival: age at maturity, offspring number and size, lifespan."
+    },
+    {
+     "id": "pe-t3-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Pace-of-life syndromes</b> add behaviour and physiology: fast, bold, high-metabolism vs slow, shy, low-metabolism.</li><li>It works as the dominant axis in tetrapods, and broadly in vascular plants and corals; few studies in invertebrates (except insects).</li><li>Answer: the fast–slow axis is the main one for some taxa, but <b>multiple axes</b> are needed (e.g. reproductive patterns, stature–recruitment, altricial vs precocial).</li></ul>"
+    },
+    {
+     "id": "pe-t3-q2",
+     "type": "quiz",
+     "q": "Which set describes a FAST life history?",
+     "options": [
+      "Early reproduction, many small offspring, short lifespan",
+      "Late reproduction, few large offspring, long lifespan",
+      "Early reproduction, few large offspring, long lifespan",
+      "Late reproduction, many small offspring, short lifespan"
+     ],
+     "right": 0,
+     "why": "Fast = early, many, small, short-lived, high mortality."
+    },
+    {
+     "id": "pe-t3-q3",
+     "type": "quiz",
+     "q": "Pace-of-life syndromes add which kinds of traits to life history?",
+     "options": [
+      "Behavioural and physiological traits",
+      "Only morphological traits",
+      "Only genetic markers",
+      "Only habitat preferences"
+     ],
+     "right": 0,
+     "why": "E.g. fast-growing, bold, high-metabolism vs slow-growing, shy, low-metabolism."
+    }
+   ]
+  },
+  {
+   "id": "t4",
+   "title": "Lesson 4 · Allee effects",
+   "bites": [
+    {
+     "id": "pe-t4-r1",
+     "type": "read",
+     "title": "Allee effects: curiosity or fundamental driver?",
+     "html": "<p>Group 2's question: are Allee effects an ecological curiosity or a fundamental driver of population dynamics? Classic paper Stephens, Sutherland &amp; Freckleton (1999), recent paper Muir, Lajeunesse &amp; Kramer (2024).</p>"
+    },
+    {
+     "id": "pe-t4-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Allee effect</b>: the smaller the population, the lower each individual's chance of surviving or reproducing.</li><li><b>Component</b> Allee effect: one fitness component (e.g. pup survival) drops at low density. <b>Demographic</b>: overall growth per individual of the whole population drops.</li><li><b>Strong</b> Allee effect: a threshold below which growth is negative and extinction is likely. <b>Weak</b>: growth is slower at low density, but no hard threshold.</li></ul>"
+    },
+    {
+     "id": "pe-t4-q1",
+     "type": "quiz",
+     "q": "What is the Allee effect, in one line?",
+     "options": [
+      "Smaller populations mean lower individual survival or reproduction",
+      "Larger populations always grow faster",
+      "Competition increases at high density",
+      "Populations grow until carrying capacity"
+     ],
+     "right": 0,
+     "why": "Group 2: the smaller the population, the lower each individual's chance of surviving or reproducing."
+    },
+    {
+     "id": "pe-t4-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Rescue effect</b>: immigrants from other populations prevent or delay local extinction.</li><li>Mechanisms: mates (sea urchins), safety (island marmots), teamwork (African wild dogs), changing habitat (bark beetles).</li><li>Group 2's answer: <b>not a curiosity, but a fundamental driver</b> for small, declining and harvested populations, often before we can detect it.</li></ul>"
+    },
+    {
+     "id": "pe-t4-q2",
+     "type": "quiz",
+     "q": "A positive relationship between ONE measurable fitness component and density is a…",
+     "options": [
+      "Component Allee effect",
+      "Demographic Allee effect",
+      "Strong Allee effect",
+      "Rescue effect"
+     ],
+     "right": 0,
+     "why": "Glossary 3a; e.g. pup survival in African wild dogs."
+    },
+    {
+     "id": "pe-t4-q3",
+     "type": "quiz",
+     "q": "What defines a STRONG Allee effect?",
+     "options": [
+      "A threshold density below which growth is negative",
+      "Growth is slower at low density but always positive",
+      "It affects only one fitness component",
+      "It only happens on islands"
+     ],
+     "right": 0,
+     "why": "Below the threshold, extinction is likely."
+    }
+   ]
+  },
+  {
+   "id": "t5",
+   "title": "Lesson 5 · Top-down vs bottom-up",
+   "bites": [
+    {
+     "id": "pe-t5-r1",
+     "type": "read",
+     "title": "Does predation grip prey numbers?",
+     "html": "<p>Group 3's question: top-down control or bottom-up release? The test case is the snowshoe hare cycle in Kluane, Yukon. Classic: Krebs et al. (1995). Recent: Oli et al. (2026).</p>"
+    },
+    {
+     "id": "pe-t5-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Top-down control</b>: consumers (predators) regulate the lower trophic levels.</li><li><b>Bottom-up control</b>: resource supply (food, nutrients, plant productivity) sets the higher levels.</li><li><b>Predation</b> in the glossary is broad: anything that reduces prey's future survival or reproduction to zero (parasitoids, herbivory, seed predation too).</li></ul>"
+    },
+    {
+     "id": "pe-t5-q1",
+     "type": "quiz",
+     "q": "Top-down control means…",
+     "options": [
+      "Consumers mainly regulate the lower trophic levels",
+      "Resources mainly regulate the higher levels",
+      "Plants control predators",
+      "Climate controls everything"
+     ],
+     "right": 0,
+     "why": "Glossary 4b."
+    },
+    {
+     "id": "pe-t5-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Trophic cascade</b>: a change at one level ripples down, with alternating rises and falls in biomass.</li><li>Krebs 1995: food addition AND predator exclusion together gave the biggest effect (~11×), but the decline still came.</li><li>Oli 2026: 43 years of capture-mark-recapture; declines come from lower survival, mainly before weaning. Verdict: predation matters a lot, but food and demography matter too.</li></ul>"
+    },
+    {
+     "id": "pe-t5-q2",
+     "type": "quiz",
+     "q": "Bottom-up control means…",
+     "options": [
+      "Resource supply mainly determines the higher trophic levels",
+      "Predators control prey",
+      "Decomposers control plants",
+      "Parasites control hosts"
+     ],
+     "right": 0,
+     "why": "Glossary 4c: nutrients and primary production."
+    },
+    {
+     "id": "pe-t5-q3",
+     "type": "quiz",
+     "q": "A trophic cascade is…",
+     "options": [
+      "Effects passing down a food web, with alternating rises and falls in biomass",
+      "A waterfall habitat",
+      "Energy loss between levels",
+      "A single predator eating many prey"
+     ],
+     "right": 0,
+     "why": "E.g. more predators → fewer herbivores → more plants."
+    }
+   ]
+  },
+  {
+   "id": "t6",
+   "title": "Lesson 6 · Food webs",
+   "bites": [
+    {
+     "id": "pe-t6-r1",
+     "type": "read",
+     "title": "From keystone to rewiring",
+     "html": "<p>Group 4's question: does food-web complexity build local biodiversity? Their example ecosystem was Lake Nakuru in Kenya. Classic: Paine (1966), food web complexity and species diversity. Recent: Bartley et al. (2019), food web rewiring in a changing world.</p>"
+    },
+    {
+     "id": "pe-t6-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Keystone species</b>: a disproportionately large effect relative to its biomass; removing it can trigger cascades or regime shifts.</li><li><b>Interaction strength</b>: how strongly one species affects another's vital rates, abundance or behaviour.</li><li><b>Network structure</b>: degree (number of links; hubs), modularity (clusters), motifs (recurring small patterns).</li></ul>"
+    },
+    {
+     "id": "pe-t6-q1",
+     "type": "quiz",
+     "q": "A keystone species is one that…",
+     "options": [
+      "Has a disproportionately large effect relative to its biomass or abundance",
+      "Is the most abundant species",
+      "Is the largest predator by body size",
+      "Has the widest geographic range"
+     ],
+     "right": 0,
+     "why": "Glossary 5a: removing it can cause big shifts, cascades or regime shifts."
+    },
+    {
+     "id": "pe-t6-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Network rewiring</b>: who interacts with whom changes over time, from seasons and range shifts or from humans (land use, invasions, climate).</li><li>Complexity (many links, alternative prey, varied niches) supports <b>resilience</b>, but complex webs are <b>not automatically stable</b>.</li><li>Lake Nakuru: cyanobacteria (Spirulina/Arthrospira) → lesser flamingo and soda tilapia → pelicans, cormorants, fish eagle.</li></ul>"
+    },
+    {
+     "id": "pe-t6-q2",
+     "type": "quiz",
+     "q": "In a network, a species' degree is…",
+     "options": [
+      "The number of links it has",
+      "Its trophic level",
+      "Its body size",
+      "Its age"
+     ],
+     "right": 0,
+     "why": "High-degree species act as hubs."
+    },
+    {
+     "id": "pe-t6-q3",
+     "type": "quiz",
+     "q": "Network rewiring is…",
+     "options": [
+      "A change over time in who interacts with whom",
+      "Rebuilding a damaged habitat",
+      "Moving species to new places on purpose",
+      "Adding fences to keep predators out"
+     ],
+     "right": 0,
+     "why": "Links weaken, disappear or form; drivers can be natural or human."
+    }
+   ]
+  },
+  {
+   "id": "t7",
+   "title": "Lesson 7 · Latitudinal gradient",
+   "bites": [
+    {
+     "id": "pe-t7-r1",
+     "type": "read",
+     "title": "Latitudinal gradients in biodiversity: how and why?",
+     "html": "<p>Your group's topic. Why does biodiversity peak in the tropics and fall toward the poles, and does that hold for every dimension? Classic: Willig, Kaufman &amp; Stevens (2003). Recent: Brodie &amp; Mannion (2023), the hierarchy of factors predicting the LDG.</p>"
+    },
+    {
+     "id": "pe-t7-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Latitudinal diversity gradient (LDG)</b>: species richness rises from the poles to the equator, across most groups.</li><li>Three dimensions: <b>taxonomic</b> (counting species), <b>functional</b> (counting jobs), <b>phylogenetic</b> (measuring shared history).</li><li>Spatial scales: point, <b>alpha</b> (one community), <b>beta</b> (difference between communities), <b>gamma</b> (many communities).</li></ul>"
+    },
+    {
+     "id": "pe-t7-q1",
+     "type": "quiz",
+     "q": "What is the latitudinal diversity gradient?",
+     "options": [
+      "Species richness rises from the poles to the equator",
+      "Species richness rises toward the poles",
+      "Body size increases toward the poles",
+      "Diversity is equal at all latitudes"
+     ],
+     "right": 0,
+     "why": "A global, general pattern across most groups."
+    },
+    {
+     "id": "pe-t7-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li>Causes in order of priority: <b>climate &amp; energy</b> (main driver), habitat area, evolutionary history, biotic factors.</li><li>Diversification = speciation minus extinction. Tropical conservatism: most lineages evolved in, and stayed adapted to, tropical conditions.</li><li>Exceptions: parasites, aquatic plants (peak in temperate zones), secondary marine mammals and birds (higher toward poles).</li></ul>"
+    },
+    {
+     "id": "pe-t7-q2",
+     "type": "quiz",
+     "q": "According to Group 5 (after Brodie & Mannion), what is the main driver of the LDG?",
+     "options": [
+      "Climate and energy",
+      "Habitat area",
+      "Biotic interactions",
+      "Evolutionary history"
+     ],
+     "right": 0,
+     "why": "Order: climate & energy → habitat area → evolutionary history → biotic factors."
+    },
+    {
+     "id": "pe-t7-q3",
+     "type": "quiz",
+     "q": "Functional diversity is…",
+     "options": [
+      "The range of traits and ecological roles in a community",
+      "The number of species",
+      "The total branch length of a phylogeny",
+      "The evenness of abundances"
+     ],
+     "right": 0,
+     "why": "'Counting jobs': diet, body size, dispersal mode."
+    }
+   ]
+  },
+  {
+   "id": "t8",
+   "title": "Lesson 8 · Counting species",
+   "bites": [
+    {
+     "id": "pe-t8-r1",
+     "type": "read",
+     "title": "How many species are on Earth, and why is it hard to say?",
+     "html": "<p>Group 6's question. Classic: Mora et al. (2011), who estimated about 8.7 million species by extrapolating from higher taxa. Recent: Wiens (2023), progress and problems.</p>"
+    },
+    {
+     "id": "pe-t8-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Species concepts</b>: biological (interbreeding, reproductively isolated), morphological (distinct looks), phylogenetic (smallest diagnosable lineage). Different concepts give different counts.</li><li>The <b>biological species concept</b> (Mayr) fails for asexual organisms and prokaryotes, geographic isolation and hybridisation.</li><li><b>Mora et al. 2011</b>: extrapolated from higher taxa (regression) → about <b>8.75 million</b> species.</li></ul>"
+    },
+    {
+     "id": "pe-t8-q1",
+     "type": "quiz",
+     "q": "The biological species concept defines a species as…",
+     "options": [
+      "Interbreeding natural populations reproductively isolated from others",
+      "Organisms that look the same",
+      "The smallest diagnosable monophyletic lineage",
+      "Organisms in the same habitat"
+     ],
+     "right": 0,
+     "why": "Ernst Mayr's concept."
+    },
+    {
+     "id": "pe-t8-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Cryptic diversity</b>: lookalike species lumped under one name (e.g. African savanna vs forest elephant).</li><li>Wiens 2023 problems: limited DNA data, cryptic diversity, underestimated <b>prokaryotes</b>, and Mora's wrong <b>assumption of stagnation</b> (>700 new genera are described each year).</li><li><b>Extrapolation</b> = estimating total richness beyond what was sampled.</li></ul>"
+    },
+    {
+     "id": "pe-t8-q2",
+     "type": "quiz",
+     "q": "For which organisms does the biological species concept fail?",
+     "options": [
+      "Asexual organisms such as prokaryotes",
+      "Mammals",
+      "Birds",
+      "Large trees"
+     ],
+     "right": 0,
+     "why": "Also problems with geographic isolation and hybridisation."
+    },
+    {
+     "id": "pe-t8-q3",
+     "type": "quiz",
+     "q": "Roughly how many species did Mora et al. 2011 estimate?",
+     "options": [
+      "About 8.7 million",
+      "About 400,000",
+      "About 50 million",
+      "About 1 billion"
+     ],
+     "right": 0,
+     "why": "8.75 million, by extrapolating from higher taxa."
+    }
+   ]
+  },
+  {
+   "id": "t9",
+   "title": "Lesson 9 · Sixth extinction",
+   "bites": [
+    {
+     "id": "pe-t9-r1",
+     "type": "read",
+     "title": "Are we facing a sixth mass extinction?",
+     "html": "<p>Group 7's question. Classic: Ceballos et al. (2015), 'Entering the sixth mass extinction'. Recent: Wiens &amp; Saban (2025), 'Questioning the sixth mass extinction'.</p>"
+    },
+    {
+     "id": "pe-t9-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Big Five</b>: periods with ≥75 % species lost: End-Ordovician, Late Devonian, End-Permian, End-Triassic, End-Cretaceous.</li><li><b>Background extinction rate</b>: the natural pace from the fossil record, about <b>2 E/MSY</b> (extinctions per million species-years).</li><li><b>Ceballos 2015</b> defines mass extinction by <b>rate</b>: modern rates vastly exceed background, even with conservative data.</li></ul>"
+    },
+    {
+     "id": "pe-t9-q1",
+     "type": "quiz",
+     "q": "Which list gives the Big Five mass extinctions in order?",
+     "options": [
+      "End-Ordovician, Late Devonian, End-Permian, End-Triassic, End-Cretaceous",
+      "Late Devonian, End-Ordovician, End-Triassic, End-Permian, End-Cretaceous",
+      "End-Cambrian, End-Permian, End-Jurassic, End-Triassic, End-Cretaceous",
+      "End-Ordovician, End-Permian, Late Devonian, End-Cretaceous, End-Triassic"
+     ],
+     "right": 0,
+     "why": "Glossary 7c."
+    },
+    {
+     "id": "pe-t9-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Wiens &amp; Saban 2025</b> define it by <b>total loss</b> (75 %), and total loss so far is very low.</li><li><b>Extinction debt</b>: species already committed to extinction by past damage, with a time lag of years to centuries.</li><li>Group 7's verdict: the warning is real (rates are high, humans drive them), but by the 75 % definition we are not there yet. Conservation is the window.</li></ul>"
+    },
+    {
+     "id": "pe-t9-q2",
+     "type": "quiz",
+     "q": "What is the background extinction rate used by Ceballos et al.?",
+     "options": [
+      "About 2 extinctions per million species-years",
+      "About 2 extinctions per year",
+      "About 200 E/MSY",
+      "Zero"
+     ],
+     "right": 0,
+     "why": "0.1–1 E/MSY rounded up to a conservative 2 E/MSY: about 1 extinction per 10,000 species per 100 years."
+    },
+    {
+     "id": "pe-t9-q3",
+     "type": "quiz",
+     "q": "How does Ceballos et al. 2015 define a mass extinction?",
+     "options": [
+      "By how fast species disappear compared with background rates",
+      "By the total share of species lost",
+      "By the number of new species",
+      "By changes in body size"
+     ],
+     "right": 0,
+     "why": "Rate-based definition."
+    }
+   ]
+  },
+  {
+   "id": "t10",
+   "title": "Lesson 10 · Biodiversity drivers",
+   "bites": [
+    {
+     "id": "pe-t10-r1",
+     "type": "read",
+     "title": "What drives the current biodiversity crisis?",
+     "html": "<p>Group 8's question. Readings: Jaureguiberry et al. (2022), the direct drivers of recent global biodiversity loss, and Bar-On, Phillips &amp; Milo (2018), the biomass distribution on Earth.</p>"
+    },
+    {
+     "id": "pe-t10-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Biodiversity crisis</b>: global declines in species, populations and ecosystem integrity driven by humans.</li><li><b>Direct drivers</b>: measurable pressures that change ecosystems right away (habitat conversion, harvesting, pollution, introductions, greenhouse gases).</li><li><b>Indirect drivers</b>: social, economic, demographic, technological and institutional processes behind the direct ones.</li></ul>"
+    },
+    {
+     "id": "pe-t10-q1",
+     "type": "quiz",
+     "q": "The biodiversity crisis is…",
+     "options": [
+      "Global declines in species, populations and ecosystem integrity driven by humans",
+      "A shortage of new species descriptions",
+      "A natural cycle in biodiversity",
+      "The loss of museum collections"
+     ],
+     "right": 0,
+     "why": "Driven by habitat change, exploitation, climate, pollution and invasions."
+    },
+    {
+     "id": "pe-t10-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li>Jaureguiberry et al. screened <b>45,162 studies</b> down to <b>154</b> for their synthesis, and compared terrestrial, freshwater and marine realms and world regions.</li><li>Bar-On et al.: biomass measured in <b>gigatons of carbon</b>. Plants ≈ 450 Gt C dominate; animals only ≈ 2 Gt C.</li><li><b>Biomass reallocation</b>: livestock (0.1 Gt C) and humans (0.06) far outweigh wild mammals (0.007); wild mammal biomass fell by ~82.5 %.</li></ul>"
+    },
+    {
+     "id": "pe-t10-q2",
+     "type": "quiz",
+     "q": "Which is a DIRECT driver of biodiversity loss?",
+     "options": [
+      "Habitat conversion",
+      "Population growth",
+      "Economic policy",
+      "Technological change"
+     ],
+     "right": 0,
+     "why": "Direct = measurable physical, biological or chemical pressures."
+    },
+    {
+     "id": "pe-t10-q3",
+     "type": "quiz",
+     "q": "Which is an INDIRECT driver?",
+     "options": [
+      "Economic and demographic processes",
+      "Harvesting",
+      "Pollution",
+      "Species introductions"
+     ],
+     "right": 0,
+     "why": "Indirect drivers shape the direct pressures in space and time."
+    }
+   ]
+  },
+  {
+   "id": "t11",
+   "title": "Lesson 11 · Value of nature",
+   "bites": [
+    {
+     "id": "pe-t11-r1",
+     "type": "read",
+     "title": "From services to contributions: valuing nature",
+     "html": "<p>Group 9's topic. Classic: Costanza et al. (1997), the value of the world's ecosystem services and natural capital. Recent: Díaz et al. (2018), assessing nature's contributions to people.</p>"
+    },
+    {
+     "id": "pe-t11-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Ecosystem services</b>: regulating (climate, floods, water purification), material (crops, fish, timber, medicine), non-material (recreation, beauty, identity).</li><li><b>Intrinsic value</b>: nature is worth something in itself. <b>Instrumental</b>: useful for human needs. <b>Relational</b>: value from people's relationships with nature.</li><li>Costanza 1997 put nature's services at about <b>US$33 trillion a year</b>, about <b>1.8×</b> the global economy.</li></ul>"
+    },
+    {
+     "id": "pe-t11-q1",
+     "type": "quiz",
+     "q": "Flood protection and water purification are which kind of ecosystem service?",
+     "options": [
+      "Regulating",
+      "Material",
+      "Non-material",
+      "Cultural only"
+     ],
+     "right": 0,
+     "why": "Regulating: climate regulation, flood protection, water purification."
+    },
+    {
+     "id": "pe-t11-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li>Díaz 2018 (nature's contributions to people) describes <b>multiple ways of valuing</b> nature, not only money.</li><li>The two papers overlap: same ground (food, water, regulation), both want nature to count in decisions.</li><li><b>Nature-based solutions</b>: conserve, restore or manage ecosystems to solve societal problems while helping biodiversity and people.</li></ul>"
+    },
+    {
+     "id": "pe-t11-q2",
+     "type": "quiz",
+     "q": "'A flower has value simply because it is a living organism.' Which value is this?",
+     "options": [
+      "Intrinsic value",
+      "Instrumental value",
+      "Relational value",
+      "Market value"
+     ],
+     "right": 0,
+     "why": "Independent of any human use."
+    },
+    {
+     "id": "pe-t11-q3",
+     "type": "quiz",
+     "q": "'A flower is valuable as a nectar source for pollinating bees.' Which value?",
+     "options": [
+      "Instrumental value",
+      "Intrinsic value",
+      "Relational value",
+      "Option value"
+     ],
+     "right": 0,
+     "why": "Valued as a means to an end."
+    }
+   ]
+  },
+  {
+   "id": "t12",
+   "title": "Lesson 12 · Citizen science",
+   "bites": [
+    {
+     "id": "pe-t12-r1",
+     "type": "read",
+     "title": "From new dawn to new standard: citizen science in ecology",
+     "html": "<p>Group 10's topic. Classic: Silvertown (2009), 'A new dawn for citizen science'. Recent: Fraisl et al. (2022), citizen science in environmental and ecological sciences.</p>"
+    },
+    {
+     "id": "pe-t12-r2",
+     "type": "read",
+     "title": "Remember these",
+     "html": "<ul><li><b>Citizen science</b>: members of the public take part in real research, mostly by contributing observations.</li><li>Volunteer data are biased (easy places and times, a few heavy contributors), so <b>filter for quality</b> and <b>model the observation process</b> (effort, occupancy–detection).</li><li><b>eBird</b> collects bird checklists with effort data; <b>GBIF</b> aggregates occurrence records. Volunteers supply 50 %+ of GBIF data.</li></ul>"
+    },
+    {
+     "id": "pe-t12-q1",
+     "type": "quiz",
+     "q": "Citizen science is…",
+     "options": [
+      "Members of the public contributing to real research",
+      "Science done only by governments",
+      "Science reported in newspapers",
+      "Research about citizens' opinions"
+     ],
+     "right": 0,
+     "why": "Public participation in scientific research and knowledge production."
+    },
+    {
+     "id": "pe-t12-r3",
+     "type": "read",
+     "title": "And these",
+     "html": "<ul><li><b>Ten Principles of Citizen Science</b> (ECSA, 2015): good practice from genuine science outcomes to feedback, open data, credit and ethics.</li><li><b>Haklay's levels</b>: 1 crowdsourcing → 2 distributed intelligence → 3 participatory science → 4 extreme citizen science.</li><li>Silvertown: modern citizen science is open to all, not a privileged few. Fraisl: it is now a standard method, with quality control and ethics built in.</li></ul>"
+    },
+    {
+     "id": "pe-t12-q2",
+     "type": "quiz",
+     "q": "Why must citizen-science data be analysed carefully?",
+     "options": [
+      "They are biased toward easy places and times",
+      "They are always fake",
+      "They have no locations",
+      "They are too precise"
+     ],
+     "right": 0,
+     "why": "Filter for quality and model the observation process."
+    },
+    {
+     "id": "pe-t12-q3",
+     "type": "quiz",
+     "q": "Haklay's Level 1, where volunteers only collect data, is…",
+     "options": [
+      "Crowdsourcing",
+      "Extreme citizen science",
+      "Participatory science",
+      "Distributed intelligence"
+     ],
+     "right": 0,
+     "why": "Level 1 of 4."
+    }
+   ]
+  }
+ ],
+ "steps": "key ideas → quick checks, lesson by lesson"
+}
