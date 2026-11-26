@@ -375,11 +375,13 @@ document.addEventListener("keydown",function(e){var p=el("glpop");if(e.key==="Es
 window.addEventListener("scroll",function(){var p=el("glpop");if(p)p.hidden=true},{passive:true});
 function rail(){
   var st=tp(CUR.id);
-  el("rail").innerHTML=steps.map(function(s,n){return '<button aria-label="Step '+(n+1)+': '+esc(s.getAttribute("data-title"))+'" class="'+(n===st.step?"cur":(st.done[n]?"done":""))+'" data-n="'+n+'"></button>'}).join("");
+  el("rail").innerHTML=steps.map(function(s,n){return '<button aria-label="Step '+(n+1)+': '+esc(s.getAttribute("data-title"))+'" class="'+(n===st.step?"cur":(st.done[n]?"done":""))+'"'+(drillShut(n)?' style="opacity:.35"':'')+' data-n="'+n+'"></button>'}).join("");
 }
 function showStep(n){
   var st=tp(CUR.id);
-  n=Math.max(0,Math.min(steps.length-1,n));st.step=n;save();
+  n=Math.max(0,Math.min(steps.length-1,n));
+  if(drillShut(n)){n=drillLimit();toast("🔒 Finish the quick drill in step "+(n+1)+" first")}
+  st.step=n;save();
   steps.forEach(function(s,k){s.hidden=k!==n});
   stopSpeak();
   el("stepnum").textContent="Step "+(n+1)+" of "+steps.length+": "+steps[n].getAttribute("data-title");
@@ -392,8 +394,8 @@ function showStep(n){
 el("rail").onclick=function(ev){var b=ev.target.closest("button[data-n]");if(b)showStep(+b.getAttribute("data-n"))};
 el("prev").onclick=function(){showStep(tp(CUR.id).step-1)};
 function stepDone(n){var st=tp(CUR.id);if(!st.done[n]){st.done[n]=true;save();xp(20,"step "+(n+1)+" done");if(Object.keys(st.done).filter(function(k){return st.done[k]}).length===steps.length){confetti();setTimeout(function(){toast("Every step of this lecture done! 🏆",true)},300)}}}
-el("next").onclick=function(){var st=tp(CUR.id),n=st.step;stepDone(n);if(n===steps.length-1)go(CUR.id+"-cards");else showStep(n+1)};
-el("steps").addEventListener("click",function(e){if(e.target.closest("[data-gocards]")){stepDone(steps.length-1);go(CUR.id+"-cards")}});
+el("next").onclick=function(){var st=tp(CUR.id),n=st.step;if(drillBlocks(n)){drillNag(n);return}stepDone(n);if(n===steps.length-1)go(CUR.id+"-cards");else showStep(n+1)};
+el("steps").addEventListener("click",function(e){if(e.target.closest("[data-gocards]")){if(drillBlocks(steps.length-1)){drillNag(steps.length-1);return}stepDone(steps.length-1);go(CUR.id+"-cards")}});
 
 /* ---------- bite-size learning: each step is cut into short bits, revealed one at a time ---------- */
 var STOPW=" the and with from that this into only than they them their which what when where have been were for not but its also about more most less some each very like just other over under such your".split(" ");
@@ -425,43 +427,103 @@ document.addEventListener("click",function(e){
   if(b){var w=el(b.getAttribute("data-testme"));if(!w)return;var on=w.classList.toggle("hide");$$(".rev",w).forEach(function(x){x.classList.remove("rev")});b.textContent=on?"👀 Show all answers":"🙈 Test me: hide the answers";if(on)toast("Tap a blurred cell to check yourself");return}
   var c=e.target.closest(".step .hide .ans");if(c&&c.classList.contains("rev"))xp(1);
 });
-function stepDrill(art,n){
+/* quick drill gates. Progress lives in S.games (value 1) because cloud sync keeps those keys. */
+function drillKey(tid,n,stage){return "drill|"+tid+"|"+n+"|"+stage}
+function drillBlocks(n){var a=steps[n];return !!(a&&a._need)&&!tp(CUR.id).done[n]&&!S.games[a._need]}
+/* the furthest step you may open: the first one whose drill is unfinished. Finished steps always stay open. */
+function drillLimit(){for(var i=0;i<steps.length;i++)if(drillBlocks(i))return i;return steps.length-1}
+function drillShut(n){return n>drillLimit()&&!tp(CUR.id).done[n]}
+function drillNag(n){
+  var d=$(".sdwrap",steps[n]),seen=d&&d.offsetParent;
+  toast(seen?"Finish every round of the quick drill first":"Open the rest of this step and finish its quick drill first");
+  if(seen)d.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function stepWords(art){
   var txt=" "+(art.textContent||"").toLowerCase().replace(/\s+/g," ")+" ";
-  var seen={},terms=CUR.VOC.filter(function(v){var t=v[1].toLowerCase().replace(/\([^)]*\)/g,"").trim();if(t.length<4||seen[t])return false;var ok=txt.indexOf(t)>=0;if(ok)seen[t]=1;return ok});
+  var seen={};return CUR.VOC.filter(function(v){var t=v[1].toLowerCase().replace(/\([^)]*\)/g,"").trim();if(t.length<4||seen[t])return false;var ok=txt.indexOf(t)>=0;if(ok)seen[t]=1;return ok});
+}
+function stepDrill(art,n){
+  var terms=art._words=stepWords(art);
   if(terms.length<3)return null;
-  var d=document.createElement("div");d.className="sdwrap";var sid="sd"+CUR.id+"_"+n,topic=CUR;
-  d.innerHTML='<h3>🎯 Quick drill: words from this step</h3><p style="font-size:.92rem;margin:0 0 8px">'+terms.length+' words. Three ways to practise them, as often as you like.</p><div class="row sdtabs"><button class="ghost" data-sm="mc">1 · Choose</button><button class="ghost" data-sm="fc">2 · Flashcards</button><button class="ghost" data-sm="hc">3 · 🔥 Hardcore</button></div><div class="sdarea"></div>';
-  var area=$(".sdarea",d),F=null,H=null;
-  function tabs(m){$$("[data-sm]",$(".sdtabs",d)).forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-sm")===m?"true":"false")})}
-  function mc(){tabs("mc");area.innerHTML='<p style="font-size:.92rem">Read the meaning, tap the word. Streak: <b id="'+sid+'">0</b> (aim for 5 in a row).</p><div class="sdrill"></div><div class="row" style="justify-content:flex-end;margin-top:10px"><button class="btn sec" data-sm="fc">Next: flashcards →</button></div>';
-    var host=$(".sdrill",area),last=null;
-    GEO.drill(host,sid,function(){
-      var v;do{v=terms[Math.floor(Math.random()*terms.length)]}while(v===last&&terms.length>1);last=v;
-      var others=terms.filter(function(x){return x!==v&&x[2]!==v[2]&&!topic.VCON.some(function(g){return g.indexOf(x[1])>=0&&g.indexOf(v[1])>=0})});
-      if(others.length<3)others=others.concat(shuffle(topic.VOC.filter(function(x){return x!==v&&terms.indexOf(x)<0})).slice(0,3-others.length));
-      return {q:esc(v[2]),opts:shuffle([v[1]].concat(shuffle(others).slice(0,3).map(function(x){return x[1]}))),ans:v[1],fb:"<b>"+esc(v[1])+"</b>: "+esc(v[2])};
-    });}
+  var earlier=[];steps.slice(0,n).forEach(function(s){(s._words||[]).forEach(function(v){if(terms.indexOf(v)<0&&earlier.indexOf(v)<0)earlier.push(v)})});
+  var d=document.createElement("div");d.className="sdwrap";var topic=CUR,tid=CUR.id;
+  var ORDER=earlier.length?["mc","hc","all"]:["mc","hc"],WORDS={mc:terms,hc:terms,all:earlier.concat(terms)};
+  var NAME={mc:"Choose",hc:"🔥 Hardcore",all:"🔥 All words so far"};
+  art._need=drillKey(tid,n,ORDER[ORDER.length-1]);
+  function passed(m){return !!(tp(tid).done[n]||S.games[drillKey(tid,n,m)])}
+  function unlocked(m){var i=ORDER.indexOf(m);return i<1||passed(m)||passed(ORDER[i-1])}
+  function wordKey(m,v){return drillKey(tid,n,m)+"|"+v[1]}
+  function todo(m){return passed(m)?WORDS[m].slice():WORDS[m].filter(function(v){return !S.games[wordKey(m,v)]})}
+  function clear(m,v,left){
+    if(passed(m))return;
+    S.games[wordKey(m,v)]=1;
+    if(left)save();else finish(m);
+  }
+  function finish(m){
+    if(passed(m))return;
+    S.games[drillKey(tid,n,m)]=1;save();tabs(m);
+    if(m===ORDER[ORDER.length-1]&&d.isConnected){confetti();toast("Quick drill complete. Next step unlocked! 🔓",true)}
+    if(CUR===topic&&steps[n]===art&&$(".bitebar",art)&&curStepN()===n){drawBites(n);rail()}
+  }
+  d.innerHTML='<h3>🎯 Quick drill: words from this step</h3><p style="font-size:.92rem;margin:0 0 8px">'+terms.length+' words. Clear '+(ORDER.length===3?'all three rounds':'both rounds')+', every word right, to unlock the next step.'+(ORDER.length===3?' The last round has '+WORDS.all.length+' words: this step and the earlier ones.':'')+' Flashcards are extra practice.</p><div class="row sdtabs">'+ORDER.map(function(m){return '<button class="ghost" data-sm="'+m+'"></button>'}).join("")+'<button class="ghost" data-sm="fc">Flashcards</button></div><div class="sdarea"></div>';
+  var area=$(".sdarea",d),mode="mc",C=null,F=null,H=null;
+  function tabs(cur){
+    $$("[data-sm]",$(".sdtabs",d)).forEach(function(b){var m=b.getAttribute("data-sm");b.setAttribute("aria-pressed",m===cur?"true":"false");
+      if(m==="fc")return;var open=unlocked(m);b.disabled=!open;b.textContent=(passed(m)?"✓ ":open?"":"🔒 ")+(ORDER.indexOf(m)+1)+" · "+NAME[m]});
+  }
+  function nextStage(m){return ORDER[ORDER.indexOf(m)+1]}
+  function doneBox(m,extra){
+    /* a round can end up with nothing left (merged from two devices, or the lesson changed): count it as cleared */
+    finish(m);
+    var nx=nextStage(m);
+    area.innerHTML='<div class="fb good"><b>✓ '+NAME[m]+' cleared: all '+WORDS[m].length+' words.</b>'+(extra||'')+(nx?'':'<br>Quick drill complete.')+'</div><div class="row" style="margin-top:10px">'+(nx?'<button class="btn" data-sm="'+nx+'">Next: '+NAME[nx]+' →</button>':'')+'<button class="btn sec" data-sm="'+m+'">Practise again</button></div>';
+  }
+  function open(m){
+    if(m==="fc"){fc();return}
+    if(!unlocked(m))return;
+    mode=m;
+    if(m==="mc"){C={deck:shuffle(todo(m))};mcDraw()}
+    else{H={m:m,deck:shuffle(todo(m)),score:0,miss:[]};H.n=H.deck.length;hcDraw()}
+    tabs(m);
+  }
+  function mcDraw(){
+    if(!C.deck.length){doneBox("mc");return}
+    var v=C.deck[0];
+    var others=terms.filter(function(x){return x!==v&&x[2]!==v[2]&&!topic.VCON.some(function(g){return g.indexOf(x[1])>=0&&g.indexOf(v[1])>=0})});
+    if(others.length<3)others=others.concat(shuffle(topic.VOC.filter(function(x){return x!==v&&terms.indexOf(x)<0})).slice(0,3-others.length));
+    C.opts=shuffle([v].concat(shuffle(others).slice(0,3)));C.answered=false;
+    area.innerHTML='<p style="font-size:.88rem;color:var(--mute)">Read the meaning, tap the word. <b>'+C.deck.length+'</b> left.</p><p class="qtext">'+esc(v[2])+'</p><div class="opts">'+C.opts.map(function(o,k){return '<button class="opt" data-mck="'+k+'">'+esc(o[1])+'</button>'}).join("")+'</div><div class="fb" hidden></div>';
+  }
+  function mcPick(k){
+    if(C.answered)return;C.answered=true;
+    var v=C.deck.shift(),ok=C.opts[k][1]===v[1];
+    $$(".opt",area).forEach(function(x,i){x.disabled=true;if(C.opts[i][1]===v[1])x.classList.add("ok");else if(i===k)x.classList.add("no")});
+    if(ok){xp(5);clear("mc",v,C.deck.length)}else C.deck.splice(Math.min(C.deck.length,2+Math.floor(Math.random()*3)),0,v);
+    var fb=$(".fb",area);fx(fb,ok?"pop":"shake");fb.hidden=false;fb.className="fb "+(ok?"good":"bad");
+    fb.innerHTML=(ok?"<b>Yes.</b> ":"<b>No, it's "+esc(v[1])+".</b> It comes back soon. ")+"<b>"+esc(v[1])+"</b>: "+esc(v[2])+'<div style="margin-top:8px"><button class="btn" data-mcnext>Next →</button></div>';
+  }
   function fc(){tabs("fc");F={deck:shuffle(terms.slice()),flip:false,known:0,rev:F?F.rev:false};fcDraw()}
   function fcDraw(){
-    if(!F.deck.length){area.innerHTML='<div class="fb good"><b>All '+terms.length+' cards done! 🎉</b></div><div class="row" style="margin-top:10px"><button class="btn sec" data-fcagain>🔀 Shuffle and go again</button><button class="btn" data-sm="hc">🔥 Hardcore: type them →</button></div>';return}
+    if(!F.deck.length){area.innerHTML='<div class="fb good"><b>All '+terms.length+' cards done! 🎉</b></div><div class="row" style="margin-top:10px"><button class="btn sec" data-fcagain>🔀 Shuffle and go again</button><button class="btn" data-sm="'+mode+'">Back to '+NAME[mode]+' →</button></div>';return}
     var v=F.deck[0],front=F.rev?esc(v[2]):'<b style="font-size:1.15rem">'+esc(v[1])+'</b>',back=F.rev?'<b style="font-size:1.15rem">'+esc(v[1])+'</b>':esc(v[2]);
     area.innerHTML='<div class="row" style="justify-content:space-between;font-size:.88rem;color:var(--mute)"><span>'+F.deck.length+' card'+(F.deck.length>1?'s':'')+' left</span><label style="cursor:pointer"><input type="checkbox" data-fcrev'+(F.rev?' checked':'')+'> Meaning first</label></div>'+
       '<button class="sdcard" data-fcflip aria-label="Flip the card">'+(F.flip?'<span class="sdsmall">'+front+'</span><span>'+back+'</span>':'<span>'+front+'</span><span class="sdsmall">Tap to flip</span>')+'</button>'+
       (F.flip?'<div class="row" style="margin-top:8px"><button class="btn sec" data-fcno>↺ Again</button><button class="btn" data-fcyes>✓ I knew it</button></div>':'');
   }
-  function hc(){tabs("hc");H={deck:shuffle(terms.slice()),score:0,n:terms.length,miss:[]};hcDraw()}
   function hcDraw(){
-    if(!H.deck.length){xp(H.score*2+5,"hardcore");if(!H.miss.length)confetti();area.innerHTML='<div class="fb '+(H.miss.length?"bad":"good")+'"><b>🔥 Hardcore done: '+H.score+' / '+H.n+' right first time.</b>'+(H.miss.length?'<br>Practise: '+H.miss.map(function(v){return '<b>'+esc(v[1])+'</b>'}).join(", "):' Perfect recall! 🧠')+'</div><div class="row" style="margin-top:10px"><button class="btn" data-sm="hc">🔥 Again</button><button class="btn sec" data-sm="fc">Flashcards</button></div>';return}
+    if(!H.deck.length){if(H.n)xp(H.score*2+5,"hardcore");doneBox(H.m,H.n?'<br>'+H.score+' / '+H.n+' right first time.'+(H.miss.length?' Practise: '+H.miss.map(function(v){return '<b>'+esc(v[1])+'</b>'}).join(", "):''):'');return}
     var v=H.deck[0];
-    area.innerHTML='<p style="font-size:.88rem;color:var(--mute)">🔥 Hardcore · '+H.deck.length+' left · no options, no hints. Type the word.</p><p class="qtext">'+esc(v[2])+'</p><div class="typein"><input class="hcin" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the term…" aria-label="Your answer"><button class="btn" data-hcok>Check</button></div><div class="fb" hidden></div>';
+    area.innerHTML='<p style="font-size:.88rem;color:var(--mute)">'+NAME[H.m]+' · <b>'+H.deck.length+'</b> left · no options, no hints. Type the word.</p><p class="qtext">'+esc(v[2])+'</p><div class="typein"><input class="hcin" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the term…" aria-label="Your answer"><button class="btn" data-hcok>Check</button></div><div class="fb" hidden></div>';
     var inp=$(".hcin",area);inp.focus({preventScroll:true});
   }
   function hcCheck(){var inp=$(".hcin",area);if(!inp||inp.disabled||!inp.value.trim())return;var v=H.deck[0],r=mTypedOk(inp.value,v[1]),fb=$(".fb",area);inp.disabled=true;$("[data-hcok]",area).disabled=true;fb.hidden=false;
-    if(r){H.deck.shift();if(!v._m)H.score++;xp(3);fx(fb,"pop");fb.className="fb good";fb.innerHTML="<b>✓ "+(r===1?"Yes! Spelled: "+esc(v[1]):"Correct!")+"</b>"}
-    else{v._m=1;if(H.miss.indexOf(v)<0)H.miss.push(v);H.deck.push(H.deck.shift());fx($(".typein",area),"shake");fb.className="fb bad";fb.innerHTML="<b>✗ It's "+esc(v[1])+".</b> It comes back at the end."}
+    if(r){H.deck.shift();if(H.miss.indexOf(v)<0)H.score++;xp(3);fx(fb,"pop");fb.className="fb good";fb.innerHTML="<b>✓ "+(r===1?"Yes! Spelled: "+esc(v[1]):"Correct!")+"</b>";clear(H.m,v,H.deck.length)}
+    else{if(H.miss.indexOf(v)<0)H.miss.push(v);H.deck.push(H.deck.shift());fx($(".typein",area),"shake");fb.className="fb bad";fb.innerHTML="<b>✗ It's "+esc(v[1])+".</b> It comes back at the end."}
     fb.innerHTML+='<div style="margin-top:8px"><button class="btn" data-hcnext>Next →</button></div>';$("[data-hcnext]",area).focus({preventScroll:true})}
   d.addEventListener("click",function(e){
-    var sm=e.target.closest("[data-sm]");if(sm){var m=sm.getAttribute("data-sm");if(m==="mc")mc();if(m==="fc")fc();if(m==="hc"){terms.forEach(function(v){delete v._m});hc()}return}
+    var sm=e.target.closest("[data-sm]");if(sm){open(sm.getAttribute("data-sm"));return}
+    var mk=e.target.closest("[data-mck]");if(mk){mcPick(+mk.getAttribute("data-mck"));return}
+    if(e.target.closest("[data-mcnext]")){mcDraw();return}
     if(e.target.closest("[data-fcflip]")){F.flip=!F.flip;fcDraw();return}
     if(e.target.closest("[data-fcyes]")){F.deck.shift();F.flip=false;xp(1);fcDraw();return}
     if(e.target.closest("[data-fcno]")){var c=F.deck.shift();F.deck.splice(Math.min(F.deck.length,2+Math.floor(Math.random()*3)),0,c);F.flip=false;fcDraw();return}
@@ -471,7 +533,7 @@ function stepDrill(art,n){
   });
   d.addEventListener("change",function(e){if(e.target.hasAttribute("data-fcrev")){F.rev=e.target.checked;F.flip=false;fcDraw()}});
   d.addEventListener("keydown",function(e){if(e.key==="Enter"&&e.target.classList.contains("hcin")){e.preventDefault();hcCheck()}});
-  mc();
+  open(ORDER.filter(function(m){return !passed(m)})[0]||"mc");
   return d;
 }
 function makeBites(art){
@@ -521,7 +583,7 @@ function drawBites(n,scroll){
   if(full){bar.hidden=true}
   else{bar.hidden=false;
     if(r<N)bar.innerHTML='<span class="bn">Bit '+r+' of '+N+'</span>'+sp+(open.length?'<span class="wait">Answer the check above to unlock the next bit ↑</span>':'')+'<button class="btn" data-more'+(open.length?' disabled':'')+'>'+MORE[r%MORE.length]+'</button>';
-    else bar.innerHTML='<span class="bn">🎉 Step '+(n+1)+' finished</span>'+sp+(open.length?'<span class="wait">Answer the check above first ↑</span>':'')+'<button class="btn" data-stepnext'+(open.length?' disabled':'')+'>'+(isLastStep?"Go to the "+esc(CUR.cards.tab)+" →":"Next step →")+'</button>';
+    else bar.innerHTML='<span class="bn">🎉 Step '+(n+1)+' finished</span>'+sp+(open.length?'<span class="wait">Answer the check above first ↑</span>':drillBlocks(n)?'<span class="wait">Finish the quick drill above first ↑</span>':'')+'<button class="btn" data-stepnext'+(open.length||drillBlocks(n)?' disabled':'')+'>'+(isLastStep?"Go to the "+esc(CUR.cards.tab)+" →":"Next step →")+'</button>';
   }
   if(scroll&&last){var y=last.getBoundingClientRect().top+window.scrollY-110;window.scrollTo({top:y,behavior:"smooth"})}
 }
