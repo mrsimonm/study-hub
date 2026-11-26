@@ -25,22 +25,22 @@
       "q": "What is historical geology (palaeogeology)?",
       "answer": "Using the principles and methods of geology to reconstruct the geological history of Earth",
       "wrong": [
-        "The study of how minerals form crystals",
-        "The study of present-day earthquakes only",
-        "The history of the science of geology"
+        "The geological study of large-scale regions, combining several disciplines to piece together an area's history",
+        "The study of rock layers and their relationships in space and time",
+        "Determining the precise age of rocks and events using radiometric techniques"
       ],
-      "e": "Slide definition (Levin & King, The Earth Through Time)."
+      "e": "Slide 2 definition (Levin & King, The Earth Through Time): the history of the whole Earth. The wrong options are regional geology (one large region), stratigraphy and absolute dating."
     },
     {
       "id": "t8-regdef",
       "q": "What is regional geology?",
-      "answer": "The geological study of large-scale regions, combining several geological disciplines to piece together an area's history",
+      "answer": "The geological study of large-scale regions, combining several disciplines to piece together an area's history",
       "wrong": [
-        "The study of a single mineral sample",
-        "The study of the Earth's core",
-        "Mapping only the soils of a region"
+        "Using the principles and methods of geology to reconstruct the geological history of the whole Earth",
+        "The study of large-scale plate interactions, from regional to global scale",
+        "The study of deformational features in rocks, from outcrop to regional scale"
       ],
-      "e": "Regional geology works at the scale of a large region and uses many disciplines together."
+      "e": "Slide 3 definition: one large region and many disciplines. The wrong options are historical geology (the whole Earth), tectonics and structural geology (lecture 7)."
     },
     {
       "id": "t8-super",
@@ -85,8 +85,8 @@
       "answer": "The dike is younger than all three layers",
       "wrong": [
         "The dike is older than all three layers",
-        "The dike is the same age as the middle layer",
-        "Nothing; cross-cutting only works for faults"
+        "The dike is younger than the bottom layer but older than the top one",
+        "The dike is the same age as the middle layer"
       ],
       "e": "Folds, faults and igneous intrusions are younger than the rocks they cut or deform.",
       "fol": true
@@ -119,13 +119,13 @@
     {
       "id": "t8-absdef",
       "q": "What is absolute dating?",
-      "answer": "Finding the precise age (in years) using radiometric techniques",
+      "answer": "Determining the precise age using radiometric techniques",
       "wrong": [
-        "Putting rock layers in order without numbers",
-        "Dating rocks by their colour",
-        "Counting the number of fossils in a layer"
+        "Putting rock layers in order (older or younger) using superposition and cross-cutting",
+        "Dividing rocks into biozones by their fossil content",
+        "Matching the same layer across a valley by lateral continuity"
       ],
-      "e": "Relative dating gives an order; absolute dating gives a number."
+      "e": "Slide 11: absolute dating gives a number (e.g. 341 ± 3 Ma). Relative dating (superposition, cross-cutting, lateral continuity) only gives an order; biozones are biostratigraphy."
     },
     {
       "id": "t8-becq",
@@ -144,10 +144,10 @@
       "answer": "A helium nucleus",
       "wrong": [
         "An electron",
-        "Only electromagnetic radiation",
-        "A neutron that stays inside"
+        "Accompanying electromagnetic radiation",
+        "A proton"
       ],
-      "e": "Alpha = helium nucleus (2 protons + 2 neutrons). U-238 → Th-234.",
+      "e": "Alpha = helium nucleus (2 protons + 2 neutrons), U-238 → Th-234. An ejected electron is beta decay; electromagnetic radiation is gamma.",
       "fol": true
     },
     {
@@ -155,22 +155,22 @@
       "q": "In beta decay, what happens?",
       "answer": "A neutron breaks down into a proton and an electron, and the electron is ejected",
       "wrong": [
-        "A helium nucleus is ejected",
-        "Two atoms join together",
-        "The atom loses all its protons"
+        "A proton breaks down into a neutron and an electron, and the electron is ejected",
+        "A neutron breaks down into a proton and an electron, and the proton is ejected",
+        "A helium nucleus (2 protons and 2 neutrons) is ejected from the nucleus"
       ],
-      "e": "Beta decay: C-14 → N-14. The atomic number goes up by one."
+      "e": "Slide 12: the NEUTRON breaks down, the ELECTRON leaves, the new proton stays. C-14 → N-14, so the atomic number goes up by one. A helium nucleus is alpha decay."
     },
     {
       "id": "t8-gamma",
       "q": "What are gamma rays in radioactive decay?",
       "answer": "Accompanying electromagnetic radiation",
       "wrong": [
-        "Ejected helium nuclei",
-        "Ejected electrons",
-        "Stable daughter atoms"
+        "Ejected helium nuclei (2 protons + 2 neutrons)",
+        "Electrons ejected after a neutron breaks down",
+        "The stable daughter at the end of a decay chain"
       ],
-      "e": "Gamma rays come along with alpha or beta decay."
+      "e": "Gamma rays come along with alpha or beta decay. Helium nuclei = alpha, electrons = beta."
     },
     {
       "id": "t8-paper",
@@ -179,7 +179,7 @@
       "wrong": [
         "Beta",
         "Gamma",
-        "None of them"
+        "Beta and gamma"
       ],
       "e": "Alpha is stopped by paper, beta by aluminium; gamma is only weakened by thick concrete.",
       "x": true
@@ -189,11 +189,11 @@
       "q": "What is the parent isotope?",
       "answer": "The original radioactive element",
       "wrong": [
-        "The decay product",
-        "The stable end of a decay chain",
-        "The oldest rock layer"
+        "The radioactive decay product",
+        "The stable element at the end of a decay chain",
+        "The isotope with the longest half-life on the slide"
       ],
-      "e": "Parent = original; daughter = decay product.",
+      "e": "Parent = original radioactive element; daughter = decay product. The longest half-life on the slide is Rb-87, which is just one parent among many.",
       "fol": true
     },
     {
@@ -201,9 +201,9 @@
       "q": "What is a half-life?",
       "answer": "The time for half of the parent atoms to decay",
       "wrong": [
-        "Half of the age of the Earth",
-        "The time for all atoms to decay",
-        "The time for a daughter atom to form a crystal"
+        "The time for all of the parent atoms to decay",
+        "The time for half of the daughter atoms to decay",
+        "Half of the time a decay chain needs to reach a stable daughter"
       ],
       "e": "After one half-life 1/2 of the parent is left, after two 1/4, after three 1/8.",
       "fol": true
@@ -215,10 +215,10 @@
       "answer": "25 %",
       "wrong": [
         "50 %",
-        "0 %",
+        "75 %",
         "12.5 %"
       ],
-      "e": "100 % → 50 % → 25 %. Three half-lives would leave 12.5 %.",
+      "e": "100 % → 50 % → 25 %. 75 % is how much has DECAYED, not what is left. Three half-lives would leave 12.5 %.",
       "fol": true
     },
     {
@@ -226,9 +226,9 @@
       "q": "What is a decay chain?",
       "answer": "A series of radioactive parents and daughters that ends with a stable daughter",
       "wrong": [
-        "A row of fossils in one layer",
-        "A single alpha decay",
-        "A line of volcanoes along a plate boundary"
+        "A series of stable daughters that ends with a radioactive parent",
+        "A single decay step in which a parent turns straight into a stable daughter",
+        "A series of rock layers whose order is set by superposition"
       ],
       "e": "Example from the slide: U-238 → … → Pb-206 (stable)."
     },
@@ -259,11 +259,11 @@
       "q": "Why is carbon-14 used only for young events?",
       "answer": "Its half-life is short: 5,730 years",
       "wrong": [
-        "Its half-life is 4.5 billion years",
-        "It only exists in igneous rocks",
-        "It does not decay"
+        "Its half-life is long: 4.5 billion years",
+        "Its half-life is long: 1.25 billion years",
+        "Its half-life is long: 704 million years"
       ],
-      "e": "With a short half-life almost nothing is left after a few tens of thousands of years. U-Pb, K-Ar and Rb-Sr are for old events.",
+      "e": "C-14 half-life: 5,730 years, so almost nothing is left after a few tens of thousands of years. 4.5 billion = U-238, 1.25 billion = K-40, 704 million = U-235: those are for old events.",
       "fol": true
     },
     {
@@ -294,11 +294,11 @@
       "h": "A gap in the record.",
       "answer": "A hiatus: a period of non-deposition or active erosion between two rock sequences",
       "wrong": [
-        "A fault along which the layers moved sideways",
-        "An igneous dike cutting the layers",
-        "A layer of volcanic ash"
+        "A fault: a planar fracture along which displacement has occurred",
+        "An igneous dike that cut across both rock sequences after they formed",
+        "A bedding plane where deposition carried on without a break"
       ],
-      "e": "Below: vertical Silurian ocean rocks (~425 Ma). Above: tilted Devonian desert rocks (~345 Ma). The surface between them is the unconformity.",
+      "e": "Below: vertical Silurian ocean rocks (~425 Ma). Above: tilted Devonian desert rocks (~345 Ma). The surface between them is the unconformity: a gap in time, not a fault, dike or normal bedding plane.",
       "fol": true
     },
     {
@@ -306,11 +306,11 @@
       "q": "Why did Charles Darwin need deep geological time?",
       "answer": "To explain the evolution of species",
       "wrong": [
-        "To date rocks with radioactivity",
-        "To explain plate tectonics",
-        "To measure the age of the Moon"
+        "To date rocks using radioactive decay",
+        "To explain how continents merge into supercontinents",
+        "To explain the principle of superposition"
       ],
-      "e": "Evolution by natural selection needs a very long time."
+      "e": "Slide 18: Darwin needed deep time to explain the evolution of species. Radioactivity was only discovered in 1896 (Becquerel)."
     },
     {
       "id": "t8-units",
@@ -352,11 +352,11 @@
       "q": "What is stratigraphy?",
       "answer": "The study of rock layers and their relationships in space and time",
       "wrong": [
-        "The study of minerals under a microscope",
-        "The study of the atmosphere's layers",
-        "The study of earthquake waves"
+        "Determining the precise age of rocks using radiometric techniques",
+        "Using geological methods to reconstruct the history of the Earth",
+        "The geological study of large-scale regions using several disciplines"
       ],
-      "e": "Slide 20 definition."
+      "e": "Slide 20 definition. The wrong options are absolute dating, historical geology and regional geology."
     },
     {
       "id": "t8-litho",
@@ -374,11 +374,11 @@
       "q": "Biostratigraphy divides rocks by …",
       "answer": "Their fossil content (biozones)",
       "wrong": [
-        "Their rock type",
-        "Absolute radiometric ages",
-        "Their magnetic direction only"
+        "Their rock type (formations, members, groups)",
+        "Absolute radiometric ages (e.g. 341 ± 3 Ma)",
+        "Relative geological time (systems, series, stages)"
       ],
-      "e": "Biostratigraphy uses fossils; the unit is the biozone."
+      "e": "Slide 20 table: bio = fossils (biozone). Rock type = lithostratigraphy, radiometric ages = geochronology, relative time = chronostratigraphy."
     },
     {
       "id": "t8-age",
@@ -410,7 +410,7 @@
       "wrong": [
         "Billions of years ago",
         "Thousands of years ago",
-        "Metres above sea level"
+        "Millions of years after the Earth formed"
       ],
       "e": "Ga = billions, Ma = millions, ka = thousands of years ago."
     },
@@ -430,9 +430,9 @@
       "q": "According to the nebular theory, how did the Earth form?",
       "answer": "From a rotating cloud of gas and dust: the Sun formed in the centre, the planets in orbit",
       "wrong": [
-        "It broke off from the Sun after a collision with another star",
-        "It formed 540 million years ago from a supercontinent",
-        "It condensed from the Moon"
+        "From a rotating cloud of gas and dust: the planets formed in the centre, the Sun in orbit",
+        "From a rotating cloud of gas and dust about 540 Ma, at the start of the Phanerozoic",
+        "From material thrown off the Sun after a collision with another star, about 4.6 Ga"
       ],
       "e": "Nebular theory, ~4.6 Ga. HL Tauri is an example of a young star with a protoplanetary disk."
     },
@@ -453,11 +453,11 @@
       "q": "What happened during differentiation in the Hadean?",
       "answer": "The Earth separated into core, mantle and crust",
       "wrong": [
-        "The continents joined into Pangea",
-        "The first animals appeared",
-        "Oxygen filled the atmosphere"
+        "The continents merged into the first supercontinent, Kenorland",
+        "The first continental crust and stromatolites appeared",
+        "Oxygen rose after the first photosynthesis"
       ],
-      "e": "Heavy material sank to form the core; lighter material rose. Degassing made the first atmosphere."
+      "e": "Differentiation: heavy material sank to form the core, lighter material rose. Kenorland (~2.7 Ga), the first continental crust and stromatolites, and the first photosynthesis all came later, in the Archean."
     },
     {
       "id": "t8-archean",
@@ -476,9 +476,9 @@
       "q": "What are stromatolites?",
       "answer": "Layered structures built by microbial mats; the first microbial life",
       "wrong": [
-        "Fossil fish scales",
-        "Crystals of zircon",
-        "Volcanic bombs"
+        "The first eukaryotic cells, from the Proterozoic eon",
+        "Very rare zircon crystals preserved from the Hadean",
+        "The first multicellular life of the late Proterozoic"
       ],
       "e": "They formed in the Archean and still grow today in a few places (present-day stromatolites, slide 27)."
     },
@@ -511,9 +511,9 @@
       "q": "On the slide 28 map, what lies at the cores of today's continents?",
       "answer": "Archean cratons, surrounded by Proterozoic shields and younger Phanerozoic orogens",
       "wrong": [
-        "Phanerozoic orogens, surrounded by Archean cratons",
-        "Young volcanic islands",
-        "Only Quaternary sediments"
+        "Phanerozoic orogens, surrounded by Proterozoic shields and older Archean cratons",
+        "Proterozoic shields, surrounded by Archean cratons and younger Phanerozoic orogens",
+        "Archean orogens, surrounded by Proterozoic cratons and younger Phanerozoic shields"
       ],
       "e": "Continents grew outwards around very old Archean cores."
     },
@@ -522,11 +522,11 @@
       "q": "What is a craton?",
       "answer": "The old (Precambrian), stable core of a continent",
       "wrong": [
-        "A young mountain belt",
-        "A subsiding area where sediments collect",
-        "A volcanic crater"
+        "A mountain belt formed by tectonic convergence",
+        "A crustal block with a history different from the rocks around it",
+        "A subsiding area where sediments accumulate"
       ],
-      "e": "Shield = exposed craton; platform = craton covered by younger sediments.",
+      "e": "Craton = old, stable core. The wrong options are orogen, terrane and basin. Shield = exposed craton; platform = craton covered by younger sediments.",
       "fol": true
     },
     {
@@ -534,11 +534,11 @@
       "q": "What is a shield?",
       "answer": "The exposed part of a craton, with Precambrian basement at the surface",
       "wrong": [
-        "A craton covered by younger sediments",
-        "A mountain belt from convergence",
-        "A crustal block with a foreign history"
+        "A craton covered by younger, mostly sedimentary rocks",
+        "Older crystalline rocks underlying younger sedimentary cover",
+        "A mountain belt formed by tectonic convergence"
       ],
-      "e": "Shield = exposed. Platform = covered."
+      "e": "Shield = exposed craton. Platform = covered craton. Basement = the older crystalline rocks under the cover. Orogen = mountain belt."
     },
     {
       "id": "t8-platform",
@@ -556,11 +556,11 @@
       "q": "What is a terrane?",
       "answer": "A crustal block with a geological history different from the rocks around it",
       "wrong": [
-        "The old stable core of a continent",
-        "A subsiding sedimentary basin",
-        "A layer of sedimentary cover"
+        "The old (Precambrian), stable core of a continent",
+        "Older crystalline rocks underlying younger sedimentary cover",
+        "A subsiding area where sediments accumulate"
       ],
-      "e": "Terranes get attached to continents, often during collisions."
+      "e": "Terranes get attached to continents, often during collisions. The wrong options are craton, basement and basin."
     },
     {
       "id": "t8-orogen",
@@ -578,9 +578,9 @@
       "q": "What is the supercontinent cycle?",
       "answer": "The repetition of the Wilson cycle: all continents merge into one and then break up again",
       "wrong": [
-        "The yearly movement of plates",
-        "The cycle of rock types",
-        "The cycle of ice ages only"
+        "The repetition of the rock cycle: igneous, sedimentary and metamorphic rocks form again and again",
+        "The repetition of the eons: Hadean, Archean, Proterozoic and Phanerozoic conditions return",
+        "The break-up of Pangea about 300 Ma, which created today's dispersed continents"
       ],
       "e": "Supercontinents form and break up again and again over hundreds of millions of years.",
       "fol": true
@@ -613,9 +613,9 @@
       "q": "What does the slide say about the future?",
       "answer": "There will probably be another supercontinent",
       "wrong": [
-        "The continents will never meet again",
-        "Pangea will re-form exactly as before next century",
-        "Plate tectonics will stop within a million years"
+        "The continents will stay dispersed as they are today",
+        "Pangea was the last supercontinent",
+        "Rodinia will re-form from today's continents"
       ],
       "e": "Today the continents are dispersed; in the future they will probably merge again."
     }

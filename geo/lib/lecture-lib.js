@@ -137,6 +137,15 @@
         if (o.length !== 4) err(w + ": needs exactly 4 options (1 correct + 3 wrong), has " + o.length + ".");
         if (o.some(function (x) { return !str(x); })) err(w + ": an option is empty or not text.");
         if (new Set(o.map(function (x) { return String(x).trim().toLowerCase(); })).size !== o.length) err(w + ": two options are identical.");
+        /* Fairness: the right answer must not stand out by length, and wrong answers must not give themselves away. */
+        if (o.length > 1 && o.every(str)) {
+          var right = String(o[0]), longestWrong = Math.max.apply(null, o.slice(1).map(function (x) { return String(x).length; }));
+          if (right.length >= 1.5 * longestWrong && right.length - longestWrong >= 15)
+            warn(w + ": the right answer (" + right.length + " chars) is much longer than every wrong one (max " + longestWrong + "), so it can be spotted by length. Shorten it (move detail to \"e\") or make the wrong ones as long and specific.");
+          var GIVE = /\b(only|any|never|nowhere|always|nothing|none)\b/i;
+          if (!GIVE.test(right) && o.slice(1).some(function (x) { return GIVE.test(x); }))
+            warn(w + ': a wrong answer uses a giveaway word (only, any, never, nowhere, always, nothing, none) that the right answer does not. Use a believable near-miss from the slides instead.');
+        }
       }
       if (!str(q.e)) warn(w + ': no "e" (explanation shown after answering).');
       if (q.id !== undefined) {
