@@ -11,5 +11,7 @@ Unified study app combining **Bio Hub** (`ZEX108E`), **Eco Hub** (*Fundamentals 
 ```bash
 python3 -m http.server 8000      # open http://localhost:8000
 node tools/validate.js           # validate all three subjects
-node tools/sync-from-hubs.js     # re-sync bio/, eco/, geo/ from ~/Projects/*-hub
+node tools/hub.js sync           # re-sync bio/, eco/, geo/ from ~/Projects/*-hub (subjects.json)
 ```
+
+Shared hub files (picker, switcher, Study Cat, stats, sign-in) come from `~/Projects/hub-kit/shell`; change them there and run `node ~/Projects/hub-kit/tools/build.js all`.
