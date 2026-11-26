@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all). -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -19,7 +20,10 @@
     var q = new URLSearchParams(location.search);
     if (!q.get("pick")) {
       var last = localStorage.getItem("studyHub.last");
-      if (last === "bio" || last === "eco" || last === "geo") {
+      /* HUB:BEGIN */
+      var valid = ["bio", "eco", "geo"];
+      /* HUB:END */
+      if (valid.indexOf(last) !== -1) {
         location.replace("./" + last + "/");
       }
     }
@@ -161,9 +165,10 @@ body.catopen{overflow:hidden}
 
 <main>
   <h1>What do you want to study?</h1>
-  <p class="lede">Pick a subject below. Inside any subject, tap <b>Subjects ▾</b> in the top bar to switch anytime—next time you open Study Hub, it reopens right where you left off.</p>
+  <p class="lede">Pick a subject below. Inside any subject, tap <b>Subjects ▾</b> in the top bar to switch anytime—next time you open it, it reopens right where you left off.</p>
 
   <div class="tiles" id="hubgrid">
+    <!-- HUB:BEGIN -->
     <a class="tile" data-hub-card="bio" href="./bio/" style="--tc:var(--c1)">
       <span class="tn">ZEX108E · Fundamentals of Biology</span>
       <span class="tt"><span aria-hidden="true">🧬</span>Bio Hub</span>
@@ -174,7 +179,7 @@ body.catopen{overflow:hidden}
       <span class="tn">ČZU · Fundamentals of Ecology</span>
       <span class="tt"><span aria-hidden="true">🌿</span>Eco Hub</span>
       <span class="ts">Lectures, glossary and 10 symposium topics with tick-all-that-apply drills and the 19q / 10m exam format.</span>
-      <span class="st"><span class="meta">12 lessons · Tick-all &amp; exam path</span></span>
+      <span class="st"><span class="meta">12 lessons · Tick-all &amp; 19q / 10m exam</span></span>
     </a>
     <a class="tile" data-hub-card="geo" href="./geo/" style="--tc:var(--c4)">
       <span class="tn">ZOX101E · Geology</span>
@@ -182,6 +187,7 @@ body.catopen{overflow:hidden}
       <span class="ts">Step-by-step lessons, rock &amp; mineral drills, lecture slides panel, weekly mock tests and final exam practice.</span>
       <span class="st"><span class="meta">Weekly tests · Lecture slides panel</span></span>
     </a>
+    <!-- HUB:END -->
   </div>
 
   <div class="card catbanner">

@@ -1,9 +1,11 @@
+/* Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all). */
 /* Study Hub subject switcher + unified Google sign-in indicator:
-   adds "Subjects ▾" to the top bar of Bio Hub, Eco Hub and Geology Hub so you can switch subjects
+   adds "Subjects ▾" to the top bar of every subject so you can switch subjects
    or sign in with Google once for the whole app without leaving where you are. */
 (function () {
   "use strict";
 
+  /* HUB:BEGIN */
   var HUBS = [
     {
       id: "bio",
@@ -36,6 +38,7 @@
       hubDoc: ""
     }
   ];
+  /* HUB:END */
 
   window.STUDY_HUBS = HUBS;
 
@@ -119,8 +122,9 @@
 
   var scriptEl = document.currentScript || document.querySelector("script[data-hub]");
   var curId = (scriptEl && scriptEl.getAttribute("data-hub")) || "";
-  if (!curId) {
-    var m = /\/(bio|eco|geo)(?:\/|$)/.exec(location.pathname);
+  if (!curId && HUBS.length) {
+    var hubRe = new RegExp("\\/(" + HUBS.map(function (h) { return h.id; }).join("|") + ")(?:\\/|$)");
+    var m = hubRe.exec(location.pathname);
     if (m) curId = m[1];
   }
 
@@ -190,7 +194,7 @@
     var info = GEOSync.info();
     if (!info.configured) return "";
     if (!info.user) {
-      return '<div class="hubsw-sync"><div><b>☁️ Cloud sync</b><small>One login for all 3 subjects</small></div><button type="button" class="hubsw-sbtn" data-hub-auth="in">Sign in</button></div>';
+      return '<div class="hubsw-sync"><div><b>☁️ Cloud sync</b><small>One login for all subjects</small></div><button type="button" class="hubsw-sbtn" data-hub-auth="in">Sign in</button></div>';
     }
     var st = info.status === "synced" ? "Synced ✓" : (info.status === "saving" || info.status === "syncing") ? "Syncing…" : "Signed in";
     var who = esc(info.user.email || info.user.displayName || "Google account");

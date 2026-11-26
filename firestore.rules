@@ -1,3 +1,4 @@
+// Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all).
 rules_version = '2';
 
 // ===============================================================
@@ -14,7 +15,7 @@ rules_version = '2';
 //    Access: get, create, update, delete by owner only; list disabled.
 //
 // 2. Subcollection: users/{userId}/hubs
-//    - Subject progress docs: {hubId} in ['bio', 'eco', 'geo', 'stats', 'micro']
+//    - Subject progress docs: {hubId} matching ^[a-z]{2,12}$ (excluding 'cat' and 'analytics')
 //      Validated by `isValidUserDoc` on create & update.
 //    - Dedicated shared Study Cat doc: {hubId} == 'cat'
 //      Validated by `isValidCatDoc` on create & update (`cat` map + `updatedAt` timestamp).
@@ -105,7 +106,7 @@ service cloud.firestore {
 
     // Validate allowed subject hub document IDs under /users/{userId}/hubs/{hubId}
     function isValidHubId(hubId) {
-      return hubId in ['bio', 'eco', 'geo', 'stats', 'micro'];
+      return hubId.matches('^[a-z]{2,12}$') && !(hubId in ['cat', 'analytics']);
     }
 
     // ===============================================================

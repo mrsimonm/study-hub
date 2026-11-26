@@ -1,18 +1,23 @@
-/* Unified Study Cat for Study Hub: one pixel-art cat shared across the Landing Page, Bio Hub, Eco Hub and Geology Hub.
-   Studying ANY subject feeds this same cat: total XP = Bio XP + Eco XP + Geology XP.
+/* Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all). */
+/* Unified Study Cat for Study Hub: one pixel-art cat shared across the landing page and every subject.
+   Studying ANY subject feeds this same cat: total XP = the sum of every subject's XP (HUB_SOURCES, generated from subjects.json).
    Spending XP in the Shop never lowers your level: spendable XP = combined XP - XP spent.
-   Saved locally in "studyHub.cat" (migrating any existing geoHub.cat / ecoHub.cat / bioHub.cat on first run)
+   Saved locally in "studyHub.cat" (migrating any existing per-subject <id>Hub.cat on first run)
    and synced across devices in Firestore at users/{uid}/hubs/cat (seeding from users/{uid}.cat if needed). */
 (function () {
   "use strict";
   var G = window.GEO || null;
   var KEY = "studyHub.cat";
-  var LEGACY_KEYS = ["bioHub.cat", "ecoHub.cat", "geoHub.cat"];
+  /* HUB:BEGIN */
   var HUB_SOURCES = [
-    { id: "bio", key: "bioHub.v1" },
-    { id: "eco", key: "ecoHub.v1" },
-    { id: "geo", key: "geoHub.v1" }
+    { id: "bio", key: "bioHub.v1", short: "Bio", hubDoc: "bio" },
+    { id: "eco", key: "ecoHub.v1", short: "Eco", hubDoc: "eco" },
+    { id: "geo", key: "geoHub.v1", short: "Geo", hubDoc: "" }
   ];
+  /* HUB:END */
+  var LEGACY_KEYS = HUB_SOURCES.map(function (h) { return h.key.replace(/\.v\d+$/, ".cat"); });
+  var HUB_RE = HUB_SOURCES.length ? new RegExp("\\/(" + HUB_SOURCES.map(function (h) { return h.id; }).join("|") + ")(?:\\/|$)") : null;
+  var XP_ACROSS = (function (n) { return n.length > 1 ? n.slice(0, -1).join(", ") + " &amp; " + n[n.length - 1] : (n[0] || "all subjects"); })(HUB_SOURCES.map(function (h) { return esc(h.short); }));
   var GOAL = (G && G.GOAL) || 150;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -32,7 +37,7 @@
   function activeHubId() {
     var s = document.querySelector("script[data-hub]");
     if (s && s.getAttribute("data-hub")) return s.getAttribute("data-hub");
-    var m = /\/(bio|eco|geo)(?:\/|$)/.exec(location.pathname);
+    var m = HUB_RE && HUB_RE.exec(location.pathname);
     return m ? m[1] : "";
   }
 
@@ -303,14 +308,11 @@
           return;
         }
         /* First time using unified Study Cat in the cloud: check legacy users/{uid}.cat (e.g. Geo Hub) too. */
-        Promise.all([
-          uref.get().catch(function () { return null; }),
-          uref.collection("hubs").doc("bio").get().catch(function () { return null; }),
-          uref.collection("hubs").doc("eco").get().catch(function () { return null; })
-        ]).then(function (snaps) {
+        var seedRefs = HUB_SOURCES.filter(function (h) { return h.hubDoc; }).map(function (h) { return uref.collection("hubs").doc(h.hubDoc); });
+        seedRefs.push(uref); // users/{uid} last, so a legacy root-level cat (e.g. Geo Hub) wins
+        Promise.all(seedRefs.map(function (r) { return r.get().catch(function () { return null; }); })).then(function (snaps) {
           var seed = hasCatProgress(C) ? sanitize(C) : null;
-          // Merge bio, eco, then geo last so existing Geo Hub cat customizations take priority if customized
-          [snaps[1], snaps[2], snaps[0]].forEach(function (s) {
+          snaps.forEach(function (s) {
             var d = s && s.exists && s.data();
             if (d && isObj(d.cat)) seed = seed ? merge(d.cat, seed) : sanitize(d.cat);
           });
@@ -920,8 +922,8 @@
   function bar(p) { return '<div class="pxbar"><i style="width:' + Math.max(0, Math.min(100, Math.round(p * 100))) + '%"></i></div>'; }
   function rRoom() {
     var si = stageIdx(), x = xpNow(), prog;
-    if (si < STAGES.length - 1) { var nx = STAGES[si + 1], a = cumXP(STAGES[si].lv), b = cumXP(nx.lv); prog = bar((x - a) / (b - a)) + '<p class="cat-sub">' + Math.max(0, b - x) + ' XP until ' + esc(C.name) + ' grows into a <b>' + nx.name + '</b> (' + x + ' total XP across Bio, Eco &amp; Geology).</p>'; }
-    else prog = '<p class="cat-sub">Fully grown (' + x + ' total XP across Bio, Eco &amp; Geology). A true chonky legend. ✨</p>';
+    if (si < STAGES.length - 1) { var nx = STAGES[si + 1], a = cumXP(STAGES[si].lv), b = cumXP(nx.lv); prog = bar((x - a) / (b - a)) + '<p class="cat-sub">' + Math.max(0, b - x) + ' XP until ' + esc(C.name) + ' grows into a <b>' + nx.name + '</b> (' + x + ' total XP across ' + XP_ACROSS + ').</p>'; }
+    else prog = '<p class="cat-sub">Fully grown (' + x + ' total XP across ' + XP_ACROSS + '). A true chonky legend. ✨</p>';
     return '<div class="cat-scene" id="catscene" title="Pet ' + esc(C.name) + '">' + roomSVG() + '</div>'
       + '<div class="cat-namerow"><button class="cat-name" data-a="rename" aria-label="Rename your cat">' + esc(C.name) + ' <span aria-hidden="true">✎</span></button><span class="pxtag">' + STAGES[si].name + '</span></div>'
       + '<p class="cat-mood" id="catsay" aria-live="polite">' + moodLine() + '</p>' + prog
@@ -933,7 +935,7 @@
     return '<button class="btn' + (can ? '' : ' sec') + '" data-buy="' + id + '"' + (can ? '' : ' disabled') + '>' + (can ? "Buy · " + cost + " XP" : "Need " + (cost - bal()) + " more XP") + '</button>';
   }
   function rShop() {
-    var h = '<div class="card kbal"><b>⚡ ' + bal() + ' XP to spend</b><small>Earned across Bio, Eco &amp; Geology (' + xpNow() + ' total XP). Spending never lowers your level.</small></div><h3 class="cat-h3">For the room</h3><div class="shopgrid">';
+    var h = '<div class="card kbal"><b>⚡ ' + bal() + ' XP to spend</b><small>Earned across ' + XP_ACROSS + ' (' + xpNow() + ' total XP). Spending never lowers your level.</small></div><h3 class="cat-h3">For the room</h3><div class="shopgrid">';
     ITEMS.forEach(function (it) {
       if (it.kind !== "room") return;
       var own = !!C.items[it.id];

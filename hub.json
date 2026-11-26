@@ -1,0 +1,11 @@
+{
+  "id": "study-hub",
+  "name": "Study Hub",
+  "short": "Study Hub",
+  "prefix": "studyHub",
+  "description": "Bio Hub, Eco Hub and Geology Hub in one app: pick a subject, switch anytime, and grow one shared Study Cat.",
+  "tagline": "ČZU Prague · All subjects in one place",
+  "school": "ČZU",
+  "colors": { "background": "#10161A", "theme": "#10161A" },
+  "firebaseProject": "geo-hub-96426"
+}

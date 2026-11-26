@@ -1,4 +1,5 @@
-/* Shared Firebase Auth + Firestore sync for Study Hub (Bio Hub, Eco Hub and Geology Hub).
+/* Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all). */
+/* Shared Firebase Auth + Firestore sync for Study Hub (every subject in subjects.json).
    One Google sign-in works across the whole Study Hub. Geology Hub syncs to users/{uid} (compatible with
    standalone geo-hub); sub-hubs with FIREBASE_CONFIG.hubDoc sync to users/{uid}/hubs/{hubDoc}. */
 (function () {
@@ -192,7 +193,7 @@
       return;
     }
     if (!user) {
-      box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Sign in with Google once to sync all your Study Hub subjects (Bio, Eco and Geology), XP, Mastery stars, Study Cats and Review lists across your devices.</p><button class="btn" id="syncin">Sign in with Google</button>';
+      box.innerHTML = '<p style="font-size:.92rem;margin:0 0 8px">Sign in with Google once to sync all your subjects, XP, Mastery stars, Study Cats and Review lists across your devices.</p><button class="btn" id="syncin">Sign in with Google</button>';
       document.getElementById("syncin").onclick = signIn;
       return;
     }

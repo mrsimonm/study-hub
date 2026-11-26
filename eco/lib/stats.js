@@ -1,7 +1,8 @@
+/* Generated from hub-kit/shell, edit there (then run: node ~/Projects/hub-kit/tools/build.js all). */
 /* Study Hub Quantitative Statistics (lib/stats.js)
    Tracks active study time, question accuracy, response speed, mode breakdown, focus sprints, sessions,
    hourly/daily/weekly/monthly/semester/yearly usage bars, circadian profiles and per-lecture metrics
-   across Bio Hub, Eco Hub and Geology Hub. Plain JS + inline SVG, offline-ready, synced via Firestore. */
+   across every subject in subjects.json. Plain JS + inline SVG, offline-ready, synced via Firestore. */
 (function () {
   "use strict";
 
@@ -9,15 +10,13 @@
   var IDLE_MS = 90000;
   var SESS_GAP_MS = 900000; // 15 min idle starts a new session
 
+  /* HUB:BEGIN */
   var HUBS = [
     { id: "bio", name: "Bio Hub", short: "Bio", icon: "🧬", code: "ZEX108E", color: "var(--c1)", key: "bioHub.v1", examKey: "exam40" },
     { id: "eco", name: "Eco Hub", short: "Eco", icon: "🌿", code: "Ecology", color: "var(--ok)", key: "ecoHub.v1", examKey: "examfull" },
     { id: "geo", name: "Geology Hub", short: "Geo", icon: "🪨", code: "ZOX101E", color: "var(--c4)", key: "geoHub.v1", examKey: "exam40" }
   ];
-  var HUB_BY_ID = {};
-  HUBS.forEach(function (h) { HUB_BY_ID[h.id] = h; });
 
-  /* Complete lecture & question-bank denominators across all 3 hubs so stats work instantly from any page */
   var CATALOG = {
     bio: [
       { id: "t1", num: 1, short: "Cell nucleus", steps: 7, q: 12, voc: 20, mas: true },
@@ -58,6 +57,14 @@
       { id: "t8", num: 8, short: "Historical geology I", steps: 12, q: 52, voc: 43, mas: true }
     ]
   };
+  /* HUB:END */
+
+  var HUB_IDS = HUBS.map(function (h) { return h.id; });
+  function zeroVals() { var o = {}; HUB_IDS.forEach(function (h) { o[h] = 0; }); return o; }
+  function sumVals(v) { var t = 0; HUB_IDS.forEach(function (h) { t += +v[h] || 0; }); return t; }
+  function perHub(make) { var o = {}; HUB_IDS.forEach(function (h) { o[h] = make(); }); return o; }
+  var HUB_BY_ID = {};
+  HUBS.forEach(function (h) { HUB_BY_ID[h.id] = h; });
   var ECO_TICK_TOTAL = 24;
   var ECO_PATH_TOTAL = 72;
 
@@ -88,7 +95,9 @@
   function activeHubId() {
     var s = document.querySelector("script[data-hub]");
     if (s && s.getAttribute("data-hub")) return s.getAttribute("data-hub");
-    var m = /\/(bio|eco|geo)(?:\/|$)/.exec(location.pathname);
+    if (!HUB_IDS.length) return "";
+    var hubRe = new RegExp("\\/(" + HUB_IDS.join("|") + ")(?:\\/|$)");
+    var m = hubRe.exec(location.pathname);
     return m ? m[1] : "";
   }
 
@@ -99,9 +108,9 @@
       hrs: {},     // "YYYY-MM-DDTHH" -> { bio?: [sec, q, ok, xp, steps, ms], ... }
       modes: {},   // "<hub>:<mode>" -> [sec, q, ok, ms]
       topics: {},  // "<hub>:<tN>" -> [sec, q, ok, ms, revOk]
-      seen: { bio: {}, eco: {}, geo: {} },
-      sess: { all: freshSess(), bio: freshSess(), eco: freshSess(), geo: freshSess() },
-      sprints: { bio: [0, 0, 0], eco: [0, 0, 0], geo: [0, 0, 0] } // [started, completed, secDone]
+      seen: perHub(function () { return {}; }),
+      sess: (function () { var o = perHub(freshSess); o.all = freshSess(); return o; })(),
+      sprints: perHub(function () { return [0, 0, 0]; }) // [started, completed, secDone]
     };
   }
 
@@ -126,7 +135,7 @@
         var row = raw.hrs[hk];
         if (!isObj(row)) return;
         var clean = {}, has = false;
-        ["bio", "eco", "geo"].forEach(function (hid) {
+        HUB_IDS.forEach(function (hid) {
           if (Array.isArray(row[hid])) { clean[hid] = normArr(row[hid], 6); has = true; }
         });
         if (has) d.hrs[hk] = clean;
@@ -143,14 +152,14 @@
       });
     }
     if (isObj(raw.seen)) {
-      ["bio", "eco", "geo"].forEach(function (hid) {
+      HUB_IDS.forEach(function (hid) {
         if (isObj(raw.seen[hid])) {
           Object.keys(raw.seen[hid]).slice(0, 1000).forEach(function (qid) { d.seen[hid][qid] = 1; });
         }
       });
     }
     if (isObj(raw.sess)) {
-      ["all", "bio", "eco", "geo"].forEach(function (k) {
+      ["all"].concat(HUB_IDS).forEach(function (k) {
         var s = raw.sess[k];
         if (isObj(s)) {
           d.sess[k] = {
@@ -163,7 +172,7 @@
       });
     }
     if (isObj(raw.sprints)) {
-      ["bio", "eco", "geo"].forEach(function (hid) {
+      HUB_IDS.forEach(function (hid) {
         if (Array.isArray(raw.sprints[hid])) d.sprints[hid] = normArr(raw.sprints[hid], 3);
       });
     }
@@ -177,7 +186,7 @@
     if (hkeys.length > 4500) hkeys = hkeys.slice(hkeys.length - 4500);
     hkeys.forEach(function (hk) {
       var ra = a.hrs[hk] || {}, rb = b.hrs[hk] || {}, rc = {}, has = false;
-      ["bio", "eco", "geo"].forEach(function (hid) {
+      HUB_IDS.forEach(function (hid) {
         if (ra[hid] || rb[hid]) { rc[hid] = maxArr(ra[hid], rb[hid], 6); has = true; }
       });
       if (has) out.hrs[hk] = rc;
@@ -188,11 +197,11 @@
     Array.from(new Set(Object.keys(a.topics).concat(Object.keys(b.topics)))).slice(0, 180).forEach(function (tk) {
       out.topics[tk] = maxArr(a.topics[tk], b.topics[tk], 5);
     });
-    ["bio", "eco", "geo"].forEach(function (hid) {
+    HUB_IDS.forEach(function (hid) {
       out.seen[hid] = Object.assign({}, b.seen[hid] || {}, a.seen[hid] || {});
       out.sprints[hid] = maxArr(a.sprints[hid], b.sprints[hid], 3);
     });
-    ["all", "bio", "eco", "geo"].forEach(function (k) {
+    ["all"].concat(HUB_IDS).forEach(function (k) {
       var sa = a.sess[k] || freshSess(), sb = b.sess[k] || freshSess();
       out.sess[k] = {
         n: Math.max(sa.n, sb.n),
@@ -606,7 +615,7 @@
   }
 
   function scopeHubs(scope) {
-    return scope === "all" ? ["bio", "eco", "geo"] : [scope];
+    return scope === "all" ? HUB_IDS : [scope];
   }
 
   /* Compute comprehensive snapshot for selected scope ("all" | "bio" | "eco" | "geo") */
@@ -774,7 +783,7 @@
       out.qSeen += ph.qSeen;
     });
 
-    if (scope === "all" || scope === "eco") {
+    if (HUB_BY_ID.eco && (scope === "all" || scope === "eco")) { // Eco Hub only: tick-all and study path counters
       try {
         var tk = JSON.parse(localStorage.getItem("ecoHub.tick") || "null");
         if (tk && isObj(tk.best)) out.ecoTickDone = Object.keys(tk.best).filter(function (k) { return tk.best[k]; }).length;
@@ -872,7 +881,7 @@
       periodLabel = DOWS[(day.getDay() + 6) % 7] + " " + day.getDate() + " " + MONTHS[day.getMonth()] + " " + day.getFullYear();
       for (var hr = 0; hr < 24; hr++) {
         var hk = dk + "T" + pad2(hr);
-        var vals = { bio: 0, eco: 0, geo: 0 }, q = 0, ok = 0, sec = 0;
+        var vals = zeroVals(), q = 0, ok = 0, sec = 0;
         hids.forEach(function (hid) {
           var a = D.hrs[hk] && D.hrs[hk][hid];
           vals[hid] = metricValFromArr(a, metric);
@@ -882,7 +891,7 @@
           short: hr % 3 === 0 ? pad2(hr) : "",
           full: pad2(hr) + ":00–" + pad2(hr) + ":59 (" + periodLabel + ")",
           vals: vals,
-          total: vals.bio + vals.eco + vals.geo,
+          total: sumVals(vals),
           sec: sec, q: q, ok: ok
         });
       }
@@ -894,7 +903,7 @@
       for (var i = 0; i < 7; i++) {
         var cd = new Date(wStart.getFullYear(), wStart.getMonth(), wStart.getDate() + i);
         var cdk = dateKey(cd);
-        var wvals = { bio: 0, eco: 0, geo: 0 }, wq = 0, wok = 0, wsec = 0;
+        var wvals = zeroVals(), wq = 0, wok = 0, wsec = 0;
         hids.forEach(function (hid) {
           wvals[hid] = sumDayMetric(cdk, hid, metric);
           for (var h2 = 0; h2 < 24; h2++) {
@@ -906,7 +915,7 @@
           short: DOWS[i],
           full: DOWS[i] + " " + cd.getDate() + " " + MONTHS[cd.getMonth()] + " " + cd.getFullYear(),
           vals: wvals,
-          total: wvals.bio + wvals.eco + wvals.geo,
+          total: sumVals(wvals),
           sec: wsec, q: wq, ok: wok
         });
       }
@@ -917,7 +926,7 @@
       for (var dNum = 1; dNum <= daysInMonth; dNum++) {
         var md = new Date(mDate.getFullYear(), mDate.getMonth(), dNum);
         var mdk = dateKey(md);
-        var mvals = { bio: 0, eco: 0, geo: 0 }, mq = 0, mok = 0, msec = 0;
+        var mvals = zeroVals(), mq = 0, mok = 0, msec = 0;
         hids.forEach(function (hid) {
           mvals[hid] = sumDayMetric(mdk, hid, metric);
           for (var h3 = 0; h3 < 24; h3++) {
@@ -929,7 +938,7 @@
           short: (dNum === 1 || dNum % 5 === 0 || dNum === daysInMonth) ? String(dNum) : "",
           full: DOWS[(md.getDay() + 6) % 7] + " " + dNum + " " + MONTHS[mDate.getMonth()] + " " + mDate.getFullYear(),
           vals: mvals,
-          total: mvals.bio + mvals.eco + mvals.geo,
+          total: sumVals(mvals),
           sec: msec, q: mq, ok: mok
         });
       }
@@ -939,7 +948,7 @@
       for (var wk = 0; wk < sem.weeks; wk++) {
         var sw0 = new Date(sem.start.getFullYear(), sem.start.getMonth(), sem.start.getDate() + wk * 7);
         var sw1 = new Date(sw0.getFullYear(), sw0.getMonth(), sw0.getDate() + 6);
-        var svals = { bio: 0, eco: 0, geo: 0 }, sq = 0, sok = 0, ssec = 0;
+        var svals = zeroVals(), sq = 0, sok = 0, ssec = 0;
         for (var sd = 0; sd < 7; sd++) {
           var curD = new Date(sw0.getFullYear(), sw0.getMonth(), sw0.getDate() + sd);
           var sdk = dateKey(curD);
@@ -955,7 +964,7 @@
           short: (wk % 2 === 0 || wk === sem.weeks - 1) ? ("W" + (wk + 1)) : "",
           full: "Week " + (wk + 1) + " (" + sw0.getDate() + " " + MONTHS[sw0.getMonth()] + " – " + sw1.getDate() + " " + MONTHS[sw1.getMonth()] + ")",
           vals: svals,
-          total: svals.bio + svals.eco + svals.geo,
+          total: sumVals(svals),
           sec: ssec, q: sq, ok: sok
         });
       }
@@ -965,7 +974,7 @@
       periodLabel = String(yrNum);
       for (var mn = 0; mn < 12; mn++) {
         var prefix = yrNum + "-" + pad2(mn + 1) + "-";
-        var yvals = { bio: 0, eco: 0, geo: 0 }, yq = 0, yok = 0, ysec = 0;
+        var yvals = zeroVals(), yq = 0, yok = 0, ysec = 0;
         Object.keys(D.hrs).forEach(function (hk) {
           if (hk.indexOf(prefix) !== 0) return;
           hids.forEach(function (hid) {
@@ -980,7 +989,7 @@
           short: MONTHS[mn],
           full: MONTHS[mn] + " " + yrNum,
           vals: yvals,
-          total: yvals.bio + yvals.eco + yvals.geo,
+          total: sumVals(yvals),
           sec: ysec, q: yq, ok: yok
         });
       }
@@ -1078,7 +1087,7 @@
 
     var slotW = plotW / n;
     var barW = Math.max(4, Math.min(34, slotW * 0.68));
-    var order = scope === "all" ? ["bio", "eco", "geo"] : [scope];
+    var order = scope === "all" ? HUB_IDS : [scope];
 
     B.forEach(function (b, idx) {
       var x0 = padL + idx * slotW + (slotW - barW) / 2;
@@ -1224,11 +1233,11 @@
       renderBarChartSVG(series, UI.scope, UI.metric) +
       '<div class="st-inspect">' +
         '<span><b>' + esc(selB ? selB.full : "") + ':</b> ' + (selB ? fmtMetricVal(selB.total, UI.metric) : "0") +
-          (UI.scope === "all" && selB ? ' (🧬 ' + (UI.metric === "min" ? selB.vals.bio.toFixed(1) + "m" : Math.round(selB.vals.bio)) + ' · 🌿 ' + (UI.metric === "min" ? selB.vals.eco.toFixed(1) + "m" : Math.round(selB.vals.eco)) + ' · 🪨 ' + (UI.metric === "min" ? selB.vals.geo.toFixed(1) + "m" : Math.round(selB.vals.geo)) + ')' : '') +
+          (UI.scope === "all" && selB ? ' (' + HUBS.map(function (h) { var v = +selB.vals[h.id] || 0; return h.icon + ' ' + (UI.metric === "min" ? v.toFixed(1) + "m" : Math.round(v)); }).join(" · ") + ')' : '') +
         '</span>' +
         '<span style="color:var(--mute)">Period total: <b>' + fmtMetricVal(periodTot, UI.metric) + '</b> · Active slots: <b>' + nonZero + '/' + series.buckets.length + '</b></span>' +
       '</div>' +
-      (UI.scope === "all" ? '<div class="st-leg"><span><i class="st-sw" style="background:var(--c1)"></i>🧬 Bio Hub</span><span><i class="st-sw" style="background:var(--ok)"></i>🌿 Eco Hub</span><span><i class="st-sw" style="background:var(--c4)"></i>🪨 Geology Hub</span><span style="margin-left:auto">Tap any bar to inspect</span></div>' : '') +
+      (UI.scope === "all" ? '<div class="st-leg">' + HUBS.map(function (hb) { return '<span><i class="st-sw" style="background:' + hb.color + '"></i>' + hb.icon + ' ' + esc(hb.name) + '</span>'; }).join("") + '<span style="margin-left:auto">Tap any bar to inspect</span></div>' : '') +
     '</div>';
 
     /* 3. Subject Comparison Matrix (when viewing All Subjects) */
@@ -1300,7 +1309,7 @@
       '<div class="st-mline"><span>Session length buckets</span><span></span><span class="st-num">' + bLabels.map(function (lb, k) { return lb + ':' + (sess.b[k] || 0); }).join(' ') + '</span></div>' +
       '<div class="st-mline"><span>Focus sprints completed</span><span></span><span class="st-num">' + S.sprintDone + ' / ' + S.sprintStart + ' (' + fmtPct(S.sprintDone, S.sprintStart) + ') · ' + fmtMin(S.sprintSec) + '</span></div>' +
       (S.bestExamPct !== null ? '<div class="st-mline"><span>Best timed exam practice</span><span></span><span class="st-num"><b>' + S.bestExamPct + '%</b></span></div>' : '') +
-      ((UI.scope === "all" || UI.scope === "eco") ? '<div class="st-mline"><span>🌿 Eco Tick-all / Study path</span><span></span><span class="st-num">' + S.ecoTickDone + '/' + ECO_TICK_TOTAL + ' (' + fmtPct(S.ecoTickDone, ECO_TICK_TOTAL) + ') · ' + S.ecoPathDone + '/' + ECO_PATH_TOTAL + '</span></div>' : '') +
+      ((HUB_BY_ID.eco && (UI.scope === "all" || UI.scope === "eco")) ? '<div class="st-mline"><span>🌿 Eco Tick-all / Study path</span><span></span><span class="st-num">' + S.ecoTickDone + '/' + ECO_TICK_TOTAL + ' (' + fmtPct(S.ecoTickDone, ECO_TICK_TOTAL) + ') · ' + S.ecoPathDone + '/' + ECO_PATH_TOTAL + '</span></div>' : '') +
     '</div>';
     h += '</div>';
 
@@ -1397,10 +1406,11 @@
         '<div class="st-top"><div class="st-top-in">' +
           '<b>📊 Statistics</b>' +
           '<div class="st-scopes" role="group" aria-label="Subject filter">' +
-            '<button type="button" class="st-pill on" data-st-scope="all">All (3)</button>' +
-            '<button type="button" class="st-pill" data-st-scope="bio">🧬 Bio</button>' +
-            '<button type="button" class="st-pill" data-st-scope="eco">🌿 Eco</button>' +
-            '<button type="button" class="st-pill" data-st-scope="geo">🪨 Geology</button>' +
+            '<button type="button" class="st-pill on" data-st-scope="all">All (' + HUB_IDS.length + ')</button>' +
+            HUB_IDS.map(function (hid) {
+              var hb = HUB_BY_ID[hid];
+              return '<button type="button" class="st-pill" data-st-scope="' + esc(hid) + '">' + hb.icon + ' ' + esc(hb.short) + '</button>';
+            }).join("") +
           '</div>' +
           '<button type="button" class="st-x" id="stclose" aria-label="Close Statistics">✕</button>' +
         '</div></div>' +

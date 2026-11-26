@@ -1,0 +1,55 @@
+[
+  {
+    "id": "bio",
+    "name": "Bio Hub",
+    "short": "Bio",
+    "icon": "🧬",
+    "code": "ZEX108E",
+    "sub": "ČZU · ZEX108E Fundamentals of Biology",
+    "desc": "12 lectures in small bites, flashcards, games, Mastery stars and 24-question exam practice.",
+    "note": "12 lectures · 24-question exam",
+    "color": "var(--c1)",
+    "key": "bioHub.v1",
+    "src": "../bio-hub",
+    "course": "courses/bio"
+  },
+  {
+    "id": "eco",
+    "name": "Eco Hub",
+    "short": "Eco",
+    "icon": "🌿",
+    "code": "Ecology",
+    "sub": "ČZU · Fundamentals of Ecology",
+    "desc": "Lectures, glossary and 10 symposium topics with tick-all-that-apply drills and the 19q / 10m exam format.",
+    "note": "12 lessons · Tick-all & 19q / 10m exam",
+    "color": "var(--ok)",
+    "key": "ecoHub.v1",
+    "examKey": "examfull",
+    "src": "../eco-hub",
+    "course": "courses/eco"
+  },
+  {
+    "id": "geo",
+    "name": "Geology Hub",
+    "short": "Geo",
+    "icon": "🪨",
+    "code": "ZOX101E",
+    "sub": "ČZU · ZOX101E Geology",
+    "desc": "Step-by-step lessons, rock & mineral drills, lecture slides panel, weekly mock tests and final exam practice.",
+    "note": "Weekly tests · Lecture slides panel",
+    "color": "var(--c4)",
+    "key": "geoHub.v1",
+    "hubDoc": "",
+    "src": "../geo-hub",
+    "course": "courses/geology",
+    "catalogStatic": [
+      { "id": "t1", "num": 1, "short": "Intro & rules", "steps": 4, "q": 20, "voc": 21, "mas": true },
+      { "id": "t2", "num": 2, "short": "Minerals", "steps": 9, "q": 74, "voc": 97, "mas": true },
+      { "id": "t3", "num": 3, "short": "Igneous rocks", "steps": 9, "q": 70, "voc": 78, "mas": true },
+      { "id": "t4", "num": 4, "short": "Sedimentary rocks", "steps": 9, "q": 70, "voc": 80, "mas": true },
+      { "id": "t5", "num": 5, "short": "Metamorphic rocks", "steps": 9, "q": 58, "voc": 85, "mas": true },
+      { "id": "t6", "num": 6, "short": "Earth structure", "steps": 9, "q": 90, "voc": 107, "mas": true }
+    ],
+    "extraShell": ["topics/t1.js", "topics/t2.js", "topics/t3.js", "topics/t4.js", "topics/t5.js", "topics/t6.js"]
+  }
+]
