@@ -139,23 +139,48 @@
     grey: { n: "Grey tabby", b: "--k-gr", l: "--k-grl", d: "--k-grd", pat: "tabby", cost: 0 },
     black: { n: "Black cat", b: "--k-bk", l: "--k-bkl", d: "--k-bkd", pat: "none", cost: 0 },
     white: { n: "Snow white", b: "--k-wh", l: "--k-whl", d: "--k-whd", pat: "none", cost: 150 },
-    calico: { n: "Calico", b: "--k-wh", l: "--k-whl", d: "--k-whd", pat: "calico", cost: 250 }
+    tuxedo: { n: "Tuxedo", b: "--k-bk", l: "--k-whl", d: "--k-bkd", pat: "tuxedo", cost: 180 },
+    cream: { n: "Ginger cream", b: "#F7D9B4", l: "#FFF4E4", d: "#C99F72", pat: "tabby", cost: 200 },
+    siamese: { n: "Siamese", b: "#F3E5D0", l: "#FFF8EE", d: "#B89F82", pat: "siamese", cost: 220 },
+    calico: { n: "Calico", b: "--k-wh", l: "--k-whl", d: "--k-whd", pat: "calico", cost: 250 },
+    tortie: { n: "Tortoiseshell", b: "--k-bk", l: "--k-orl", d: "--k-bkd", pat: "tortie", cost: 280 },
+    galaxy: { n: "Starry galaxy", b: "#262B54", l: "#4B528C", d: "#141733", pat: "galaxy", cost: 500 }
   };
   var ITEMS = [
     { id: "yarn", kind: "room", n: "Yarn ball", cost: 40, vb: "17 71 20 14" },
+    { id: "bowls", kind: "room", n: "Food & water bowls", cost: 50, vb: "101 76 19 12" },
     { id: "dice", kind: "room", n: "Dice toy", cost: 60, vb: "81 73 12 12" },
+    { id: "mouse", kind: "room", n: "Toy mouse", cost: 70, vb: "2 78 16 10" },
     { id: "plant", kind: "room", n: "Big plant", cost: 80, vb: "0 55 18 24" },
     { id: "clock", kind: "room", n: "Wall clock", cost: 90, vb: "51 7 18 18" },
     { id: "rug", kind: "room", n: "Cosy rug", cost: 100, vb: "16 73 88 16" },
+    { id: "crystals", kind: "room", n: "Rock & crystal collection", cost: 110, vb: "10 36 28 10" },
     { id: "bed", kind: "room", n: "Cat bed", cost: 120, vb: "34 72 52 14" },
+    { id: "books", kind: "room", n: "Stack of textbooks", cost: 130, vb: "30 76 18 12" },
     { id: "lights", kind: "room", n: "Fairy lights", cost: 150, vb: "0 0 46 12" },
+    { id: "scratcher", kind: "room", n: "Scratching post", cost: 160, vb: "72 48 16 32" },
+    { id: "pothos", kind: "room", n: "Hanging pothos", cost: 170, vb: "108 2 12 29" },
     { id: "poster", kind: "room", n: "Chart poster", cost: 180, vb: "82 6 30 24" },
-    { id: "desk", kind: "room", n: "Study desk", cost: 250, vb: "13 44 36 37" },
     { id: "shelf", kind: "room", n: "Bookshelf", cost: 200, vb: "78 28 38 18" },
+    { id: "corkboard", kind: "room", n: "Study corkboard", cost: 220, vb: "52 26 26 19" },
+    { id: "terrarium", kind: "room", n: "Terrarium jar", cost: 240, vb: "1 47 14 15" },
+    { id: "desk", kind: "room", n: "Study desk", cost: 250, vb: "13 44 36 37" },
+    { id: "microscope", kind: "room", n: "Microscope", cost: 280, vb: "89 72 14 15" },
     { id: "tank", kind: "room", n: "Fish tank", cost: 300, vb: "85 45 36 37" },
+    { id: "lava", kind: "room", n: "Lava lamp", cost: 320, vb: "43 53 11 24" },
+    { id: "trophy", kind: "room", n: "Golden diploma", cost: 450, vb: "66 7 17 18" },
+    { id: "collar", kind: "wear", slot: "neck", n: "Bell collar", cost: 50 },
     { id: "bow", kind: "wear", slot: "neck", n: "Bow tie", cost: 60 },
+    { id: "bandana", kind: "wear", slot: "neck", n: "Bandana", cost: 80 },
     { id: "glasses", kind: "wear", slot: "face", n: "Nerd glasses", cost: 100 },
+    { id: "scarf", kind: "wear", slot: "neck", n: "Cozy scarf", cost: 120 },
+    { id: "shades", kind: "wear", slot: "face", n: "Cool sunglasses", cost: 120 },
+    { id: "beanie", kind: "wear", slot: "head", n: "Cozy beanie", cost: 130 },
+    { id: "monocle", kind: "wear", slot: "face", n: "Monocle", cost: 150 },
+    { id: "headphones", kind: "wear", slot: "head", n: "Headphones", cost: 180 },
     { id: "cap", kind: "wear", slot: "head", n: "Graduation cap", cost: 200 },
+    { id: "flower", kind: "wear", slot: "head", n: "Flower crown", cost: 220 },
+    { id: "wizard", kind: "wear", slot: "head", n: "Wizard hat", cost: 300 },
     { id: "crown", kind: "wear", slot: "head", n: "Crown", cost: 400 }
   ];
   var IT = {}; ITEMS.forEach(function (x) { IT[x.id] = x; });
@@ -334,10 +359,11 @@
   }
 
   /* ---------- pixel drawing helpers ---------- */
-  function v(x) { return "var(" + x + ")"; }
+  function v(x) { return x && x.charAt(0) === "-" ? "var(" + x + ")" : x; }
   var PAL = { o: "--k-eye", e: "--k-eye", a: "--k-frame", b: "--k-bed", B: "--k-bed2", c: "--k-cloud", d: "--k-wood2", w: "--k-wood", f: "--k-fish", g: "--k-gold", G: "--k-goldd",
     l: "--k-leaf", L: "--k-leaf2", p: "--k-pot", P: "--k-potd", r: "--k-rug", R: "--k-rug2", s: "--k-sun", t: "--k-water", y: "--k-yarn", k: "--k-pink", x: "#fff",
-    z: "--k-base", h: "--k-wall1", H: "--k-wall2", K: "--k-wall3", u: "--k-curtain", U: "--k-curtain2", i: "--k-hill", I: "--k-hill2", v: "--k-star", V: "--k-dust", S: "--k-screen", q: "--k-sky1", Q: "--k-sky2", F: "--k-floor", j: "--k-floor2", m: "--k-cap", M: "--k-capd", n: "--k-bow", N: "--k-bowd" };
+    z: "--k-base", h: "--k-wall1", H: "--k-wall2", K: "--k-wall3", u: "--k-curtain", U: "--k-curtain2", i: "--k-hill", I: "--k-hill2", v: "--k-star", V: "--k-dust", S: "--k-screen", q: "--k-sky1", Q: "--k-sky2", F: "--k-floor", j: "--k-floor2", m: "--k-cap", M: "--k-capd", n: "--k-bow", N: "--k-bowd",
+    C: "#C99762", D: "#7A4B2A", A: "#9B6FD9", E: "#C9A4FF", W: "#6642A3", T: "#34427A", Z: "#212B52", X: "#E04F5F", Y: "#B23242", O: "#FF9A4D", J: "#D9E5EC", "1": "#8796A4", "2": "#515D6B" };
   function fillOf(c) { var p = PAL[c] || c; return p.charAt(0) === "-" ? v(p) : p; }
   function rect(x, y, w, h, c) { return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" style="fill:' + fillOf(c) + '"/>'; }
   function sprite(rows, x0, y0) {
@@ -434,6 +460,28 @@
         if (inner(x, y, 2) && inEll(x, y, CX + p.bx * 0.45, bcy - p.by * 0.2, p.bx * 0.32, p.by * 0.38)) put(x, y, v("--k-bk"));
         if (inner(x, y, 1) && (x + y) % 4 === 0) put(x, y, v("--k-or"));
       }
+      if (co.pat === "tuxedo") {
+        if (inner(x, y, 2) && inEll(x, y, CX, bcy - p.by * 0.12, p.bx * 0.44, p.by * 0.62)) put(x, y, L);
+        if (inner(x, y, 3) && inEll(x, y, CX, hcy + p.hy * 0.45, p.hx * 0.52, p.hy * 0.36)) put(x, y, L);
+      }
+      if (co.pat === "siamese") {
+        if (inner(x, y, 3) && !inEll(x, y, CX, hcy, p.hx, p.hy) && !(inTri(x, y, iL[0], iL[1], iL[2]) || inTri(x, y, iR[0], iR[1], iR[2]))) put(x, y, "#4E3A2F");
+        if (inner(x, y, 3) && inEll(x, y, CX, hcy + 1.4, p.hx * 0.56, p.hy * 0.44)) put(x, y, "#5C4538");
+        if (inner(x, y, 1)) put(x, y, "#4E3A2F");
+      }
+      if (co.pat === "tortie") {
+        if (inner(x, y, 3) && inEll(x, y, CX + p.hx * 0.42, hcy - p.hy * 0.35, p.hx * 0.4, p.hy * 0.38)) put(x, y, v("--k-or"));
+        if (inner(x, y, 2) && inEll(x, y, CX - p.bx * 0.45, bcy - p.by * 0.15, p.bx * 0.38, p.by * 0.42)) put(x, y, v("--k-or"));
+        if (inner(x, y, 2) && inEll(x, y, CX + p.bx * 0.35, bcy + p.by * 0.18, p.bx * 0.3, p.by * 0.32)) put(x, y, v("--k-gold"));
+        if ((inner(x, y, 2) || inner(x, y, 3) || inner(x, y, 1)) && ((x * 7 + y * 13) % 11 === 0)) put(x, y, v("--k-or"));
+        if ((inner(x, y, 2) || inner(x, y, 3)) && ((x * 11 + y * 5) % 17 === 0)) put(x, y, v("--k-gold"));
+      }
+      if (co.pat === "galaxy") {
+        if (inner(x, y, 3) && inEll(x, y, CX - p.hx * 0.35, hcy - p.hy * 0.25, p.hx * 0.45, p.hy * 0.42)) put(x, y, "#4C3B88");
+        if (inner(x, y, 2) && inEll(x, y, CX + p.bx * 0.25, bcy - p.by * 0.1, p.bx * 0.48, p.by * 0.48)) put(x, y, "#345995");
+        if ((inner(x, y, 2) || inner(x, y, 3) || inner(x, y, 1)) && ((x * 13 + y * 29) % 23 === 0)) put(x, y, v("--k-gold"));
+        if ((inner(x, y, 2) || inner(x, y, 3)) && ((x * 19 + y * 11) % 31 === 0)) put(x, y, WH);
+      }
     }
     var hy = Math.round(hcy), top = Math.round(hcy - p.hy), ex = Math.max(3, Math.round(p.hx * 0.45));
     function mm(dx, dy, c) { put(CX + dx, hy + dy, c); put(CX - 1 - dx, hy + dy, c); }
@@ -445,9 +493,9 @@
       [bx, bx - 1].forEach(function (dx) { mt(dx, br - 2, D, 2); mt(dx, br + 1, D, 2); });
       Object.keys(tail).forEach(function (k, n) { var q = k.split(","); if (n % 5 === 2 && inner(+q[0], +q[1], 1)) put(+q[0], +q[1], D); });
     }
-    var pd = Math.round(p.bx * 0.45);
-    [pd - 1, pd, pd + 1].forEach(function (dx) { [GY - 3, GY - 2].forEach(function (r) { mt(dx, r, L, 2); }); });
-    mt(pd, GY - 2, D, 2);
+    var pd = Math.round(p.bx * 0.45), pawC = co.pat === "siamese" ? "#4E3A2F" : L, pawD = co.pat === "siamese" ? "#36261E" : D;
+    [pd - 1, pd, pd + 1].forEach(function (dx) { [GY - 3, GY - 2].forEach(function (r) { mt(dx, r, pawC, 2); }); });
+    mt(pd, GY - 2, pawD, 2);
     if (m === "purr") { mm(ex - 2, 1, E); mm(ex - 1, 0, E); mm(ex, 0, E); mm(ex + 1, 1, E); }
     else if (m === "sleepy") { mm(ex - 2, 0, E); mm(ex - 1, 1, E); mm(ex, 1, E); mm(ex + 1, 0, E); }
     else if (m === "grumpy") {
@@ -471,18 +519,87 @@
       mm(0, -1, E); mm(1, -1, E);
       put(CX + ex, hy - 1, WH); put(CX - ex, hy - 1, WH);
     }
+    if (wr.face === "shades") {
+      [-1, 0, 1].forEach(function (dy) { [ex - 2, ex - 1, ex, ex + 1].forEach(function (dx) { mm(dx, dy, E); }); });
+      [ex - 1, ex].forEach(function (dx) { mm(dx, 2, E); });
+      mm(0, -1, E); mm(1, -1, E); mm(ex + 2, -1, E);
+      put(CX + ex - 1, hy - 1, WH); put(CX - 1 - (ex - 1), hy - 1, WH);
+      put(CX + ex, hy, fillOf("J")); put(CX - 1 - ex, hy, fillOf("J"));
+    }
+    if (wr.face === "monocle") {
+      var mx = CX + ex;
+      [-2, 2].forEach(function (dy) { for (x = mx - 1; x <= mx + 1; x++) put(x, hy + dy, fillOf("g")); });
+      [-1, 0, 1].forEach(function (dy) { put(mx - 2, hy + dy, fillOf("g")); put(mx + 2, hy + dy, fillOf("g")); });
+      put(mx - 1, hy - 1, WH);
+      for (y = hy + 2; y <= Math.round(hcy + p.hy) + 1; y++) put(mx + 2 + (y % 2), y, fillOf(y % 2 ? "G" : "g"));
+    }
     var neck = Math.round(hcy + p.hy) - 1;
     if (wr.neck === "bow") {
       ["nn....nn", "nnnNNnnn", "nn....nn"].forEach(function (row, r) { for (var k = 0; k < 8; k++) if (row.charAt(k) !== ".") put(CX - 4 + k, neck - 1 + r, fillOf(row.charAt(k))); });
       put(CX - 4, neck - 2, fillOf("N")); put(CX + 3, neck - 2, fillOf("N"));
     }
+    if (wr.neck === "collar") {
+      for (x = CX - 5; x < CX + 5; x++) { put(x, neck - 1, fillOf(x === CX - 5 || x === CX + 4 ? "Y" : "X")); put(x, neck, fillOf("Y")); }
+      put(CX - 1, neck + 1, fillOf("g")); put(CX, neck + 1, fillOf("g"));
+      put(CX - 1, neck + 2, fillOf("G")); put(CX, neck + 2, fillOf("g"));
+    }
+    if (wr.neck === "bandana") {
+      ["UUUUUUUUUU", ".uuuuuuuu.", "..uuuxuu..", "...uuuu...", "....UU...."].forEach(function (row, r) {
+        for (var k = 0; k < row.length; k++) if (row.charAt(k) !== ".") put(CX - 5 + k, neck - 1 + r, fillOf(row.charAt(k)));
+      });
+    }
+    if (wr.neck === "scarf") {
+      for (x = CX - 6; x < CX + 6; x++) {
+        var stp = (x + 6) % 3 === 0;
+        put(x, neck - 1, fillOf(stp ? "a" : "X"));
+        put(x, neck, fillOf(stp ? "a" : "Y"));
+      }
+      ["XXY", "aaY", "XXY", "aaY", "X.X"].forEach(function (row, r) {
+        for (var k = 0; k < 3; k++) if (row.charAt(k) !== ".") put(CX + 2 + k, neck + 1 + r, fillOf(row.charAt(k)));
+      });
+    }
+    var hw = Math.round(p.hx);
     if (wr.head === "cap") {
-      var hw = Math.round(p.hx);
       for (x = CX - hw + 2; x < CX + hw - 2; x++) put(x, top - 2, fillOf("m"));
       for (x = CX - hw; x < CX + hw; x++) put(x, top - 1, fillOf(x === CX - hw || x === CX + hw - 1 ? "M" : "m"));
       for (x = CX - 4; x < CX + 4; x++) put(x, top, fillOf("M"));
       for (y = top - 1; y < top + 3; y++) put(CX + hw - 2, y, fillOf("g"));
       put(CX + hw - 3, top + 3, fillOf("g")); put(CX + hw - 2, top + 3, fillOf("g"));
+    }
+    if (wr.head === "beanie") {
+      var bw = Math.max(5, hw - 2);
+      for (x = CX - bw + 2; x < CX + bw - 2; x++) put(x, top - 4, fillOf("b"));
+      for (x = CX - bw + 1; x < CX + bw - 1; x++) put(x, top - 3, fillOf((x % 2) ? "B" : "b"));
+      for (x = CX - bw; x < CX + bw; x++) { put(x, top - 2, fillOf((x % 2) ? "b" : "B")); put(x, top - 1, fillOf((x % 2) ? "M" : "b")); put(x, top, fillOf("M")); }
+      ["aaa", "aJa"].forEach(function (row, r) { for (var k = 0; k < 3; k++) put(CX - 1 + k, top - 6 + r, fillOf(row.charAt(k))); });
+    }
+    if (wr.head === "headphones") {
+      for (x = CX - hw + 2; x < CX + hw - 2; x++) put(x, top - 3, fillOf("m"));
+      put(CX - hw + 1, top - 2, fillOf("M")); put(CX + hw - 2, top - 2, fillOf("M"));
+      for (y = top - 1; y <= hy + 1; y++) { put(CX - hw - 1, y, fillOf("M")); put(CX + hw, y, fillOf("M")); }
+      for (y = hy - 2; y <= hy + 2; y++) {
+        put(CX - hw - 2, y, fillOf("m")); put(CX - hw - 1, y, fillOf("y"));
+        put(CX + hw + 1, y, fillOf("m")); put(CX + hw, y, fillOf("y"));
+      }
+      put(CX - hw - 2, hy - 2, fillOf("M")); put(CX + hw + 1, hy - 2, fillOf("M"));
+      put(CX - hw - 2, hy + 2, fillOf("M")); put(CX + hw + 1, hy + 2, fillOf("M"));
+    }
+    if (wr.head === "flower") {
+      var fw = Math.max(5, hw - 2);
+      for (x = CX - fw; x < CX + fw; x++) { put(x, top, fillOf((x % 2) ? "l" : "L")); put(x, top + 1, fillOf((x % 2) ? "L" : "l")); }
+      [[-4, "y", "g"], [0, "g", "x"], [4, "t", "g"]].forEach(function (fl) {
+        var fx = CX + fl[0];
+        put(fx, top - 2, fillOf(fl[1])); put(fx - 1, top - 1, fillOf(fl[1])); put(fx + 1, top - 1, fillOf(fl[1]));
+        put(fx, top, fillOf(fl[1])); put(fx, top - 1, fillOf(fl[2]));
+      });
+    }
+    if (wr.head === "wizard") {
+      var ww = Math.max(7, hw);
+      for (x = CX - ww; x < CX + ww; x++) put(x, top, fillOf(x === CX - ww || x === CX + ww - 1 ? "Z" : "T"));
+      for (x = CX - 5; x < CX + 5; x++) put(x, top - 1, fillOf("g"));
+      ["....TT...", "...TTT...", "...TTT...", "..TTTZ...", "..TTgTT..", ".TTTTZT..", ".TTTTTT..", "TTTTTTTT."].forEach(function (row, r) {
+        for (var k = 0; k < row.length; k++) if (row.charAt(k) !== ".") put(CX - 4 + k, top - 9 + r, fillOf(row.charAt(k)));
+      });
     }
     if (wr.head === "crown") {
       ["g..gg..g", "g..gg..g", "gGgggGgg", "gggyyggg", "GGGGGGGG"].forEach(function (row, r) { for (var k = 0; k < 8; k++) if (row.charAt(k) !== ".") put(CX - 4 + k, top - 4 + r, fillOf(row.charAt(k))); });
@@ -577,12 +694,139 @@
     h += twinkle(40, 52, "x", 0) + twinkle(41, 50, "x", .6) + twinkle(40, 48, "x", 1.2);
     return h;
   }
+  function bowls() {
+    return sprite([
+      "..DDD...........t.",
+      ".DDDDD....ottttto.",
+      "opppppoo..obbbbbb.",
+      "oppppppo..obBbbbo.",
+      ".oPPPPo....obbbbo."
+    ], 103, 80) + rect(114, 81, 1, 1, "x");
+  }
+  function mouse() {
+    return sprite([
+      "....kk.....",
+      "...k111....",
+      "..111111k..",
+      ".k1o1111.k.",
+      "..22222...k"
+    ], 4, 80);
+  }
+  function crystals() {
+    return sprite([
+      "..A....................u..",
+      ".AEA..........ddd.....uLu.",
+      ".AEAW...w....dwwwd...uLLu.",
+      "AAEAWA.dwd..daaaaad..uLuu.",
+      "WAAWW.dpppd.dwwwwwd.uuLLu.",
+      "WWWWWWddddd.ddddddd.UUUUUU"
+    ], 12, 38) + twinkle(14, 38, "x", 0) + twinkle(35, 39, "x", 1.1);
+  }
+  function books() {
+    return sprite([
+      "..bbbbbbbbbbb.",
+      ".baaaaaaaaaab.",
+      "..BBBBBBBBBBB.",
+      ".llllllllllll.",
+      "laaaaaaaaaaal.",
+      ".LLLLLLLLLyLL.",
+      "ppppppppppyp..",
+      "paaaaaaaaap...",
+      "PPPPPPPPPPP..."
+    ], 32, 77);
+  }
+  function scratcher() {
+    return rect(74, 75, 12, 3, "r") + rect(74, 77, 12, 1, "R")
+      + rect(78, 55, 4, 20, "w")
+      + rect(78, 57, 4, 1, "d") + rect(78, 60, 4, 1, "d") + rect(78, 63, 4, 1, "d") + rect(78, 66, 4, 1, "d") + rect(78, 69, 4, 1, "d") + rect(78, 72, 4, 1, "d")
+      + rect(74, 52, 12, 3, "r") + rect(74, 54, 12, 1, "R")
+      + rect(84, 55, 1, 5, "d") + sprite([".y.", "yyy", ".y."], 83, 60);
+  }
+  function pothos() {
+    return rect(114, 3, 1, 6, "d")
+      + sprite([
+        ".PPPPPP.",
+        ".pppppp.",
+        "..pppp..",
+        "..pPPp.."
+      ], 111, 9)
+      + sprite([
+        ".lL..Ll.",
+        "lLl..lLl",
+        ".l.L..l.",
+        "lL.l.Ll.",
+        ".l.L..l.",
+        "..Ll..L.",
+        "..l..lL.",
+        ".lL...l.",
+        ".l......",
+        "L......."
+      ], 110, 12);
+  }
+  function corkboard() {
+    return rect(53, 27, 24, 17, "d") + rect(54, 28, 22, 15, "w") + rect(55, 29, 20, 13, "C")
+      + rect(57, 31, 6, 5, "g") + rect(59, 30, 2, 1, "X") + rect(58, 33, 4, 1, "d") + rect(58, 34, 3, 1, "d")
+      + rect(65, 31, 8, 5, "a") + rect(68, 30, 2, 1, "b") + rect(66, 33, 6, 1, "e") + rect(66, 34, 4, 1, "1")
+      + rect(57, 37, 5, 4, "y") + rect(59, 36, 1, 1, "x")
+      + rect(64, 37, 5, 4, "t") + rect(66, 36, 1, 1, "X")
+      + rect(70, 38, 4, 3, "l") + rect(71, 37, 1, 1, "g");
+  }
+  function terrarium() {
+    return rect(2, 59, 12, 2, "w") + rect(2, 61, 12, 1, "d") + rect(4, 62, 1, 1, "d") + rect(11, 62, 1, 1, "d")
+      + sprite([
+        "...dddd...",
+        "..oJJJJo..",
+        ".oJttttJo.",
+        ".oJttltJo.",
+        ".oJtlLltJo",
+        ".oJllLllJo",
+        ".oJLLLLLJo",
+        ".oJDDDDDJo",
+        "..oooooo.."
+      ], 3, 50)
+      + rect(5, 52, 1, 3, "x").replace("fill:#fff", "fill:#fff;opacity:.45")
+      + twinkle(7, 52, "g", 0) + twinkle(10, 54, "g", 1.1);
+  }
+  function microscope() {
+    return sprite([
+      "....22....",
+      "....11....",
+      "...2112...",
+      "...1112...",
+      "....11.2..",
+      "...211..2.",
+      "....tt..2.",
+      "..22222.2.",
+      "....J...2.",
+      "......222.",
+      ".22222222.",
+      "2111111112"
+    ], 91, 73);
+  }
+  function lava() {
+    return rect(46, 72, 5, 3, "2") + rect(47, 71, 3, 1, "1") + rect(47, 55, 3, 2, "2")
+      + rect(46, 57, 5, 14, "W") + rect(47, 57, 3, 14, "A")
+      + '<g class="k-tick"><g class="f1">'
+      + rect(47, 67, 3, 3, "X") + rect(48, 68, 1, 1, "O") + rect(47, 60, 2, 3, "O") + rect(48, 61, 1, 1, "g")
+      + '</g><g class="f2">'
+      + rect(47, 65, 3, 3, "X") + rect(48, 66, 1, 1, "O") + rect(48, 58, 2, 3, "O") + rect(48, 59, 1, 1, "g") + rect(47, 69, 2, 2, "X")
+      + '</g></g>'
+      + rect(46, 58, 1, 9, "x").replace("fill:#fff", "fill:#fff;opacity:.28");
+  }
+  function trophy() {
+    return rect(68, 9, 14, 14, "G") + rect(69, 10, 12, 12, "g") + rect(70, 11, 10, 10, "a")
+      + rect(72, 13, 6, 1, "d") + rect(72, 15, 6, 1, "1") + rect(73, 17, 4, 1, "1")
+      + rect(76, 18, 2, 2, "X") + rect(76, 20, 1, 2, "Y") + rect(77, 20, 1, 2, "X")
+      + twinkle(70, 10, "x", 0.3) + twinkle(80, 12, "x", 1.4);
+  }
   var ART = {
     lights: lights, poster: poster, shelf: shelf, plant: plant, tank: tank, yarn: yarn, dice: dice, clock: clock, desk: desk,
+    bowls: bowls, mouse: mouse, crystals: crystals, books: books, scratcher: scratcher, pothos: pothos, corkboard: corkboard, terrarium: terrarium, microscope: microscope, lava: lava, trophy: trophy,
     rug: function () { return pxEll(60, 81.5, 42, 6, "r", "R", true); },
     bed: function () { return pxEll(60, 79.5, 24, 4.6, "b", "d") + pxEll(60, 79, 19, 2.6, "B"); }
   };
-  var BACK = ["lights", "poster", "shelf", "clock", "desk", "plant", "tank", "rug", "bed"], FRONT = ["yarn", "dice"];
+  var BACK = ["lights", "pothos", "trophy", "poster", "corkboard", "shelf", "clock", "crystals", "terrarium", "desk", "lava", "plant", "scratcher", "tank", "rug", "bed"];
+  var FRONT = ["mouse", "yarn", "books", "dice", "microscope", "bowls"];
   function shown(id) { return !!C.items[id] && !C.off[id]; }
   function twinkle(x, y, c, d) { return '<g class="k-tw" style="animation-delay:' + d + 's">' + rect(x, y, 1, 1, c) + '</g>'; }
   function roomBase() {
