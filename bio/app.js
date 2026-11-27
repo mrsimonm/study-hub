@@ -438,9 +438,36 @@ function drillNag(n){
   toast(seen?"Finish every round of the quick drill first":"Open the rest of this step and finish its quick drill first");
   if(seen)d.scrollIntoView({behavior:"smooth",block:"start"});
 }
+/* each word belongs to ONE step, the one that teaches it: where it is first highlighted (the closing recap
+   step does not count), or, if never highlighted, where it is first written as a whole word */
+function stepText(art){
+  var c=art.cloneNode(true);
+  $$(".chk,.sdwrap,.bitebar,[data-gocards]",c).forEach(function(x){x.remove()});
+  $$("p,li,td,th,tr,h2,h3,h4,div,br,dt,dd,button,summary,figcaption,text",c).forEach(function(x){x.after(" ")});
+  function flat(s){return String(s).toLowerCase().replace(/\s+/g," ")}
+  return {all:flat(c.textContent),marked:$$("b,strong,dfn,h2,h3,h4,dt,tbody td:first-child",c).map(function(x){return flat(x.textContent)}).join(" | ")};
+}
+function wordRe(term){
+  var low=String(term).toLowerCase(),base=low.replace(/\([^)]*\)/g,"").trim();
+  if(base.length<4)return null;
+  var alts=[base],pl=low.match(/\(pl\.?\s*([^)]+)\)/);
+  if(pl)alts.push(pl[1].trim());
+  if(/[^aeiou]y$/.test(base))alts.push(base.slice(0,-1)+"ies");
+  return new RegExp("(^|[^\\p{L}\\p{N}])(?:"+alts.map(function(a){return a.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("|")+")(?:s|es)?(?![\\p{L}\\p{N}])","u");
+}
+function teachMap(){
+  var T=steps.map(stepText),map=steps.map(function(){return []}),seen={};
+  CUR.VOC.forEach(function(v){
+    var re=wordRe(v[1]),key=String(v[1]).toLowerCase();if(!re||seen[key])return;seen[key]=1;
+    var i=T.findIndex(function(t,n){return (n<T.length-1||T.length===1)&&re.test(t.marked)});
+    if(i<0)i=T.findIndex(function(t){return re.test(t.all)});
+    if(i>=0)map[i].push(v);
+  });
+  return map;
+}
 function stepWords(art){
-  var txt=" "+(art.textContent||"").toLowerCase().replace(/\s+/g," ")+" ";
-  var seen={};return CUR.VOC.filter(function(v){var t=v[1].toLowerCase().replace(/\([^)]*\)/g,"").trim();if(t.length<4||seen[t])return false;var ok=txt.indexOf(t)>=0;if(ok)seen[t]=1;return ok});
+  if(!steps._teach)steps._teach=teachMap();
+  return (steps._teach[steps.indexOf(art)]||[]).slice();
 }
 function stepDrill(art,n){
   var terms=art._words=stepWords(art);
@@ -490,7 +517,8 @@ function stepDrill(art,n){
     if(!C.deck.length){doneBox("mc");return}
     var v=C.deck[0];
     var others=terms.filter(function(x){return x!==v&&x[2]!==v[2]&&!topic.VCON.some(function(g){return g.indexOf(x[1])>=0&&g.indexOf(v[1])>=0})});
-    if(others.length<3)others=others.concat(shuffle(topic.VOC.filter(function(x){return x!==v&&terms.indexOf(x)<0})).slice(0,3-others.length));
+    /* extra wrong choices come only from words already taught in earlier steps, never from later ones */
+    if(others.length<3)others=others.concat(shuffle(earlier.filter(function(x){return x[2]!==v[2]&&!topic.VCON.some(function(g){return g.indexOf(x[1])>=0&&g.indexOf(v[1])>=0})})).slice(0,3-others.length));
     C.opts=shuffle([v].concat(shuffle(others).slice(0,3)));C.answered=false;
     area.innerHTML='<p style="font-size:.88rem;color:var(--mute)">Read the meaning, tap the word. <b>'+C.deck.length+'</b> left.</p><p class="qtext">'+esc(v[2])+'</p><div class="opts">'+C.opts.map(function(o,k){return '<button class="opt" data-mck="'+k+'">'+esc(o[1])+'</button>'}).join("")+'</div><div class="fb" hidden></div>';
   }
