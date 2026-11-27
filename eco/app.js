@@ -228,7 +228,7 @@ function mark(q,ok){
 }
 function optsHTML(q){
   var order=shuffle(q.o.map(function(t,k){return {t:t,ok:k===0}}));
-  return {order:order,html:order.map(function(x,k){return '<button class="opt" data-k="'+k+'">'+String.fromCharCode(65+k)+'. '+esc(x.t)+'</button>'}).join("")};
+  return {order:order,html:order.map(function(x,k){return '<button class="opt" data-k="'+k+'">'+esc(x.t)+'</button>'}).join("")};
 }
 function topicChip(q){var t=GEO.byId[q.t];return t?'<span class="chip tc">L'+t.num+' '+esc(t.short)+'</span>':''}
 function tags(q,mixed){return (mixed?topicChip(q):'')+(q.y?'<span class="chip">why</span>':'')+(q.x?'<span class="chip x">video extra</span>':'')}
@@ -692,7 +692,7 @@ function vQuizDraw(){
   var same=shuffle(others.filter(function(x){return x[0]===v[0]})),rest=shuffle(others.filter(function(x){return x[0]!==v[0]}));
   var opts=shuffle([v].concat(same.concat(rest).slice(0,3)));
   var ask=it.dir==="t"?'What does <b>'+esc(v[1])+'</b> mean?':'Which term means: <b>'+esc(v[2])+'</b>';
-  h.innerHTML='<div class="qhead"><span>Question '+(q.i+1)+' of '+q.items.length+'</span>'+(it.again?'<span class="chip">missed earlier</span>':'')+'</div><div class="bar"><i style="width:'+(q.i/q.items.length*100)+'%"></i></div><p class="qtext">'+ask+'</p><div class="opts">'+opts.map(function(o,k){return '<button class="opt" data-k="'+k+'">'+String.fromCharCode(65+k)+'. '+esc(it.dir==="t"?o[2]:o[1])+'</button>'}).join("")+'</div><div class="fb" hidden></div><div class="nr" hidden style="margin-top:10px"><button class="btn" id="vqnext">'+(q.i===q.items.length-1&&(q.retry||!q.missed.length)?"See result":"Next")+'</button></div>';
+  h.innerHTML='<div class="qhead"><span>Question '+(q.i+1)+' of '+q.items.length+'</span>'+(it.again?'<span class="chip">missed earlier</span>':'')+'</div><div class="bar"><i style="width:'+(q.i/q.items.length*100)+'%"></i></div><p class="qtext">'+ask+'</p><div class="opts">'+opts.map(function(o,k){return '<button class="opt" data-k="'+k+'">'+esc(it.dir==="t"?o[2]:o[1])+'</button>'}).join("")+'</div><div class="fb" hidden></div><div class="nr" hidden style="margin-top:10px"><button class="btn" id="vqnext">'+(q.i===q.items.length-1&&(q.retry||!q.missed.length)?"See result":"Next")+'</button></div>';
   h.onclick=function(e){var b=e.target.closest(".opt");if(!b||b.disabled)return;var k=+b.getAttribute("data-k"),ok=opts[k]===v;
     $$(".opt",h).forEach(function(x,n){x.disabled=true;if(opts[n]===v)x.classList.add("ok");else if(n===k)x.classList.add("no")});
     if(ok){q.score++;xp(5)}else if(!it.again)q.missed.push(it);fx(h,ok?"pop":"shake");
@@ -1056,7 +1056,7 @@ function mNext(){
   var head='<div class="qhead"><span>'+(MS.kind==="boss"?"👑 Boss round":MS.kind==="check"?"🔁 Memory check":MS.kind==="refresh"?"✨ Refresh":"⭐".repeat(MS.star)+" "+MSTAR[MS.star].n)+' · '+MS.done+' / '+MS.total+'</span>'+(MS.combo>=3?'<span class="combo">🔥 '+MS.combo+'</span>':'<span class="chip">'+esc(stepName(e.it))+'</span>')+'</div><div class="bar"><i style="width:'+Math.round(MS.done/Math.max(1,MS.total)*100)+'%"></i></div>'+(MS.star===4?'<div class="mtimer"><i></i></div>':'');
   var body=(T.lab?'<p class="mlab">'+T.lab+'</p>':'')+'<p class="qtext">'+T.q+'</p>';
   if(T.type==="tf")body+='<div class="tf"><button class="t" data-tf="1">✓ Right</button><button class="f" data-tf="0">✗ Wrong</button></div>';
-  if(T.type==="mc")body+=(T.hide?'<button class="btn sec" data-reveal style="width:100%;margin:6px 0">🧠 I have my answer in mind: show the options</button>':'')+'<div class="opts"'+(T.hide?' hidden':'')+'>'+T.opts.map(function(o,i){return '<button class="opt" data-o="'+i+'"><span class="k">'+"ABCD"[i]+'.</span> '+esc(o)+'</button>'}).join("")+'</div>';
+  if(T.type==="mc")body+=(T.hide?'<button class="btn sec" data-reveal style="width:100%;margin:6px 0">🧠 I have my answer in mind: show the options</button>':'')+'<div class="opts"'+(T.hide?' hidden':'')+'>'+T.opts.map(function(o,i){return '<button class="opt" data-o="'+i+'">'+esc(o)+'</button>'}).join("")+'</div>';
   if(T.type==="type")body+='<div class="typein"><input id="min" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type it…" aria-label="Your answer"><button class="btn" data-ok>Check</button></div>'+(T.hint?'<div class="row" style="margin-top:8px"><button class="ghost" data-mh>Hint: show a letter</button></div><p class="hint" id="mh"></p>':'');
   box.innerHTML=head+body+'<div class="fb" hidden></div>';
   MS.hint=0;var inp=el("min");if(inp)inp.focus();
@@ -1147,9 +1147,45 @@ function mType(){var inp=el("min");if(!inp||inp.disabled||!inp.value.trim())retu
   if(r)mAnswer(true,null,r===1);else if(MS.star===3&&!MS.tried){MS.tried=1;fx($(".typein",el("mbox")),"shake");el("mh")&&(el("mh").textContent="Not quite. One more try, or use a hint.")}else{MS.tried=0;mAnswer(false)}}
 document.addEventListener("keydown",function(e){if(el("v-mastery").hidden)return;
   if(e.key==="Enter"&&e.target.id==="min"){e.preventDefault();mType();return}
-  if(!MS||e.target.tagName==="INPUT")return;
-  if(/^[1-4]$/.test(e.key)){var b=$$('#mbox button.opt')[+e.key-1];if(b&&!b.disabled&&!$("#mbox .opts").hidden)b.click()}
 });
+
+/* ---------- keyboard answering: a number picks, Enter confirms and then goes on ---------- */
+(function(){
+  var css=document.createElement("style");
+  css.textContent=".opts,.tf{counter-reset:kn}.opts>button.opt::before,.tf>button::before{counter-increment:kn;content:counter(kn);display:inline-block;min-width:1.7em;margin-right:8px;border:1px solid currentColor;border-radius:5px;font-size:.78rem;font-weight:700;text-align:center;opacity:.6}.opts>button.kpick,.tf>button.kpick{outline:3px solid var(--acc);outline-offset:2px}";
+  document.head.appendChild(css);
+  var NEXT="[data-next],[data-mcnext],[data-hcnext],[data-whonext],[data-mnext],[data-act=next],[data-reveal],#vqnext,#tynext,#mbox button.btn[data-mgo],.sdarea button.btn[data-sm]:not(.sec)";
+  var pick=null,host=null;
+  function all(sel){return Array.prototype.slice.call(document.querySelectorAll(sel))}
+  function shown(x){return x.isConnected&&x.getClientRects().length>0&&getComputedStyle(x).visibility!=="hidden"}
+  function inView(x){var r=x.getBoundingClientRect();return r.bottom>0&&r.top<window.innerHeight}
+  function clear(){if(pick)pick.classList.remove("kpick");pick=null}
+  /* the question that gets the keys: the one used last, else the first open one on screen */
+  function group(){
+    var open=all(".opts,.tf").filter(function(g){return shown(g)&&g.querySelector(":scope>button:not([disabled])")});
+    return open.filter(function(g){return g.parentElement===host&&inView(g)})[0]||open.filter(inView)[0]||open.filter(function(g){return g.parentElement===host})[0]||open[0];
+  }
+  function nextBtn(){
+    var l=all(NEXT).filter(function(b){return !b.disabled&&shown(b)});
+    return l.filter(function(b){return host&&host.contains(b)})[0]||(host&&host.isConnected&&host.classList.contains("chk")?null:l.filter(inView)[0]);
+  }
+  document.addEventListener("click",function(e){var g=e.target.closest&&e.target.closest(".opts,.tf");if(g){host=g.parentElement;clear()}},true);
+  window.addEventListener("hashchange",function(){clear();host=null});
+  document.addEventListener("keydown",function(e){
+    if(e.ctrlKey||e.metaKey||e.altKey||e.repeat||e.defaultPrevented)return;
+    var t=e.target;if(t&&t.closest&&t.closest("input,textarea,select"))return;
+    if(/^[1-9]$/.test(e.key)){
+      var g=group();if(!g)return;var b=g.querySelectorAll(":scope>button")[+e.key-1];if(!b||b.disabled)return;
+      e.preventDefault();clear();pick=b;host=g.parentElement;b.classList.add("kpick");
+      if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();
+      b.scrollIntoView({block:"nearest"});return;
+    }
+    if(e.key!=="Enter")return;
+    if(pick){var p=pick;clear();if(!p.disabled&&shown(p)){e.preventDefault();p.click();return}}
+    if(t&&t.closest&&t.closest("button:not([disabled]),a,summary,.gl"))return;
+    var n=nextBtn();if(n){e.preventDefault();n.click()}
+  });
+})();
 
 /* ---------- focus sprint ---------- */
 var FS={end:0,t:null,brk:false};
