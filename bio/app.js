@@ -444,7 +444,7 @@ function stepWords(art){
 }
 function stepDrill(art,n){
   var terms=art._words=stepWords(art);
-  if(terms.length<3)return null;
+  if(!terms.length)return null;
   var earlier=[];steps.slice(0,n).forEach(function(s){(s._words||[]).forEach(function(v){if(terms.indexOf(v)<0&&earlier.indexOf(v)<0)earlier.push(v)})});
   var d=document.createElement("div");d.className="sdwrap";var topic=CUR,tid=CUR.id;
   var ORDER=earlier.length?["mc","hc","all"]:["mc","hc"],WORDS={mc:terms,hc:terms,all:earlier.concat(terms)};
@@ -465,7 +465,7 @@ function stepDrill(art,n){
     if(m===ORDER[ORDER.length-1]&&d.isConnected){confetti();toast("Quick drill complete. Next step unlocked! 🔓",true)}
     if(CUR===topic&&steps[n]===art&&$(".bitebar",art)&&curStepN()===n){drawBites(n);rail()}
   }
-  d.innerHTML='<h3>🎯 Quick drill: words from this step</h3><p style="font-size:.92rem;margin:0 0 8px">'+terms.length+' words. Clear '+(ORDER.length===3?'all three rounds':'both rounds')+', every word right, to unlock the next step.'+(ORDER.length===3?' The last round has '+WORDS.all.length+' words: this step and the earlier ones.':'')+' Flashcards are extra practice.</p><div class="row sdtabs">'+ORDER.map(function(m){return '<button class="ghost" data-sm="'+m+'"></button>'}).join("")+'<button class="ghost" data-sm="fc">Flashcards</button></div><div class="sdarea"></div>';
+  d.innerHTML='<h3>🎯 Quick drill: words from this step</h3><p style="font-size:.92rem;margin:0 0 8px">'+terms.length+(terms.length>1?' words':' word')+'. Clear '+(ORDER.length===3?'all three rounds':'both rounds')+', every word right, to unlock the next step.'+(ORDER.length===3?' The last round has '+WORDS.all.length+' words: this step and the earlier ones.':'')+' Flashcards are extra practice.</p><div class="row sdtabs">'+ORDER.map(function(m){return '<button class="ghost" data-sm="'+m+'"></button>'}).join("")+'<button class="ghost" data-sm="fc">Flashcards</button></div><div class="sdarea"></div>';
   var area=$(".sdarea",d),mode="mc",C=null,F=null,H=null;
   function tabs(cur){
     $$("[data-sm]",$(".sdtabs",d)).forEach(function(b){var m=b.getAttribute("data-sm");b.setAttribute("aria-pressed",m===cur?"true":"false");
@@ -476,7 +476,7 @@ function stepDrill(art,n){
     /* a round can end up with nothing left (merged from two devices, or the lesson changed): count it as cleared */
     finish(m);
     var nx=nextStage(m);
-    area.innerHTML='<div class="fb good"><b>✓ '+NAME[m]+' cleared: all '+WORDS[m].length+' words.</b>'+(extra||'')+(nx?'':'<br>Quick drill complete.')+'</div><div class="row" style="margin-top:10px">'+(nx?'<button class="btn" data-sm="'+nx+'">Next: '+NAME[nx]+' →</button>':'')+'<button class="btn sec" data-sm="'+m+'">Practise again</button></div>';
+    area.innerHTML='<div class="fb good"><b>✓ '+NAME[m]+' cleared: '+(WORDS[m].length>1?'all '+WORDS[m].length+' words':'the word')+'.</b>'+(extra||'')+(nx?'':'<br>Quick drill complete.')+'</div><div class="row" style="margin-top:10px">'+(nx?'<button class="btn" data-sm="'+nx+'">Next: '+NAME[nx]+' →</button>':'')+'<button class="btn sec" data-sm="'+m+'">Practise again</button></div>';
   }
   function open(m){
     if(m==="fc"){fc();return}
@@ -504,7 +504,7 @@ function stepDrill(art,n){
   }
   function fc(){tabs("fc");F={deck:shuffle(terms.slice()),flip:false,known:0,rev:F?F.rev:false};fcDraw()}
   function fcDraw(){
-    if(!F.deck.length){area.innerHTML='<div class="fb good"><b>All '+terms.length+' cards done! 🎉</b></div><div class="row" style="margin-top:10px"><button class="btn sec" data-fcagain>🔀 Shuffle and go again</button><button class="btn" data-sm="'+mode+'">Back to '+NAME[mode]+' →</button></div>';return}
+    if(!F.deck.length){area.innerHTML='<div class="fb good"><b>'+(terms.length>1?'All '+terms.length+' cards':'Card')+' done! 🎉</b></div><div class="row" style="margin-top:10px"><button class="btn sec" data-fcagain>🔀 Shuffle and go again</button><button class="btn" data-sm="'+mode+'">Back to '+NAME[mode]+' →</button></div>';return}
     var v=F.deck[0],front=F.rev?esc(v[2]):'<b style="font-size:1.15rem">'+esc(v[1])+'</b>',back=F.rev?'<b style="font-size:1.15rem">'+esc(v[1])+'</b>':esc(v[2]);
     area.innerHTML='<div class="row" style="justify-content:space-between;font-size:.88rem;color:var(--mute)"><span>'+F.deck.length+' card'+(F.deck.length>1?'s':'')+' left</span><label style="cursor:pointer"><input type="checkbox" data-fcrev'+(F.rev?' checked':'')+'> Meaning first</label></div>'+
       '<button class="sdcard" data-fcflip aria-label="Flip the card">'+(F.flip?'<span class="sdsmall">'+front+'</span><span>'+back+'</span>':'<span>'+front+'</span><span class="sdsmall">Tap to flip</span>')+'</button>'+
