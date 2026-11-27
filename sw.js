@@ -2,7 +2,7 @@
 // Study Hub offline support: caches the hub shell and every subject listed in subjects.json.
 // Bump V when you change root shell files or switcher.js. Content files (json, md, js, html)
 // are fetched fresh when online and served from cache when offline.
-const V = "study-hub-42ebd2dc";
+const V = "study-hub-848eda04";
 const SHELL = [
   "./", "./index.html", "./switcher.js", "./manifest.webmanifest",
   "./lib/firebase-config.js", "./lib/firebase-sync.js", "./lib/cat.js", "./lib/stats.js",
