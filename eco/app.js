@@ -1152,30 +1152,44 @@ document.addEventListener("keydown",function(e){if(el("v-mastery").hidden)return
 /* ---------- keyboard answering: a number picks, Enter confirms and then goes on ---------- */
 (function(){
   var css=document.createElement("style");
-  css.textContent=".opts,.tf{counter-reset:kn}.opts>button.opt::before,.tf>button::before{counter-increment:kn;content:counter(kn);display:inline-block;min-width:1.7em;margin-right:8px;border:1px solid currentColor;border-radius:5px;font-size:.78rem;font-weight:700;text-align:center;opacity:.6}.opts>button.kpick,.tf>button.kpick{outline:3px solid var(--acc);outline-offset:2px}";
+  css.textContent=".opts,.tf{counter-reset:kn}.opts>button.opt::before,.tf>button::before{counter-increment:kn;content:counter(kn);display:inline-block;min-width:1.7em;margin-right:8px;border:1px solid currentColor;border-radius:5px;font-size:.78rem;font-weight:700;text-align:center;opacity:.6}.opts>button.kpick,.tf>button.kpick{outline:3px solid var(--acc);outline-offset:2px}.match{counter-reset:kt km}.match>button[data-s=t]::before{counter-increment:kt;content:counter(kt)}.match>button[data-s=m]::before{counter-increment:km;content:counter(km)}.match>button[data-s]::before,[data-fcno]::before,[data-fcyes]::before,#vno::before,#vyes::before{display:inline-block;min-width:1.7em;margin-right:8px;border:1px solid currentColor;border-radius:5px;font-size:.78rem;font-weight:700;text-align:center;opacity:.6}[data-fcno]::before,#vno::before{content:'1'}[data-fcyes]::before,#vyes::before{content:'2'}.match>button.kpick,.row>button.kpick{outline:3px solid var(--acc);outline-offset:2px}";
   document.head.appendChild(css);
-  var NEXT="[data-next],[data-mcnext],[data-hcnext],[data-whonext],[data-mnext],[data-act=next],[data-reveal],#vqnext,#tynext,#mbox button.btn[data-mgo],.sdarea button.btn[data-sm]:not(.sec)";
+  var NEXT="[data-next],[data-mcnext],[data-hcnext],[data-whonext],[data-mnext],[data-act=next],[data-reveal],#vqnext,#tynext,#vshow,#magain,[data-fcflip],#mbox button.btn[data-mgo],.sdarea button.btn[data-sm]:not(.sec)";
   var pick=null,host=null;
   function all(sel){return Array.prototype.slice.call(document.querySelectorAll(sel))}
   function shown(x){return x.isConnected&&x.getClientRects().length>0&&getComputedStyle(x).visibility!=="hidden"}
   function inView(x){var r=x.getBoundingClientRect();return r.bottom>0&&r.top<window.innerHeight}
   function clear(){if(pick)pick.classList.remove("kpick");pick=null}
+  var GROUPS=".opts,.tf,.match,.sdarea .row,#vtrainer .row";
+  /* what the number keys choose from; in match pairs it is the column you are on */
+  function choices(g){
+    var c=Array.prototype.slice.call(g.children).filter(function(x){return x.tagName==="BUTTON"});
+    if(g.classList.contains("match")){var s=g.querySelector("button.sel"),side=s&&s.getAttribute("data-s")==="t"?"m":"t";return c.filter(function(b){return b.getAttribute("data-s")===side})}
+    if(g.classList.contains("row")&&!g.querySelector(":scope>[data-fcno],:scope>#vno"))return [];
+    return c;
+  }
+  function live(b){return !b.disabled&&!b.classList.contains("done")}
   /* the question that gets the keys: the one used last, else the first open one on screen */
   function group(){
-    var open=all(".opts,.tf").filter(function(g){return shown(g)&&g.querySelector(":scope>button:not([disabled])")});
+    var open=all(GROUPS).filter(function(g){return shown(g)&&choices(g).some(live)});
     return open.filter(function(g){return g.parentElement===host&&inView(g)})[0]||open.filter(inView)[0]||open.filter(function(g){return g.parentElement===host})[0]||open[0];
   }
   function nextBtn(){
     var l=all(NEXT).filter(function(b){return !b.disabled&&shown(b)});
     return l.filter(function(b){return host&&host.contains(b)})[0]||(host&&host.isConnected&&host.classList.contains("chk")?null:l.filter(inView)[0]);
   }
-  document.addEventListener("click",function(e){var g=e.target.closest&&e.target.closest(".opts,.tf");if(g){host=g.parentElement;clear()}},true);
+  document.addEventListener("click",function(e){
+    if(!e.target.closest)return;
+    var g=e.target.closest(GROUPS);if(g){host=g.parentElement;clear()}
+    /* a button clicked with the mouse must not swallow the next Enter */
+    var b=e.target.closest("button");if(b&&e.detail&&document.activeElement===b)b.blur();
+  },true);
   window.addEventListener("hashchange",function(){clear();host=null});
   document.addEventListener("keydown",function(e){
     if(e.ctrlKey||e.metaKey||e.altKey||e.repeat||e.defaultPrevented)return;
     var t=e.target;if(t&&t.closest&&t.closest("input,textarea,select"))return;
     if(/^[1-9]$/.test(e.key)){
-      var g=group();if(!g)return;var b=g.querySelectorAll(":scope>button")[+e.key-1];if(!b||b.disabled)return;
+      var g=group();if(!g)return;var b=choices(g)[+e.key-1];if(!b||!live(b))return;
       e.preventDefault();clear();pick=b;host=g.parentElement;b.classList.add("kpick");
       if(document.activeElement&&document.activeElement.blur)document.activeElement.blur();
       b.scrollIntoView({block:"nearest"});return;
